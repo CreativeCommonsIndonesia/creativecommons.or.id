@@ -1,0 +1,284 @@
+/*  ============================
+ *   CREATIVE COMMONS INDONESIA
+ *   v 0.9
+ *  ============================
+ *
+ *   Copyright 2022 CCID
+ *     by Joaquim Baeta
+ *     <mail@joaquimbaeta.com>
+ *
+ *  ============================ */
+
+:root {
+  --ccid-red-96: #fbeeeeff; /* navbar text hover */
+  --ccid-red-91: #f6dadaff; /* image shadow */
+  --ccid-red-86: #f2c5c5ff; /* navbar text, footer text, image border */
+  --ccid-red-81: #edb0b0ff; /* links */
+  --ccid-red-76: #e89b9bff;
+  --ccid-red-71: #e48686ff;
+  --ccid-red-66: #df7272ff;
+  --ccid-red-61: #da5d5dff; /* icons in footer */
+  --ccid-red-56: #d54949ff;
+  --ccid-red-51: #d03434ff;
+  --ccid-red-46: #bf2b2bff;
+  --ccid-red-41: #aa2727ff; /* footer link decoration */
+  --ccid-red-36: #962222ff; /* default red, navbar bg */
+  --ccid-red-31: #7f1d1dff; /* main footer */
+  --ccid-red-26: #6e1919ff; /* footer license bg */
+  --ccid-red-21: #571414ff;
+  --ccid-red-16: #430f0fff;
+  --ccid-red-11: #2e0a0aff;
+  --ccid-red-06: #1a0505ff;
+
+
+  /*/*--bs-font-sans-serif:  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";* !important;/*/
+  
+  --bs-font-sans-serif: 'Jost' !important;
+  /*--bs-font-sans-serif: 'Sen' !important;*/
+  /*--bs-font-sans-serif: 'Source Sans Pro' !important;*/
+
+}
+
+
+
+/* Navbar */
+
+.navbar {
+  background-color: var(--ccid-red-36);
+  border-bottom: 5px solid var(--ccid-red-86);
+}
+
+.navbar a {
+  color: var(--ccid-red-86);
+}
+
+.navbar a:hover {
+  color: var(--ccid-red-96);
+}
+
+.navbar .dropdown-menu {
+  border-radius: 0;
+/*  border-bottom: 5px solid var(--ccid-red-86);*/
+/*  border-right: 5px solid var(--ccid-red-86);*/
+  border: 0;
+  box-shadow: 5px 5px 0px 0px var(--ccid-red-86);
+}
+
+.navbar .dropdown-menu .dropdown-item:active {
+  background-color: var(--ccid-red-16);
+}
+
+/* Breadcrumbs */
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: var(--ccid-red-36); 
+}
+
+.breadcrumb-item.active {
+  color: var(--ccid-red-71);
+/*  color: var(--bs-body-color);*/
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f105";
+    font-weight: 900;
+}
+
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: 'Jost' !important;
+}
+
+main p, main li, .index-page p {
+  font-family: 'Sen' !important;
+}
+
+/* Main */
+
+main a {
+  color: var(--bs-body-color-rgb);
+  text-decoration: none;
+  background-image: linear-gradient(120deg, var(--ccid-red-81) 0%, var(--ccid-red-81) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.3rem;
+  background-position: 0 100%;
+  transition: background-size 0.2s ease-in-out;
+}
+
+main a:hover {
+  color: var(--bs-body-color-rgb);
+  background-size: 100% 100%;
+}
+
+
+main img {
+ border: 1px solid;
+ border-color: var(--ccid-red-86);
+ box-shadow: 7px 7px 0px -2px var(--ccid-red-91);
+}
+
+
+/* Footer  */
+
+
+footer {
+  background-color: var(--ccid-red-31);
+}
+
+footer h5 {
+  color: var(--ccid-red-61);
+}
+
+footer .fa-li i {
+  color: var(--ccid-red-61);
+}
+
+footer li {
+  color: var(--ccid-red-86);
+}
+
+footer li b {
+  font-weight: 500;
+}
+
+footer li a {
+  text-decoration: none;
+}
+
+footer li a {
+  color: var(--ccid-red-86);
+  text-decoration: none;
+  background-image: linear-gradient(120deg, #aa2727ff 0%, #aa2727ff 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.1rem;
+  background-position: 0 100%;
+  transition: background-size 0.2s ease-in-out;
+}
+
+footer li a:hover {
+  color: var(--ccid-red-86);
+  background-size: 100% 100%;
+}
+
+.footer-license {
+  background-color: var(--ccid-red-26); 
+}
+
+.footer-license p {
+  color: var(--ccid-red-76);
+}
+
+.footer-license a {
+  color: var(--ccid-red-76);
+  text-decoration: none;
+  background-image: linear-gradient(120deg, #aa2727ff 0%, #aa2727ff 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.1rem;
+  background-position: 0 100%;
+  transition: background-size 0.2s ease-in-out;
+}
+
+.footer-license a:hover {
+  color: var(--ccid-red-76);
+  background-size: 100% 100%;
+}
+
+
+
+
+
+
+
+.bg-dark-red-1 {
+  background-color: var(--ccid-red-31);
+}
+
+.bg-dark-red-2 {
+  background-color: var(--ccid-red-26);
+}
+
+
+
+
+/* Buttons  */
+
+.btn {
+  border-radius: 0;
+}
+
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--ccid-red-36);
+  --bs-btn-border-color: var(--ccid-red-36);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--ccid-red-41);
+  --bs-btn-hover-border-color: var(--ccid-red-41);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--ccid-red-31);
+  --bs-btn-active-border-color: var(--ccid-red-31);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #0d6efd;
+  --bs-btn-disabled-border-color: #0d6efd;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--ccid-red-36);
+  --bs-btn-border-color: var(--ccid-red-36);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--ccid-red-36);
+  --bs-btn-hover-border-color: var(--ccid-red-36);
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--ccid-red-36);
+  --bs-btn-active-border-color: var(--ccid-red-36);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #0d6efd;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #0d6efd;
+  --bs-gradient: none;
+}
+
+
+
+
+
+
+
+.dropdown-menu {
+  /*z-index: -999;*/
+}
+
+
+.index-card .text-bg-dark {
+  --bs-bg-opacity: 0.8;
+}
+
+
+
+/* CCID people */
+
+.ccid-people img {
+  border: 0;
+  box-shadow: none;
+}
+
+.ccid-people p {
+  font-size: 1.2rem;
+}
+
+.ccid-people li {
+  font-size: 1.2rem;
+}
+
+.ccid-people a {
+  background-image: linear-gradient(120deg, #00000033 0%, #00000033 100%);
+}
