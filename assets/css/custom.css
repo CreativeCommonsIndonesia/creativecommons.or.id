@@ -9,6 +9,14 @@
  *
  *  ============================ */
 
+@font-face {
+  font-family: 'Jost Regular';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local('Jost Regular'), url('../fonts/Jost-Regular.ttf') format('ttf');
+}
+
 :root {
   --ccid-red-96: #fbeeeeff; /* navbar text hover */
   --ccid-red-91: #f6dadaff; /* image shadow */
