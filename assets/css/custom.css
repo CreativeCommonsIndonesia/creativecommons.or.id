@@ -45,11 +45,41 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+/*  font-size: 2rem;*/
+}
+
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 2rem;
+  }
+
+  h2, .h2 {
+    font-size: 1.8rem;
+  }
+
+  h3, .h3 {
+    font-size: 1.6rem;
+  }
+
+  h4, .h4 {
+    font-size: 1.4rem;
+  }
+}
+
+h5, .h5 {
+  font-size: 1.2rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
 }
 
 main p, main li, .index-page p {
   font-family: 'Sen' !important;
+}
+
+.article-author, .publication-date, .share-links .fa-share-from-square {
+  color: var(--ccid-red-71);
 }
 
 /* Navbar */
@@ -74,7 +104,8 @@ main p, main li, .index-page p {
 .navbar .dropdown-menu {
   border-radius: 0;
   border: 0;
-  box-shadow: 5px 5px 0px 0px var(--ccid-red-86);
+  --bs-dropdown-link-hover-bg: var(--ccid-red-21);
+  box-shadow: 6px 5.5px 0px -0.5px #eb7f7f78;
 }
 
 .navbar .dropdown-menu .dropdown-item:active {
@@ -122,13 +153,28 @@ main a:hover {
   background-size: 100% 100%;
 }
 
+/* Images, figures */
 
-main img {
- border: 1px solid;
- border-color: var(--ccid-red-86);
- box-shadow: 7px 7px 0px -2px var(--ccid-red-91);
+main img, .border-shadow, figure {
+  background: var(--ccid-red-96);
+  border: 1px solid;
+  border-color: var(--ccid-red-86);
+  box-shadow: 7px 7px 0px -2px var(--ccid-red-91);
 }
 
+figure img {
+  border: 0;
+  box-shadow: none;
+}
+
+.figure-img {
+  margin-bottom: 0;
+}
+
+.figure-caption {
+  color: var(--bs-body-color-rgb);
+  padding: 0.8rem 0rem 0.8rem 0.8rem;
+}
 
 /* Footer  */
 
@@ -138,6 +184,7 @@ footer {
 
 footer h5 {
   color: var(--ccid-red-61);
+  margin-left: -1.5rem;
 }
 
 footer .fa-li i {
@@ -215,8 +262,8 @@ footer li a:hover {
 
 .btn {
   border-radius: 0;
+  background-image: none;
 }
-
 
 .btn-primary {
   --bs-btn-color: #fff;
@@ -256,34 +303,43 @@ footer li a:hover {
 
 
 
-
-
-.dropdown-menu {
-  /*z-index: -999;*/
-}
-
-
 .index-card .text-bg-dark {
-  --bs-bg-opacity: 0.8;
+  --bs-bg-opacity: 0.875;
 }
-
-
 
 /* CCID people */
 
-.ccid-people img {
-  border: 0;
-  box-shadow: none;
+.author-profile a, .ccid-people h5 a, .share-links a {
+  color: var(--ccid-red-56);
+  text-decoration: none;
+  background-image: none;
+  transition: 0.2s ease-in-out;
 }
 
-.ccid-people p {
-  font-size: 1.2rem;
+.author-profile a:hover, .ccid-people h5 a:hover, .share-links a:hover {
+  color: var(--ccid-red-46);
 }
 
-.ccid-people li {
-  font-size: 1.2rem;
+.author-profile img {
+  width: 60px;
+  margin-right: 1.5rem;
 }
 
-.ccid-people a {
-  background-image: linear-gradient(120deg, #00000033 0%, #00000033 100%);
+.ccid-people .badge {
+  position: relative;
+  z-index: 999;
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  padding: 0 20px 0 0;
+}
+
+.ccid-people .progress {
+  height: 2px;
+  background: var(--ccid-red-91);
+  margin-top: -1.4rem;
+  z-index: -999;
+}
+
+.ccid-people .progress-bar {
+  background: var(--ccid-red-76);
 }
