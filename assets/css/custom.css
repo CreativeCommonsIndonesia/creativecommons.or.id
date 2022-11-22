@@ -50,8 +50,8 @@ body {
   font-family: 'Jost', 'Sen', sans-serif;
 }
 
-h1 {
-/*  font-size: 2rem;*/
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  font-weight: 400;
 }
 
 @media (min-width: 1200px) {
@@ -200,7 +200,7 @@ footer li {
 }
 
 footer li b {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 footer li a {
@@ -328,4 +328,24 @@ footer li a:hover {
 
 .ccid-people .progress-bar {
   background: var(--ccid-red-76);
+}
+
+/* Utilities */
+
+@media (min-width: 576px) {
+  .w-sm-25 {
+    width: 25% !important;
+  }
+
+  .w-sm-50 {
+    width: 50%;
+  }
+
+  .w-sm-75 {
+    width: 75% !important;
+  }
+
+  .w-sm-100 {
+    width: 100% !important;
+  }
 }
