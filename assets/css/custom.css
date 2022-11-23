@@ -349,3 +349,10 @@ footer li a:hover {
     width: 100% !important;
   }
 }
+
+/* Article end */
+
+.article-end {
+  background: url('../img/article-end.svg') no-repeat center;
+  height: 200px;
+}
