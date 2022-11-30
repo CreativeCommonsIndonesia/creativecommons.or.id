@@ -1,0 +1,358 @@
+/*  ============================
+ *   CREATIVE COMMONS INDONESIA
+ *   v 0.9
+ *  ============================
+ *
+ *   Copyright 2022 CCID
+ *     by Joaquim Baeta
+ *     <mail@joaquimbaeta.com>
+ *
+ *  ============================ */
+
+:root {
+  --ccid-red-96: #fbeeeeff; /* navbar text hover */
+  --ccid-red-91: #f6dadaff; /* image shadow */
+  --ccid-red-86: #f2c5c5ff; /* navbar text, footer text, image border */
+  --ccid-red-81: #edb0b0ff; /* links */
+  --ccid-red-76: #e89b9bff;
+  --ccid-red-71: #e48686ff;
+  --ccid-red-66: #df7272ff;
+  --ccid-red-61: #da5d5dff; /* icons in footer */
+  --ccid-red-56: #d54949ff;
+  --ccid-red-51: #d03434ff;
+  --ccid-red-46: #bf2b2bff;
+  --ccid-red-41: #aa2727ff; /* footer link decoration */
+  --ccid-red-36: #962222ff; /* default red, navbar bg */
+  --ccid-red-31: #7f1d1dff; /* main footer */
+  --ccid-red-26: #6e1919ff; /* footer license bg */
+  --ccid-red-21: #571414ff;
+  --ccid-red-16: #430f0fff;
+  --ccid-red-11: #2e0a0aff;
+  --ccid-red-06: #1a0505ff;
+  --ccid-greyred-76: #4a3d40ff;
+  --ccid-greyred-86: #4c4649ff;
+  --ccid-greyred-96: #514e50ff;
+}
+
+/* Color */
+
+.bg-dark-red-1 {
+  background-color: var(--ccid-red-31);
+}
+
+.bg-dark-red-2 {
+  background-color: var(--ccid-red-26);
+}
+
+/* Typography */
+
+body {
+  font-family: 'Jost', 'Sen', sans-serif;
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  font-weight: 400;
+}
+
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 2rem;
+  }
+
+  h2, .h2 {
+    font-size: 1.8rem;
+  }
+
+  h3, .h3 {
+    font-size: 1.6rem;
+  }
+
+  h4, .h4 {
+    font-size: 1.4rem;
+  }
+}
+
+h5, .h5 {
+  font-size: 1.2rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+
+main p, main li, .index-page p {
+  font-family: 'Sen' !important;
+}
+
+main a {
+  color: var(--bs-body-color-rgb);
+  text-decoration: none;
+  background-image: linear-gradient(120deg, var(--ccid-red-81) 0%, var(--ccid-red-81) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.3rem;
+  background-position: 0 100%;
+  transition: background-size 0.2s ease-in-out;
+}
+
+main a:hover {
+  color: var(--bs-body-color-rgb);
+  background-size: 100% 100%;
+}
+
+.article-author, .publication-date, .share-links .fa-share-from-square {
+  color: var(--ccid-red-71);
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: var(--ccid-red-36);
+  border-bottom: 5px solid var(--ccid-red-86);
+}
+
+.navbar a {
+  color: var(--ccid-red-86);
+}
+
+.navbar a:hover {
+  color: var(--ccid-red-96);
+}
+
+.navbar .dropdown-toggle.show {
+  color: var(--ccid-red-96);
+}
+
+.navbar .dropdown-menu {
+  border-radius: 0;
+  border: 0;
+  --bs-dropdown-link-hover-bg: var(--ccid-red-21);
+  box-shadow: 6px 5.5px 0px -0.5px #eb7f7f78;
+}
+
+.navbar .dropdown-menu .dropdown-item:active {
+  background-color: var(--ccid-red-16);
+}
+
+/* Breadcrumbs */
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: var(--ccid-red-36); 
+}
+
+.breadcrumb-item.active {
+  color: var(--ccid-greyred-96);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f105";
+    font-weight: 900;
+    color: var(--ccid-red-86);
+}
+
+@media (max-width: 991.98px) {
+  .breadcrumb-item.active {
+    display: none;
+  }
+}
+
+/* Images, figures */
+
+main img, .border-shadow, figure {
+  background: var(--ccid-red-96);
+  border: 1px solid;
+  border-color: var(--ccid-red-86);
+  box-shadow: 7px 7px 0px -2px var(--ccid-red-91);
+}
+
+figure img {
+  border: 0;
+  box-shadow: none;
+}
+
+.figure-img {
+  margin-bottom: 0;
+}
+
+.figure-caption {
+  color: var(--bs-body-color-rgb);
+  padding: 0.8rem 0rem 0.8rem 0.8rem;
+}
+
+/* Footer  */
+
+footer {
+  background-color: var(--ccid-red-31);
+}
+
+footer h5 {
+  color: var(--ccid-red-61);
+  margin-left: -1.5rem;
+}
+
+footer .fa-li i {
+  color: var(--ccid-red-51);
+}
+
+footer li {
+  color: var(--ccid-red-86);
+}
+
+footer li b {
+  font-weight: 400;
+}
+
+footer li a {
+  text-decoration: none;
+}
+
+footer li a {
+  color: var(--ccid-red-86);
+  text-decoration: none;
+  background-image: linear-gradient(120deg, #aa2727ff 0%, #aa2727ff 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.1rem;
+  background-position: 0 100%;
+  transition: background-size 0.2s ease-in-out;
+}
+
+footer li a:hover {
+  color: var(--ccid-red-86);
+  background-size: 100% 100%;
+}
+
+.footer-license {
+  background-color: var(--ccid-red-26); 
+}
+
+.footer-license p {
+  color: var(--ccid-red-76);
+}
+
+.footer-license a {
+  color: var(--ccid-red-76);
+  text-decoration: none;
+  background-image: linear-gradient(120deg, #aa2727ff 0%, #aa2727ff 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.1rem;
+  background-position: 0 100%;
+  transition: background-size 0.2s ease-in-out;
+}
+
+.footer-license a:hover {
+  color: var(--ccid-red-76);
+  background-size: 100% 100%;
+}
+
+
+/* Buttons  */
+
+.btn {
+  border-radius: 0;
+  background-image: none;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--ccid-red-36);
+  --bs-btn-border-color: var(--ccid-red-36);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--ccid-red-41);
+  --bs-btn-hover-border-color: var(--ccid-red-41);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--ccid-red-31);
+  --bs-btn-active-border-color: var(--ccid-red-31);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #0d6efd;
+  --bs-btn-disabled-border-color: #0d6efd;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--ccid-red-36);
+  --bs-btn-border-color: var(--ccid-red-36);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--ccid-red-36);
+  --bs-btn-hover-border-color: var(--ccid-red-36);
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--ccid-red-36);
+  --bs-btn-active-border-color: var(--ccid-red-36);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #0d6efd;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #0d6efd;
+  --bs-gradient: none;
+}
+
+/* Index page */
+
+.index-card .text-bg-dark {
+  --bs-bg-opacity: 0.875;
+}
+
+/* CCID people */
+
+.author-profile a, .ccid-people h5 a, .share-links a {
+  color: var(--ccid-red-56);
+  text-decoration: none;
+  background-image: none;
+  transition: 0.2s ease-in-out;
+}
+
+.author-profile a:hover, .ccid-people h5 a:hover, .share-links a:hover {
+  color: var(--ccid-red-46);
+}
+
+.author-profile img {
+  width: 60px;
+  margin-right: 1.5rem;
+}
+
+.ccid-people .badge {
+  position: relative;
+  z-index: 999;
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  padding: 0 20px 0 0;
+}
+
+.ccid-people .progress {
+  height: 2px;
+  background: var(--ccid-red-91);
+  margin-top: -1.4rem;
+  z-index: -999;
+}
+
+.ccid-people .progress-bar {
+  background: var(--ccid-red-76);
+}
+
+/* Utilities */
+
+@media (min-width: 576px) {
+  .w-sm-25 {
+    width: 25% !important;
+  }
+
+  .w-sm-50 {
+    width: 50%;
+  }
+
+  .w-sm-75 {
+    width: 75% !important;
+  }
+
+  .w-sm-100 {
+    width: 100% !important;
+  }
+}
+
+/* Article end */
+
+.article-end {
+  background: url('../img/article-end.svg') no-repeat center;
+  height: 200px;
+}
