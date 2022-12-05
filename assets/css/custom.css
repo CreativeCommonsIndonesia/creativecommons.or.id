@@ -32,25 +32,32 @@
   --ccid-greyred-76: #4a3d40ff;
   --ccid-greyred-86: #4c4649ff;
   --ccid-greyred-96: #514e50ff;
+  --font-body: 'Sen', system-ui, -apple-system, sans-serif;
+  --font-headings: 'Jost', 'Sen', system-ui, -apple-system, sans-serif;
 }
 
 /* Color */
 
-.bg-dark-red-1 {
+.bg-ccid-red-36 {
+  background-color: var(--ccid-red-36) !important;
+}
+
+.bg-ccid-red-31 {
   background-color: var(--ccid-red-31);
 }
 
-.bg-dark-red-2 {
+.bg-ccid-red-26 {
   background-color: var(--ccid-red-26);
 }
 
 /* Typography */
 
 body {
-  font-family: 'Jost', 'Sen', sans-serif;
+  font-family: var(--font-body);
 }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, .breadcrumb, .article-meta {
+  font-family: var(--font-headings);
   font-weight: 400;
 }
 
@@ -80,10 +87,6 @@ h6, .h6 {
   font-size: 1rem;
 }
 
-main p, main li, .index-page p {
-  font-family: 'Sen' !important;
-}
-
 main a {
   color: var(--bs-body-color-rgb);
   text-decoration: none;
@@ -99,13 +102,33 @@ main a:hover {
   background-size: 100% 100%;
 }
 
-.article-author, .publication-date, .share-links .fa-share-from-square {
-  color: var(--ccid-red-71);
+h3 a, h5 a {
+/*  font-weight: 400;*/
+  color: var(--ccid-red-36);
+  text-decoration: none;
+  background-image: none;
+  transition: 0.2s ease-in-out;
+}
+
+h3 a:hover, h5 a:hover {
+  color: var(--ccid-red-41);
+}
+
+.author-profile a, .ccid-people h5 a, .article-meta a {
+  color: var(--ccid-red-56);
+  text-decoration: none;
+  background-image: none;
+  transition: 0.2s ease-in-out;
+}
+
+.author-profile a:hover, .ccid-people h5 a:hover, .article-meta a:hover {
+  color: var(--ccid-red-46);
 }
 
 /* Navbar */
 
 .navbar {
+  font-family: var(--font-headings);
   background-color: var(--ccid-red-36);
   border-bottom: 5px solid var(--ccid-red-86);
 }
@@ -159,16 +182,11 @@ main a:hover {
 
 /* Images, figures */
 
-main img, .border-shadow, figure {
+main img, .border-shadow, figure iframe {
   background: var(--ccid-red-96);
   border: 1px solid;
   border-color: var(--ccid-red-86);
   box-shadow: 7px 7px 0px -2px var(--ccid-red-91);
-}
-
-figure img {
-  border: 0;
-  box-shadow: none;
 }
 
 .figure-img {
@@ -176,13 +194,16 @@ figure img {
 }
 
 .figure-caption {
-  color: var(--bs-body-color-rgb);
-  padding: 0.8rem 0rem 0.8rem 0.8rem;
+  text-align: center;
+  color: var(--ccid-greyred-96);
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
 }
 
 /* Footer  */
 
 footer {
+  font-family: var(--font-headings);
   background-color: var(--ccid-red-31);
 }
 
@@ -245,7 +266,6 @@ footer li a:hover {
   background-size: 100% 100%;
 }
 
-
 /* Buttons  */
 
 .btn {
@@ -287,24 +307,60 @@ footer li a:hover {
   --bs-gradient: none;
 }
 
+/* Badges */
+
+.badge {
+  font-family: var(--font-headings);
+  font-weight: 400;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0;
+}
+
 /* Index page */
 
 .index-card .text-bg-dark {
   --bs-bg-opacity: 0.875;
 }
 
+.index-page .author-profile {
+  display: flex;
+  align-items: center;
+}
+
+.index-page .author-profile img {
+  width: auto;
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+.highlighted-article-image, #paginated-list .col-sm-2 {
+  background-image: radial-gradient(#514e50ff, #571414ff);
+  padding: 0;
+  overflow: hidden;
+}
+
+.highlighted-article-image img, #paginated-list .col-sm-2 img {
+  background-size: cover;
+  opacity: 0.75;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  min-height: 100%;
+}
+
+.highlighted-article-image img:hover, #paginated-list .col-sm-2 img:hover {
+  opacity: 1;
+}
+
+/* Articles */
+
+.article-author, .article-meta .fa-solid {
+  color: var(--ccid-red-71);
+}
+
 /* CCID people */
-
-.author-profile a, .ccid-people h5 a, .share-links a {
-  color: var(--ccid-red-56);
-  text-decoration: none;
-  background-image: none;
-  transition: 0.2s ease-in-out;
-}
-
-.author-profile a:hover, .ccid-people h5 a:hover, .share-links a:hover {
-  color: var(--ccid-red-46);
-}
 
 .author-profile img {
   width: 60px;
@@ -319,15 +375,18 @@ footer li a:hover {
   padding: 0 20px 0 0;
 }
 
-.ccid-people .progress {
+.progress {
   height: 2px;
   background: var(--ccid-red-91);
-  margin-top: -1.4rem;
   z-index: -999;
 }
 
-.ccid-people .progress-bar {
+.progress-bar {
   background: var(--ccid-red-76);
+}
+
+.ccid-people .progress {
+  margin-top: -1.4rem;
 }
 
 /* Utilities */
