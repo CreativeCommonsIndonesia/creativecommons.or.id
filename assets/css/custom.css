@@ -10,28 +10,28 @@
  *  ============================ */
 
 :root {
-  --ccid-red-96: #fbeeeeff; /* navbar text hover */
-  --ccid-red-91: #f6dadaff; /* image shadow */
-  --ccid-red-86: #f2c5c5ff; /* navbar text, footer text, image border */
-  --ccid-red-81: #edb0b0ff; /* links */
-  --ccid-red-76: #e89b9bff;
-  --ccid-red-71: #e48686ff;
+  --ccid-red-96: #fbeeeeff; /* Navbar text hover */
+  --ccid-red-91: #f6dadaff; /* Image shadow */
+  --ccid-red-86: #f2c5c5ff; /* Navbar text, footer text, image border */
+  --ccid-red-81: #edb0b0ff; /* Links */
+  --ccid-red-76: #e89b9bff; /* Footer license text */
+  --ccid-red-71: #e48686ff; /* Article meta icons, list markers */
   --ccid-red-66: #df7272ff;
-  --ccid-red-61: #da5d5dff; /* icons in footer */
+  --ccid-red-61: #da5d5dff; /* Icons in footer */
   --ccid-red-56: #d54949ff;
   --ccid-red-51: #d03434ff;
   --ccid-red-46: #bf2b2bff;
-  --ccid-red-41: #aa2727ff; /* footer link decoration */
-  --ccid-red-36: #962222ff; /* default red, navbar bg */
-  --ccid-red-31: #7f1d1dff; /* main footer */
-  --ccid-red-26: #6e1919ff; /* footer license bg */
-  --ccid-red-21: #571414ff;
-  --ccid-red-16: #430f0fff;
+  --ccid-red-41: #aa2727ff; /* Footer link decoration */
+  --ccid-red-36: #962222ff; /* Default red, navbar bg */
+  --ccid-red-31: #7f1d1dff; /* Main footer */
+  --ccid-red-26: #6e1919ff; /* Footer license bg */
+  --ccid-red-21: #571414ff; /* Dropdown menu hover background */
+  --ccid-red-16: #430f0fff; /* Dropdown menu active item */
   --ccid-red-11: #2e0a0aff;
   --ccid-red-06: #1a0505ff;
   --ccid-greyred-76: #4a3d40ff;
   --ccid-greyred-86: #4c4649ff;
-  --ccid-greyred-96: #514e50ff;
+  --ccid-greyred-96: #514e50ff; /* Active breadcrumb, highlighted article meta text, figure caption */
   --font-body: 'Sen', system-ui, -apple-system, sans-serif;
   --font-headings: 'Jost', 'Sen', system-ui, -apple-system, sans-serif;
 }
@@ -123,6 +123,21 @@ h3 a:hover, h5 a:hover {
 
 .author-profile a:hover, .ccid-people h5 a:hover, .article-meta a:hover {
   color: var(--ccid-red-46);
+}
+
+main ul {
+  padding-left: 20px;
+}
+
+main li::marker {
+    font-family: "Font Awesome 6 Free";
+    content: "\f30b";
+    font-weight: 900;
+    color: var(--ccid-red-71);
+}
+
+main li {
+  padding-left: 10px;
 }
 
 /* Navbar */
