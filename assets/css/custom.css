@@ -104,14 +104,14 @@ main a:hover {
 
 h3 a, h5 a {
 /*  font-weight: 400;*/
-  color: var(--ccid-red-36);
+  color: var(--ccid-red-46);
   text-decoration: none;
   background-image: none;
   transition: 0.2s ease-in-out;
 }
 
 h3 a:hover, h5 a:hover {
-  color: var(--ccid-red-41);
+  color: var(--ccid-red-56);
 }
 
 .author-profile a, .ccid-people h5 a, .article-meta a {
@@ -318,6 +318,16 @@ footer li a:hover {
 
 /* Index page */
 
+.index-page .navbar {
+  border: none;
+  box-shadow: 0px 5px 0px 0px #eb7f7f78;
+}
+
+.index-jumbotron {
+  background: url(../img/index-bg.svg) center center / cover no-repeat;
+  border-bottom: 10px solid var(--ccid-red-96);
+}
+
 .index-card .text-bg-dark {
   --bs-bg-opacity: 0.875;
 }
@@ -331,6 +341,10 @@ footer li a:hover {
   width: auto;
   height: 40px;
   margin-right: 0.5rem;
+}
+
+.highlighted-article .article-meta {
+  color: var(--ccid-greyred-96);
 }
 
 .highlighted-article-image, #paginated-list .col-sm-2 {
@@ -352,6 +366,11 @@ footer li a:hover {
 
 .highlighted-article-image img:hover, #paginated-list .col-sm-2 img:hover {
   opacity: 1;
+}
+
+.index-title {
+  font-weight: 500;
+  text-shadow: 4px 4px #eb7f7f78;
 }
 
 /* Articles */
@@ -414,4 +433,43 @@ footer li a:hover {
 .article-end {
   background: url('../img/article-end.svg') no-repeat center;
   height: 200px;
+}
+
+/* Pagination */
+
+.hidden {
+  display: none;
+}
+
+ul#paginated-list {
+  list-style-type: none;
+}
+
+.pagination-container {
+  font-family: var(--font-headings);
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  padding: 1rem 0;
+  justify-content: center;
+}
+
+.pagination-number, .pagination-button {
+  font-size: 0.9rem;
+  background-color: transparent;
+  border: none;
+  margin: 0.25rem 0.25rem;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+  transition: 0.2s ease-in-out;
+}
+
+.pagination-number:hover, .pagination-button:not(.disabled):hover {
+  background: var(--ccid-red-96);
+}
+
+.pagination-number.active {
+  color: var(--bs-body-color-rgb);
+  background: var(--ccid-red-91);
 }
