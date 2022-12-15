@@ -458,6 +458,11 @@ footer li a:hover {
 
 ul#paginated-list {
   list-style-type: none;
+  padding-left: 2px;
+}
+
+ul#paginated-list li::marker {
+    content: "";
 }
 
 .pagination-container {
