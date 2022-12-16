@@ -424,6 +424,13 @@ footer li a:hover {
   margin-right: 1.5rem;
 }
 
+@media (max-width: 409px) {
+  .author-profile img {
+    width: 55px;
+    margin-right: 1.25rem;
+  }
+}
+
 .ccid-people .badge {
   position: relative;
   z-index: 999;
