@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GR2HTWFX22"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GR2HTWFX22');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Creative Commons Indonesia supports the usage of Creative Commons licenses and open cultural works in Indonesia">
@@ -9,27 +19,19 @@
     <title>Lokakarya Hak Cipta dan Lisensi Creative Commons untuk Jurnal Ilmiah di Universitas Muhammadiyah Sumatera Utara</title>
     
     <!-- fonts -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
-
-    <!-- icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Sen&display=swap" rel="stylesheet"> 
 
     <!-- css -->
-    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../../assets/css/material-kit.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../../assets/css/custom.css" rel="stylesheet">
+    <link href="../../assets/css/animate.min.css" rel="stylesheet">
 
-    <!-- js -->
-    <script src="../../assets/js/jquery.min.js"></script>
-    <script src="../../assets/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/material.min.js"></script>
-    <script src="../../assets/js/material-kit.js"></script>
-
-    <!-- plugins -->
-    <script src="../../assets/js/nouislider.min.js"></script> <!-- sliders (http://refreshless.com/nouislider) -->
-    <script src="../../assets/js/bootstrap-datepicker.js"></script> <!-- datepicker (http://www.eyecon.ro/bootstrap-datepicker) -->
-    <script src="../../assets/js/jPages.js"></script> <!-- pagination -->
-    <script src="../../assets/js/js.js"></script> <!-- pagination -->
+    <!-- icons -->
+    <link href="../../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="../../assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="../../assets/fontawesome/css/solid.css" rel="stylesheet">
 
     <!-- favicon -->
     <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
@@ -37,233 +39,159 @@
     <!-- rss feed -->
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="../../feed.xml">
   </head>
-
     
-<body class="index-page">
-	<div class="wrapper">
-	
-	
-        	<style>
-.main {
-	margin-top: 80px;
-  }
-.navbar, .navbar.navbar-danger {
-	background-color: #9e1c1c;
-	color: #ffffff;
-}
-</style>  
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-md" aria-label="Navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html"><img src="../../assets/img/logoputih.png" alt="Creative Commons Indonesia" class="img-fluid" width="150"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ccidnavbar" aria-controls="ccidnavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <nav class="navbar navbar-danger navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="../../index.html">
-                    <div class="logo-container">
-                        <div class="logo">
-                            <img src="../../assets/img/logoputih.png" alt="Creative Commons Indonesia" class="img-responsive" width="150">
-                        </div>
-                    </div>
-                </a>
-            </div>
-    
-            <div class="collapse navbar-collapse" id="navigation-index">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="../../tentang.html" target="_blank">
-                            Tentang
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../../lisensi-cc-bahasa-indonesia.html" target="_blank">
-                            Lisensi
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Blog <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../../sobatccid.html">Sobat CCID</a></li>
-                            <li><a href="../../berita.html">Berita</a></li>
-                            <li><a href="../../kajian.html">Kajian</a></li>
-                            <li><a href="../../acara.html">Acara</a></li>
-                        </ul>
-                    </li>
-		<li>
-			<a href="../../search.html" target="_blank">
-			<i class="fa fa-search" aria-hidden="true"></i>
-			</a>
-		</li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="ccidnavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Informasi
+              </a>
+              <ul class="dropdown-menu mt-3 bg-ccid-red-31 animate__animated animate__flipInY animate__faster" aria-labelledby="resources">
+                <li><a class="dropdown-item" href="../../lisensi-cc-bahasa-indonesia.html">Lisensi</a></li>
+                <li><a class="dropdown-item" href="../../kajian.html">Kajian</a></li>
+                <li><a class="dropdown-item" href="../../faq.html">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../../berita.html">Berita</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../acara.html">Acara</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../tentang.html">Tentang kami</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../sobatccid.html">Sobat CCID</a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/CreativeCommonsIndonesia" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://twitter.com/CC_ID" title="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/cc.indonesia/" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../hubungi-kami.html" title="Hubungi kami"><i class="fa-solid fa-address-book"></i></a></li>            
+          </ul>       
         </div>
+      </div>
     </nav>
 
-	
-       
-        
-	<div class="main">
-		<div class="section section-basic">
-	    	<div class="container">
-		
-		<small><a href="../../index.html">Beranda</a>/<a href="https://creativecommons.or.id/acara.html">
-			Acara
-		</a>/Lokakarya Hak Cipta dan Lisensi Creative Commons untuk Jurnal Ilmiah di Universitas Muhammadiyah Sumatera Utara</small>
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="text-center article-title">
-                            <h2>
-                                Lokakarya Hak Cipta dan Lisensi Creative Commons untuk Jurnal Ilmiah di Universitas Muhammadiyah Sumatera Utara
-                            </h2>
-                        </div>
-                            <p><img src="../../uploads/ccid%20lokakarya%20umsu%202.jpeg" alt="ccid lokakarya umsu 2.jpeg" class="img-responsive center-block" width="500" /></p>
+    <div class="container-fluid mt-2">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+          <li class="breadcrumb-item"><a href="../../acara.html">Acara</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Lokakarya Hak Cipta dan Lisensi Creative Commons untuk Jurnal Ilmiah di Universitas Muhammadiyah Sumatera Utara</li>
+        </ol>
+      </nav>
+    </div>         
+          
+    <main class="container p-5">
+      <div class="row mt-2 mt-md-5">
+        <div class="col-12">
 
-<p>Senin, tanggal 29 April 2019, Creative Commons Indonesia (CCID) dan Lembaga Penelitian dan Pengabdian kepada Masyarakat (LP2M) Universitas Muhammadiyah Sumatera Utara (UMSU) bekerja sama menyelenggarakan lokakarya hak cipta dan lisensi Creative Commons (lisensi CC) di kota Medan. Acara dibuka dengan sambutan oleh Wakil Rektor I UMSU, Dr. Muhammad Arifin, S.H., M.Hum. dan Ketua LP2M UMSU Dr. Muhammad Said Siregar, Msi. Keduanya berharap dengan terselenggaranya lokakarya ini para akademisi UMSU dapat lebih memahami tata kelola hak cipta dan pelisensian jurnal-jurnal UMSU dengan lisensi CC. Peserta acara terdiri dari para pengelola jurnal yang ada di UMSU, dosen pengampu mata kuliah Hak Kekayaan Intelektual dari Fakultas Hukum UMSU, dan peserta eksternal dari komunitas blogger Medan.</p>
+          <div class="row article-meta mb-3">
+            <div class="col-sm-6">
+              <i class="fa-solid fa-calendar-day fa-fw"></i> 2 May 2019
+            </div>
+            <div class="col-sm-6 pt-1 pt-sm-0 text-sm-end">
+              <i class="fa-solid fa-share-from-square fa-fw pe-1"></i> Bagikan ke 
+            
+              <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://creativecommons.or.id/2019/05/lokakarya-hak-cipta-dan-lisensi-creative-commons-untuk-jurnal-ilmiah-di-universitas-muhammadiyah-sumatera-utara.html"><i class="fa-brands fa-linkedin ps-1" title="LinkedIn" aria-hidden="true"></i></a>
 
-<p>Pada lokakarya kali ini, Harsa Wahyu Ramadhan mewakili CCID sebagai pemateri untuk memberikan materi tentang “Penerapan Lisensi Creative Commons untuk Jurnal Ilmiah” dengan moderator Bapak Irfan Nasution. Acara ini berlangsung dari pukul 09.30 sampai dengan pukul 11.00 WIB.</p>
+              <a href="https://facebook.com/sharer.php?u=https://creativecommons.or.id/2019/05/lokakarya-hak-cipta-dan-lisensi-creative-commons-untuk-jurnal-ilmiah-di-universitas-muhammadiyah-sumatera-utara.html" rel="nofollow" target="_blank"><i class="fa-brands fa-facebook" title="Facebook" aria-hidden="true"></i></a>
 
-<p>Harsa membagi pemaparan ke dalam tiga bagian besar yakni: dasar-dasar hak cipta, lisensi hak cipta, dan ditutup dengan contoh penerapan lisensi CC untuk jurnal ilmiah. Pembahasan materi dimulai dengan sedikit ulasan tentang pelisensian jurnal ilmiah dengan lisensi CC sebagai salah satu syarat agar jurnal dapat terindeks Directory of Open Access Journals (DOAJ). Harsa juga menekankan bahwa hak cipta adalah salah satu bagian dari Hak kekayaan Intelektual (HKI) dan harus dibedakan dengan pelindungan paten, merek, rahasia dagang, dan jenis HKI lainnya agar tidak terjadi miskonsepsi tentang HKI.</p>
+              <a href="https://twitter.com/intent/tweet?url=https://creativecommons.or.id/2019/05/lokakarya-hak-cipta-dan-lisensi-creative-commons-untuk-jurnal-ilmiah-di-universitas-muhammadiyah-sumatera-utara.html" rel="nofollow" target="_blank"><i class="fa-brands fa-twitter" title="Twitter" aria-hidden="true"></i></a>
+            </div>
+          </div>
 
-<p>Lokakarya kemudian masuk pada materi inti dengan pembahasan mengenai dasar-dasar hak cipta yang mencakup: hak moral dan hak ekonomi, subjek dan objek pelindungan hak cipta, dan fungsi sosial hak cipta. Untuk melaksanakan hak ekonomi dengan baik, Harsa menyarankan pembuatan surat perjanjian penerbitan karya tulis yang merinci jenis-jenis hak ekonomi apa saja yang dilisensikan oleh penulis atau pencipta kepada penerbit. Misalnya penulis melisensikan hak penggandaan dan pendistribusian ciptaan saja namun tidak mencakup hak penerjemahan dan pembuatan ciptaan adaptasi/turunan kepada penerbit. Perincian dalam pengaturan perjanjian lisensi penting untuk menghindari sengketa dan salah tafsir atas perjanjian tersebut.</p>
+          <h1>Lokakarya Hak Cipta dan Lisensi Creative Commons untuk Jurnal Ilmiah di Universitas Muhammadiyah Sumatera Utara</h1>
 
-<p>Pemaparan materi dilanjutkan dengan membahas perbedaan dasar antara lisensi hak cipta (copyright license) dan prinsip pengalihan hak cipta (copyright transfer agreement) pada karya tulis. Dalam model lisensi hak cipta, hak ekonomi penulis tetap dipegang oleh penulis sendiri dan penulis masih bisa mengizinkan beberapa hak ekonominya untuk dilaksanakan baik secara noneksklusif kepada penerbit lain atau secara eksklusif hanya kepada satu penerbit. Sedangkan pada model pengaliahan hak cipta, hak ekonomi penulis beralih secara keseluruhan kepada penerbit. Pada kasus-kasus tertentu, penulis biasanya masih diberikan kebebasan oleh penerbit untuk menyebarluaskan karya tulis secara nonkomersial dan melisensikan karya turunannya kepada pihak ketiga, sementara terdapat juga posisi di mana penulis sama sekali tidak diizinkan untuk menyebarluaskan karya tulisnya maupun melisensikan turunan ciptaannya.</p>
+          <div class="author-profile pt-2 mt-4 mb-5">
+            <img class="img-fluid float-start" src="../../uploads/people/harsa_square.jpg">
+            <h5> Harsa Wahyu Ramadhan</h5>
+            <h6><a href="https://www.linkedin.com/in/harsarama/"><i class="fa-brands fa-linkedin"></i></a></h6>
+          </div>
 
-<p>Materi ditutup dengan penjelasan tentang lisensi CC yang mencakup: karakteristik lisensi CC, ketentuan lisensi CC, petunjuk penggunaan lisensi CC, dan contoh praktik terbaik penerapan lisensi CC untuk jurnal ilmiah. Karakteristik lisensi CC sebagai lisensi hak cipta yang bersifat terbuka (open license) artinya lisensi CC bersifat noneksklusif dan penulis mengizinkan kepada publik untuk menggunakan karya tulisnya sepanjang publik patuh pada syarat dan ketentuan dalam tiap jenis lisensi CC.  Lisensi CC memiliki tiga fungsi utama yaitu: pertama, sebagai dokumen elektronik yang memiliki kekuatan hukum (legal code) untuk pembuktian di pengadilan; kedua, sebagai pemberitahuan kepada publik melalui simbol-simbol dan bahasa yang sederhana mengenai apa yang boleh dan tidak boleh dilakukan dalam menggunakan karya tulis; ketiga, lisensi CC sebagai bahasa komputer (terbaca mesin) yang dapat ditelusuri atau dibaca oleh mesin pencari seperti mesin pencari creative commons (ccsearch.creativecommons.org) atau melalui platform yang mengintegrasikan lisensi CC, misalnya Google image search, Youtube, Flickr, dan lain-lain. Selain itu, Harsa juga memberikan contoh praktik terbaik penerapan lisensi CC untuk jurnal ilmiah khususnya dalam hal atribusi penulis dan pemberitahuan hak cipta (copyright notice) dalam situs jurnal ilmiah berdasarkan lisensi CC. Dari sisi publik, penggunaan artikel jurnal yang dilisensikan dengan lisensi CC hendaknya diberikan atribusi kepada penulis dengan mengikuti kaidah TASL (title, author, source, license). Kaidah atribusi mencakup: judul karya tulis, penulis/peneliti sebagai pencipta karya tulis, jurnal dimana artikel dipublikasikan beserta pranala DOI (digital object identifier), dan pranala menuju ketentuan lisensi CC. Untuk pemberitahuan hak cipta jurnal ilmiah dengan lisensi CC, praktik terbaik sebaiknya dilaksanakan dengan urutan: pertama, pemberitahuan bahwa artikel jurnal yang diterbitkan dalam jurmal tersebut diterbitkan di bawah ketentuan lisensi CC dan rincian ketentuan penggunaan berdasarkan lisensi CC yang digunakan; kedua, pemberitahuan bahwa hak cipta karya tulis tetap di tangan penulis dan pihak jurnal sebagai pemegang hak cipta atau penerima lisensi noneksklusif dari penulis; ketiga, pemberitahuan bahwa penerbit juga bertindak sebagai penerbit pertama yang berhak atas hak ekonomi dari versi cetak karya tulis; keempat, pemberitahuan bahwa dengan menerbitkan karya tulis di jurnal ini, maka penulis memberikan hak kepada publik di bawah ketentuan lisensi CC.</p>
+          <img src="../../uploads/ccid%20lokakarya%20umsu%202.jpeg" alt="ccid lokakarya umsu 2.jpeg" class="img-fluid w-sm-50 float-sm-end ms-sm-5 mb-4">
 
-<p>Pada sesi tanya-jawab, terdapat tiga pertanyaan yang ditanyakan oleh tiga orang peserta. Pertanyaan pertama yaitu mengenai apakah dibolehkan bagi peneliti untuk menyebarkan karya tulisnya secara pribadi dan terbatas kepada koleganya sesama peneliti melalui platform researchgate ataupun surel (email) meski karya tulisnya telah diterbitkan oleh penerbit jurnal? Untuk pertanyaan ini, Harsa menjelaskan bahwa hal tersebut bergantung kepada model kebijakan hak cipta dan perjanjian hak cipta seperti apa yang diterapkan oleh penerbit, jika konteksnya karya tulis diterbitkan dalam jurnal dengan model kebijakan akses terbuka (open access) berdasarkan lisensi CC, peneliti tentu bisa menyebarkan karya tulisnya tersebut. Lain halnya, jika karya tulis diterbitkan dalam jurnal dengan model kebijakan bersifat eksklusif berdasarkan pengalihan hak cipta (copyright transfer agreement), maka karya tulis menjadi milik penerbit dan pada umumnya peneliti tidak dibolehkan lagi mendistribusikan karya tulisnya secara keseluruhan kecuali abstrak penelitiannya terhitung sejak masa embargo. Satu hal yang sebaiknya tidak luput, peneliti kemungkinan besar masih dapat berlindung dibalik ketentuan penggunaan yang wajar (fair use) dalam Undang-Undang Hak Cipta Indonesia (dapat dilihat dalam Pasal 43 huruf d dan Pasal 44 huruf a UU No. 28 tahun 2014) untuk menyebarkan karya tulisnya secara terbatas sepanjang bersifat tidak komersial dan untuk keperluan penelitian, namun alangkah lebih bijak jika peneliti tidak menempuh risiko hukum dengan menempuh cara ini.</p>
+          <p>Senin, tanggal 29 April 2019, Creative Commons Indonesia (CCID) dan Lembaga Penelitian dan Pengabdian kepada Masyarakat (LP2M) Universitas Muhammadiyah Sumatera Utara (UMSU) bekerja sama menyelenggarakan lokakarya hak cipta dan lisensi Creative Commons (lisensi CC) di kota Medan. Acara dibuka dengan sambutan oleh Wakil Rektor I UMSU, Dr. Muhammad Arifin, S.H., M.Hum. dan Ketua LP2M UMSU Dr. Muhammad Said Siregar, Msi. Keduanya berharap dengan terselenggaranya lokakarya ini para akademisi UMSU dapat lebih memahami tata kelola hak cipta dan pelisensian jurnal-jurnal UMSU dengan lisensi CC. Peserta acara terdiri dari para pengelola jurnal yang ada di UMSU, dosen pengampu mata kuliah Hak Kekayaan Intelektual dari Fakultas Hukum UMSU, dan peserta eksternal dari komunitas blogger Medan.</p>
 
-<p>Pertanyaan kedua terkait dengan bagaimana cara bekerja lisensi CC terkait dengan penyalinan keseluruhan teks artikel dari blog tentang kesehatan tanpa penyebutan sumber untuk dimuat pada blog yang dimonetisasi dengan menerima iklan dari platform Google adsense? Harsa kemudian menjawab bahwa penyalinan keseluruhan teks artikel kesehatan tanpa penyebutan sumber dan untuk kepentingan komersial sudah jelas merupakan bentuk pelanggaran lisensi CC khususnya ketentuan atribusi yang selalu ada pada tiap enam jenis lisensi CC dan ketentuan nonkomersial jika artikel kesehatan tersebut dilisensikan dengan ketentuan nonkomersial. Satu hal yang perlu diingat bahwa lisensi CC bekerja berdasarkan sistem pelindungan hak cipta. Dengan demikian, penegakan pelanggaran ketentuan lisensi CC juga bersandar pada penegakan pelanggaran hak cipta, baik hak moral maupun hak ekonomi. Langkah terdekat yang dapat ditempuh adalah dengan menghubungi langsung pelanggar untuk bertanggung jawab atas pelanggaran hak cipta dan mengajukan klaim hak cipta sekaligus permohonan penurunan konten (takedown notice) kepada Google ad sense selaku pemberi iklan. Sebagai tambahan, perlu dicatat bahwa Creative Commons sebagai penyedia lisensi CC tidak bertindak sebagai penasihat hukum yang menimbulkan hubungan kerja pengacara-klien, namun lebih berperan sebagai fasilitator dan saksi dalam memberikan keterangan terkait penerapan lisensi hak cipta untuk karya tulis di blog.</p>
+          <p>Pada lokakarya kali ini, Harsa Wahyu Ramadhan mewakili CCID sebagai pemateri untuk memberikan materi tentang “Penerapan Lisensi Creative Commons untuk Jurnal Ilmiah” dengan moderator Bapak Irfan Nasution. Acara ini berlangsung dari pukul 09.30 sampai dengan pukul 11.00 WIB.</p>
 
-<p>Pertanyaan ketiga berkenaan dengan bagaimana legalitas lisensi CC di Indonesia dan apakah ciptaan harus dicatatkan terlebih dahulu sebelum lisensi CC diterapkan pada ciptaan tersebut? Berkaitan dengan legalitas lisensi CC, hal ini tentunya merujuk pada dasar hukum pemberlakuan lisensi hak cipta di Indonesia yang telah diatur dalam Pasal 1 angka 20 UU No. 28 tahun 2014, yang menyebutkan definisi lisensi adalah izin tertulis yang diberikan oleh pemegang hak cipta/pemilik hak terkait kepada pihak lain untuk melaksanakan hak ekonomi atas ciptaannya/produk hak terkait dengan syarat tertentu. Dari definisi tersebut, lisensi CC dalam konteks karya tulis misalnya dimaksudkan sebagai pelaksanaan pemberian izin tertulis yang diberikan oleh penulis selaku pemegang hak cipta kepada penerbit dan juga kepada publik secara noneksklusif untuk melaksanakan hak ekonomi atas karya tulisnya di bawah syarat dan ketentuan lisensi CC. Dengan demikian, lisensi CC memiliki kekuatan hukum untuk dapat diterapkan di Indonesia. Lalu, suatu ciptaan tidak perlu dicatatkan terlebih dahulu ke Direktorat Jenderal Kekayaan Intelektual (DJKI) karena berdasarkan prinsip deklaratif, hak cipta melindungi secara otomatis begitu suatu ide telah diekspresikan ke dalam bentuk karya yang nyata. Dengan sistem pelindungan otomatis ini, maka suatu karya sudah bisa langsung dilisensikan dengan lisensi CC tanpa perlu dicatatkan.</p>
+          <p>Harsa membagi pemaparan ke dalam tiga bagian besar yakni: dasar-dasar hak cipta, lisensi hak cipta, dan ditutup dengan contoh penerapan lisensi CC untuk jurnal ilmiah. Pembahasan materi dimulai dengan sedikit ulasan tentang pelisensian jurnal ilmiah dengan lisensi CC sebagai salah satu syarat agar jurnal dapat terindeks Directory of Open Access Journals (DOAJ). Harsa juga menekankan bahwa hak cipta adalah salah satu bagian dari Hak kekayaan Intelektual (HKI) dan harus dibedakan dengan pelindungan paten, merek, rahasia dagang, dan jenis HKI lainnya agar tidak terjadi miskonsepsi tentang HKI.</p>
 
-<p>Salindia presentasi dapat diakses di: https://www.slideshare.net/HarsaRamadhan/lisensi-creative-commons-untuk-jurnal-ilmiah</p>
+          <p>Lokakarya kemudian masuk pada materi inti dengan pembahasan mengenai dasar-dasar hak cipta yang mencakup: hak moral dan hak ekonomi, subjek dan objek pelindungan hak cipta, dan fungsi sosial hak cipta. Untuk melaksanakan hak ekonomi dengan baik, Harsa menyarankan pembuatan surat perjanjian penerbitan karya tulis yang merinci jenis-jenis hak ekonomi apa saja yang dilisensikan oleh penulis atau pencipta kepada penerbit. Misalnya penulis melisensikan hak penggandaan dan pendistribusian ciptaan saja namun tidak mencakup hak penerjemahan dan pembuatan ciptaan adaptasi/turunan kepada penerbit. Perincian dalam pengaturan perjanjian lisensi penting untuk menghindari sengketa dan salah tafsir atas perjanjian tersebut.</p>
 
-<p>Laporan lokakarya oleh Harsa Wahyu Ramadhan</p>
+          <p>Pemaparan materi dilanjutkan dengan membahas perbedaan dasar antara lisensi hak cipta (copyright license) dan prinsip pengalihan hak cipta (copyright transfer agreement) pada karya tulis. Dalam model lisensi hak cipta, hak ekonomi penulis tetap dipegang oleh penulis sendiri dan penulis masih bisa mengizinkan beberapa hak ekonominya untuk dilaksanakan baik secara noneksklusif kepada penerbit lain atau secara eksklusif hanya kepada satu penerbit. Sedangkan pada model pengaliahan hak cipta, hak ekonomi penulis beralih secara keseluruhan kepada penerbit. Pada kasus-kasus tertentu, penulis biasanya masih diberikan kebebasan oleh penerbit untuk menyebarluaskan karya tulis secara nonkomersial dan melisensikan karya turunannya kepada pihak ketiga, sementara terdapat juga posisi di mana penulis sama sekali tidak diizinkan untuk menyebarluaskan karya tulisnya maupun melisensikan turunan ciptaannya.</p>
 
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-12">
-                                    <h5 style="display: inline;">Tags:</h5>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">lokakarya</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">lisensi cc</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">jurnal ilmiah</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">jurnal</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">universitas muhammadiyah sumatera utara</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">umsu</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">hak cipta</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">penulis</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">sumatera utara</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">lisensi creative commons</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">creative commons</button>
-                                    
-                            </div>                       
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <h5>Oleh: Creative Commons Indonesia</h5>
-                        2 May 2019
-                        <hr>
-                        <h5>Kategori:</h5>
-                        
-                        <button class="btn btn-white btn-xs" type="button">Acara</button>
-                        
-                        <hr>
-                        <h5>Berita Terbaru</h5>
-			<ul>
-                        
-			<li><a href="../../2019/01/lokakarya-hak-cipta-dan-lisensi-creative-commons-di-pekanbaru.html" class="btn-link">Lokakarya Hak Cipta dan Lisensi Creative Commons di Pekanbaru</a></li>
-                        
-			<li><a href="../../2018/12/pengumuman-resmi-hasil-akhir-training-of-trainers-creative-commons-indonesia.html" class="btn-link">Pengumuman Resmi: Hasil Akhir Training of Trainers Creative Commons Indonesia</a></li>
-                        
-			<li><a href="../../2018/08/literatur-terbaru-tentang-model-bisnis-terbuka-made-with-cc.html" class="btn-link">Literatur tentang Model Bisnis Terbuka "Made With CC"</a></li>
-                        
-			<li><a href="../../2018/08/data-dan-artikel-ilmiah-terbuka-dari-plos.html" class="btn-link">Data dan Artikel Ilmiah Terbuka dari PLOS!</a></li>
-                        
-			<li><a href="../../2018/08/Konten-Format-Model-3-Dimensi-Berilsensi-CC-di-Platform-Sketchfab.html" class="btn-link">Konten Format Model 3 Dimensi Berilsensi CC di Platform Sketchfab</a></li>
-                        
-	 		</ul>
-			<hr>
-			<h5>Bagikan di:</h5>
-			<a href="https://facebook.com/sharer.php?u=https://creativecommons.or.id/2019/05/lokakarya-hak-cipta-dan-lisensi-creative-commons-untuk-jurnal-ilmiah-di-universitas-muhammadiyah-sumatera-utara.html" rel="nofollow" target="_blank"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
-			<a href="https://twitter.com/intent/tweet?text=Lokakarya Hak Cipta dan Lisensi Creative Commons untuk Jurnal Ilmiah di Universitas Muhammadiyah Sumatera Utara&url=http://creativecommons.or.id//2019/05/lokakarya-hak-cipta-dan-lisensi-creative-commons-untuk-jurnal-ilmiah-di-universitas-muhammadiyah-sumatera-utara/&via=&related=" rel="nofollow" target="_blank"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a>
-			</div>
-		</div>
+          <p>Materi ditutup dengan penjelasan tentang lisensi CC yang mencakup: karakteristik lisensi CC, ketentuan lisensi CC, petunjuk penggunaan lisensi CC, dan contoh praktik terbaik penerapan lisensi CC untuk jurnal ilmiah. Karakteristik lisensi CC sebagai lisensi hak cipta yang bersifat terbuka (open license) artinya lisensi CC bersifat noneksklusif dan penulis mengizinkan kepada publik untuk menggunakan karya tulisnya sepanjang publik patuh pada syarat dan ketentuan dalam tiap jenis lisensi CC.  Lisensi CC memiliki tiga fungsi utama yaitu: pertama, sebagai dokumen elektronik yang memiliki kekuatan hukum (legal code) untuk pembuktian di pengadilan; kedua, sebagai pemberitahuan kepada publik melalui simbol-simbol dan bahasa yang sederhana mengenai apa yang boleh dan tidak boleh dilakukan dalam menggunakan karya tulis; ketiga, lisensi CC sebagai bahasa komputer (terbaca mesin) yang dapat ditelusuri atau dibaca oleh mesin pencari seperti mesin pencari creative commons (ccsearch.creativecommons.org) atau melalui platform yang mengintegrasikan lisensi CC, misalnya Google image search, Youtube, Flickr, dan lain-lain. Selain itu, Harsa juga memberikan contoh praktik terbaik penerapan lisensi CC untuk jurnal ilmiah khususnya dalam hal atribusi penulis dan pemberitahuan hak cipta (copyright notice) dalam situs jurnal ilmiah berdasarkan lisensi CC. Dari sisi publik, penggunaan artikel jurnal yang dilisensikan dengan lisensi CC hendaknya diberikan atribusi kepada penulis dengan mengikuti kaidah TASL (title, author, source, license). Kaidah atribusi mencakup: judul karya tulis, penulis/peneliti sebagai pencipta karya tulis, jurnal dimana artikel dipublikasikan beserta pranala DOI (digital object identifier), dan pranala menuju ketentuan lisensi CC. Untuk pemberitahuan hak cipta jurnal ilmiah dengan lisensi CC, praktik terbaik sebaiknya dilaksanakan dengan urutan: pertama, pemberitahuan bahwa artikel jurnal yang diterbitkan dalam jurmal tersebut diterbitkan di bawah ketentuan lisensi CC dan rincian ketentuan penggunaan berdasarkan lisensi CC yang digunakan; kedua, pemberitahuan bahwa hak cipta karya tulis tetap di tangan penulis dan pihak jurnal sebagai pemegang hak cipta atau penerima lisensi noneksklusif dari penulis; ketiga, pemberitahuan bahwa penerbit juga bertindak sebagai penerbit pertama yang berhak atas hak ekonomi dari versi cetak karya tulis; keempat, pemberitahuan bahwa dengan menerbitkan karya tulis di jurnal ini, maka penulis memberikan hak kepada publik di bawah ketentuan lisensi CC.</p>
 
-<div class="row">
-<div class="col-lg-9">
-		
-	<div id="disqus_thread"></div>
-	<script>
+          <p>Pada sesi tanya-jawab, terdapat tiga pertanyaan yang ditanyakan oleh tiga orang peserta. Pertanyaan pertama yaitu mengenai apakah dibolehkan bagi peneliti untuk menyebarkan karya tulisnya secara pribadi dan terbatas kepada koleganya sesama peneliti melalui platform researchgate ataupun surel (email) meski karya tulisnya telah diterbitkan oleh penerbit jurnal? Untuk pertanyaan ini, Harsa menjelaskan bahwa hal tersebut bergantung kepada model kebijakan hak cipta dan perjanjian hak cipta seperti apa yang diterapkan oleh penerbit, jika konteksnya karya tulis diterbitkan dalam jurnal dengan model kebijakan akses terbuka (open access) berdasarkan lisensi CC, peneliti tentu bisa menyebarkan karya tulisnya tersebut. Lain halnya, jika karya tulis diterbitkan dalam jurnal dengan model kebijakan bersifat eksklusif berdasarkan pengalihan hak cipta (copyright transfer agreement), maka karya tulis menjadi milik penerbit dan pada umumnya peneliti tidak dibolehkan lagi mendistribusikan karya tulisnya secara keseluruhan kecuali abstrak penelitiannya terhitung sejak masa embargo. Satu hal yang sebaiknya tidak luput, peneliti kemungkinan besar masih dapat berlindung dibalik ketentuan penggunaan yang wajar (fair use) dalam Undang-Undang Hak Cipta Indonesia (dapat dilihat dalam Pasal 43 huruf d dan Pasal 44 huruf a UU No. 28 tahun 2014) untuk menyebarkan karya tulisnya secara terbatas sepanjang bersifat tidak komersial dan untuk keperluan penelitian, namun alangkah lebih bijak jika peneliti tidak menempuh risiko hukum dengan menempuh cara ini.</p>
 
-	/**
-	*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-	*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-	/*
-	var disqus_config = function () {
-	this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-	this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-	};
-	*/
-	(function() { // DON'T EDIT BELOW THIS LINE
-	var d = document, s = d.createElement('script');
-	s.src = '//creative-commons-indonesia.disqus.com/embed.js';
-	s.setAttribute('data-timestamp', +new Date());
-	(d.head || d.body).appendChild(s);
-	})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <p>Pertanyaan kedua terkait dengan bagaimana cara bekerja lisensi CC terkait dengan penyalinan keseluruhan teks artikel dari blog tentang kesehatan tanpa penyebutan sumber untuk dimuat pada blog yang dimonetisasi dengan menerima iklan dari platform Google adsense? Harsa kemudian menjawab bahwa penyalinan keseluruhan teks artikel kesehatan tanpa penyebutan sumber dan untuk kepentingan komersial sudah jelas merupakan bentuk pelanggaran lisensi CC khususnya ketentuan atribusi yang selalu ada pada tiap enam jenis lisensi CC dan ketentuan nonkomersial jika artikel kesehatan tersebut dilisensikan dengan ketentuan nonkomersial. Satu hal yang perlu diingat bahwa lisensi CC bekerja berdasarkan sistem pelindungan hak cipta. Dengan demikian, penegakan pelanggaran ketentuan lisensi CC juga bersandar pada penegakan pelanggaran hak cipta, baik hak moral maupun hak ekonomi. Langkah terdekat yang dapat ditempuh adalah dengan menghubungi langsung pelanggar untuk bertanggung jawab atas pelanggaran hak cipta dan mengajukan klaim hak cipta sekaligus permohonan penurunan konten (takedown notice) kepada Google ad sense selaku pemberi iklan. Sebagai tambahan, perlu dicatat bahwa Creative Commons sebagai penyedia lisensi CC tidak bertindak sebagai penasihat hukum yang menimbulkan hubungan kerja pengacara-klien, namun lebih berperan sebagai fasilitator dan saksi dalam memberikan keterangan terkait penerapan lisensi hak cipta untuk karya tulis di blog.</p>
 
-</div>
-</div>
+          <p>Pertanyaan ketiga berkenaan dengan bagaimana legalitas lisensi CC di Indonesia dan apakah ciptaan harus dicatatkan terlebih dahulu sebelum lisensi CC diterapkan pada ciptaan tersebut? Berkaitan dengan legalitas lisensi CC, hal ini tentunya merujuk pada dasar hukum pemberlakuan lisensi hak cipta di Indonesia yang telah diatur dalam Pasal 1 angka 20 UU No. 28 tahun 2014, yang menyebutkan definisi lisensi adalah izin tertulis yang diberikan oleh pemegang hak cipta/pemilik hak terkait kepada pihak lain untuk melaksanakan hak ekonomi atas ciptaannya/produk hak terkait dengan syarat tertentu. Dari definisi tersebut, lisensi CC dalam konteks karya tulis misalnya dimaksudkan sebagai pelaksanaan pemberian izin tertulis yang diberikan oleh penulis selaku pemegang hak cipta kepada penerbit dan juga kepada publik secara noneksklusif untuk melaksanakan hak ekonomi atas karya tulisnya di bawah syarat dan ketentuan lisensi CC. Dengan demikian, lisensi CC memiliki kekuatan hukum untuk dapat diterapkan di Indonesia. Lalu, suatu ciptaan tidak perlu dicatatkan terlebih dahulu ke Direktorat Jenderal Kekayaan Intelektual (DJKI) karena berdasarkan prinsip deklaratif, hak cipta melindungi secara otomatis begitu suatu ide telah diekspresikan ke dalam bentuk karya yang nyata. Dengan sistem pelindungan otomatis ini, maka suatu karya sudah bisa langsung dilisensikan dengan lisensi CC tanpa perlu dicatatkan.</p>
 
-        	</div>
-		</div>
-	</div>
+          <p>Salindia presentasi dapat diakses di: https://www.slideshare.net/HarsaRamadhan/lisensi-creative-commons-untuk-jurnal-ilmiah</p>
 
-        
-        <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          <p>Laporan lokakarya oleh Harsa Wahyu Ramadhan</p>
 
-  ga('create', 'UA-92784032-1', 'auto');
-  ga('send', 'pageview');
-</script>     
+          <div class="article-end mt-5"></div>
+        </div>
+      </div>
+    </main>
 
-<footer class="footer">
-    <div class="container">
-	<nav class="pull-left">
-	    <ul>
-		<li><a href="../../faq.html">FAQ</a></li>
-		<li><a href="../../hubungi-kami.html">Hubungi Kami</a></li>
-		<li><a href="https://www.facebook.com/CreativeCommonsIndonesia"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-		<li><a href="https://twitter.com/CC_ID"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-		<li><a href="../../feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
-	    </ul>
-	</nav>
-	<div class="copyright pull-right"><a href="https://creativecommons.org/licenses/by/4.0">2012-2016 Creative Commons Indonesia | CC BY 4.0</a></div>
-    </div>
-</footer>
+    <footer class="mt-5">
+      <div class="container-fluid">
+        <div class="row align-items-md-end pt-5 pb-4">
+          <div class="col-md-12 col-lg-2 offset-lg-1 px-5 px-md-0 mb-4 mb-md-5 mb-lg-2 text-center align-self-center">
+            <img src="../../assets/img/footer-sketch.svg" class="img-fluid h-100 px-2">
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 ps-5 ps-md-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Informasi</h5></li>
+              <li><span class="fa-li"><i class="fa-brands fa-readme"></i></span><a href="../../media.html">Media</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-creative-commons"></i></span><a href="../../lisensi-cc-bahasa-indonesia.html">Lisensi</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-book-open-reader"></i></span><a href="../../kajian.html">Kajian</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-circle-question"></i></span><a href="../../faq.html">FAQ</a></li>             
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Tentang kami</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-person-rays"></i></span><a href="../../tentang.html">Tentang kami</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-newspaper"></i></span><a href="../../berita.html">Berita</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-calendar-check"></i></span><a href="../../acara.html">Acara</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 ps-5 ps-md-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Network</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-users"></i></span><a href="../../sobatccid.html">Sobat CCID</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-creative-commons"></i></span><a href="https://creativecommons.org/">CCHQ</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-earth-asia"></i></span><a href="https://network.creativecommons.org/">CC Global Network</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Kontak</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-address-book"></i></span><a href="../../hubungi-kami.html">Hubungi kami</a></li>              
+              <li><span class="fa-li"><i class="fa-brands fa-square-facebook"></i></span><a href="https://www.facebook.com/CreativeCommonsIndonesia">Facebook</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-twitter"></i></span><a href="https://twitter.com/CC_ID">Twitter</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-instagram"></i></span><a href="https://www.instagram.com/cc.indonesia/">Instagram</a></li>
+          </div>
+        </div>
+        <div class="row footer-license">
+          <div class="col-12 text-center text-white">
+            <p class="my-4"><i class="fa-brands fa-creative-commons pe-1"></i><i class="fa-brands fa-creative-commons-by pe-1"></i> 2012&ndash;2022 Creative Commons Indonesia. Kecuali dinyatakan lain, konten di situs ini dilisensikan di bawah lisensi <a href="https://creativecommons.org/licenses/by/4.0/deed.id">Creative Commons Atribusi 4.0 Internasional</a>. 
+          </div>
+        </div>
+      </div>
+    </footer>
 
-    
-	</div>
-</body>
-
+    <!-- js -->
+    <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+    <script src="../../assets/js/popper.min.js"></script>
+    <script src="../../assets/js/bootstrap.js"></script>
+  </body>
 </html>
