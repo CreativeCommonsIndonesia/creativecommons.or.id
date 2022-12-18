@@ -377,7 +377,7 @@ footer li a:hover {
 
 @media (max-width: 575px) {
   .article-type {
-    padding: 0.67rem;
+    padding: 0.756rem;
   }
 
   .index-page .author-profile {
@@ -385,7 +385,7 @@ footer li a:hover {
   }
 
   .index-page .author-profile img {
-    height: 44px;
+    height: 47px;
   }
 }
 
