@@ -499,6 +499,10 @@ footer li a:hover {
     width: 25% !important;
   }
 
+  .w-sm-35 {
+    width: 35%;
+  }
+
   .w-sm-50 {
     width: 50%;
   }
