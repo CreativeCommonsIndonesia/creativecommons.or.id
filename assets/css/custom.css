@@ -451,6 +451,11 @@ footer li a:hover {
   color: var(--ccid-red-71);
 }
 
+.article h4, .article .h4, .article h3, .article .h3, .article h2, .article .h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.2rem;
+}
+
 /* CCID people */
 
 .author-profile img {
