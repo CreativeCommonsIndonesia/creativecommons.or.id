@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GR2HTWFX22"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GR2HTWFX22');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Creative Commons Indonesia supports the usage of Creative Commons licenses and open cultural works in Indonesia">
@@ -9,27 +19,19 @@
     <title>Apa itu Freedom of Panorama?</title>
     
     <!-- fonts -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
-
-    <!-- icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Sen&display=swap" rel="stylesheet"> 
 
     <!-- css -->
-    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../../assets/css/material-kit.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../../assets/css/custom.css" rel="stylesheet">
+    <link href="../../assets/css/animate.min.css" rel="stylesheet">
 
-    <!-- js -->
-    <script src="../../assets/js/jquery-3.6.1.min.js"></script>
-    <script src="../../assets/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/material.min.js"></script>
-    <script src="../../assets/js/material-kit.js"></script>
-
-    <!-- plugins -->
-    <script src="../../assets/js/nouislider.min.js"></script> <!-- sliders (http://refreshless.com/nouislider) -->
-    <script src="../../assets/js/bootstrap-datepicker.js"></script> <!-- datepicker (http://www.eyecon.ro/bootstrap-datepicker) -->
-    <script src="../../assets/js/jPages.js"></script> <!-- pagination -->
-    <script src="../../assets/js/js.js"></script> <!-- pagination -->
+    <!-- icons -->
+    <link href="../../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="../../assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="../../assets/fontawesome/css/solid.css" rel="stylesheet">
 
     <!-- favicon -->
     <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
@@ -37,313 +39,230 @@
     <!-- rss feed -->
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="../../feed.xml">
   </head>
-
     
-<body class="index-page">
-	<div class="wrapper">
-	
-	
-        	<style>
-.main {
-	margin-top: 80px;
-  }
-.navbar, .navbar.navbar-danger {
-	background-color: #9e1c1c;
-	color: #ffffff;
-}
-</style>  
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-md" aria-label="Navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html"><img src="../../assets/img/logoputih.png" alt="Creative Commons Indonesia" class="img-fluid" width="150"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ccidnavbar" aria-controls="ccidnavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <nav class="navbar navbar-danger navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="../../index.html">
-                    <div class="logo-container">
-                        <div class="logo">
-                            <img src="../../assets/img/logoputih.png" alt="Creative Commons Indonesia" class="img-fluid" width="150">
-                        </div>
-                    </div>
-                </a>
-            </div>
-    
-            <div class="collapse navbar-collapse" id="navigation-index">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="../../tentang.html" target="_blank">
-                            Tentang
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../../lisensi-cc-bahasa-indonesia.html" target="_blank">
-                            Lisensi
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Blog <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../../sobatccid.html">Sobat CCID</a></li>
-                            <li><a href="../../berita.html">Berita</a></li>
-                            <li><a href="../../kajian.html">Kajian</a></li>
-                            <li><a href="../../acara.html">Acara</a></li>
-                        </ul>
-                    </li>
-		<li>
-			<a href="../../search.html" target="_blank">
-			<i class="fa fa-search" aria-hidden="true"></i>
-			</a>
-		</li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="ccidnavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Informasi
+              </a>
+              <ul class="dropdown-menu mt-3 bg-ccid-red-31 animate__animated animate__flipInY animate__faster" aria-labelledby="resources">
+                <li><a class="dropdown-item" href="../../lisensi-cc-bahasa-indonesia.html">Lisensi</a></li>
+                <li><a class="dropdown-item" href="../../kajian.html">Kajian</a></li>
+                <li><a class="dropdown-item" href="../../faq.html">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../../berita.html">Berita</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../acara.html">Acara</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../tentang.html">Tentang kami</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../sobatccid.html">Sobat CCID</a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/CreativeCommonsIndonesia" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://twitter.com/CC_ID" title="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/cc.indonesia/" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../hubungi-kami.html" title="Hubungi kami"><i class="fa-solid fa-address-book"></i></a></li>            
+          </ul>       
         </div>
+      </div>
     </nav>
 
-	
-       
-        
-	<div class="main">
-		<div class="section section-basic">
-	    	<div class="container">
-		
-		<small><a href="../../index.html">Beranda</a>/<a href="https://creativecommons.or.id/
-			kajian
-		.html">
-			Kajian
-		</a>/Apa itu Freedom of Panorama?</small>
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="text-center article-title">
-                            <h2>
-                                Apa itu Freedom of Panorama?
-                            </h2>
-                        </div>
-                            <p>Anda suka mengaambil gambar di ruang publik?</p>
+    <div class="container-fluid mt-2">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+          <li class="breadcrumb-item"><a href="../../kajian.html">Kajian</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Apa itu Freedom of Panorama?</li>
+        </ol>
+      </nav>
+    </div>         
+          
+    <main class="container article p-5">
+      <div class="row mt-2 mt-md-5">
+        <div class="col-12">
 
-<p>Seperti <strong>gedung</strong>, <strong>patung</strong>, <strong>monumen</strong>, <strong>lukisan di suatu pameran</strong>, <strong>koleksi museum</strong>, atau <strong>papan reklame</strong>?</p>
+          <div class="row article-meta mb-3">
+            <div class="col-sm-6">
+              <i class="fa-solid fa-calendar-day fa-fw"></i> 12 November 2018
+            </div>
+            <div class="col-sm-6 pt-1 pt-sm-0 text-sm-end">
+              <i class="fa-solid fa-share-from-square fa-fw pe-1"></i> Bagikan ke 
+            
+              <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://creativecommons.or.id/2018/11/apa-itu-freedom-of-panorama.html"><i class="fa-brands fa-linkedin ps-1" title="LinkedIn" aria-hidden="true"></i></a>
 
-<p>Bagaimana jika proses pengambilan gambar tersebut dikategorikan sebagai “<strong>pelanggaran hak cipta</strong>” oleh Undang-Undang Hak Cipta yang berlaku?</p>
+              <a href="https://facebook.com/sharer.php?u=https://creativecommons.or.id/2018/11/apa-itu-freedom-of-panorama.html" rel="nofollow" target="_blank"><i class="fa-brands fa-facebook" title="Facebook" aria-hidden="true"></i></a>
 
-<p>Tahukah Anda bahwa beberapa negara di Eropa dan Amerika menetapkan bahwa “segala obyek yang ada di ruang publik” tersebut <strong>hanya dapat diabadikan</strong> di bawah ketentuan “<strong><em>Freedom of Panorama</em></strong>” (FoP)?</p>
+              <a href="https://twitter.com/intent/tweet?url=https://creativecommons.or.id/2018/11/apa-itu-freedom-of-panorama.html" rel="nofollow" target="_blank"><i class="fa-brands fa-twitter" title="Twitter" aria-hidden="true"></i></a>
+            </div>
+          </div>
 
-<p><img src="../../uploads/Atomium_010-censored.png" alt="Atomium_010-censored.png" class="img-fluid center-block" width="500" /><center><small><i>Gambar digubah oleh Hilman Fathoni dari berkas Atomium 010-censored oleh <a href="https://commons.wikimedia.org/wiki/User:Nro92">Nro92</a> dan <a href="https://commons.wikimedia.org/wiki/User:Romaine">Romaine</a>, melalui <a href="https://commons.wikimedia.org/wiki/File:Atomium_010-censored.png">Wikimedia Commons</a>, <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.id">CC0</a></i></small></center></p>
+          <h1>Apa itu Freedom of Panorama?</h1>
 
-<h1 id="awal-mula-pemikiran-kebebasan-pencitraan-obyek-di-ruang-publik"><strong>Awal Mula Pemikiran Kebebasan Pencitraan Obyek di Ruang Publik</strong></h1>
+          <div class="author-profile pt-2 mt-4 mb-5">
+            <img class="img-fluid float-start" src="../../uploads/people/hilman_square.jpg">
+            <h5>Hilman Fathoni</h5>
+            <h6><a href="https://www.linkedin.com/in/hilman-fathoni/"><i class="fa-brands fa-linkedin"></i></a></h6>
+          </div>
 
-<hr />
+          <p>Anda suka mengaambil gambar di ruang publik?</p>
 
-<p>Pemikiran ini pertama kali muncul di Swedia, melibatkan <em>Bildkonst Upphovsrätt i Sverige</em> (BUS), lembaga manajemen kolektif untuk seniman-seniman Swedia dan Wikimedia Swedia.</p>
+          <p>Seperti <strong>gedung</strong>, <strong>patung</strong>, <strong>monumen</strong>, <strong>lukisan di suatu pameran</strong>, <strong>koleksi museum</strong>, atau <strong>papan reklame</strong>?</p>
 
-<p>Pihak BUS menggugat Wikimedia Swedia karena telah membuat <a href="http://offentligkonst.se/">basis data terbuka dalam bentuk peta</a> yang menampilkan karya-karya seni rupa di ruang publik. Wikimedia Swedia dianggap telah melakukan pelanggaran hak cipta dengan m<strong>engumumkan ciptaan milik pihak lain secara daring dengan penerapan lisensi terbuka (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.id">CC BY-SA</a>) yang memungkinkan penggunaan ciptaan dalam kepentingan komersial tanpa izin langsung dari pihak terkait</strong>. Dalam gugatan ini, BUS tidak mengindahkan fakta bahwa proyek tersebut bukan merupakan proyek untuk mencari keuntungan. Juga, bagaimana regulasi pelindungan hak cipta Swedia sudah mengecualikan pencitraan ciptaan yang ada di ruang publik ke medium lain yang dilakukan tanpa izin pencipta atau pemegang hak cipta dari kategori pelanggaran hak cipta. BUS beranggapan bahwa ciptaan apapun yang diumumkan secara daring <strong>dapat berpotensi menguntungkan pihak-pihak yang dapat mengaksesnya</strong>, tanpa ada sistem penyaluran royalti yang layak kepada pemegang hak cipta atas ciptaan yang diumumkan. Dalam gugatannya, BUS juga meminta agar Wikimedia Swedia membayar ganti rugi sebesar SEK 100.000 (setara dengan 12.300 dollar Amerika).</p>
+          <p>Bagaimana jika proses pengambilan gambar tersebut dikategorikan sebagai “<strong>pelanggaran hak cipta</strong>” oleh Undang-Undang Hak Cipta yang berlaku?</p>
 
-<p>Gugatan tersebut disambut dengan pernyataan sikap oleh <a href="https://blog.wikimedia.org/2016/04/04/strike-against-freedom-panorama/">Yayasan Wikimedia</a> yang pada intinya menyatakan bahwa gugatan tersebut tidak dapat diterima karena bertentangan dengan asas <strong>kebebasan berekspresi dan kebebasan berbagi konten secara wajar</strong>, baik secara daring maupun luring. Selain itu, setiap ciptaan yang dicitrakan dalam proyek <em>offentlig konst</em> merupakan ciptaan yang diadakan <a href="https://www.privateinternetaccess.com/blog/2016/04/supreme-court-wikipedia-violates-copyright-posting-photos-public-art/">berdasarkan pembayaran pajak oleh masyarakat Swedia</a>. Secara logis, ciptaan-ciptaan tersebut seharusnya bebas digunakan oleh publik. Mereka juga berpendapat bahwa jika memang ciptaan-ciptaan terkait tidak dapat langsung dicitrakan dalam karya fotografi atau format lainnya, sebaiknya pencipta atau pemegang hak cipta ciptaan tersebut memublikasikannya secara terbatas, di tempat-tempat tertutup.</p>
+          <p>Tahukah Anda bahwa beberapa negara di Eropa dan Amerika menetapkan bahwa “segala obyek yang ada di ruang publik” tersebut <strong>hanya dapat diabadikan</strong> di bawah ketentuan “<strong><em>Freedom of Panorama</em></strong>” (FoP)?</p>
 
-<p>Karena, sangat tidak masuk akal untuk memaksakan keinginan pihak-pihak tertentu yang dapat berdampak pada kebebasan pengabadian pemandangan di ruang publik. Apabila gugatan BUS dikabulkan, setiap aktivitas pengambilan dan penyebaran gambar yang baik secara sengaja atau tidak sengaja, sampai hal kecil seperti swafoto, mengandung unsur ciptaan seseorang di dalamnya dapat terkena dampak atas adanya pembatasan tersebut. Wikimedia Swedia juga merasa bahwa hal ini seharusnya diatur dalam ketentuan “pembatasan pelindungan” pada Undang-Undang Hak Cipta Swedia dan diharmonisasikan dengan seluruh peraturan menyangkut hak cipta yang mengikat semua negara di Eropa. Tentu saja tanpa pembatasan untuk penggunaan dalam kepentingan komersial. Karena hal tersebut akan mempengaruhi setiap hasil pencitraan yang dikontribusikan ke proyek Wikimedia, yang mewajibkan setiap kontributor untuk memperbolehkan penggunaan dalam kepentingan komersial melalui penerapan lisensi <a href="https://creativecommons.org/licenses/by/4.0/deed.id">CC BY</a> atau <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.id">CC BY-SA</a>.</p>
+          <figure class="figure w-sm-50 float-sm-end ms-sm-5 mt-3 mb-4">
+            <img src="../../uploads/Atomium_010-censored.png" alt="Atomium_010-censored.png" class="figure-img img-fluid">
+            <figcaption class="figure-caption">Gambar digubah oleh Hilman Fathoni dari berkas Atomium 010-censored oleh <a href="https://commons.wikimedia.org/wiki/User:Nro92">Nro92</a> dan <a href="https://commons.wikimedia.org/wiki/User:Romaine">Romaine</a>, melalui <a href="https://commons.wikimedia.org/wiki/File:Atomium_010-censored.png">Wikimedia Commons</a>, <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.id">CC0</a>.</figcaption>
+          </figure>
 
-<p>Perkara ini akhirnya ditutup dengan dikabulkannya gugatan BUS di tingkat Pengadilan Tinggi Swedia. Wikimedia Swedia harus mengeluarkan uang sebesar 89.000 dollar Amerika untuk biaya perkara dan pembayaran ganti rugi. Situs web proyek pemetaan masih dapat diakses. Namun, tidak semua monumen atau patung yang dipetakan dapat disaksikan secara langsung gambar-gambarnya melalui proyek peta interaktif tersebut.</p>
+          <h2>Awal Mula Pemikiran Kebebasan Pencitraan Obyek di Ruang Publik</h2>
 
-<p>Salah satu wilayah yang terkena dampak oleh kasus tersebut adalah proyek <a href="https://creativecommons.or.id/2016/10/kenapa-mengunggah-karya-ke-wikimedia-commons.html">Wikimedia Commons</a> oleh <a href="https://www.wikimedia.org/">Yayasan Wikimedia</a>. Salah satu jenis berkas gambar yang paling banyak dibagikan di Wikimedia Commons adalah karya fotografi, termasuk <a href="http://www.wikilovesmonuments.org/">karya fotografi dengan obyek-obyek ciptaan yang ada di ruang publik</a>. Proyek Wiki, seperti <a href="https://www.wikipedia.org/">Wikipedia</a> dan <a href="https://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a>, adalah salah satu situs web yang paling kerap digunakan sebagai sumber ilmu pengetahuan di seluruh dunia. Setidaknya terdapat jutaan artikel dalam berbagai bahasa di Wikipedia dan puluhan ribu berkas media di Wikimedia Commons yang dibagikan oleh para kontributor untuk bebas digunakan kembali di bawah ketentuan lisensi <a href="https://creativecommons.org/licenses/by/4.0/deed.id">CC BY</a> atau <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.id">CC BY-SA</a>, yang mengizinkan penggunaan dalam kepentingan komersial.</p>
+          <p>Pemikiran ini pertama kali muncul di Swedia, melibatkan <em>Bildkonst Upphovsrätt i Sverige</em> (BUS), lembaga manajemen kolektif untuk seniman-seniman Swedia dan Wikimedia Swedia.</p>
 
-<p>Sebagai salah satu <em>platform</em> sumber ilmu pengetahuan terbesar di dunia, tak ayal <strong>putusan pengadilan tersebut kemudian melahirkan dampak global</strong>. Pihak Yayasan Wikimedia dan para pengurus Wikimedia Commons kemudian membuat <a href="https://commons.wikimedia.org/wiki/Commons:Freedom_of_panorama">satu laman</a> dokumentasi tentang apa yang boleh dan tidak boleh dibagikan dengan merujuk pada ketentuan pengecualian dan pembatasan dari berbagai negara mengenai “penggunaan” ciptaan-ciptaan yang ada di ruang publik. Resiko dari tidak ditaatinya ketentuan yang ada di wilayah hukum masing-masing kontributor adalah <a href="https://commons.wikimedia.org/wiki/Commons:Freedom_of_panorama#Uploading_images_covered_under_Freedom_of_Panorama_to_the_Commons">penghapusan berkas yang dilaksanakan oleh para pengurus situs web Wikimedia Commons</a>. Karena, pihak pengurus situs Wikimedia Commons <strong>menghindari adanya ketidakpastian hukum</strong> yang dianggap <strong>mengusik upaya penyediaan konten-konten ilmu pengetahuan secara permanen</strong>.</p>
+          <p>Pihak BUS menggugat Wikimedia Swedia karena telah membuat <a href="http://offentligkonst.se/">basis data terbuka dalam bentuk peta</a> yang menampilkan karya-karya seni rupa di ruang publik. Wikimedia Swedia dianggap telah melakukan pelanggaran hak cipta dengan m<strong>engumumkan ciptaan milik pihak lain secara daring dengan penerapan lisensi terbuka (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.id">CC BY-SA</a>) yang memungkinkan penggunaan ciptaan dalam kepentingan komersial tanpa izin langsung dari pihak terkait</strong>. Dalam gugatan ini, BUS tidak mengindahkan fakta bahwa proyek tersebut bukan merupakan proyek untuk mencari keuntungan. Juga, bagaimana regulasi pelindungan hak cipta Swedia sudah mengecualikan pencitraan ciptaan yang ada di ruang publik ke medium lain yang dilakukan tanpa izin pencipta atau pemegang hak cipta dari kategori pelanggaran hak cipta. BUS beranggapan bahwa ciptaan apapun yang diumumkan secara daring <strong>dapat berpotensi menguntungkan pihak-pihak yang dapat mengaksesnya</strong>, tanpa ada sistem penyaluran royalti yang layak kepada pemegang hak cipta atas ciptaan yang diumumkan. Dalam gugatannya, BUS juga meminta agar Wikimedia Swedia membayar ganti rugi sebesar SEK 100.000 (setara dengan 12.300 dollar Amerika).</p>
 
-<h1 id="penerapan-ketentuan-pengecualian-dan-pembatasan-freedom-of-panorama-di-berbagai-negara"><strong>Penerapan Ketentuan Pengecualian dan Pembatasan “<em>Freedom of Panorama</em>” di Berbagai Negara</strong></h1>
+          <p>Gugatan tersebut disambut dengan pernyataan sikap oleh <a href="https://blog.wikimedia.org/2016/04/04/strike-against-freedom-panorama/">Yayasan Wikimedia</a> yang pada intinya menyatakan bahwa gugatan tersebut tidak dapat diterima karena bertentangan dengan asas <strong>kebebasan berekspresi dan kebebasan berbagi konten secara wajar</strong>, baik secara daring maupun luring. Selain itu, setiap ciptaan yang dicitrakan dalam proyek <em>offentlig konst</em> merupakan ciptaan yang diadakan <a href="https://www.privateinternetaccess.com/blog/2016/04/supreme-court-wikipedia-violates-copyright-posting-photos-public-art/">berdasarkan pembayaran pajak oleh masyarakat Swedia</a>. Secara logis, ciptaan-ciptaan tersebut seharusnya bebas digunakan oleh publik. Mereka juga berpendapat bahwa jika memang ciptaan-ciptaan terkait tidak dapat langsung dicitrakan dalam karya fotografi atau format lainnya, sebaiknya pencipta atau pemegang hak cipta ciptaan tersebut memublikasikannya secara terbatas, di tempat-tempat tertutup.</p>
 
-<hr />
+          <p>Karena, sangat tidak masuk akal untuk memaksakan keinginan pihak-pihak tertentu yang dapat berdampak pada kebebasan pengabadian pemandangan di ruang publik. Apabila gugatan BUS dikabulkan, setiap aktivitas pengambilan dan penyebaran gambar yang baik secara sengaja atau tidak sengaja, sampai hal kecil seperti swafoto, mengandung unsur ciptaan seseorang di dalamnya dapat terkena dampak atas adanya pembatasan tersebut. Wikimedia Swedia juga merasa bahwa hal ini seharusnya diatur dalam ketentuan “pembatasan pelindungan” pada Undang-Undang Hak Cipta Swedia dan diharmonisasikan dengan seluruh peraturan menyangkut hak cipta yang mengikat semua negara di Eropa. Tentu saja tanpa pembatasan untuk penggunaan dalam kepentingan komersial. Karena hal tersebut akan mempengaruhi setiap hasil pencitraan yang dikontribusikan ke proyek Wikimedia, yang mewajibkan setiap kontributor untuk memperbolehkan penggunaan dalam kepentingan komersial melalui penerapan lisensi <a href="https://creativecommons.org/licenses/by/4.0/deed.id">CC BY</a> atau <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.id">CC BY-SA</a>.</p>
 
-<p>Berikut contoh-contoh pemberlakuan ketentuan “pembatasan dan/atau pengecualian” yang membebaskan “penggunaan” ciptaan yang ada di ruang publik, pada regulasi-regulasi pelindungan hak cipta di beberapa negara:</p>
+          <p>Perkara ini akhirnya ditutup dengan dikabulkannya gugatan BUS di tingkat Pengadilan Tinggi Swedia. Wikimedia Swedia harus mengeluarkan uang sebesar 89.000 dollar Amerika untuk biaya perkara dan pembayaran ganti rugi. Situs web proyek pemetaan masih dapat diakses. Namun, tidak semua monumen atau patung yang dipetakan dapat disaksikan secara langsung gambar-gambarnya melalui proyek peta interaktif tersebut.</p>
 
-<ul>
-  <li>
-    <p>Sejak 7 Oktober 2016, Prancis memberlakukan ketentuan pembatasan dan pengecualian pelindungan hak cipta terkait hal ini melalui <a href="https://web.archive.org/web/20170127170315/https://www.legifrance.gouv.fr/affichCodeArticle.do">Pasal L122-5 Undang-Undang Kekayaan Intelektual</a>. Pada prinsipnya, ketentuan ini mengecualikan perbuatan “penyebaran kembali” dan “penggunaan kembali” terhadap segala karya arsitektur dan karya seni rupa, khususnya patung, yang ada di ruang publik dan diciptakan oleh perseorangan dari kategori pelanggaran hak cipta asal bukan untuk kepentingan komersial. Bagian pelarangan penggunaan dalam kepentingan komersial ini merupakan hal problematis bagi pihak Wikimedia. Karena, setiap kontributor proyek Wikimedia selalu membagikan berkas dengan hak penggunaan untuk kepentingan komersial melalui penerapan lisensi <a href="https://creativecommons.org/licenses/by/4.0/deed.id">CC BY</a> atau <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.id">CC BY-SA</a>.</p>
-  </li>
-  <li>
-    <p>Di Australia ketentuan mengenai hal ini diatur melalui Pasal 65 hingga 68 Undang-Undang Hak Cipta Tahun 1968. Inti bunyi dari pasal 65 tersebut ialah “segala perbuatan seperti pembuatan lukisan, pembuatan sketsa, pembuatan ukiran, pembuatan karya fotografi atau masuknya karya dalam rekaman karya sinematografi maupun siaran televisi terhadap seluruh karya seni rupa (tidak termasuk desain tata letak sirkuit terpadu) yang terdapat di ruang publik, baik yang ada sementara maupun permanen, dikecualikan dari kategori perbuatan pelanggaran hak cipta. Selanjutnya pada Pasal 66 disebutkan bahwa ciptaan berupa karya arsitektur seperti gedung dan maket dari gedung tersebut juga dikecualikan dari kategori perbuatan pelanggaran hak cipta. Meskipun begitu, dalam hal ini <a href="https://web.archive.org/web/20140630101936/http://www.artslaw.com.au/info-sheets/info-sheet/street-photographers-rights/">pengecualian tidak diberlakukan</a> terhadap ciptaan dalam format 2 dimensi seperti mural dan/atau karya seni rupa jalanan lainnya.</p>
-  </li>
-  <li>
-    <p>Kanada memberlakukan hal yang sama seperti Australia melalui Pasal 32.2 ayat 1 Undang-Undang Hak Cipta. Yang berbeda ialah perbuatan-perbuatan tersebut tidak dikecualikan dari kategori pelanggaran hak cipta apabila ciptaan yang dicitrakan merupakan maket atau ilustrasi karya arsitektur. Selain itu pengecualian hanya berlaku pada karya seni rupa yang ada secara permanen di ruang publik. Sebagai pelengkap, ketentuan ini mengecualikan seluruh ciptaan yang menjadi bagian latar belakang di dalam sebuah karya fotografi, yang ikut tertangkap di dalam karya fotografi tersebut secara sengaja atau tidak sengaja menjadi bagian inti dari karya fotografi tersebut, dari kategori perbuatan melanggar hak cipta.</p>
-  </li>
-  <li>
-    <p>Di Amerika Serikat (AS), pengecualian hanya diberlakukan terhadap gedung-gedung yang ada di ruang publik. Disebutkan dalam <em><a href="https://en.wikisource.org/wiki/United_States_Code/Title_17/Chapter_1/Section_120">17 U.S. Code § 120(a)</a></em> yang dimaksud dengan gedung adalah bangunan yang secara permanen ada di ruang publik dan digunakan oleh manusia, seperti rumah, gedung perkantoran, tempat ibadah, museum, dan taman.  Ketentuan ini tidak berlaku terhadap karya-karya seni rupa yang ada di ruang publik. Sebagai tambahan, ketentuan ini tidak terbatas hanya pada jenis bangunan yang disebutkan saja, namun juga bangunan lain yang memenuhi kriteria seperti bangunan-bangunan tersebut.</p>
-  </li>
-  <li>
-    <p><a href="https://web.archive.org/web/20150630234615/http://pravo.gov.ru/proxy/ips/?docbody=&amp;nd=102171743&amp;rdk=&amp;backlink=1">Rusia</a> memberlakukan ketentuan yang memperbolehkan pengambilan gambar taman terbuka, namun tidak termasuk karya seni rupa, baik yang diumumkan dalam format 2 dimensi maupun 3 dimensi.</p>
-  </li>
-</ul>
+          <p>Salah satu wilayah yang terkena dampak oleh kasus tersebut adalah proyek <a href="https://creativecommons.or.id/2016/10/kenapa-mengunggah-karya-ke-wikimedia-commons.html">Wikimedia Commons</a> oleh <a href="https://www.wikimedia.org/">Yayasan Wikimedia</a>. Salah satu jenis berkas gambar yang paling banyak dibagikan di Wikimedia Commons adalah karya fotografi, termasuk <a href="http://www.wikilovesmonuments.org/">karya fotografi dengan obyek-obyek ciptaan yang ada di ruang publik</a>. Proyek Wiki, seperti <a href="https://www.wikipedia.org/">Wikipedia</a> dan <a href="https://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a>, adalah salah satu situs web yang paling kerap digunakan sebagai sumber ilmu pengetahuan di seluruh dunia. Setidaknya terdapat jutaan artikel dalam berbagai bahasa di Wikipedia dan puluhan ribu berkas media di Wikimedia Commons yang dibagikan oleh para kontributor untuk bebas digunakan kembali di bawah ketentuan lisensi <a href="https://creativecommons.org/licenses/by/4.0/deed.id">CC BY</a> atau <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.id">CC BY-SA</a>, yang mengizinkan penggunaan dalam kepentingan komersial.</p>
 
-<p>Setiap kontributor proyek Wiki harus merujuk pada setiap ketentuan pengecualian dan pembatasan yang berlaku di negaranya, sebagaimana disebutkan dalam beberapa contoh di atas, untuk menghindari akibat hukum yang tidak diinginkan seperti yang dialami oleh Wikimedia Swedia, juga penghapusan kontribusi oleh pengurus situs web proyek Wiki terkait.</p>
+          <p>Sebagai salah satu <em>platform</em> sumber ilmu pengetahuan terbesar di dunia, tak ayal <strong>putusan pengadilan tersebut kemudian melahirkan dampak global</strong>. Pihak Yayasan Wikimedia dan para pengurus Wikimedia Commons kemudian membuat <a href="https://commons.wikimedia.org/wiki/Commons:Freedom_of_panorama">satu laman</a> dokumentasi tentang apa yang boleh dan tidak boleh dibagikan dengan merujuk pada ketentuan pengecualian dan pembatasan dari berbagai negara mengenai “penggunaan” ciptaan-ciptaan yang ada di ruang publik. Resiko dari tidak ditaatinya ketentuan yang ada di wilayah hukum masing-masing kontributor adalah <a href="https://commons.wikimedia.org/wiki/Commons:Freedom_of_panorama#Uploading_images_covered_under_Freedom_of_Panorama_to_the_Commons">penghapusan berkas yang dilaksanakan oleh para pengurus situs web Wikimedia Commons</a>. Karena, pihak pengurus situs Wikimedia Commons <strong>menghindari adanya ketidakpastian hukum</strong> yang dianggap <strong>mengusik upaya penyediaan konten-konten ilmu pengetahuan secara permanen</strong>.</p>
 
-<h1 id="kerangka-dasar-pelindungan-hak-cipta-di-indonesia"><strong>Kerangka Dasar pelindungan Hak Cipta di Indonesia</strong></h1>
+          <h2>Penerapan Ketentuan Pengecualian dan Pembatasan “<em>Freedom of Panorama</em>” di Berbagai Negara</h2>
 
-<hr />
+          <p>Berikut contoh-contoh pemberlakuan ketentuan “pembatasan dan/atau pengecualian” yang membebaskan “penggunaan” ciptaan yang ada di ruang publik, pada regulasi-regulasi pelindungan hak cipta di beberapa negara:</p>
 
-<p>Hak cipta adalah hak eksklusif yang dimiliki oleh pencipta atau pemegang hak cipta seketika ciptaannya diwujudkan dan diumumkan. Selain <strong>kewajiban penyebutan nama pencipta atau pemegang hak cipta</strong>, pelindungan hak moral dari Pasal 5 Undang-Undang No. 28 Tahun 2014 Tentang Hak Cipta (UUHC14) memastikan agar aktivitas seperti “pembuatan ciptaan turunan atau pemodifikasian ciptaan” terhadap suatu obyek pelindungan hak cipta <strong>wajib disertai izin langsung</strong> dari pencipta atau pemegang hak cipta ciptaan terkait. Hak ekonomi mewajibkan setiap “pengumuman”, “penggandaan”, “pendistribusian” dan “pengadaptasian” ciptaan, apalagi yang <strong>melibatkan kepentingan komersial</strong>, juga harus dilaksanakan atas izin langsung dari pencipta atau pemegang hak cipta. Termasuk dalam aktivitas pengumuman ialah penyajian kembali ciptaan dengan pemberitahuan <strong>hak penggunaan</strong> (<em>copyright notice</em>, lisensi publik, dan lain-lain) kepada setiap pengakses tempat ciptaan diumumkan.</p>
+          <ul>
+            <li>
+              <p>Sejak 7 Oktober 2016, Prancis memberlakukan ketentuan pembatasan dan pengecualian pelindungan hak cipta terkait hal ini melalui <a href="https://web.archive.org/web/20170127170315/https://www.legifrance.gouv.fr/affichCodeArticle.do">Pasal L122-5 Undang-Undang Kekayaan Intelektual</a>. Pada prinsipnya, ketentuan ini mengecualikan perbuatan “penyebaran kembali” dan “penggunaan kembali” terhadap segala karya arsitektur dan karya seni rupa, khususnya patung, yang ada di ruang publik dan diciptakan oleh perseorangan dari kategori pelanggaran hak cipta asal bukan untuk kepentingan komersial. Bagian pelarangan penggunaan dalam kepentingan komersial ini merupakan hal problematis bagi pihak Wikimedia. Karena, setiap kontributor proyek Wikimedia selalu membagikan berkas dengan hak penggunaan untuk kepentingan komersial melalui penerapan lisensi <a href="https://creativecommons.org/licenses/by/4.0/deed.id">CC BY</a> atau <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.id">CC BY-SA</a>.</p>
+            </li>
+            <li>
+              <p>Di Australia ketentuan mengenai hal ini diatur melalui Pasal 65 hingga 68 Undang-Undang Hak Cipta Tahun 1968. Inti bunyi dari pasal 65 tersebut ialah “segala perbuatan seperti pembuatan lukisan, pembuatan sketsa, pembuatan ukiran, pembuatan karya fotografi atau masuknya karya dalam rekaman karya sinematografi maupun siaran televisi terhadap seluruh karya seni rupa (tidak termasuk desain tata letak sirkuit terpadu) yang terdapat di ruang publik, baik yang ada sementara maupun permanen, dikecualikan dari kategori perbuatan pelanggaran hak cipta. Selanjutnya pada Pasal 66 disebutkan bahwa ciptaan berupa karya arsitektur seperti gedung dan maket dari gedung tersebut juga dikecualikan dari kategori perbuatan pelanggaran hak cipta. Meskipun begitu, dalam hal ini <a href="https://web.archive.org/web/20140630101936/http://www.artslaw.com.au/info-sheets/info-sheet/street-photographers-rights/">pengecualian tidak diberlakukan</a> terhadap ciptaan dalam format 2 dimensi seperti mural dan/atau karya seni rupa jalanan lainnya.</p>
+            </li>
+            <li>
+              <p>Kanada memberlakukan hal yang sama seperti Australia melalui Pasal 32.2 ayat 1 Undang-Undang Hak Cipta. Yang berbeda ialah perbuatan-perbuatan tersebut tidak dikecualikan dari kategori pelanggaran hak cipta apabila ciptaan yang dicitrakan merupakan maket atau ilustrasi karya arsitektur. Selain itu pengecualian hanya berlaku pada karya seni rupa yang ada secara permanen di ruang publik. Sebagai pelengkap, ketentuan ini mengecualikan seluruh ciptaan yang menjadi bagian latar belakang di dalam sebuah karya fotografi, yang ikut tertangkap di dalam karya fotografi tersebut secara sengaja atau tidak sengaja menjadi bagian inti dari karya fotografi tersebut, dari kategori perbuatan melanggar hak cipta.</p>
+            </li>
+            <li>
+              <p>Di Amerika Serikat (AS), pengecualian hanya diberlakukan terhadap gedung-gedung yang ada di ruang publik. Disebutkan dalam <em><a href="https://en.wikisource.org/wiki/United_States_Code/Title_17/Chapter_1/Section_120">17 U.S. Code § 120(a)</a></em> yang dimaksud dengan gedung adalah bangunan yang secara permanen ada di ruang publik dan digunakan oleh manusia, seperti rumah, gedung perkantoran, tempat ibadah, museum, dan taman.  Ketentuan ini tidak berlaku terhadap karya-karya seni rupa yang ada di ruang publik. Sebagai tambahan, ketentuan ini tidak terbatas hanya pada jenis bangunan yang disebutkan saja, namun juga bangunan lain yang memenuhi kriteria seperti bangunan-bangunan tersebut.</p>
+            </li>
+            <li>
+              <p><a href="https://web.archive.org/web/20150630234615/http://pravo.gov.ru/proxy/ips/?docbody=&amp;nd=102171743&amp;rdk=&amp;backlink=1">Rusia</a> memberlakukan ketentuan yang memperbolehkan pengambilan gambar taman terbuka, namun tidak termasuk karya seni rupa, baik yang diumumkan dalam format 2 dimensi maupun 3 dimensi.</p>
+            </li>
+          </ul>
 
-<p>Berkaca pada penjelasan di bagian sebelumnya, <strong><em>Freedom of Panorama</em></strong> (FoP) adalah ketentuan yang diatur melalui regulasi Kekayaan Intelektual (hak cipta, paten, desain industri, dan lain-lain) untuk <strong>mengecualikan beberapa aktivitas “penggunaan ciptaan” yang ada di ruang publik</strong> dari kategori pelanggaran hak cipta, dengan mewajibkan pengguna ciptaan untuk mengikuti ketentuan tertentu. Penggunaan ciptaan yang dimaksud antara lain adalah pembuatan karya fotografi dan/atau pembuatan rekaman video ciptaan tertentu. Termasuk juga upaya pencitraan beberapa ciptaan tersebut seperti pengabadian dalam format lukisan. Ciptaan di ruang publik dalam konteks ini dibagi dalam dua kategori, yaitu dalam <strong>format dua dimensi dan tiga dimensi</strong>, juga yang <strong>permanen dan sementara</strong>.</p>
+          <p>Setiap kontributor proyek Wiki harus merujuk pada setiap ketentuan pengecualian dan pembatasan yang berlaku di negaranya, sebagaimana disebutkan dalam beberapa contoh di atas, untuk menghindari akibat hukum yang tidak diinginkan seperti yang dialami oleh Wikimedia Swedia, juga penghapusan kontribusi oleh pengurus situs web proyek Wiki terkait.</p>
 
-<p>Merujuk dari Pasal 40 UUHC14, ciptaan-ciptaan yang terkait langsung dengan ketentuan ini ialah:</p>
+          <h2>Kerangka Dasar pelindungan Hak Cipta di Indonesia</h2>
 
-<p>f. karya seni rupa dalam segala bentuk seperti lukisan, gambar, ukiran, kaligrafi, seni pahat, patung, atau kolase;
-h. karya arsitektur.</p>
+          <p>Hak cipta adalah hak eksklusif yang dimiliki oleh pencipta atau pemegang hak cipta seketika ciptaannya diwujudkan dan diumumkan. Selain <strong>kewajiban penyebutan nama pencipta atau pemegang hak cipta</strong>, pelindungan hak moral dari Pasal 5 Undang-Undang No. 28 Tahun 2014 Tentang Hak Cipta (UUHC14) memastikan agar aktivitas seperti “pembuatan ciptaan turunan atau pemodifikasian ciptaan” terhadap suatu obyek pelindungan hak cipta <strong>wajib disertai izin langsung</strong> dari pencipta atau pemegang hak cipta ciptaan terkait. Hak ekonomi mewajibkan setiap “pengumuman”, “penggandaan”, “pendistribusian” dan “pengadaptasian” ciptaan, apalagi yang <strong>melibatkan kepentingan komersial</strong>, juga harus dilaksanakan atas izin langsung dari pencipta atau pemegang hak cipta. Termasuk dalam aktivitas pengumuman ialah penyajian kembali ciptaan dengan pemberitahuan <strong>hak penggunaan</strong> (<em>copyright notice</em>, lisensi publik, dan lain-lain) kepada setiap pengakses tempat ciptaan diumumkan.</p>
 
-<p>Yaitu monumen, gedung tua maupun baru, dan setiap karya seni rupa yang dapat diakses di ruang publik dengan atau tanpa pembatasan, permanen maupun sementara.</p>
+          <p>Berkaca pada penjelasan di bagian sebelumnya, <strong><em>Freedom of Panorama</em></strong> (FoP) adalah ketentuan yang diatur melalui regulasi Kekayaan Intelektual (hak cipta, paten, desain industri, dan lain-lain) untuk <strong>mengecualikan beberapa aktivitas “penggunaan ciptaan” yang ada di ruang publik</strong> dari kategori pelanggaran hak cipta, dengan mewajibkan pengguna ciptaan untuk mengikuti ketentuan tertentu. Penggunaan ciptaan yang dimaksud antara lain adalah pembuatan karya fotografi dan/atau pembuatan rekaman video ciptaan tertentu. Termasuk juga upaya pencitraan beberapa ciptaan tersebut seperti pengabadian dalam format lukisan. Ciptaan di ruang publik dalam konteks ini dibagi dalam dua kategori, yaitu dalam <strong>format dua dimensi dan tiga dimensi</strong>, juga yang <strong>permanen dan sementara</strong>.</p>
 
-<p>Artinya, setiap aktivitas-aktivitas “penggunaan ciptaan” yang disebutkan di atas dapat dilaksanakan jika izin langsung dari pencipta atau pemegang hak cipta diperoleh, terdapat ketentuan pengecualian dalam regulasi pelindungan hak cipta, dan jika masa berlaku pelindungan ciptaan terkait sudah habis. Apabila kita melihat <a href="https://commons.wikimedia.org/wiki/Commons:Freedom_of_panorama#Indonesia">laman ini</a>, dinyatakan bahwa Indonesia belum memiliki ketentuan yang mengatur secara jelas pada Undang-Undang Hak Ciptanya (UUHC). Pengaturan secara jelas yang dimaksud adalah pengecualian bagi pihak perseorangan atau kelompok untuk dapat mengunggah berkas media hasil citraan ciptaan, dalam format dua dimensi maupun tiga dimensi, yang tersedia di ruang publik secara permanen maupun sementara.</p>
+          <p>Merujuk dari Pasal 40 UUHC14, ciptaan-ciptaan yang terkait langsung dengan ketentuan ini ialah:</p>
 
-<h2 id="pengecualian-dan-pembatasan-pelindungan-hak-cipta-ciptaan-di-indonesia"><strong>Pengecualian dan Pembatasan pelindungan Hak Cipta Ciptaan di Indonesia</strong></h2>
+          <p>f. karya seni rupa dalam segala bentuk seperti lukisan, gambar, ukiran, kaligrafi, seni pahat, patung, atau kolase;
+          h. karya arsitektur.</p>
 
-<hr />
+          <p>Yaitu monumen, gedung tua maupun baru, dan setiap karya seni rupa yang dapat diakses di ruang publik dengan atau tanpa pembatasan, permanen maupun sementara.</p>
 
-<p>Meskipun begitu, Indonesia telah mengatur pembatasan hak cipta melalui huruf b dan d ayat Pasal 43 UUHC14:</p>
+          <p>Artinya, setiap aktivitas-aktivitas “penggunaan ciptaan” yang disebutkan di atas dapat dilaksanakan jika izin langsung dari pencipta atau pemegang hak cipta diperoleh, terdapat ketentuan pengecualian dalam regulasi pelindungan hak cipta, dan jika masa berlaku pelindungan ciptaan terkait sudah habis. Apabila kita melihat <a href="https://commons.wikimedia.org/wiki/Commons:Freedom_of_panorama#Indonesia">laman ini</a>, dinyatakan bahwa Indonesia belum memiliki ketentuan yang mengatur secara jelas pada Undang-Undang Hak Ciptanya (UUHC). Pengaturan secara jelas yang dimaksud adalah pengecualian bagi pihak perseorangan atau kelompok untuk dapat mengunggah berkas media hasil citraan ciptaan, dalam format dua dimensi maupun tiga dimensi, yang tersedia di ruang publik secara permanen maupun sementara.</p>
 
-<p>Perbuatan yang tidak dianggap sebagai pelanggaran Hak Cipta meliputi:</p>
+          <h2>Pengecualian dan Pembatasan pelindungan Hak Cipta Ciptaan di Indonesia</h2>
 
-<p>b. Pengumuman, Pendistribusian, Komunikasi, dan/atau Penggandaan segala sesuatu yang dilaksanakan oleh atau atas nama pemerintah, kecuali dinyatakan dilindungi oleh peraturan perundang-undangan, pernyataan pada Ciptaan tersebut, atau ketika terhadap Ciptaan tersebut dilakukan Pengumuman, Pendistribusian, Komunikasi, dan/atau Penggandaan;
-d. pembuatan dan penyebarluasan konten Hak Cipta melalui media teknologi informasi dan komunikasi yang bersifat tidak komersial dan/atau menguntungkan Pencipta atau pihak terkait, atau Pencipta tersebut menyatakan tidak keberatan atas pembuatan dan penyebarluasan tersebut.</p>
+          <p>Meskipun begitu, Indonesia telah mengatur pembatasan hak cipta melalui huruf b dan d ayat Pasal 43 UUHC14:</p>
 
-<p>Pada huruf b disebutkan bahwa setiap pengumuman, pendistribusian, komunikasi, dan/atau penggandaan setiap ciptaan yang merupakan produk pemerintah, boleh dilaksanakan tanpa izin langsung dari pencipta atau pemegang hak ciptanya. Artinya, setiap upaya pencitraan kembali gedung atau monumen, sebagai karya seni rupa maupun karya arsitektur, yang pengadaannya dilaksanakan atas nama pemerintah, dapat dilakukan secara langsung tanpa perlu ada izin tertulis dari siapapun. Asalkan pelaksanaan hak tersebut masih dalam batas wajar, yaitu tidak mengurangi nilai kehormatan dari ciptaan dan juga pencipta atau pemegang hak cipta ciptaan terkait.</p>
+          <p>Perbuatan yang tidak dianggap sebagai pelanggaran Hak Cipta meliputi:</p>
 
-<p><strong>Dengan begitu, upaya pendokumentasian, pengumuman, dan pelisensian kembali ciptaan berupa gedung atau monumen, sebagai karya seni rupa maupun karya arsitektur, dalam format dua dimensi maupun tiga dimensi, yang tersedia di ruang publik secara permanen maupun sementara, dan diciptakan atas nama pemerintah tidak dianggap sebagai perbuatan melanggar hak cipta meskipun dilaksanakan tanpa izin langsung secara tertulis maupun tidak tertulis oleh pencipta atau pemegang hak cipta. Kecuali, dilarang oleh ketentuan peraturan perundang-undangan lain, misalnya untuk menjaga keamanan dan kestabilan negara Republik Indonesia.</strong></p>
+          <p>b. Pengumuman, Pendistribusian, Komunikasi, dan/atau Penggandaan segala sesuatu yang dilaksanakan oleh atau atas nama pemerintah, kecuali dinyatakan dilindungi oleh peraturan perundang-undangan, pernyataan pada Ciptaan tersebut, atau ketika terhadap Ciptaan tersebut dilakukan Pengumuman, Pendistribusian, Komunikasi, dan/atau Penggandaan;
+          d. pembuatan dan penyebarluasan konten Hak Cipta melalui media teknologi informasi dan komunikasi yang bersifat tidak komersial dan/atau menguntungkan Pencipta atau pihak terkait, atau Pencipta tersebut menyatakan tidak keberatan atas pembuatan dan penyebarluasan tersebut.</p>
 
-<p>Pada huruf d, disebutkan bahwa pembuatan dan penyebarluasan ciptaan secara daring, <strong>selain ciptaan yang dimaksud dalam huruf b</strong>, <strong>dapat dilaksanakan</strong>, bahkan dalam kepentingan komersial atau disediakan untuk digunakan kembali dalam kepentingan komersial secara langsung a<strong>sal pihak pencipta atau pemegang hak cipta tidak keberatan terhadap hal tersebut</strong>. Artinya, setiap ciptaan berupa karya seni rupa maupun karya arsitektur lainnya yang hendak dicitrakan serta dibagikan dalam format lain dan untuk kepentingan apapun, harus menyertakan pernyataan bahwa penggunaan tersebut bukan merupakan untuk kepentingan komersial. Atau, jika penggunaan melibatkan kepentingan komersial, izin langsung dari pencipta atau pemegang hak cipta, mutlak dibutuhkan untuk menghindarkan perbuatan dari kategori pelanggaran hak cipta. Bagian ini menjadi dasar status “<em>not OK</em>” Indonesia di laman ini karena belum memenuhi standar atau kriteria “FoP” Wikimedia Commons.</p>
+          <p>Pada huruf b disebutkan bahwa setiap pengumuman, pendistribusian, komunikasi, dan/atau penggandaan setiap ciptaan yang merupakan produk pemerintah, boleh dilaksanakan tanpa izin langsung dari pencipta atau pemegang hak ciptanya. Artinya, setiap upaya pencitraan kembali gedung atau monumen, sebagai karya seni rupa maupun karya arsitektur, yang pengadaannya dilaksanakan atas nama pemerintah, dapat dilakukan secara langsung tanpa perlu ada izin tertulis dari siapapun. Asalkan pelaksanaan hak tersebut masih dalam batas wajar, yaitu tidak mengurangi nilai kehormatan dari ciptaan dan juga pencipta atau pemegang hak cipta ciptaan terkait.</p>
 
-<p><strong>Untuk memenuhi kriteria tersebut, Indonesia dapat menerapkan pengecualian dan pembatasan yang diberlakukan pada ciptaan di huruf b, <a href="https://en.wikipedia.org/wiki/Freedom_of_panorama#United_States">tanpa membuat daftar spesifik tentang ciptaan apa yang dikecualikan</a>, karena sesungguhnya jenis ciptaan yang ada di ruang publik bisa saja <a href="https://commons.wikimedia.org/wiki/Commons:Freedom_of_panorama#Music,_literature_etc.">tidak hanya berupa karya seni rupa dan karya arsitektur</a> (pameran karya teks, karya seni terapan di pasaran, <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/68">ekspresi budaya tradisional</a>, rekaman suara musik di ruang publik dan lain-lain), dengan tambahan ketentuan yang mewajibkan penyebutan sumber atau nama pencipta dan/atau pemegang hak cipta, yang kemudian dapat memperluas kriteria penggunaan ciptaan dan <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/22">menghindari sifat multitafsir (“tidak merugikan kepentingan wajar”) dari huruf a ayat (1) Pasal 44 UUHC14</a>. Penghindaran adanya ketentuan multitafsir misalnya dengan pembuatan ketentuan yang menyatakan bahwa ciptaan citraan terkait merupakan ciptaan yang terpisah dari obyek yang dicitrakan, yang dilindungi oleh Pasal 40 UUHC14, sesuai dengan format citraannya. Satu tambahan ketentuan seperti itu saja dapat menjembatani hak pencipta ciptaan citraan untuk melaksanakan pelisensian ciptaan (baca ketentuan Pasal 80 UUHC 14 Tentang Lisensi di <a href="http://creativecommons.or.id/2018/08/lokakarya-lisensi-creative-commons-untuk-seminar-nasional-relawan-jurnal-indonesia-di-universitas-islam-negeri-sunan-gunung-jati.html">artikel ini</a>) secara mandiri, tanpa memposisikan pencipta sebagai pihak pelaksana sublisensi pada ciptaan hasil citraan. Karena pelaksana sublisensi wajib memperoleh izin langsung secara tertulis untuk melisensikan kembali suatu ciptaan, materi asli maupun karya turunan, dalam aktivitas pengumuman ciptaan.</strong></p>
+          <p><strong>Dengan begitu, upaya pendokumentasian, pengumuman, dan pelisensian kembali ciptaan berupa gedung atau monumen, sebagai karya seni rupa maupun karya arsitektur, dalam format dua dimensi maupun tiga dimensi, yang tersedia di ruang publik secara permanen maupun sementara, dan diciptakan atas nama pemerintah tidak dianggap sebagai perbuatan melanggar hak cipta meskipun dilaksanakan tanpa izin langsung secara tertulis maupun tidak tertulis oleh pencipta atau pemegang hak cipta. Kecuali, dilarang oleh ketentuan peraturan perundang-undangan lain, misalnya untuk menjaga keamanan dan kestabilan negara Republik Indonesia.</strong></p>
 
-<p><strong>Pencitraan obyek yang ada di ruang publik, dengan kemudahan yang ditawarkan oleh teknologi terkini, <a href="https://kominfo.go.id/content/detail/6095/indonesia-raksasa-teknologi-digital-asia/0/sorotan_media">semakin menjadi sesuatu yang lumrah bagi masyarakat umum</a>. Hukum, dalam hal ini peraturan, seharusnya dapat mengikuti perkembangan teknologi dan kebiasaan masyarakat. Karena, pada hakikatnya, peraturan dibuat untuk memberikan kepastian hukum terhadap hubungan hukum antara subyek-subyek hukum di suatu wilayah hukum. Maka dari itu, alangkah baiknya suatu ketentuan dibuat selengkap dan serinci mungkin, untuk menghindari adanya kekosongan hukum. Serta memberikan ruang gerak yang bebas dan masih ada dalam batas-batas kewajaran.</strong></p>
+          <p>Pada huruf d, disebutkan bahwa pembuatan dan penyebarluasan ciptaan secara daring, <strong>selain ciptaan yang dimaksud dalam huruf b</strong>, <strong>dapat dilaksanakan</strong>, bahkan dalam kepentingan komersial atau disediakan untuk digunakan kembali dalam kepentingan komersial secara langsung a<strong>sal pihak pencipta atau pemegang hak cipta tidak keberatan terhadap hal tersebut</strong>. Artinya, setiap ciptaan berupa karya seni rupa maupun karya arsitektur lainnya yang hendak dicitrakan serta dibagikan dalam format lain dan untuk kepentingan apapun, harus menyertakan pernyataan bahwa penggunaan tersebut bukan merupakan untuk kepentingan komersial. Atau, jika penggunaan melibatkan kepentingan komersial, izin langsung dari pencipta atau pemegang hak cipta, mutlak dibutuhkan untuk menghindarkan perbuatan dari kategori pelanggaran hak cipta. Bagian ini menjadi dasar status “<em>not OK</em>” Indonesia di laman ini karena belum memenuhi standar atau kriteria “FoP” Wikimedia Commons.</p>
 
-<h2 id="jalan-keluar-sementara-menunggu-masa-berlaku-pelindungan-habis"><strong>Jalan Keluar Sementara: Menunggu Masa Berlaku pelindungan Habis</strong></h2>
+          <p><strong>Untuk memenuhi kriteria tersebut, Indonesia dapat menerapkan pengecualian dan pembatasan yang diberlakukan pada ciptaan di huruf b, <a href="https://en.wikipedia.org/wiki/Freedom_of_panorama#United_States">tanpa membuat daftar spesifik tentang ciptaan apa yang dikecualikan</a>, karena sesungguhnya jenis ciptaan yang ada di ruang publik bisa saja <a href="https://commons.wikimedia.org/wiki/Commons:Freedom_of_panorama#Music,_literature_etc.">tidak hanya berupa karya seni rupa dan karya arsitektur</a> (pameran karya teks, karya seni terapan di pasaran, <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/68">ekspresi budaya tradisional</a>, rekaman suara musik di ruang publik dan lain-lain), dengan tambahan ketentuan yang mewajibkan penyebutan sumber atau nama pencipta dan/atau pemegang hak cipta, yang kemudian dapat memperluas kriteria penggunaan ciptaan dan <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/22">menghindari sifat multitafsir (“tidak merugikan kepentingan wajar”) dari huruf a ayat (1) Pasal 44 UUHC14</a>. Penghindaran adanya ketentuan multitafsir misalnya dengan pembuatan ketentuan yang menyatakan bahwa ciptaan citraan terkait merupakan ciptaan yang terpisah dari obyek yang dicitrakan, yang dilindungi oleh Pasal 40 UUHC14, sesuai dengan format citraannya. Satu tambahan ketentuan seperti itu saja dapat menjembatani hak pencipta ciptaan citraan untuk melaksanakan pelisensian ciptaan (baca ketentuan Pasal 80 UUHC 14 Tentang Lisensi di <a href="http://creativecommons.or.id/2018/08/lokakarya-lisensi-creative-commons-untuk-seminar-nasional-relawan-jurnal-indonesia-di-universitas-islam-negeri-sunan-gunung-jati.html">artikel ini</a>) secara mandiri, tanpa memposisikan pencipta sebagai pihak pelaksana sublisensi pada ciptaan hasil citraan. Karena pelaksana sublisensi wajib memperoleh izin langsung secara tertulis untuk melisensikan kembali suatu ciptaan, materi asli maupun karya turunan, dalam aktivitas pengumuman ciptaan.</strong></p>
 
-<hr />
+          <p><strong>Pencitraan obyek yang ada di ruang publik, dengan kemudahan yang ditawarkan oleh teknologi terkini, <a href="https://kominfo.go.id/content/detail/6095/indonesia-raksasa-teknologi-digital-asia/0/sorotan_media">semakin menjadi sesuatu yang lumrah bagi masyarakat umum</a>. Hukum, dalam hal ini peraturan, seharusnya dapat mengikuti perkembangan teknologi dan kebiasaan masyarakat. Karena, pada hakikatnya, peraturan dibuat untuk memberikan kepastian hukum terhadap hubungan hukum antara subyek-subyek hukum di suatu wilayah hukum. Maka dari itu, alangkah baiknya suatu ketentuan dibuat selengkap dan serinci mungkin, untuk menghindari adanya kekosongan hukum. Serta memberikan ruang gerak yang bebas dan masih ada dalam batas-batas kewajaran.</strong></p>
 
-<p>Indonesia mengatur masa berlaku pelindungan hak cipta melalui Pasal 58-61 UUHC14. Pasal 58 dan 60 merupakan pasal-pasal yang relevan untuk dikaitkan dalam konteks diskusi mengenai FoP. Ketentuan di dalam kedua pasal ini dapat menjadi jalan keluar sementara dalam aktivitas “penggunaan” ciptaan yang ada di ruang publik. Aktivitas tersebut bisa saja hanya menargetkan ciptaan-ciptaan di ruang publik yang sudah habis masa berlaku pelindungan hak ciptanya.</p>
+          <h2>Jalan Keluar Sementara: Menunggu Masa Berlaku pelindungan Habis</h2>
 
-<p>Masa berlaku pelindungan hak cipta untuk karya seni rupa dan karya arsitektur ialah seumur hidup pencipta ditambah 70 tahun setelah pencipta meninggal dunia. Apabila ciptaan diciptakan oleh dua orang atau lebih, hitung mundur selama 70 tahun dihitung sejak tahun meninggal pencipta yang meninggal paling terakhir. Apabila ciptaan diciptakan oleh badan hukum, maka masa berlaku pelindungannya adalah 50 tahun sejak ciptaan pertama kali dipublikasikan. Seluruh ciptaan yang telah habis masa berlaku pelindungannya, dapat digunakan dengan cara apapun dan untuk kepentingan apapun, asal sumber ciptaan ditemukan dan/atau nama pencipta atau pemegang hak cipta terus disebutkan. Kemudian, Pasal 60 mengatur masa berlaku pelindungan ciptaan yang tidak diketahui identitas penciptanya. Setiap ciptaan yang tidak diketahui identitas penciptanya habis masa berlaku pelindungan hak ciptanya pada tahun ke-50 setelah pertama kali dipublikasikan.</p>
+          <p>Indonesia mengatur masa berlaku pelindungan hak cipta melalui Pasal 58-61 UUHC14. Pasal 58 dan 60 merupakan pasal-pasal yang relevan untuk dikaitkan dalam konteks diskusi mengenai FoP. Ketentuan di dalam kedua pasal ini dapat menjadi jalan keluar sementara dalam aktivitas “penggunaan” ciptaan yang ada di ruang publik. Aktivitas tersebut bisa saja hanya menargetkan ciptaan-ciptaan di ruang publik yang sudah habis masa berlaku pelindungan hak ciptanya.</p>
 
-<p>Para pengguna ciptaan yang melaksanakan aktivitas “penggunaan” ciptaan di ruang publik dapat merujuk ketentuan-ketentuan di atas, misalnya untuk aktivitas pembangunan pangkalan data bangunan tua di ruang publik, sedikit mirip dengan yang dilaksanakan oleh Wikimedia Swedia. Keberadaan pangkalan data semacam itu, kemudian dapat memudahkan upaya-upaya pembuatan sumber pengetahuan lain, misalnya penyusunan buku tentang sejarah karya arsitektur di Indonesia atau paling tidak untuk melengkapi setiap artikel tentang bangunan-bangunan di Wikipedia dengan data dan gambar yang ada. <strong>Upaya seperti ini seharusnya juga mendapatkan dorongan dari pihak pemerintah. Ketentuan masa berlaku pelindungan hak cipta merupakan salah satu pewujudan fungsi sosial dari regulasi tentang pelindungan hak cipta. Pewujudan fungsi tersebut dapat didukung dengan pembangunan infrastruktur, pangkalan data misalnya, yang memuat data tentang ciptaan yang sudah habis masa berlaku pelindungan hak ciptanya, dan lebih bagus lagi jika ciptaan atau informasi tentang ciptaan terkait juga dapat langsung diakses pada infrastruktur tersebut</strong>.</p>
+          <p>Masa berlaku pelindungan hak cipta untuk karya seni rupa dan karya arsitektur ialah seumur hidup pencipta ditambah 70 tahun setelah pencipta meninggal dunia. Apabila ciptaan diciptakan oleh dua orang atau lebih, hitung mundur selama 70 tahun dihitung sejak tahun meninggal pencipta yang meninggal paling terakhir. Apabila ciptaan diciptakan oleh badan hukum, maka masa berlaku pelindungannya adalah 50 tahun sejak ciptaan pertama kali dipublikasikan. Seluruh ciptaan yang telah habis masa berlaku pelindungannya, dapat digunakan dengan cara apapun dan untuk kepentingan apapun, asal sumber ciptaan ditemukan dan/atau nama pencipta atau pemegang hak cipta terus disebutkan. Kemudian, Pasal 60 mengatur masa berlaku pelindungan ciptaan yang tidak diketahui identitas penciptanya. Setiap ciptaan yang tidak diketahui identitas penciptanya habis masa berlaku pelindungan hak ciptanya pada tahun ke-50 setelah pertama kali dipublikasikan.</p>
 
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-12">
-                                    <h5 style="display: inline;">Tags:</h5>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">cc</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">freedom of panorama</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">lisensi cc</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">lisensi creative commons</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">indonesia</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">cc indonesia</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">ccid</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">panorama</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">wikimedia commons</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">wikimedia</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">wikimedia indonesia</button>
-                                    
-                            </div>                       
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <h5>Oleh: Hilman Fathoni</h5>
-                        12 Nov 2018
-                        <hr>
-                        <h5>Kategori:</h5>
-                        
-                        <button class="btn btn-white btn-xs" type="button">Kajian</button>
-                        
-                        <hr>
-                        <h5>Berita Terbaru</h5>
-			<ul>
-                        
-			<li><a href="../../2019/01/lokakarya-hak-cipta-dan-lisensi-creative-commons-di-pekanbaru.html" class="btn-link">Lokakarya Hak Cipta dan Lisensi Creative Commons di Pekanbaru</a></li>
-                        
-			<li><a href="../../2018/12/pengumuman-resmi-hasil-akhir-training-of-trainers-creative-commons-indonesia.html" class="btn-link">Pengumuman Resmi: Hasil Akhir Training of Trainers Creative Commons Indonesia</a></li>
-                        
-			<li><a href="../../2018/08/literatur-terbaru-tentang-model-bisnis-terbuka-made-with-cc.html" class="btn-link">Literatur tentang Model Bisnis Terbuka "Made With CC"</a></li>
-                        
-			<li><a href="../../2018/08/data-dan-artikel-ilmiah-terbuka-dari-plos.html" class="btn-link">Data dan Artikel Ilmiah Terbuka dari PLOS!</a></li>
-                        
-			<li><a href="../../2018/08/Konten-Format-Model-3-Dimensi-Berilsensi-CC-di-Platform-Sketchfab.html" class="btn-link">Konten Format Model 3 Dimensi Berilsensi CC di Platform Sketchfab</a></li>
-                        
-	 		</ul>
-			<hr>
-			<h5>Bagikan di:</h5>
-			<a href="https://facebook.com/sharer.php?u=https://creativecommons.or.id/2018/11/apa-itu-freedom-of-panorama.html" rel="nofollow" target="_blank"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
-			<a href="https://twitter.com/intent/tweet?text=Apa itu Freedom of Panorama?&url=http://creativecommons.or.id//2018/11/apa-itu-freedom-of-panorama/&via=&related=" rel="nofollow" target="_blank"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a>
-			</div>
-		</div>
+          <p>Para pengguna ciptaan yang melaksanakan aktivitas “penggunaan” ciptaan di ruang publik dapat merujuk ketentuan-ketentuan di atas, misalnya untuk aktivitas pembangunan pangkalan data bangunan tua di ruang publik, sedikit mirip dengan yang dilaksanakan oleh Wikimedia Swedia. Keberadaan pangkalan data semacam itu, kemudian dapat memudahkan upaya-upaya pembuatan sumber pengetahuan lain, misalnya penyusunan buku tentang sejarah karya arsitektur di Indonesia atau paling tidak untuk melengkapi setiap artikel tentang bangunan-bangunan di Wikipedia dengan data dan gambar yang ada. <strong>Upaya seperti ini seharusnya juga mendapatkan dorongan dari pihak pemerintah. Ketentuan masa berlaku pelindungan hak cipta merupakan salah satu pewujudan fungsi sosial dari regulasi tentang pelindungan hak cipta. Pewujudan fungsi tersebut dapat didukung dengan pembangunan infrastruktur, pangkalan data misalnya, yang memuat data tentang ciptaan yang sudah habis masa berlaku pelindungan hak ciptanya, dan lebih bagus lagi jika ciptaan atau informasi tentang ciptaan terkait juga dapat langsung diakses pada infrastruktur tersebut</strong>.</p>
 
-<div class="row">
-<div class="col-lg-9">
-		
-	<div id="disqus_thread"></div>
-	<script>
+          <div class="article-end mt-5"></div>
+        </div>
+      </div>
+    </main>
 
-	/**
-	*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-	*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-	/*
-	var disqus_config = function () {
-	this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-	this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-	};
-	*/
-	(function() { // DON'T EDIT BELOW THIS LINE
-	var d = document, s = d.createElement('script');
-	s.src = '//creative-commons-indonesia.disqus.com/embed.js';
-	s.setAttribute('data-timestamp', +new Date());
-	(d.head || d.body).appendChild(s);
-	})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <footer class="mt-5">
+      <div class="container-fluid">
+        <div class="row align-items-md-end pt-5 pb-4">
+          <div class="col-md-12 col-lg-2 offset-lg-1 px-5 px-md-0 mb-4 mb-md-5 mb-lg-2 text-center align-self-center">
+            <img src="../../assets/img/footer-sketch.svg" class="img-fluid h-100 px-2">
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 ps-5 ps-md-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Informasi</h5></li>
+              <li><span class="fa-li"><i class="fa-brands fa-readme"></i></span><a href="../../media.html">Media</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-creative-commons"></i></span><a href="../../lisensi-cc-bahasa-indonesia.html">Lisensi</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-book-open-reader"></i></span><a href="../../kajian.html">Kajian</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-circle-question"></i></span><a href="../../faq.html">FAQ</a></li>             
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Tentang kami</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-person-rays"></i></span><a href="../../tentang.html">Tentang kami</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-newspaper"></i></span><a href="../../berita.html">Berita</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-calendar-check"></i></span><a href="../../acara.html">Acara</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 ps-5 ps-md-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Network</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-users"></i></span><a href="../../sobatccid.html">Sobat CCID</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-creative-commons"></i></span><a href="https://creativecommons.org/">CCHQ</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-earth-asia"></i></span><a href="https://network.creativecommons.org/">CC Global Network</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Kontak</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-address-book"></i></span><a href="../../hubungi-kami.html">Hubungi kami</a></li>              
+              <li><span class="fa-li"><i class="fa-brands fa-square-facebook"></i></span><a href="https://www.facebook.com/CreativeCommonsIndonesia">Facebook</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-twitter"></i></span><a href="https://twitter.com/CC_ID">Twitter</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-instagram"></i></span><a href="https://www.instagram.com/cc.indonesia/">Instagram</a></li>
+          </div>
+        </div>
+        <div class="row footer-license">
+          <div class="col-12 text-center text-white">
+            <p class="my-4"><i class="fa-brands fa-creative-commons pe-1"></i><i class="fa-brands fa-creative-commons-by pe-1"></i> 2012&ndash;2022 Creative Commons Indonesia. Kecuali dinyatakan lain, konten di situs ini dilisensikan di bawah lisensi <a href="https://creativecommons.org/licenses/by/4.0/deed.id">Creative Commons Atribusi 4.0 Internasional</a>. 
+          </div>
+        </div>
+      </div>
+    </footer>
 
-</div>
-</div>
-
-        	</div>
-		</div>
-	</div>
-
-        
-        <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-92784032-1', 'auto');
-  ga('send', 'pageview');
-</script>     
-
-<footer class="footer">
-    <div class="container">
-	<nav class="pull-left">
-	    <ul>
-		<li><a href="../../faq.html">FAQ</a></li>
-		<li><a href="../../hubungi-kami.html">Hubungi Kami</a></li>
-		<li><a href="https://www.facebook.com/CreativeCommonsIndonesia"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-		<li><a href="https://twitter.com/CC_ID"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-		<li><a href="../../feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
-	    </ul>
-	</nav>
-	<div class="copyright pull-right"><a href="https://creativecommons.org/licenses/by/4.0/">2012-2016 Creative Commons Indonesia | CC BY 4.0</a></div>
-    </div>
-</footer>
-
-    
-	</div>
-</body>
-
+    <!-- js -->
+    <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+    <script src="../../assets/js/popper.min.js"></script>
+    <script src="../../assets/js/bootstrap.js"></script>
+  </body>
 </html>
