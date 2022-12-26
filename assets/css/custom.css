@@ -132,11 +132,20 @@ main ul {
   padding-left: 20px;
 }
 
-main li::marker {
-    font-family: "Font Awesome 6 Free";
-    content: "\f30b";
-    font-weight: 900;
-    color: var(--ccid-red-71);
+main ul li::marker {
+  font-family: "Font Awesome 6 Free";
+  content: "\f30b";
+  font-weight: 900;
+  color: var(--ccid-red-71);
+}
+
+main ol {
+  padding-left: 20px;
+}
+
+main ol li::marker {
+  font-weight: 700;
+  color: var(--ccid-red-71);
 }
 
 main li {
