@@ -546,8 +546,12 @@ footer li a:hover {
 /* Utilities */
 
 @media (min-width: 576px) {
+  .w-sm-24 {
+    width: 24% !important;
+  }
+
   .w-sm-25 {
-    width: 25% !important;
+    width: 24% !important;
   }
 
   .w-sm-35 {
@@ -564,6 +568,12 @@ footer li a:hover {
 
   .w-sm-100 {
     width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .w-md-24 {
+    width: 24% !important;
   }
 }
 
