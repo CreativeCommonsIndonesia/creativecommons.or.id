@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GR2HTWFX22"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GR2HTWFX22');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Creative Commons Indonesia supports the usage of Creative Commons licenses and open cultural works in Indonesia">
@@ -9,27 +19,19 @@
     <title>#OpenAccessWeek - Pengalihan Hak Cipta (Copyright Transfer Agreement) Ciptaan vs Pelisensian Ciptaan</title>
     
     <!-- fonts -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
-
-    <!-- icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Sen&display=swap" rel="stylesheet"> 
 
     <!-- css -->
-    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../../assets/css/material-kit.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../../assets/css/custom.css" rel="stylesheet">
+    <link href="../../assets/css/animate.min.css" rel="stylesheet">
 
-    <!-- js -->
-    <script src="../../assets/js/jquery-3.6.1.min.js"></script>
-    <script src="../../assets/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/material.min.js"></script>
-    <script src="../../assets/js/material-kit.js"></script>
-
-    <!-- plugins -->
-    <script src="../../assets/js/nouislider.min.js"></script> <!-- sliders (http://refreshless.com/nouislider) -->
-    <script src="../../assets/js/bootstrap-datepicker.js"></script> <!-- datepicker (http://www.eyecon.ro/bootstrap-datepicker) -->
-    <script src="../../assets/js/jPages.js"></script> <!-- pagination -->
-    <script src="../../assets/js/js.js"></script> <!-- pagination -->
+    <!-- icons -->
+    <link href="../../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="../../assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="../../assets/fontawesome/css/solid.css" rel="stylesheet">
 
     <!-- favicon -->
     <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
@@ -37,306 +39,235 @@
     <!-- rss feed -->
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="../../feed.xml">
   </head>
-
     
-<body class="index-page">
-	<div class="wrapper">
-	
-	
-        	<style>
-.main {
-	margin-top: 80px;
-  }
-.navbar, .navbar.navbar-danger {
-	background-color: #9e1c1c;
-	color: #ffffff;
-}
-</style>  
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-md" aria-label="Navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html"><img src="../../assets/img/logoputih.png" alt="Creative Commons Indonesia" class="img-fluid" width="150"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ccidnavbar" aria-controls="ccidnavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <nav class="navbar navbar-danger navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="../../index.html">
-                    <div class="logo-container">
-                        <div class="logo">
-                            <img src="../../assets/img/logoputih.png" alt="Creative Commons Indonesia" class="img-fluid" width="150">
-                        </div>
-                    </div>
-                </a>
-            </div>
-    
-            <div class="collapse navbar-collapse" id="navigation-index">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="../../tentang.html" target="_blank">
-                            Tentang
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../../lisensi-cc-bahasa-indonesia.html" target="_blank">
-                            Lisensi
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Blog <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../../sobatccid.html">Sobat CCID</a></li>
-                            <li><a href="../../berita.html">Berita</a></li>
-                            <li><a href="../../kajian.html">Kajian</a></li>
-                            <li><a href="../../acara.html">Acara</a></li>
-                        </ul>
-                    </li>
-		<li>
-			<a href="../../search.html" target="_blank">
-			<i class="fa fa-search" aria-hidden="true"></i>
-			</a>
-		</li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="ccidnavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Informasi
+              </a>
+              <ul class="dropdown-menu mt-3 bg-ccid-red-31 animate__animated animate__flipInY animate__faster" aria-labelledby="resources">
+                <li><a class="dropdown-item" href="../../lisensi-cc-bahasa-indonesia.html">Lisensi</a></li>
+                <li><a class="dropdown-item" href="../../kajian.html">Kajian</a></li>
+                <li><a class="dropdown-item" href="../../faq.html">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../../berita.html">Berita</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../acara.html">Acara</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../tentang.html">Tentang kami</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../sobatccid.html">Sobat CCID</a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/CreativeCommonsIndonesia" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://twitter.com/CC_ID" title="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/cc.indonesia/" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../hubungi-kami.html" title="Hubungi kami"><i class="fa-solid fa-address-book"></i></a></li>            
+          </ul>       
         </div>
+      </div>
     </nav>
 
-	
-       
-        
-	<div class="main">
-		<div class="section section-basic">
-	    	<div class="container">
-		
-		<small><a href="../../index.html">Beranda</a>/<a href="https://creativecommons.or.id/
-			kajian
-		.html">
-			Kajian
-		</a>/#OpenAccessWeek - Pengalihan Hak Cipta (Copyright Transfer Agreement) Ciptaan vs Pelisensian Ciptaan</small>
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="text-center article-title">
-                            <h2>
-                                #OpenAccessWeek - Pengalihan Hak Cipta (Copyright Transfer Agreement) Ciptaan vs Pelisensian Ciptaan
-                            </h2>
-                        </div>
-                            <p><img src="../../uploads/web%20banner_blank_id.png" alt="web banner_blank_id.png" class="img-fluid center-block" width="500" /><center><small><i>Logo Pekan Keterbukaan Akses Internasional diterjemahkan oleh Hilman Fathoni, templat disediakan oleh Open Access Week, di openaccessweek.org, dengan lisensi CC BY.</i></small></center></p>
+    <div class="container-fluid mt-2">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+          <li class="breadcrumb-item"><a href="../../kajian.html">Kajian</a></li>
+          <li class="breadcrumb-item active" aria-current="page">#OpenAccessWeek - Pengalihan Hak Cipta (Copyright Transfer Agreement) Ciptaan vs Pelisensian Ciptaan</li>
+        </ol>
+      </nav>
+    </div>         
+          
+    <main class="container article p-5">
+      <div class="row mt-2 mt-md-5">
+        <div class="col-12">
 
-<h1 id="open-access-week"><strong>Open Access Week</strong></h1>
+          <div class="row article-meta mb-3">
+            <div class="col-sm-6">
+              <i class="fa-solid fa-calendar-day fa-fw"></i> 26 October 2018
+            </div>
+            <div class="col-sm-6 pt-1 pt-sm-0 text-sm-end">
+              <i class="fa-solid fa-share-from-square fa-fw pe-1"></i> Bagikan ke 
+            
+              <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://creativecommons.or.id/2018/10/pengalihan-hak-cipta-copyright-transfer-ciptaan-vs-pelisensian-ciptaan.html"><i class="fa-brands fa-linkedin ps-1" title="LinkedIn" aria-hidden="true"></i></a>
 
-<hr />
+              <a href="https://facebook.com/sharer.php?u=https://creativecommons.or.id/2018/10/pengalihan-hak-cipta-copyright-transfer-ciptaan-vs-pelisensian-ciptaan.html" rel="nofollow" target="_blank"><i class="fa-brands fa-facebook" title="Facebook" aria-hidden="true"></i></a>
 
-<p>Artikel ini merupakan bagian dari agenda <a href="http://www.openaccessweek.org/profiles/blogs/theme-of-2018-international-open-access-week-to-be-designing-equi">Pekan Keterbukaan Akses Internasional 2018</a> (Selanjutnya disebut dengan PKAI atau PKAI 2018). PKAI 2018 merupakan serangkaian upaya untuk meningkatkan kesadaran tentang prinsip <em>open access</em> atau gerakan keterbukaan publikasi karya ilmiah di ranah daring. Tahun ini, PKAI mengangkat tema “<em>Designing Equitable Foundations for Open Knowledge</em>” (bahasa Inggris) atau Merancang Pondasi Pengetahuan Terbuka Yang Berkeadilan. Tema ini dibuat untuk mengajak para pemangku kepentingan terkait agar dapat sama-sama merumuskan peran gerakan <em>open access</em> dalam isu keberagaman, keadilan, dan inklusifitas. Tiga unsur tersebut perlu dikaji lebih lanjut agar akses keterlibatan pemangku kepentingan dapat berjalan lancar dan distribusi pengetahuan terbuka dapat terlaksana secara berkelanjutan. Anda dapat turut serta berkampanya dengan mengikuti petunjuk-petunjuk di <a href="http://www.openaccessweek.org/page/graphics">situs web ini</a>.</p>
+              <a href="https://twitter.com/intent/tweet?url=https://creativecommons.or.id/2018/10/pengalihan-hak-cipta-copyright-transfer-ciptaan-vs-pelisensian-ciptaan.html" rel="nofollow" target="_blank"><i class="fa-brands fa-twitter" title="Twitter" aria-hidden="true"></i></a>
+            </div>
+          </div>
 
-<p>Pemajuan prinsip ini menjadi hal yang penting karena <a href="https://www.vox.com/2016/2/18/11047052/alexandra-elbakyan-interview">kebutuhan akses terhadap ilmu pengetahuan dari seluruh penjuru dunia</a> semakin meningkat seiring berkembangnya teknologi pengaksesan informasi. Hal ini membuktikan bahwa, model penyediaan ilmu pengetahuan secara <a href="https://www.theguardian.com/commentisfree/2018/sep/13/scientific-publishing-rip-off-taxpayers-fund-research?CMP=share_btn_fb&amp;fbclid=IwAR2JGNRnIdGK3-bRavUWO1tIah1G9rTloTNhOiL6Ypv2iXCqtmA91CvDOxI">tertutup</a> yang mengenakan biaya mahal dan keterbatasan penggunaan serta penyebaran kembali oleh pengakses maupun pencipta sudah bukan lagi menjadi hal yang relevan. Untuk itu dibutuhkan ekosistem ketersediaan ilmu pengetahuan yang terbuka bagi lebih banyak orang, tidak hanya untuk para ilmuwan, sambil menetapkan beberapa pembatasan yang masuk akal <a href="https://www.openaccess.nl/en/what-is-open-access">sebagai model bisnis, strategi diseminasi, dan infrastruktur penerbitan karya ilmiah daring</a>. Maka dari itu, kini, hampir setiap saat, ide-ide mengenai pewujudan sistem baru tersebut, terus d<a href="http://oad.simmons.edu/oadwiki/Main_Page">ikumpulkan, diolah, dan diupayakan</a>.</p>
+          <h1>#OpenAccessWeek - Pengalihan Hak Cipta (Copyright Transfer Agreement) Ciptaan vs Pelisensian Ciptaan</h1>
 
-<h2 id="pengalihan-hak-cipta">Pengalihan Hak Cipta</h2>
+          <!-- Profile of the article author -->
+          <div class="author-profile pt-2 mt-4 mb-5">
+            <img class="img-fluid float-start" src="../../uploads/people/hilman_square.jpg">
+            <h5>Hilman Fathoni</h5>
+            <h6><a href="https://www.linkedin.com/in/hilman-fathoni/"><i class="fa-brands fa-linkedin"></i></a></h6>
+          </div>
 
-<hr />
+          <!-- Main article content goes here -->
 
-<p>Hak cipta atas suatu ciptaan pada umumnya dipegang secara eksklusif oleh pencipta seketika ciptaan diwujudkan dan diumumkan. Kontrol eksklusif dari hak cipta memastikan setiap manfaat ciptaan dapat dirasakan oleh pencipta. Namun, pencipta memiliki hak untuk membagi kontrol ekskulsif tersebut pada pihak lain. Pihak yang mendapatkan sebagaian dari kontrol eksklusif tersebut adalah pemegang hak cipta.</p>
+          <h2>Open Access Week</h2>
 
-<p>Peran sebagai pemegang hak cipta dapat dilaksanakan oleh perseorangan maupun kelompok. Posisi ini biasanya mereka dapatkan saat pencipta membutuhkan jasa dari pihak lain yang sama sekali tidak ikut serta menciptakan suatu ciptaan. Karena memiliki kelebihan yang tidak dimiliki pencipta, ketika pencipta telah sepakat untuk menggunakan bantuan pihak lain tersebut, maka pencipta membayar sejumlah kompensasi dengan besaran sesuai kesepakatan antara dua pihak tersebut. Misalnya, pencipta adalah seorang penulis buku yang ingin menerbitkan buku ciptaannya. Proses penerbitan buku tersebut biasanya melibatkan pihak penerbit sebagai pemegang hak cipta yang nantinya membantu proses penggandaan, pendistribusian, dan penjualan buku. Hasil penjualan buku kemudian dibagi sesuai dengan kesepakatan, atau, bisa juga penerbit ‘membeli’ hak eksklusif pencipta selama beberapa tahun dengan membayar di depan (jual putus), guna mendapatkan keuntungan penjualan buku tersebut untuk dirinya sendiri.</p>
+          <figure class="figure w-sm-50 float-sm-end ms-sm-5 mt-2 mb-4">
+            <img src="../../uploads/web%20banner_blank_id.png" alt="web banner_blank_id.png" class="figure-img img-fluid">
+            <figcaption class="figure-caption">Logo Pekan Keterbukaan Akses Internasional diterjemahkan oleh Hilman Fathoni, templat disediakan oleh Open Access Week, di openaccessweek.org, dengan lisensi CC BY.</figcaption>
+          </figure>
 
-<p>Mekanisme ini diatur dalam <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/11">Pasal 16-19</a>, <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/16">pasal 29-30</a>, <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/35">Pasal 76-77</a>, <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/43">Pasal 98</a>, dan <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/57">Pasal 122</a> Undang-Undang No. 28 Tahun 2014 tentang Hak Cipta (UUHC 2014). Pada umunya, pengalihan hak cipta hanya menyangkut persoalan pengalihan hak ekonomi saja. Untuk mengatur distribusi manfaat ekonomis yang lahir dari estetika ekspresif suatu ciptaan. Bahasa yang digunakan oleh UU dalam hal ini ialah “jual putus”, di mana pihak ketiga, dalam hal ini kemudian berperan sebagai pemegang hak cipta setelah mereka membeli hak ekonomi melalui kesepakatan yang dituangkan dalam perjanjian tertulis dengan pihak pencipta. Perjanjian tersebut diatur pula masa perikatannya oleh UUHC 2014 yaitu paling lama 25 tahun. Setelah 25 tahun berlalu, apabila dalam perjanjian tidak tertera batas waktu berakhir perjanjian, maka kontrol atas hak ekonomi kembali lagi secara eksklusif dipegang hanya oleh pihak pencipta.</p>
+          <p>Artikel ini merupakan bagian dari agenda <a href="http://www.openaccessweek.org/profiles/blogs/theme-of-2018-international-open-access-week-to-be-designing-equi">Pekan Keterbukaan Akses Internasional 2018</a> (Selanjutnya disebut dengan PKAI atau PKAI 2018). PKAI 2018 merupakan serangkaian upaya untuk meningkatkan kesadaran tentang prinsip <em>open access</em> atau gerakan keterbukaan publikasi karya ilmiah di ranah daring. Tahun ini, PKAI mengangkat tema “<em>Designing Equitable Foundations for Open Knowledge</em>” (bahasa Inggris) atau Merancang Pondasi Pengetahuan Terbuka Yang Berkeadilan. Tema ini dibuat untuk mengajak para pemangku kepentingan terkait agar dapat sama-sama merumuskan peran gerakan <em>open access</em> dalam isu keberagaman, keadilan, dan inklusifitas. Tiga unsur tersebut perlu dikaji lebih lanjut agar akses keterlibatan pemangku kepentingan dapat berjalan lancar dan distribusi pengetahuan terbuka dapat terlaksana secara berkelanjutan. Anda dapat turut serta berkampanya dengan mengikuti petunjuk-petunjuk di <a href="http://www.openaccessweek.org/page/graphics">situs web ini</a>.</p>
 
-<p>Pada praktiknya, akibat hukum dari pengalihan hak cipta antara penulis kepada penerbit, biasanya membatasi perbuatan yang dapat dilaksanakan oleh pihak penulis terhadap karya tulisnya. Misalnya, penulis tidak dapat melaksanakan publikasi secara mandiri terhadap karya tulisnya sama sekali. Atau, apabila disepakati, penulis hanya dapat memublikasikan secara mandiri karya tulis versi awal, yaitu versi yang belum melalui proses editorial atau peninjauan oleh penerbit. <strong>Risiko sengketa pelanggaran hak cipta amat rentan dalam praktik ini</strong>. <strong>Karena penulis yang tidak memahami hak dan kewajibannya setelah ada kesepakatan tertulis dengan pihak penerbit, dapat dianggap melakukan pelanggaran hak cipta, yang anehnya, terhadap karya tulis yang ia buat sendiri, yang sebetulnya memang sudah menjadi haknya untuk memublikasikannya melalui kanal apapun dan untuk kepentingan apapun</strong>.</p>
+          <p>Pemajuan prinsip ini menjadi hal yang penting karena <a href="https://www.vox.com/2016/2/18/11047052/alexandra-elbakyan-interview">kebutuhan akses terhadap ilmu pengetahuan dari seluruh penjuru dunia</a> semakin meningkat seiring berkembangnya teknologi pengaksesan informasi. Hal ini membuktikan bahwa, model penyediaan ilmu pengetahuan secara <a href="https://www.theguardian.com/commentisfree/2018/sep/13/scientific-publishing-rip-off-taxpayers-fund-research?CMP=share_btn_fb&amp;fbclid=IwAR2JGNRnIdGK3-bRavUWO1tIah1G9rTloTNhOiL6Ypv2iXCqtmA91CvDOxI">tertutup</a> yang mengenakan biaya mahal dan keterbatasan penggunaan serta penyebaran kembali oleh pengakses maupun pencipta sudah bukan lagi menjadi hal yang relevan. Untuk itu dibutuhkan ekosistem ketersediaan ilmu pengetahuan yang terbuka bagi lebih banyak orang, tidak hanya untuk para ilmuwan, sambil menetapkan beberapa pembatasan yang masuk akal <a href="https://www.openaccess.nl/en/what-is-open-access">sebagai model bisnis, strategi diseminasi, dan infrastruktur penerbitan karya ilmiah daring</a>. Maka dari itu, kini, hampir setiap saat, ide-ide mengenai pewujudan sistem baru tersebut, terus d<a href="http://oad.simmons.edu/oadwiki/Main_Page">ikumpulkan, diolah, dan diupayakan</a>.</p>
 
-<h2 id="pelisensian-ciptaan">Pelisensian Ciptaan</h2>
+          <h3>Pengalihan Hak Cipta</h3>
 
-<hr />
+          <p>Hak cipta atas suatu ciptaan pada umumnya dipegang secara eksklusif oleh pencipta seketika ciptaan diwujudkan dan diumumkan. Kontrol eksklusif dari hak cipta memastikan setiap manfaat ciptaan dapat dirasakan oleh pencipta. Namun, pencipta memiliki hak untuk membagi kontrol ekskulsif tersebut pada pihak lain. Pihak yang mendapatkan sebagaian dari kontrol eksklusif tersebut adalah pemegang hak cipta.</p>
 
-<p>Mekanisme pelisensian ciptaan diatur pada Angka <a href="https://id.wikisource.org/wiki/Undang-Undang_Republik_Indonesia_Nomor_28_Tahun_2014">20</a> Ketentuan Umum dan Pasal <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/36">80</a>-<a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/37">83</a> Undang-Undang No. 28 Tahun 2014 Tentang Hak Cipta (UUHC 2014). Pada umumnya, lisensi hak cipta adalah sebuah izin tertulis yang berfungsi sebagai pemberitahuan oleh pencipta atau pemegang hak cipta kepada pengguna ciptaan mengenai pelaksanaan hak dan kewajiban dari aktivitas penggunaan suatu ciptaan. Intinya, izin tersebut menyatakan apa yang boleh dan tidak boleh dilakukan oleh pengguna ciptaan terhadap suatu ciptaan. Pemegang hak cipta, dapat melisensikan ciptaan secara mandiri dan/atau melalui perwakilan, artinya berperan sebagai pemberi lisensi, kepada pihak ketiga, atau dalam hal ini pengguna ciptaan sebagai penerima lisensi, untuk melaksanakan beberapa perbuatan berdasarkan ketentuan lisensi yang diterapkan. Ketentuan lisensi yang diterapkan dapat diberlakukan hingga masa berlaku perlindungan hak cipta ciptaan yang dilisensikan habis.</p>
+          <p>Peran sebagai pemegang hak cipta dapat dilaksanakan oleh perseorangan maupun kelompok. Posisi ini biasanya mereka dapatkan saat pencipta membutuhkan jasa dari pihak lain yang sama sekali tidak ikut serta menciptakan suatu ciptaan. Karena memiliki kelebihan yang tidak dimiliki pencipta, ketika pencipta telah sepakat untuk menggunakan bantuan pihak lain tersebut, maka pencipta membayar sejumlah kompensasi dengan besaran sesuai kesepakatan antara dua pihak tersebut. Misalnya, pencipta adalah seorang penulis buku yang ingin menerbitkan buku ciptaannya. Proses penerbitan buku tersebut biasanya melibatkan pihak penerbit sebagai pemegang hak cipta yang nantinya membantu proses penggandaan, pendistribusian, dan penjualan buku. Hasil penjualan buku kemudian dibagi sesuai dengan kesepakatan, atau, bisa juga penerbit ‘membeli’ hak eksklusif pencipta selama beberapa tahun dengan membayar di depan (jual putus), guna mendapatkan keuntungan penjualan buku tersebut untuk dirinya sendiri.</p>
 
-<p>Lisensi hak cipta tidak harus selalu memuat ketentuan tentang besaran royalti yang harus dibayar. Karena, pada intinya ketentuan lisensi memuat apa yang boleh dan tidak boleh dilaksanakan oleh penerima lisensi. Jika ketentuan lisensi menyatakan bahwa penggunaan ciptaan dalam kepentingan komersial dilarang, artinya penerima lisensi wajib meminta izin dan/atau membayar sejumlah royalti kepada pemberi lisensi. Namun, apabila ketentuan lisensi menyatakan bahwa penggunaan ciptaan dalam kepentingan komersial diizinkan, artinya penerima lisensi secara langsung diizinkan untuk menggunakan ciptaan dalam kepentingan komersial.</p>
+          <p>Mekanisme ini diatur dalam <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/11">Pasal 16-19</a>, <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/16">pasal 29-30</a>, <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/35">Pasal 76-77</a>, <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/43">Pasal 98</a>, dan <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/57">Pasal 122</a> Undang-Undang No. 28 Tahun 2014 tentang Hak Cipta (UUHC 2014). Pada umunya, pengalihan hak cipta hanya menyangkut persoalan pengalihan hak ekonomi saja. Untuk mengatur distribusi manfaat ekonomis yang lahir dari estetika ekspresif suatu ciptaan. Bahasa yang digunakan oleh UU dalam hal ini ialah “jual putus”, di mana pihak ketiga, dalam hal ini kemudian berperan sebagai pemegang hak cipta setelah mereka membeli hak ekonomi melalui kesepakatan yang dituangkan dalam perjanjian tertulis dengan pihak pencipta. Perjanjian tersebut diatur pula masa perikatannya oleh UUHC 2014 yaitu paling lama 25 tahun. Setelah 25 tahun berlalu, apabila dalam perjanjian tidak tertera batas waktu berakhir perjanjian, maka kontrol atas hak ekonomi kembali lagi secara eksklusif dipegang hanya oleh pihak pencipta.</p>
 
-<p>Perbedaan mendasar antara konsep ini dengan pengalihan hak cipta terletak pada bunyi ayat (3) Pasal 82 UUHC 2014. Penerapan lisensi hak cipta <strong>tidak dapat dijadikan sarana untuk menghilangkan atau mengambil alih seluruh hak pencipta atas ciptaannya.</strong> Dalam hal ini, pencipta juga berperan sebagai pemegang hak cipta. Ketika ia melaksanakan pelisensian ciptaan secara mandiri, ia sama sekali tidak mengalihkan, dalam hal ini, kontrol eksklusif atas hak ekonominya kepada penerima lisensi. Ia hanya memberikan izin kepada penerima lisensi untuk <strong>sama-sama</strong> melaksanakan hak ekonomi atas ciptaan tersebut. Untuk <strong>sama-sama</strong> menerima manfaat ekonomis dari ciptaan. <strong>Pemberi lisensi tetap mempertahankan hak ciptanya secara eksklusif sambil membagikan hak penggunaan ciptaan kepada penerima lisensi</strong>.</p>
+          <p>Pada praktiknya, akibat hukum dari pengalihan hak cipta antara penulis kepada penerbit, biasanya membatasi perbuatan yang dapat dilaksanakan oleh pihak penulis terhadap karya tulisnya. Misalnya, penulis tidak dapat melaksanakan publikasi secara mandiri terhadap karya tulisnya sama sekali. Atau, apabila disepakati, penulis hanya dapat memublikasikan secara mandiri karya tulis versi awal, yaitu versi yang belum melalui proses editorial atau peninjauan oleh penerbit. <strong>Risiko sengketa pelanggaran hak cipta amat rentan dalam praktik ini</strong>. <strong>Karena penulis yang tidak memahami hak dan kewajibannya setelah ada kesepakatan tertulis dengan pihak penerbit, dapat dianggap melakukan pelanggaran hak cipta, yang anehnya, terhadap karya tulis yang ia buat sendiri, yang sebetulnya memang sudah menjadi haknya untuk memublikasikannya melalui kanal apapun dan untuk kepentingan apapun</strong>.</p>
 
-<p><strong>Pelisensian ciptaan yang dilaksanakan dalam hubungan hukum antara penulis dan penerbit merupakan pemberian izin kepada penerbit (lisensi ke dalam atau lisensi privat) untuk menggandakan, mengumumkan, menyebarluaskan karya tulis, dan melisensikannya kembali kepada pihak ketiga, dalam hal ini pembaca atau pengutip (lisensi keluar atau lisensi publik), sambil tetap dapat memublikasikan karya tulis tersebut di mana pun dan untuk kepentingan apapun.</strong></p>
+          <h3>Pelisensian Ciptaan</h3>
 
-<h3 id="mengenal-bentuk-bentuk-lisensi">Mengenal Bentuk-Bentuk Lisensi</h3>
+          <p>Mekanisme pelisensian ciptaan diatur pada Angka <a href="https://id.wikisource.org/wiki/Undang-Undang_Republik_Indonesia_Nomor_28_Tahun_2014">20</a> Ketentuan Umum dan Pasal <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/36">80</a>-<a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/37">83</a> Undang-Undang No. 28 Tahun 2014 Tentang Hak Cipta (UUHC 2014). Pada umumnya, lisensi hak cipta adalah sebuah izin tertulis yang berfungsi sebagai pemberitahuan oleh pencipta atau pemegang hak cipta kepada pengguna ciptaan mengenai pelaksanaan hak dan kewajiban dari aktivitas penggunaan suatu ciptaan. Intinya, izin tersebut menyatakan apa yang boleh dan tidak boleh dilakukan oleh pengguna ciptaan terhadap suatu ciptaan. Pemegang hak cipta, dapat melisensikan ciptaan secara mandiri dan/atau melalui perwakilan, artinya berperan sebagai pemberi lisensi, kepada pihak ketiga, atau dalam hal ini pengguna ciptaan sebagai penerima lisensi, untuk melaksanakan beberapa perbuatan berdasarkan ketentuan lisensi yang diterapkan. Ketentuan lisensi yang diterapkan dapat diberlakukan hingga masa berlaku perlindungan hak cipta ciptaan yang dilisensikan habis.</p>
 
-<hr />
+          <p>Lisensi hak cipta tidak harus selalu memuat ketentuan tentang besaran royalti yang harus dibayar. Karena, pada intinya ketentuan lisensi memuat apa yang boleh dan tidak boleh dilaksanakan oleh penerima lisensi. Jika ketentuan lisensi menyatakan bahwa penggunaan ciptaan dalam kepentingan komersial dilarang, artinya penerima lisensi wajib meminta izin dan/atau membayar sejumlah royalti kepada pemberi lisensi. Namun, apabila ketentuan lisensi menyatakan bahwa penggunaan ciptaan dalam kepentingan komersial diizinkan, artinya penerima lisensi secara langsung diizinkan untuk menggunakan ciptaan dalam kepentingan komersial.</p>
 
-<p>Lisensi hak cipta paling tidak dibagi dalam dua bentuk:</p>
+          <p>Perbedaan mendasar antara konsep ini dengan pengalihan hak cipta terletak pada bunyi ayat (3) Pasal 82 UUHC 2014. Penerapan lisensi hak cipta <strong>tidak dapat dijadikan sarana untuk menghilangkan atau mengambil alih seluruh hak pencipta atas ciptaannya.</strong> Dalam hal ini, pencipta juga berperan sebagai pemegang hak cipta. Ketika ia melaksanakan pelisensian ciptaan secara mandiri, ia sama sekali tidak mengalihkan, dalam hal ini, kontrol eksklusif atas hak ekonominya kepada penerima lisensi. Ia hanya memberikan izin kepada penerima lisensi untuk <strong>sama-sama</strong> melaksanakan hak ekonomi atas ciptaan tersebut. Untuk <strong>sama-sama</strong> menerima manfaat ekonomis dari ciptaan. <strong>Pemberi lisensi tetap mempertahankan hak ciptanya secara eksklusif sambil membagikan hak penggunaan ciptaan kepada penerima lisensi</strong>.</p>
 
-<ul>
-  <li>
-    <p><strong>Lisensi ke Dalam</strong> memiliki bentuk yang kurang lebih sama dengan perjanjian-perjanjian pada umumnya. Biasanya lisensi dengan bentuk ini sifatnya rahasia. Lisensi ini hanya dapat dibaca oleh pihak-pihak yang dengan terang disebutkan di dalam perjanjian lisensi sebagai pihak yang terikat dengan ketentuan lisensi. Karena sifatnya yang privat, lisensi dengan bentuk ini biasanya hanya mengikat beberapa pihak saja.</p>
-  </li>
-  <li>
-    <p><strong>Lisensi ke Luar</strong> dapat disebut sebagai lisensi publik. Akses untuk melihat ketentuan lisensi ini terbuka bagi pihak-pihak yang hendak mengikatkan diri dalam suatu hubungan hukum, dalam hal ini aktivitas penggunaan ciptaan. Lisensi dengan bentuk ini dapat mengikat banyak pihak sekaligus karena sifatnya yang terbuka. Pada intinya  ketentuan lisensi ini mengikat pencipta atau pemegang hak cipta dengan semua pengguna ciptaan yang menggunakan ciptaan yang diumumkan dengan ketentuan lisensi ini.</p>
-  </li>
-</ul>
+          <p><strong>Pelisensian ciptaan yang dilaksanakan dalam hubungan hukum antara penulis dan penerbit merupakan pemberian izin kepada penerbit (lisensi ke dalam atau lisensi privat) untuk menggandakan, mengumumkan, menyebarluaskan karya tulis, dan melisensikannya kembali kepada pihak ketiga, dalam hal ini pembaca atau pengutip (lisensi keluar atau lisensi publik), sambil tetap dapat memublikasikan karya tulis tersebut di mana pun dan untuk kepentingan apapun.</strong></p>
 
-<p>Lisensi hak cipta dapat menjadi alat penyederhana bahasa hukum dari UUHC. Dengan begitu dialog antara pencipta atau pemegang hak cipta akan menjadi semakin mudah. Karena tidak semua pihak-pihak terkait dalam hubungan hukum di ranah perlindungan hak cipta memiliki pengetahuan atau dapat langsung memahami mekanisme perlindungan hak cipta dengan membaca peraturannya. Selain itu dengan mengetahui perbedaan jenis lisensi dan isi ketentuannya, pengguna ciptaan dapat membedakan mana ciptaan yang dapat diakses secara gratis saja dan mana ciptaan yang dapat diakses secara gratis dan terbuka. Maksud terbuka dalam hal ini adalah ciptaan-ciptaan tersebut selain dapat diunduh dan disebarluaskan secara gratis, juga mengandung izin langsung yang memungkinkan pengguna ciptaan untuk menggubah atau menggunakan ciptaan dalam kepentingan komersial.</p>
+          <h4>Mengenal Bentuk-Bentuk Lisensi</h4>
 
-<p>Hal ini dapat dipahami dengan mengetahui sifat lisensi hak cipta:</p>
+          <p>Lisensi hak cipta paling tidak dibagi dalam dua bentuk:</p>
 
-<ul>
-  <li><strong>Lisensi Tertutup</strong> biasanya dinyatakan dengan ungkapan “all rights reserved” (seluruh hak dipertahankan). Artinya, pihak pencipta atau pemegang hak cipta sepakat dengan mekanisme perlindungan hak cipta tradisional. Di mana seluruh pengguna ciptaan yang dapat mengakses ciptaannya harus mendapatkan izin langsung atau melakukan interaksi secara langsung dengan pencipta atau pemegang hak cipta untuk kemudian menggunakan ciptaan sesuai dengan kebutuhannya. Lisensi ini ada seketika setelah ciptaan diciptakan dan diumumkan.</li>
-</ul>
+          <ul>
+            <li>
+              <p><strong>Lisensi ke Dalam</strong> memiliki bentuk yang kurang lebih sama dengan perjanjian-perjanjian pada umumnya. Biasanya lisensi dengan bentuk ini sifatnya rahasia. Lisensi ini hanya dapat dibaca oleh pihak-pihak yang dengan terang disebutkan di dalam perjanjian lisensi sebagai pihak yang terikat dengan ketentuan lisensi. Karena sifatnya yang privat, lisensi dengan bentuk ini biasanya hanya mengikat beberapa pihak saja.</p>
+            </li>
+            <li>
+              <p><strong>Lisensi ke Luar</strong> dapat disebut sebagai lisensi publik. Akses untuk melihat ketentuan lisensi ini terbuka bagi pihak-pihak yang hendak mengikatkan diri dalam suatu hubungan hukum, dalam hal ini aktivitas penggunaan ciptaan. Lisensi dengan bentuk ini dapat mengikat banyak pihak sekaligus karena sifatnya yang terbuka. Pada intinya  ketentuan lisensi ini mengikat pencipta atau pemegang hak cipta dengan semua pengguna ciptaan yang menggunakan ciptaan yang diumumkan dengan ketentuan lisensi ini.</p>
+            </li>
+          </ul>
 
-<p><img src="../../uploads/gabungan%20lisensi%20terbuka.jpg" alt="gabungan lisensi terbuka.jpg" class="img-fluid center-block" width="500" /></p>
+          <p>Lisensi hak cipta dapat menjadi alat penyederhana bahasa hukum dari UUHC. Dengan begitu dialog antara pencipta atau pemegang hak cipta akan menjadi semakin mudah. Karena tidak semua pihak-pihak terkait dalam hubungan hukum di ranah perlindungan hak cipta memiliki pengetahuan atau dapat langsung memahami mekanisme perlindungan hak cipta dengan membaca peraturannya. Selain itu dengan mengetahui perbedaan jenis lisensi dan isi ketentuannya, pengguna ciptaan dapat membedakan mana ciptaan yang dapat diakses secara gratis saja dan mana ciptaan yang dapat diakses secara gratis dan terbuka. Maksud terbuka dalam hal ini adalah ciptaan-ciptaan tersebut selain dapat diunduh dan disebarluaskan secara gratis, juga mengandung izin langsung yang memungkinkan pengguna ciptaan untuk menggubah atau menggunakan ciptaan dalam kepentingan komersial.</p>
 
-<ul>
-  <li><strong>Lisensi Terbuka</strong> biasanya, meskipun tidak selalu, dinyatakan dengan ungkapan “some rights reserved” (beberapa hak dipertahankan). Sifat terbuka dari lisensi ini biasanya dinyatakan dengan ketentuan yang langsung mengizinkan penggandaan dan penyebarluasan ciptaan oleh pengguna ciptaan. Lisensi ini biasanya dilengkapi dengan ketentuan pilihan yang nantinya ditentukan oleh pencipta atau pemegang hak cipta untuk mengatur hak penggunaan ciptaan pengguna ciptaan. Jenis lisensi ini diterapkan oleh pencipta atau pemegang hak cipta yang ingin memberikan akses terbuka dan legal kepada pengguna ciptaan dalam aktivitas penggunaan ciptaannya. Penentuan ketentuan lisensi hak cipta oleh pihak pencipta atau pemegang hak cipta sesuai dengan bunyi <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/37">Pasal 81 UUHC 2014</a>. Sifat pembuatanya yang mandiri menyebabkan terciptanya produk lisensi terbuka yang beragam, seperti <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License</a>, <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Governmet License</a>, dan termasuk Lisensi Creative Commons.</li>
-</ul>
+          <p>Hal ini dapat dipahami dengan mengetahui sifat lisensi hak cipta:</p>
 
-<h2 id="manajemen-hak-cipta-penulis-dalam-publikasi-karya-ilmiah-terbuka-daring">Manajemen Hak Cipta Penulis Dalam Publikasi Karya Ilmiah Terbuka Daring</h2>
+          <ul>
+            <li><strong>Lisensi Tertutup</strong> biasanya dinyatakan dengan ungkapan “all rights reserved” (seluruh hak dipertahankan). Artinya, pihak pencipta atau pemegang hak cipta sepakat dengan mekanisme perlindungan hak cipta tradisional. Di mana seluruh pengguna ciptaan yang dapat mengakses ciptaannya harus mendapatkan izin langsung atau melakukan interaksi secara langsung dengan pencipta atau pemegang hak cipta untuk kemudian menggunakan ciptaan sesuai dengan kebutuhannya. Lisensi ini ada seketika setelah ciptaan diciptakan dan diumumkan.</li>
+          </ul>
 
-<hr />
+          <img src="../../uploads/gabungan%20lisensi%20terbuka.jpg" alt="gabungan lisensi terbuka.jpg" class="img-fluid w-sm-50 float-sm-end ms-sm-5 mt-3 mb-4" style="border: 0; box-shadow: none;">
 
-<p>Dalam penerapan prinsip keterbukaan akses diyakini bahwa kontrol penuh ciptaan yang dipegang oleh penulis, jauh lebih memberdayakan daripada kontrol tersebut dipegang oleh penerbit.</p>
+          <ul>
+            <li><strong>Lisensi Terbuka</strong> biasanya, meskipun tidak selalu, dinyatakan dengan ungkapan “some rights reserved” (beberapa hak dipertahankan). Sifat terbuka dari lisensi ini biasanya dinyatakan dengan ketentuan yang langsung mengizinkan penggandaan dan penyebarluasan ciptaan oleh pengguna ciptaan. Lisensi ini biasanya dilengkapi dengan ketentuan pilihan yang nantinya ditentukan oleh pencipta atau pemegang hak cipta untuk mengatur hak penggunaan ciptaan pengguna ciptaan. Jenis lisensi ini diterapkan oleh pencipta atau pemegang hak cipta yang ingin memberikan akses terbuka dan legal kepada pengguna ciptaan dalam aktivitas penggunaan ciptaannya. Penentuan ketentuan lisensi hak cipta oleh pihak pencipta atau pemegang hak cipta sesuai dengan bunyi <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/37">Pasal 81 UUHC 2014</a>. Sifat pembuatanya yang mandiri menyebabkan terciptanya produk lisensi terbuka yang beragam, seperti <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License</a>, <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Governmet License</a>, dan termasuk Lisensi Creative Commons.</li>
+          </ul>
 
-<p>Paling tidak, penerbit seharusnya dapat memberikan pilihan kepada penulis untuk mengatur status hak cipta atas beberapa versi karya tulis yang akan diterbitkannya. Atau, malah mengarahkan penulis untuk menerapkan konsep pemberian lisensi dan <strong>izin pelisensian kembali</strong> terhadap karya tulis yang akan diterbitkan dalam suatu surat perjanjian penerbitan. Status kepemegangan atau kontrol hak cipta atas suatu karya tulis harus jelas terlebih dahulu sebelum karya tulis diterbitkan. Hal ini merupakan inti dari aktivitas penggunaan ciptaan, dalam hal ini aktivitas penerbitan, agar tidak terjadi sengketa akibat kesalahan memahami ketentuan penggunaan ciptaan dari pihak-pihak yang terkait.</p>
+          <img src="../../uploads/oauin6.jpg" alt="oauin6.jpg" class="img-fluid w-sm-25 float-sm-end ms-sm-5 mt-4 mb-4">
 
-<p>Berikut adalah beberapa contoh upaya penyediaan informasi tentang pengaturan status hak cipta dari penerbit untuk penulis:</p>
+          <h3>Manajemen Hak Cipta Penulis Dalam Publikasi Karya Ilmiah Terbuka Daring</h3>
 
-<p><img src="../../uploads/oauin6.jpg" alt="oauin6.jpg" class="img-fluid center-block" width="400" /></p>
+          <p>Dalam penerapan prinsip keterbukaan akses diyakini bahwa kontrol penuh ciptaan yang dipegang oleh penulis, jauh lebih memberdayakan daripada kontrol tersebut dipegang oleh penerbit.</p>
 
-<p><img src="../../uploads/oauin12.jpg" alt="oauin12.jpg" class="img-fluid center-block" width="400" /></p>
+          <img src="../../uploads/oauin12.jpg" alt="oauin12.jpg" class="img-fluid w-sm-25 float-sm-end ms-sm-5 mb-4">
 
-<ul>
-  <li><strong>Kebijakan pengarsipan mandiri oleh penulis</strong></li>
-</ul>
+          <p>Paling tidak, penerbit seharusnya dapat memberikan pilihan kepada penulis untuk mengatur status hak cipta atas beberapa versi karya tulis yang akan diterbitkannya. Atau, malah mengarahkan penulis untuk menerapkan konsep pemberian lisensi dan <strong>izin pelisensian kembali</strong> terhadap karya tulis yang akan diterbitkan dalam suatu surat perjanjian penerbitan. Status kepemegangan atau kontrol hak cipta atas suatu karya tulis harus jelas terlebih dahulu sebelum karya tulis diterbitkan. Hal ini merupakan inti dari aktivitas penggunaan ciptaan, dalam hal ini aktivitas penerbitan, agar tidak terjadi sengketa akibat kesalahan memahami ketentuan penggunaan ciptaan dari pihak-pihak yang terkait.</p>
 
-<p>Sebagai penerbit, hendaknya kebijakan pengarsipan mandiri (<em><a href="https://authorservices.wiley.com/author-resources/Journal-Authors/licensing/self-archiving.html">self archiving</a></em>) diterapkan dan dijelaskan pada laman <em>article submission</em> atau dengan membuat laman <em>resources</em> untuk penulis yang memuat penjelasan tersebut. Hal ini diperlukan untuk menghindari kesalahpahaman jika penulis hendak mengumumkan karya tulis tersebut di tempat lain, misalnya di situs webnya sendiri atau layanan media sosial misalnya. Atau misalnya untuk menetapkan <strong>ketentuan embargo</strong> yang melarang pencipta untuk melakukan pengarsipan mandiri dalam kurun waktu tertentu. Namun, untuk menghadirkan pelayanan yang baik dan <strong>mendukung visibilitas</strong> serta <strong>dampak karya tulis para penulis</strong> <strong>tanpa mengurangi kesempatan akses dari pembaca</strong>, hendaknya penerbit membebaskan penulis untuk melaksanakan pengarsipan mandiri dan tidak menerapkan kebijakan embargo. Apabila penerapan kebijakan embargo tak terhindarkan, penerbit sebaiknya membuat pengecualian dengan penjabaran bahwa artikel yang dapat diarsipkan secara mandiri, misalnya hanya teks versi pracetak saja (<em>pre-print</em>), bukan teks dalam format yang sudah dipublikasikan oleh penerbit (<em>post-print</em>).</p>
+          <p>Berikut adalah beberapa contoh upaya penyediaan informasi tentang pengaturan status hak cipta dari penerbit untuk penulis:</p>      
 
-<p><img src="../../uploads/oauin5.jpg" alt="oauin5.jpg" class="img-fluid center-block" width="400" /></p>
+          <ul>
+            <li><strong>Kebijakan pengarsipan mandiri oleh penulis</strong></li>
+          </ul>
 
-<ul>
-  <li><strong>Informasi perbedaan antara pengalihan hak cipta dan pelisensian ciptaan</strong></li>
-</ul>
+          <img src="../../uploads/oauin5.jpg" alt="oauin5.jpg" class="img-fluid w-sm-25 float-sm-end ms-sm-5 mt-3 mb-4">
 
-<p>Sebagai penerbit, ada baiknya juga untuk memberikan penjelasan, atau bahkan kesempatan, kepada penulis tentang perbedaan antara pengalihan hak cipta (<em>Copyright transfer</em>) dengan pelisensian ciptaan (<em>Copyright licensing</em>). Lihat <a href="https://authorservices.wiley.com/author-resources/Journal-Authors/licensing/licensing-info-faqs.html">Contoh dokumen perjanjian hak cipta &amp; Contoh dokumen pernyataan pelisensian kembali karya oleh penerbit (Wiley)</a> berikut ini. Wiley berusaha menjelaskan hal tersebut dalam laman <em>resources</em> yang dibuat khusus untuk para penulis, sambil memberikan contoh format dokumen pengalihan hak cipta dari penulis kepada penerbit. Pengalihan hak cipta adalah pembagian peran sebagai pemegang hak cipta atas karya tulis kepada penerbit. Artinya penerbit sama-sama memiliki hak eksklusif untuk mengontrol di mana saja artikel dapat diumumkan dan digunakan dalam model penggunaan apa saja. Pelisensian karya yang dituangkan dalam sebuah <a href="https://authorservices.wiley.com/author-resources/Journal-Authors/licensing/open-access-agreements.html">surat pernyataan</a> pemberian izin pelisensian kembali kepada penerbit memiliki makna yang berbeda. Melisensikan karya berarti hanya memberikan izin kepada penerbit untuk mengumumkan karya dengan ketentuan lisensi yang disepakati, tanpa membagikan peran sebagai pemegang hak cipta kepada penerbit. Mekanisme ini secara otomatis mempertahankan seluruh kontrol eksklusif hak cipta atas karya tulis pada pihak penulis. Lisensi CC setidaknya sudah diterapkan pada lebih dari <a href="https://doaj.org/">3 juta karya ilmiah</a> yang didiseminasikan secara daring. Petunjuk pemilihan lisensi atau isi ketentuan lisensi sangat direkomendasikan untuk ditampilkan oleh pihak penerbit agar penulis dapat mengerti akibat hukum dari lisensi yang akan diterapkan pada karya ilmiahnya.</p>
+          <p>Sebagai penerbit, hendaknya kebijakan pengarsipan mandiri (<em><a href="https://authorservices.wiley.com/author-resources/Journal-Authors/licensing/self-archiving.html">self archiving</a></em>) diterapkan dan dijelaskan pada laman <em>article submission</em> atau dengan membuat laman <em>resources</em> untuk penulis yang memuat penjelasan tersebut. Hal ini diperlukan untuk menghindari kesalahpahaman jika penulis hendak mengumumkan karya tulis tersebut di tempat lain, misalnya di situs webnya sendiri atau layanan media sosial misalnya. Atau misalnya untuk menetapkan <strong>ketentuan embargo</strong> yang melarang pencipta untuk melakukan pengarsipan mandiri dalam kurun waktu tertentu. Namun, untuk menghadirkan pelayanan yang baik dan <strong>mendukung visibilitas</strong> serta <strong>dampak karya tulis para penulis</strong> <strong>tanpa mengurangi kesempatan akses dari pembaca</strong>, hendaknya penerbit membebaskan penulis untuk melaksanakan pengarsipan mandiri dan tidak menerapkan kebijakan embargo. Apabila penerapan kebijakan embargo tak terhindarkan, penerbit sebaiknya membuat pengecualian dengan penjabaran bahwa artikel yang dapat diarsipkan secara mandiri, misalnya hanya teks versi pracetak saja (<em>pre-print</em>), bukan teks dalam format yang sudah dipublikasikan oleh penerbit (<em>post-print</em>).</p>
 
-<p><img src="../../uploads/oauin9.jpg" alt="oauin9.jpg" class="img-fluid center-block" width="400" /><center><small><i>Contoh petunjuk pengetahuan tentang lisensi CC oleh Wiley</i></small></center></p>
+          <ul>
+            <li><strong>Informasi perbedaan antara pengalihan hak cipta dan pelisensian ciptaan</strong></li>
+          </ul>
 
-<h3 id="bahan-bahan">Bahan-bahan:</h3>
+          <figure class="figure w-sm-25 float-sm-end ms-sm-5 mb-4">
+            <img src="../../uploads/oauin9.jpg" alt="oauin9.jpg" class="figure-img img-fluid">
+            <figcaption class="figure-caption">Contoh petunjuk pengetahuan tentang lisensi CC oleh Wiley.</figcaption>
+          </figure>
 
-<hr />
+          <p>Sebagai penerbit, ada baiknya juga untuk memberikan penjelasan, atau bahkan kesempatan, kepada penulis tentang perbedaan antara pengalihan hak cipta (<em>Copyright transfer</em>) dengan pelisensian ciptaan (<em>Copyright licensing</em>). Lihat <a href="https://authorservices.wiley.com/author-resources/Journal-Authors/licensing/licensing-info-faqs.html">Contoh dokumen perjanjian hak cipta &amp; Contoh dokumen pernyataan pelisensian kembali karya oleh penerbit (Wiley)</a> berikut ini. Wiley berusaha menjelaskan hal tersebut dalam laman <em>resources</em> yang dibuat khusus untuk para penulis, sambil memberikan contoh format dokumen pengalihan hak cipta dari penulis kepada penerbit. Pengalihan hak cipta adalah pembagian peran sebagai pemegang hak cipta atas karya tulis kepada penerbit. Artinya penerbit sama-sama memiliki hak eksklusif untuk mengontrol di mana saja artikel dapat diumumkan dan digunakan dalam model penggunaan apa saja. Pelisensian karya yang dituangkan dalam sebuah <a href="https://authorservices.wiley.com/author-resources/Journal-Authors/licensing/open-access-agreements.html">surat pernyataan</a> pemberian izin pelisensian kembali kepada penerbit memiliki makna yang berbeda. Melisensikan karya berarti hanya memberikan izin kepada penerbit untuk mengumumkan karya dengan ketentuan lisensi yang disepakati, tanpa membagikan peran sebagai pemegang hak cipta kepada penerbit. Mekanisme ini secara otomatis mempertahankan seluruh kontrol eksklusif hak cipta atas karya tulis pada pihak penulis. Lisensi CC setidaknya sudah diterapkan pada lebih dari <a href="https://doaj.org/">3 juta karya ilmiah</a> yang didiseminasikan secara daring. Petunjuk pemilihan lisensi atau isi ketentuan lisensi sangat direkomendasikan untuk ditampilkan oleh pihak penerbit agar penulis dapat mengerti akibat hukum dari lisensi yang akan diterapkan pada karya ilmiahnya.</p>
 
-<p>(1) http://www.dmlp.org/legal-guide/understanding-difference-between-transfer-and-license</p>
+          <h4>Bahan-bahan:</h4>
 
-<p>(2) https://www.authorsalliance.org/our-issues/managing-rights/</p>
+          <ol>
+            <li><a href="http://www.dmlp.org/legal-guide/understanding-difference-between-transfer-and-license">http://www.dmlp.org/legal-guide/understanding-difference-between-transfer-and-license</a></li>
+            <li><a href="https://www.authorsalliance.org/our-issues/managing-rights">https://www.authorsalliance.org/our-issues/managing-rights</a></li>
+            <li><a href="https://www.authorsalliance.org/resources">https://www.authorsalliance.org/resources</a></li>
+          </ol>
 
-<p>(3) https://www.authorsalliance.org/resources/</p>
+          <div class="article-end mt-5"></div>
+        </div>
+      </div>
+    </main>
 
-<hr />
+    <footer class="mt-5">
+      <div class="container-fluid">
+        <div class="row align-items-md-end pt-5 pb-4">
+          <div class="col-md-12 col-lg-2 offset-lg-1 px-5 px-md-0 mb-4 mb-md-5 mb-lg-2 text-center align-self-center">
+            <img src="../../assets/img/footer-sketch.svg" class="img-fluid h-100 px-2">
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 ps-5 ps-md-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Informasi</h5></li>
+              <li><span class="fa-li"><i class="fa-brands fa-readme"></i></span><a href="../../media.html">Media</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-creative-commons"></i></span><a href="../../lisensi-cc-bahasa-indonesia.html">Lisensi</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-book-open-reader"></i></span><a href="../../kajian.html">Kajian</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-circle-question"></i></span><a href="../../faq.html">FAQ</a></li>             
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Tentang kami</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-person-rays"></i></span><a href="../../tentang.html">Tentang kami</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-newspaper"></i></span><a href="../../berita.html">Berita</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-calendar-check"></i></span><a href="../../acara.html">Acara</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 ps-5 ps-md-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Network</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-users"></i></span><a href="../../sobatccid.html">Sobat CCID</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-creative-commons"></i></span><a href="https://creativecommons.org/">CCHQ</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-earth-asia"></i></span><a href="https://network.creativecommons.org/">CC Global Network</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Kontak</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-address-book"></i></span><a href="../../hubungi-kami.html">Hubungi kami</a></li>              
+              <li><span class="fa-li"><i class="fa-brands fa-square-facebook"></i></span><a href="https://www.facebook.com/CreativeCommonsIndonesia">Facebook</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-twitter"></i></span><a href="https://twitter.com/CC_ID">Twitter</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-instagram"></i></span><a href="https://www.instagram.com/cc.indonesia/">Instagram</a></li>
+          </div>
+        </div>
+        <div class="row footer-license">
+          <div class="col-12 text-center text-white">
+            <p class="my-4"><i class="fa-brands fa-creative-commons pe-1"></i><i class="fa-brands fa-creative-commons-by pe-1"></i> 2012&ndash;2022 Creative Commons Indonesia. Kecuali dinyatakan lain, konten di situs ini dilisensikan di bawah lisensi <a href="https://creativecommons.org/licenses/by/4.0/deed.id">Creative Commons Atribusi 4.0 Internasional</a>. 
+          </div>
+        </div>
+      </div>
+    </footer>
 
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-12">
-                                    <h5 style="display: inline;">Tags:</h5>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Open Access</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Open Access Week</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Pengalihan Hak Cipta</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Pelisensian Ciptaan</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Copyright Transfer Agreement</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Copyright license</button>
-                                    
-                            </div>                       
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <h5>Oleh: Hilman Fathoni</h5>
-                        26 Oct 2018
-                        <hr>
-                        <h5>Kategori:</h5>
-                        
-                        <button class="btn btn-white btn-xs" type="button">Kajian</button>
-                        
-                        <hr>
-                        <h5>Berita Terbaru</h5>
-			<ul>
-                        
-			<li><a href="../../2019/01/lokakarya-hak-cipta-dan-lisensi-creative-commons-di-pekanbaru.html" class="btn-link">Lokakarya Hak Cipta dan Lisensi Creative Commons di Pekanbaru</a></li>
-                        
-			<li><a href="../../2018/12/pengumuman-resmi-hasil-akhir-training-of-trainers-creative-commons-indonesia.html" class="btn-link">Pengumuman Resmi: Hasil Akhir Training of Trainers Creative Commons Indonesia</a></li>
-                        
-			<li><a href="../../2018/08/literatur-terbaru-tentang-model-bisnis-terbuka-made-with-cc.html" class="btn-link">Literatur tentang Model Bisnis Terbuka "Made With CC"</a></li>
-                        
-			<li><a href="../../2018/08/data-dan-artikel-ilmiah-terbuka-dari-plos.html" class="btn-link">Data dan Artikel Ilmiah Terbuka dari PLOS!</a></li>
-                        
-			<li><a href="../../2018/08/Konten-Format-Model-3-Dimensi-Berilsensi-CC-di-Platform-Sketchfab.html" class="btn-link">Konten Format Model 3 Dimensi Berilsensi CC di Platform Sketchfab</a></li>
-                        
-	 		</ul>
-			<hr>
-			<h5>Bagikan di:</h5>
-			<a href="https://facebook.com/sharer.php?u=https://creativecommons.or.id/2018/10/pengalihan-hak-cipta-copyright-transfer-ciptaan-vs-pelisensian-ciptaan.html" rel="nofollow" target="_blank"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
-			<a href="https://twitter.com/intent/tweet?text=#OpenAccessWeek - Pengalihan Hak Cipta (Copyright Transfer Agreement) Ciptaan vs Pelisensian Ciptaan&url=http://creativecommons.or.id//2018/10/pengalihan-hak-cipta-copyright-transfer-ciptaan-vs-pelisensian-ciptaan/&via=&related=" rel="nofollow" target="_blank"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a>
-			</div>
-		</div>
-
-<div class="row">
-<div class="col-lg-9">
-		
-	<div id="disqus_thread"></div>
-	<script>
-
-	/**
-	*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-	*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-	/*
-	var disqus_config = function () {
-	this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-	this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-	};
-	*/
-	(function() { // DON'T EDIT BELOW THIS LINE
-	var d = document, s = d.createElement('script');
-	s.src = '//creative-commons-indonesia.disqus.com/embed.js';
-	s.setAttribute('data-timestamp', +new Date());
-	(d.head || d.body).appendChild(s);
-	})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-</div>
-</div>
-
-        	</div>
-		</div>
-	</div>
-
-        
-        <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-92784032-1', 'auto');
-  ga('send', 'pageview');
-</script>     
-
-<footer class="footer">
-    <div class="container">
-	<nav class="pull-left">
-	    <ul>
-		<li><a href="../../faq.html">FAQ</a></li>
-		<li><a href="../../hubungi-kami.html">Hubungi Kami</a></li>
-		<li><a href="https://www.facebook.com/CreativeCommonsIndonesia"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-		<li><a href="https://twitter.com/CC_ID"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-		<li><a href="../../feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
-	    </ul>
-	</nav>
-	<div class="copyright pull-right"><a href="https://creativecommons.org/licenses/by/4.0/">2012-2016 Creative Commons Indonesia | CC BY 4.0</a></div>
-    </div>
-</footer>
-
-    
-	</div>
-</body>
-
+    <!-- js -->
+    <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+    <script src="../../assets/js/popper.min.js"></script>
+    <script src="../../assets/js/bootstrap.js"></script>
+  </body>
 </html>
