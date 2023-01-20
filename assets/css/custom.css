@@ -441,6 +441,10 @@ footer li a:hover {
   }
 }
 
+.article-list h5 a {
+  color: var(--bs-body-color);
+}
+
 .highlighted-article-image img {
   background-size: cover;
   opacity: 0.75;
