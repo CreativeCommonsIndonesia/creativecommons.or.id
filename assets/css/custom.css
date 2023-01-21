@@ -441,7 +441,7 @@ footer li a:hover {
   }
 }
 
-.article-list h5 a {
+.article-list h5 a, #paginated-list h5 a {
   color: var(--bs-body-color);
 }
 
