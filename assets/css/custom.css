@@ -14,7 +14,7 @@
   --ccid-red-91: #f6dadaff; /* Image and other shadows */
   --ccid-red-86: #f2c5c5ff; /* Navbar text, footer text, image border */
   --ccid-red-81: #edb0b0ff; /* Links */
-  --ccid-red-76: #e89b9bff; /* Footer license text */
+  --ccid-red-76: #e89b9bff; /* Footer license text, hr */
   --ccid-red-71: #e48686ff; /* Article meta icons, list markers */
   --ccid-red-66: #df7272ff;
   --ccid-red-61: #da5d5dff; /* Icons in footer */
@@ -225,6 +225,17 @@ main img, .border-shadow, figure iframe {
   color: var(--ccid-greyred-96);
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
+}
+
+.figure-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 575px) {
+  .figure-group {
+    flex-direction: column;
+  }
 }
 
 /* Footer  */
@@ -554,6 +565,14 @@ footer li a:hover {
     width: 24% !important;
   }
 
+  .w-sm-30 {
+    width: 30%;
+  }
+
+  .w-sm-32 {
+    width: 32%;
+  }
+
   .w-sm-35 {
     width: 35%;
   }
@@ -651,4 +670,10 @@ ul#paginated-list li::marker {
   margin-top: 0rem;
   margin-right: 3rem !important;
   margin-left: 3rem !important;
+}
+
+
+hr {
+  margin: 2rem 0;
+  border-top: 2px solid var(--ccid-red-76);
 }
