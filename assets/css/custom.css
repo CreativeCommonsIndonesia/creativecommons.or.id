@@ -623,6 +623,10 @@ footer li a:hover {
     width: 30% !important;
   }
 
+  .w-md-50 {
+    width: 50% !important;
+  }
+
   .w-md-64 {
     width: 64% !important;
   }
@@ -721,6 +725,8 @@ hr {
   color: var(--ccid-greyred-96);
   background-color: #ffffff;
   border: 1px solid var(--ccid-red-86);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .carousel-caption p {
