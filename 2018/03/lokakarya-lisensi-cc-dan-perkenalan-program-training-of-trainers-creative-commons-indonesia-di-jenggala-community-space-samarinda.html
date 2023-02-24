@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GR2HTWFX22"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GR2HTWFX22');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Creative Commons Indonesia supports the usage of Creative Commons licenses and open cultural works in Indonesia">
@@ -9,27 +19,19 @@
     <title>Lokakarya Lisensi CC dan Perkenalan Program Training of Trainers Creative Commons Indonesia di Jenggala Community Hub, Samarinda</title>
     
     <!-- fonts -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
-
-    <!-- icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Sen&display=swap" rel="stylesheet"> 
 
     <!-- css -->
-    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../../assets/css/material-kit.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../../assets/css/custom.css" rel="stylesheet">
+    <link href="../../assets/css/animate.min.css" rel="stylesheet">
 
-    <!-- js -->
-    <script src="../../assets/js/jquery-3.6.1.min.js"></script>
-    <script src="../../assets/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/material.min.js"></script>
-    <script src="../../assets/js/material-kit.js"></script>
-
-    <!-- plugins -->
-    <script src="../../assets/js/nouislider.min.js"></script> <!-- sliders (http://refreshless.com/nouislider) -->
-    <script src="../../assets/js/bootstrap-datepicker.js"></script> <!-- datepicker (http://www.eyecon.ro/bootstrap-datepicker) -->
-    <script src="../../assets/js/jPages.js"></script> <!-- pagination -->
-    <script src="../../assets/js/js.js"></script> <!-- pagination -->
+    <!-- icons -->
+    <link href="../../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="../../assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="../../assets/fontawesome/css/solid.css" rel="stylesheet">
 
     <!-- favicon -->
     <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
@@ -37,255 +39,193 @@
     <!-- rss feed -->
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="../../feed.xml">
   </head>
-
     
-<body class="index-page">
-	<div class="wrapper">
-	
-	
-        	<style>
-.main {
-	margin-top: 80px;
-  }
-.navbar, .navbar.navbar-danger {
-	background-color: #9e1c1c;
-	color: #ffffff;
-}
-</style>  
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-md" aria-label="Navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html"><img src="../../assets/img/logoputih.png" alt="Creative Commons Indonesia" class="img-fluid" width="150"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ccidnavbar" aria-controls="ccidnavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <nav class="navbar navbar-danger navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="../../index.html">
-                    <div class="logo-container">
-                        <div class="logo">
-                            <img src="../../assets/img/logoputih.png" alt="Creative Commons Indonesia" class="img-fluid" width="150">
-                        </div>
-                    </div>
-                </a>
-            </div>
-    
-            <div class="collapse navbar-collapse" id="navigation-index">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="../../tentang.html" target="_blank">
-                            Tentang
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../../lisensi-cc-bahasa-indonesia.html" target="_blank">
-                            Lisensi
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Blog <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../../sobatccid.html">Sobat CCID</a></li>
-                            <li><a href="../../berita.html">Berita</a></li>
-                            <li><a href="../../kajian.html">Kajian</a></li>
-                            <li><a href="../../acara.html">Acara</a></li>
-                        </ul>
-                    </li>
-		<li>
-			<a href="../../search.html" target="_blank">
-			<i class="fa fa-search" aria-hidden="true"></i>
-			</a>
-		</li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="ccidnavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Informasi
+              </a>
+              <ul class="dropdown-menu mt-3 bg-ccid-red-31 animate__animated animate__flipInY animate__faster" aria-labelledby="resources">
+                <li><a class="dropdown-item" href="../../lisensi-cc-bahasa-indonesia.html">Lisensi</a></li>
+                <li><a class="dropdown-item" href="../../kajian.html">Kajian</a></li>
+                <li><a class="dropdown-item" href="../../faq.html">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../../berita.html">Berita</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../acara.html">Acara</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../media.html">Media</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../tentang.html">Tentang kami</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../sobatccid.html">Sobat CCID</a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/CreativeCommonsIndonesia" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://twitter.com/CC_ID" title="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/cc.indonesia/" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../hubungi-kami.html" title="Hubungi kami"><i class="fa-solid fa-address-book"></i></a></li>            
+          </ul>       
         </div>
+      </div>
     </nav>
 
-	
-       
-        
-	<div class="main">
-		<div class="section section-basic">
-	    	<div class="container">
-		
-		<small><a href="../../index.html">Beranda</a>/<a href="https://creativecommons.or.id/
-			acara
-		.html">
-			Acara
-		</a>/Lokakarya Lisensi CC dan Perkenalan Program Training of Trainers Creative Commons Indonesia di Jenggala Community Hub, Samarinda</small>
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="text-center article-title">
-                            <h2>
-                                Lokakarya Lisensi CC dan Perkenalan Program Training of Trainers Creative Commons Indonesia di Jenggala Community Hub, Samarinda
-                            </h2>
-                        </div>
-                            <p><img src="../../uploads/%5BSPCCID%5D%2019%20Maret%202018%20Lokakarya%20CCID%20di%20Samarinda.jpg" alt="[SPCCID] 19 Maret 2018 Lokakarya CCID di Samarinda.jpg" class="img-fluid center-block" width="500" /></p>
+    <div class="container-fluid mt-2">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+          <li class="breadcrumb-item"><a href="../../acara.html">Acara</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Lokakarya Lisensi CC dan Perkenalan Program Training of Trainers Creative Commons Indonesia di Jenggala Community Hub, Samarinda</li>
+        </ol>
+      </nav>
+    </div>         
+          
+    <main class="container article p-5">
+      <div class="row mt-2 mt-md-5">
+        <div class="col-12">
 
-<p>Pada tanggal 16 Maret 2018, Creative Commons Indonesia (CCID) berkesempatan menyampaikan materi tentang lisensi Creative Commons (lisensi CC) bekerjasama dengan Jenggala Community Hub, sebuah ruang aktivitas muda-mudi yang terletak di Bukit Alaya, kota Samarinda. CCID kali ini diwakili oleh Hilman Fathoni datang untuk juga memperkenalkan program Training of Trainers Creative Commons Indonesia (CCID-ToT) kepada para peserta lokakarya yang hadir pada kesempatan tersebut. Namun, sebelum perkenalan tentang program tersebut dipaparkan, pemateri terlebih dahulu memperkenalkan apa itu Creative Commons (CC) dan lisensi CC.</p>
+          <div class="row article-meta mb-3">
+            <div class="col-sm-6">
+              <i class="fa-solid fa-calendar-day fa-fw"></i> 16 Maret 2018
+            </div>
+            <div class="col-sm-6 pt-1 pt-sm-0 text-sm-end">
+              <i class="fa-solid fa-share-from-square fa-fw pe-1"></i> Bagikan ke 
+            
+              <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://creativecommons.or.id/2018/03/lokakarya-lisensi-cc-dan-perkenalan-program-training-of-trainers-creative-commons-indonesia-di-jenggala-community-space-samarinda.html"><i class="fa-brands fa-linkedin ps-1" title="LinkedIn" aria-hidden="true"></i></a>
 
-<p>Dengan perkiran latar belakang peserta yang mirip dengan para peserta yang hadir di <a href="creativecommons.or.id/2018/03/lokakarya-lisensi-cc-dan-perkenalan-program-training-of-trainers-creative-commons-indonesia-di-jagongan-media-rakyat-yogyakarta.html">JMR</a>, pemateri memberikan penjelasan yang kurang lebih sama, yaitu membuka bagian pertama materi pada hari itu, Hilman mengajak peserta untuk menyamakan persepsi dengan menjelaskan perbedaan antara perlindungan Hak Cipta dengan bentuk perlindungan Kekayaan Intelektual yang lainnya. Selanjutnya dijelaskan pula prinsip-prinsip bentuk perlindungan hak cipta dari Undang-Undang No. 28 Tahun 2014 Tentang Hak Cipta (UUHC 2014) seperti bagaimana ciptaan telah diumumkan dan diwujudkan secara nyata ketika hendak digunakan, maka pengguna harus memperoleh izin langsung terlebih dahulu dari pihak Pencipta dan/atau Pemegang Hak Cipta. Pada bagian penjelasan ini juga dipaparkan bahwa selain izin penggunaan ciptaan, hubungan hukum antara Pencipta dengan Pemegang Hak Cipta dan Pengguna Ciptaan juga diatur oleh pengaturan tentang hak moral dan hak ekonomi. Setelah memaparkan apa-apa saja yang termasuk dalam obyek perlindungan hak cipta, khususnya yang disebutkan dalam Pasal 40 UUHC 2014.</p>
+              <a href="https://facebook.com/sharer.php?u=https://creativecommons.or.id/2018/03/lokakarya-lisensi-cc-dan-perkenalan-program-training-of-trainers-creative-commons-indonesia-di-jenggala-community-space-samarinda.html" rel="nofollow" target="_blank"><i class="fa-brands fa-facebook" title="Facebook" aria-hidden="true"></i></a>
 
-<p>Bagian selanjutnya ialah materi tentang lisensi CC yang dibuka dengan penjelasan bahwa lisensi CC yang dibuka dengan pemaparan tentang perbedaan antara lisensi tertutup dan lisensi terbuka serta perbedaan antara lisensi ke luar (publik) dan lisensi ke dalam (privat). Kemudian pemateri mengaitkannya dengan keberadaan organisasi Creative Commons yang berupaya untuk memajukan lisensi terbuka dengan menyediakan seperangkat lisensi dengan ketentuan yang bermacam-maca. Ketentuan awal lisensi CC yang dipaparkan ialah</p>
+              <a href="https://twitter.com/intent/tweet?url=https://creativecommons.or.id/2018/03/lokakarya-lisensi-cc-dan-perkenalan-program-training-of-trainers-creative-commons-indonesia-di-jenggala-community-space-samarinda.html" rel="nofollow" target="_blank"><i class="fa-brands fa-twitter" title="Twitter" aria-hidden="true"></i></a>
+            </div>
+          </div>
 
-<ul>
-  <li>Setiap ciptaan berlisensi CC dapat langsung digandakan dan disebarluaskan</li>
-  <li>Ketentuan lisensi yang diterapkan tidak dapat dicabut (irrevocable)</li>
-  <li>Penerapan Digital Rights Management dilarang untuk ciptaan berlisensi CC</li>
-  <li>Ciptaan yang dilisensikan harus merupakan ciptaan sendiri, atau diizinkan oleh pencipta atau pemegang hak cipta lain untuk melisensikan ciptaan dengan lisensi CC</li>
-</ul>
+          <h1>Lokakarya Lisensi CC dan Perkenalan Program Training of Trainers Creative Commons Indonesia di Jenggala Community Hub, Samarinda</h1>
 
-<p>Pemateri kemudian menjelaskan spektrum-spektrum yang menentukan model perlindungan hak cipta pada setiap pilihan lisensi CC yang diterapkan pada ciptaan, yaitu:</p>
+          <!-- Profile of the article author -->
+          <div class="author-profile pt-2 mt-4 mb-5">
+            <img class="img-fluid float-start" src="../../uploads/people/ccid-mosaic.png">
+            <h5>Creative Commons Indonesia</h5>
+            <h6><a href="https://www.facebook.com/CreativeCommonsIndonesia" title="Facebook"><i class="fa-brands fa-square-facebook pe-2"></i></a> <a href="https://twitter.com/CC_ID" title="Twitter"><i class="fa-brands fa-twitter pe-2"></i></a> <a href="https://www.instagram.com/cc.indonesia/" title="Instagram"><i class="fa-brands fa-instagram pe-2"></i></a> <a href="../../hubungi-kami.html" title="Hubungi kami"><i class="fa-solid fa-address-book"></i></a></h6>
+          </div>
 
-<ul>
-  <li>
-    <p>Pemaparan kewajiban-kewajiban yang muncul dari spektrum BY (Atribution/Atribusi) yaitu kewajiban untuk menyebutkan nama pencipta dan sumber ciptaan dan menyatakan perubahan yang dilaksanakan terhadap ciptaan. Pemateri juga mencontohkan rumus atribusi yang sesuai yang disediakan oleh CC. Selain itu, pemateri juga mencontohkan praktek penerapan spektrum BY sebagai kebijakan “One License Policy” yang berjalan dengan baik oleh Satu Data Indonesia dan Noun Projects. Karena penggunaan spektrum BY memerlukan pertimbangan-pertimbangan seperti penerapannya pada ciptaan yang hampir mendekati kriteria sebagai “bukan ciptaan yang dilindungi” dan merupakan bagian dari upaya untuk memudahkan penggunaan ciptaan-ciptaan kecil yang kerap digunakan pada kegiatan-kegiatan yang sederhana.</p>
-  </li>
-  <li>
-    <p>Pemaparan kewajiban-kewajiban yang muncul dari spektrum SA (ShareAlike/BerbagiSerupa) yaitu kewajiban untuk menerapkan lisensi yang sama pada setiap hasil gubahan dan karya turunan. Pemateri mencontohkan Wikipedia sebagai salah satu contoh penerapan spektrum SA yang tujuan penerpannya ialah penyediaan ciptaan yang memang ditujukan sebagai ciptaan layak gubah dan disediakan melalui platform yang mendukung penggubahan ciptaan dan penerapan lisensi yang sama.</p>
-  </li>
-  <li>
-    <p>Pemaparan kewajiban-kewajiban yang muncul dari spektrum NC (NonCommercial/NonKomersial) yaitu larangan penggunaan ciptaan untuk kepentingan komersial. Meskipun begitu, spektrum NC mengecualikan kegiatan nirlaba-kegiatan nirlaba yang memanfaatkan ciptaan berketentuan NC. Pemateri mencontohkan Indonesian Netlabel Union, khususnya Yes No Wave Netlabel sebagai salah satu contoh penerapan spektrum NC. Karena pertimbangan penggunaan spektrum NC-SA ialah untuk mempertahankan jalur masuknya royalti secara eksklusif di tangan pemegang hak cipta dan untuk memastikan bahwa setiap hasil gubahan menerapkan lisensi yang sama, supaya ciptaan tidak dapat dikomersialisasi dengan adanya spektrum SA di dalamnya.</p>
-  </li>
-  <li>
-    <p>Pemaparan kewajiban-kewajiban yang muncul dari spektrum ND (NonDerrivatives/TanpaTurunan) yaitu larangan untuk mengubah dan menggubah ciptaan yang mengecualikan penggunaan pribadi. Pemateri mencontohkan Katadata sebagai salah satu contoh penerapan spektrum ND karena rasio penerapannya memang sesuai dengan konten dan cara penyediaan konten-kontennya yaitu untuk menghindari manipulasi atau pemanfaatan data secara tidak bertanggung jawab dan menghindari pelanggaran kehormatan dari sumber atau penyelewengan fakta yang disajikan.</p>
-  </li>
-  <li>
-    <p>Penjelasan ketentuan lisensi CC0 yaitu belum adanya payung hukum yang mendasari pendedikasian hak ke domain publik di Indonesia dan penerapan Tanda Domain Publik Creative Commons untuk menandai ciptaan-ciptaan yang sudah bebas hak cipta.</p>
-  </li>
-</ul>
+          <!-- Main article content goes here -->
 
-<p>Setelah itu pemateri memberikan contoh-contoh situs web lain yang menerapkan lisensi CC yang tidak menggunakan prinsip “One License Policy” yaitu Free Music Archive, Flickr, dan Directory of Open Access Journal.  Pada kesempatan tersebut juga dijelaskan teknis penerapan secara daring lisensi CC melalui <a href="creativecommons.org/choose">creativecommons.org/choose</a> dan pemaparan fungsi masing-masing laman teks ringkas dan teks lengkap lisensi CC. Pemateri juga menjelaskan bagaimana Pencipta dan/atau Pemegang Hak Cipta dapat menerapkan lisensi CC dengan mengakses tombol-tombol lisensi CC siap guna melalui creativecommons.org/downloads.</p>
+          <img src="../../uploads/%5BSPCCID%5D%2019%20Maret%202018%20Lokakarya%20CCID%20di%20Samarinda.jpg" alt="[SPCCID] 19 Maret 2018 Lokakarya CCID di Samarinda.jpg" class="img-fluid w-sm-50 float-sm-end ms-sm-5 mb-4">
 
-<p>Bagian kedua dari materi pada kesempatan kali ini ialah penjelasan tentang fungsi sosial hak cipta yang diantaranya adalah prinsip penggunaan wajar (Fair Use), masa berlaku perlindungan hak cipta, dan jenis-jenis ciptaan yang tidak dilindungi oleh UUHC 2014 seperti dokumen negara, kitab suci, serta konsep atau ide yang tidak diwujudkan secara nyata.</p>
+          <p>Pada tanggal 16 Maret 2018, Creative Commons Indonesia (CCID) berkesempatan menyampaikan materi tentang lisensi Creative Commons (lisensi CC) bekerjasama dengan Jenggala Community Hub, sebuah ruang aktivitas muda-mudi yang terletak di Bukit Alaya, kota Samarinda. CCID kali ini diwakili oleh Hilman Fathoni datang untuk juga memperkenalkan program Training of Trainers Creative Commons Indonesia (CCID-ToT) kepada para peserta lokakarya yang hadir pada kesempatan tersebut. Namun, sebelum perkenalan tentang program tersebut dipaparkan, pemateri terlebih dahulu memperkenalkan apa itu Creative Commons (CC) dan lisensi CC.</p>
 
-<p>Sebeleum menutup penyampaian materi pada hari tersebut, Hilman menjelaskan ketentuan-ketentuan dalam program Training of Trainers Creative Commons Indonesia (CCID-ToT) yang antara lain adalah:</p>
+          <p>Dengan perkiran latar belakang peserta yang mirip dengan para peserta yang hadir di <a href="creativecommons.or.id/2018/03/lokakarya-lisensi-cc-dan-perkenalan-program-training-of-trainers-creative-commons-indonesia-di-jagongan-media-rakyat-yogyakarta.html">JMR</a>, pemateri memberikan penjelasan yang kurang lebih sama, yaitu membuka bagian pertama materi pada hari itu, Hilman mengajak peserta untuk menyamakan persepsi dengan menjelaskan perbedaan antara perlindungan Hak Cipta dengan bentuk perlindungan Kekayaan Intelektual yang lainnya. Selanjutnya dijelaskan pula prinsip-prinsip bentuk perlindungan hak cipta dari Undang-Undang No. 28 Tahun 2014 Tentang Hak Cipta (UUHC 2014) seperti bagaimana ciptaan telah diumumkan dan diwujudkan secara nyata ketika hendak digunakan, maka pengguna harus memperoleh izin langsung terlebih dahulu dari pihak Pencipta dan/atau Pemegang Hak Cipta. Pada bagian penjelasan ini juga dipaparkan bahwa selain izin penggunaan ciptaan, hubungan hukum antara Pencipta dengan Pemegang Hak Cipta dan Pengguna Ciptaan juga diatur oleh pengaturan tentang hak moral dan hak ekonomi. Setelah memaparkan apa-apa saja yang termasuk dalam obyek perlindungan hak cipta, khususnya yang disebutkan dalam Pasal 40 UUHC 2014.</p>
 
-<ul>
-  <li>Dasar Pelaksanaan CCID-ToT</li>
-  <li>Jenis-jenis sertifikat Creative Commons</li>
-  <li>Fungsi sertifikat Creative Commons</li>
-  <li>Ketentuan umum untuk peserta tahap penyaringan CCID-ToT</li>
-  <li>Tahap-tahap penyaringan CCID-ToT</li>
-  <li>Penghargaan untuk 15 peserta yang lolos dari tahap-tahap penyaringan CCID-ToT</li>
-</ul>
+          <p>Bagian selanjutnya ialah materi tentang lisensi CC yang dibuka dengan penjelasan bahwa lisensi CC yang dibuka dengan pemaparan tentang perbedaan antara lisensi tertutup dan lisensi terbuka serta perbedaan antara lisensi ke luar (publik) dan lisensi ke dalam (privat). Kemudian pemateri mengaitkannya dengan keberadaan organisasi Creative Commons yang berupaya untuk memajukan lisensi terbuka dengan menyediakan seperangkat lisensi dengan ketentuan yang bermacam-maca. Ketentuan awal lisensi CC yang dipaparkan ialah</p>
 
-<p>Sebagai penutup , pemateri mengundang seluruh peserta untuk turut serta dalam diskusi di kanal pembicaraan CC di Slack.</p>
+          <ul>
+            <li>Setiap ciptaan berlisensi CC dapat langsung digandakan dan disebarluaskan</li>
+            <li>Ketentuan lisensi yang diterapkan tidak dapat dicabut (irrevocable)</li>
+            <li>Penerapan Digital Rights Management dilarang untuk ciptaan berlisensi CC</li>
+            <li>Ciptaan yang dilisensikan harus merupakan ciptaan sendiri, atau diizinkan oleh pencipta atau pemegang hak cipta lain untuk melisensikan ciptaan dengan lisensi CC</li>
+          </ul>
 
-<p>Terima kasih, Jenggala Community Hub!</p>
+          <p>Pemateri kemudian menjelaskan spektrum-spektrum yang menentukan model perlindungan hak cipta pada setiap pilihan lisensi CC yang diterapkan pada ciptaan, yaitu:</p>
 
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-12">
-                                    <h5 style="display: inline;">Tags:</h5>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Jenggala Community Hub</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Samarinda</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Sosialisasi Lisensi Creative Commons</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Lokakarya Lisensi Creative Commons</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Lisensi Creative Commons</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Creative Commons Indonesia</button>
-                                    
-                            </div>                       
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <h5>Oleh: Creative Commons Indonesia</h5>
-                        16 Mar 2018
-                        <hr>
-                        <h5>Kategori:</h5>
-                        
-                        <button class="btn btn-white btn-xs" type="button">Acara</button>
-                        
-                        <hr>
-                        <h5>Berita Terbaru</h5>
-			<ul>
-                        
-			<li><a href="../../2019/01/lokakarya-hak-cipta-dan-lisensi-creative-commons-di-pekanbaru.html" class="btn-link">Lokakarya Hak Cipta dan Lisensi Creative Commons di Pekanbaru</a></li>
-                        
-			<li><a href="../../2018/12/pengumuman-resmi-hasil-akhir-training-of-trainers-creative-commons-indonesia.html" class="btn-link">Pengumuman Resmi: Hasil Akhir Training of Trainers Creative Commons Indonesia</a></li>
-                        
-			<li><a href="../../2018/08/literatur-terbaru-tentang-model-bisnis-terbuka-made-with-cc.html" class="btn-link">Literatur tentang Model Bisnis Terbuka "Made With CC"</a></li>
-                        
-			<li><a href="../../2018/08/data-dan-artikel-ilmiah-terbuka-dari-plos.html" class="btn-link">Data dan Artikel Ilmiah Terbuka dari PLOS!</a></li>
-                        
-			<li><a href="../../2018/08/Konten-Format-Model-3-Dimensi-Berilsensi-CC-di-Platform-Sketchfab.html" class="btn-link">Konten Format Model 3 Dimensi Berilsensi CC di Platform Sketchfab</a></li>
-                        
-	 		</ul>
-			<hr>
-			<h5>Bagikan di:</h5>
-			<a href="https://facebook.com/sharer.php?u=https://creativecommons.or.id/2018/03/lokakarya-lisensi-cc-dan-perkenalan-program-training-of-trainers-creative-commons-indonesia-di-jenggala-community-space-samarinda.html" rel="nofollow" target="_blank"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
-			<a href="https://twitter.com/intent/tweet?text=Lokakarya Lisensi CC dan Perkenalan Program Training of Trainers Creative Commons Indonesia di Jenggala Community Hub, Samarinda&url=http://creativecommons.or.id//2018/03/lokakarya-lisensi-cc-dan-perkenalan-program-training-of-trainers-creative-commons-indonesia-di-jenggala-community-space-samarinda/&via=&related=" rel="nofollow" target="_blank"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a>
-			</div>
-		</div>
+          <ul>
+            <li>
+              <p>Pemaparan kewajiban-kewajiban yang muncul dari spektrum BY (Atribution/Atribusi) yaitu kewajiban untuk menyebutkan nama pencipta dan sumber ciptaan dan menyatakan perubahan yang dilaksanakan terhadap ciptaan. Pemateri juga mencontohkan rumus atribusi yang sesuai yang disediakan oleh CC. Selain itu, pemateri juga mencontohkan praktek penerapan spektrum BY sebagai kebijakan “One License Policy” yang berjalan dengan baik oleh Satu Data Indonesia dan Noun Projects. Karena penggunaan spektrum BY memerlukan pertimbangan-pertimbangan seperti penerapannya pada ciptaan yang hampir mendekati kriteria sebagai “bukan ciptaan yang dilindungi” dan merupakan bagian dari upaya untuk memudahkan penggunaan ciptaan-ciptaan kecil yang kerap digunakan pada kegiatan-kegiatan yang sederhana.</p>
+            </li>
+            <li>
+              <p>Pemaparan kewajiban-kewajiban yang muncul dari spektrum SA (ShareAlike/BerbagiSerupa) yaitu kewajiban untuk menerapkan lisensi yang sama pada setiap hasil gubahan dan karya turunan. Pemateri mencontohkan Wikipedia sebagai salah satu contoh penerapan spektrum SA yang tujuan penerpannya ialah penyediaan ciptaan yang memang ditujukan sebagai ciptaan layak gubah dan disediakan melalui platform yang mendukung penggubahan ciptaan dan penerapan lisensi yang sama.</p>
+            </li>
+            <li>
+              <p>Pemaparan kewajiban-kewajiban yang muncul dari spektrum NC (NonCommercial/NonKomersial) yaitu larangan penggunaan ciptaan untuk kepentingan komersial. Meskipun begitu, spektrum NC mengecualikan kegiatan nirlaba-kegiatan nirlaba yang memanfaatkan ciptaan berketentuan NC. Pemateri mencontohkan Indonesian Netlabel Union, khususnya Yes No Wave Netlabel sebagai salah satu contoh penerapan spektrum NC. Karena pertimbangan penggunaan spektrum NC-SA ialah untuk mempertahankan jalur masuknya royalti secara eksklusif di tangan pemegang hak cipta dan untuk memastikan bahwa setiap hasil gubahan menerapkan lisensi yang sama, supaya ciptaan tidak dapat dikomersialisasi dengan adanya spektrum SA di dalamnya.</p>
+            </li>
+            <li>
+              <p>Pemaparan kewajiban-kewajiban yang muncul dari spektrum ND (NonDerrivatives/TanpaTurunan) yaitu larangan untuk mengubah dan menggubah ciptaan yang mengecualikan penggunaan pribadi. Pemateri mencontohkan Katadata sebagai salah satu contoh penerapan spektrum ND karena rasio penerapannya memang sesuai dengan konten dan cara penyediaan konten-kontennya yaitu untuk menghindari manipulasi atau pemanfaatan data secara tidak bertanggung jawab dan menghindari pelanggaran kehormatan dari sumber atau penyelewengan fakta yang disajikan.</p>
+            </li>
+            <li>
+              <p>Penjelasan ketentuan lisensi CC0 yaitu belum adanya payung hukum yang mendasari pendedikasian hak ke domain publik di Indonesia dan penerapan Tanda Domain Publik Creative Commons untuk menandai ciptaan-ciptaan yang sudah bebas hak cipta.</p>
+            </li>
+          </ul>
 
-<div class="row">
-<div class="col-lg-9">
-		
-	<div id="disqus_thread"></div>
-	<script>
+          <p>Setelah itu pemateri memberikan contoh-contoh situs web lain yang menerapkan lisensi CC yang tidak menggunakan prinsip “One License Policy” yaitu Free Music Archive, Flickr, dan Directory of Open Access Journal.  Pada kesempatan tersebut juga dijelaskan teknis penerapan secara daring lisensi CC melalui <a href="creativecommons.org/choose">creativecommons.org/choose</a> dan pemaparan fungsi masing-masing laman teks ringkas dan teks lengkap lisensi CC. Pemateri juga menjelaskan bagaimana Pencipta dan/atau Pemegang Hak Cipta dapat menerapkan lisensi CC dengan mengakses tombol-tombol lisensi CC siap guna melalui creativecommons.org/downloads.</p>
 
-	/**
-	*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-	*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-	/*
-	var disqus_config = function () {
-	this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-	this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-	};
-	*/
-	(function() { // DON'T EDIT BELOW THIS LINE
-	var d = document, s = d.createElement('script');
-	s.src = '//creative-commons-indonesia.disqus.com/embed.js';
-	s.setAttribute('data-timestamp', +new Date());
-	(d.head || d.body).appendChild(s);
-	})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <p>Bagian kedua dari materi pada kesempatan kali ini ialah penjelasan tentang fungsi sosial hak cipta yang diantaranya adalah prinsip penggunaan wajar (Fair Use), masa berlaku perlindungan hak cipta, dan jenis-jenis ciptaan yang tidak dilindungi oleh UUHC 2014 seperti dokumen negara, kitab suci, serta konsep atau ide yang tidak diwujudkan secara nyata.</p>
 
-</div>
-</div>
+          <p>Sebeleum menutup penyampaian materi pada hari tersebut, Hilman menjelaskan ketentuan-ketentuan dalam program Training of Trainers Creative Commons Indonesia (CCID-ToT) yang antara lain adalah:</p>
 
-        	</div>
-		</div>
-	</div>
+          <ul>
+            <li>Dasar Pelaksanaan CCID-ToT</li>
+            <li>Jenis-jenis sertifikat Creative Commons</li>
+            <li>Fungsi sertifikat Creative Commons</li>
+            <li>Ketentuan umum untuk peserta tahap penyaringan CCID-ToT</li>
+            <li>Tahap-tahap penyaringan CCID-ToT</li>
+            <li>Penghargaan untuk 15 peserta yang lolos dari tahap-tahap penyaringan CCID-ToT</li>
+          </ul>
 
-        
-        <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          <p>Sebagai penutup , pemateri mengundang seluruh peserta untuk turut serta dalam diskusi di kanal pembicaraan CC di Slack.</p>
 
-  ga('create', 'UA-92784032-1', 'auto');
-  ga('send', 'pageview');
-</script>     
+          <p>Terima kasih, Jenggala Community Hub!</p>
 
-<footer class="footer">
-    <div class="container">
-	<nav class="pull-left">
-	    <ul>
-		<li><a href="../../faq.html">FAQ</a></li>
-		<li><a href="../../hubungi-kami.html">Hubungi Kami</a></li>
-		<li><a href="https://www.facebook.com/CreativeCommonsIndonesia"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-		<li><a href="https://twitter.com/CC_ID"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-		<li><a href="../../feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
-	    </ul>
-	</nav>
-	<div class="copyright pull-right"><a href="https://creativecommons.org/licenses/by/4.0/">2012-2016 Creative Commons Indonesia | CC BY 4.0</a></div>
-    </div>
-</footer>
+          <div class="article-end mt-5"></div>
+        </div>
+      </div>
+    </main>
 
-    
-	</div>
-</body>
+    <footer class="mt-5">
+      <div class="container-fluid">
+        <div class="row align-items-md-end pt-5 pb-4">
+          <div class="col-md-12 col-lg-2 offset-lg-1 px-5 px-md-0 mb-4 mb-md-5 mb-lg-2 text-center align-self-center">
+            <img src="../../assets/img/footer-sketch.svg" class="img-fluid h-100 px-2">
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 ps-5 ps-md-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Informasi</h5></li>
+              <li><span class="fa-li"><i class="fa-brands fa-readme"></i></span><a href="../../media.html">Media</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-creative-commons"></i></span><a href="../../lisensi-cc-bahasa-indonesia.html">Lisensi</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-book-open-reader"></i></span><a href="../../kajian.html">Kajian</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-circle-question"></i></span><a href="../../faq.html">FAQ</a></li>             
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Tentang kami</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-person-rays"></i></span><a href="../../tentang.html">Tentang kami</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-newspaper"></i></span><a href="../../berita.html">Berita</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-calendar-check"></i></span><a href="../../acara.html">Acara</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 ps-5 ps-md-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Network</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-users"></i></span><a href="../../sobatccid.html">Sobat CCID</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-creative-commons"></i></span><a href="https://creativecommons.org/">CCHQ</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-earth-asia"></i></span><a href="https://network.creativecommons.org/">CC Global Network</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Kontak</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-address-book"></i></span><a href="../../hubungi-kami.html">Hubungi kami</a></li>              
+              <li><span class="fa-li"><i class="fa-brands fa-square-facebook"></i></span><a href="https://www.facebook.com/CreativeCommonsIndonesia">Facebook</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-twitter"></i></span><a href="https://twitter.com/CC_ID">Twitter</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-instagram"></i></span><a href="https://www.instagram.com/cc.indonesia/">Instagram</a></li>
+          </div>
+        </div>
+        <div class="row footer-license">
+          <div class="col-12 text-center text-white">
+            <p class="my-4"><i class="fa-brands fa-creative-commons pe-1"></i><i class="fa-brands fa-creative-commons-by pe-1"></i> 2012&ndash;2023 Creative Commons Indonesia. Kecuali dinyatakan lain, konten di situs ini dilisensikan di bawah lisensi <a href="https://creativecommons.org/licenses/by/4.0/deed.id">Creative Commons Atribusi 4.0 Internasional</a>. 
+          </div>
+        </div>
+      </div>
+    </footer>
 
+    <!-- js -->
+    <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+    <script src="../../assets/js/popper.min.js"></script>
+    <script src="../../assets/js/bootstrap.js"></script>
+  </body>
 </html>
