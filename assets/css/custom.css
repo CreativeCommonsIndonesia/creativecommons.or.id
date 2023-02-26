@@ -238,6 +238,12 @@ main img, .border-shadow, figure iframe {
   }
 }
 
+.borderless {
+  box-shadow: none;
+  border: 0;
+  background: transparent;
+}
+
 /* Footer  */
 
 footer {
