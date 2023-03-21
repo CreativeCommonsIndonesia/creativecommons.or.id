@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GR2HTWFX22"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GR2HTWFX22');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Creative Commons Indonesia supports the usage of Creative Commons licenses and open cultural works in Indonesia">
@@ -9,27 +19,19 @@
     <title>Ketentuan Hak Cipta Dalam Aktivitas Permainan Video</title>
     
     <!-- fonts -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-
-    <!-- icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Sen&display=swap" rel="stylesheet"> 
 
     <!-- css -->
-    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../assets/css/material-kit.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../../assets/css/custom.css" rel="stylesheet">
+    <link href="../../assets/css/animate.min.css" rel="stylesheet">
 
-    <!-- js -->
-    <script src="../../assets/js/jquery-3.6.1.min.js"></script>
-    <script src="../../assets/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/material.min.js"></script>
-    <script src="../../assets/js/material-kit.js"></script>
-
-    <!-- plugins -->
-    <script src="../../assets/js/nouislider.min.js"></script> <!-- sliders (http://refreshless.com/nouislider) -->
-    <script src="../../assets/js/bootstrap-datepicker.js"></script> <!-- datepicker (http://www.eyecon.ro/bootstrap-datepicker) -->
-    <script src="../../assets/js/jPages.js"></script> <!-- pagination -->
-    <script src="../../assets/js/js.js"></script> <!-- pagination -->
+    <!-- icons -->
+    <link href="../../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="../../assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="../../assets/fontawesome/css/solid.css" rel="stylesheet">
 
     <!-- favicon -->
     <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
@@ -37,277 +39,227 @@
     <!-- rss feed -->
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="../../feed.xml">
   </head>
-
     
-<body class="index-page">
-	<div class="wrapper">
-	
-	
-        	<style>
-.main {
-	margin-top: 80px;
-  }
-.navbar, .navbar.navbar-danger {
-	background-color: #9e1c1c;
-	color: #ffffff;
-}
-</style>  
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-md" aria-label="Navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html"><img src="../../assets/img/logoputih.png" alt="Creative Commons Indonesia" class="img-fluid" width="150"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ccidnavbar" aria-controls="ccidnavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <nav class="navbar navbar-danger navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="../../index.html">
-                    <div class="logo-container">
-                        <div class="logo">
-                            <img src="../../assets/img/logoputih.png" alt="Creative Commons Indonesia" class="img-fluid" width="150">
-                        </div>
-                    </div>
-                </a>
-            </div>
-    
-            <div class="collapse navbar-collapse" id="navigation-index">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="../../tentang.html" target="_blank">
-                            Tentang
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../../lisensi-cc-bahasa-indonesia.html" target="_blank">
-                            Lisensi
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Blog <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../../sobatccid.html">Sobat CCID</a></li>
-                            <li><a href="../../berita.html">Berita</a></li>
-                            <li><a href="../../kajian.html">Kajian</a></li>
-                            <li><a href="../../acara.html">Acara</a></li>
-                        </ul>
-                    </li>
-		<li>
-			<a href="../../search.html" target="_blank">
-			<i class="fa fa-search" aria-hidden="true"></i>
-			</a>
-		</li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="ccidnavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Informasi
+              </a>
+              <ul class="dropdown-menu mt-3 bg-ccid-red-31 animate__animated animate__flipInY animate__faster" aria-labelledby="resources">
+                <li><a class="dropdown-item" href="../../lisensi-cc-bahasa-indonesia.html">Lisensi</a></li>
+                <li><a class="dropdown-item" href="../../kajian.html">Kajian</a></li>
+                <li><a class="dropdown-item" href="../../faq.html">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../../berita.html">Berita</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../acara.html">Acara</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../media.html">Media</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../tentang.html">Tentang kami</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../sobatccid.html">Sobat CCID</a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/CreativeCommonsIndonesia" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://twitter.com/CC_ID" title="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/cc.indonesia/" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../hubungi-kami.html" title="Hubungi kami"><i class="fa-solid fa-address-book"></i></a></li>            
+          </ul>       
         </div>
+      </div>
     </nav>
 
-	
-       
-        
-	<div class="main">
-		<div class="section section-basic">
-	    	<div class="container">
-		
-		<small><a href="../../index.html">Beranda</a>/<a href="https://creativecommons.or.id/
-			kajian
-		.html">
-			Kajian
-		</a>/Ketentuan Hak Cipta Dalam Aktivitas Permainan Video</small>
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="text-center article-title">
-                            <h2>
-                                Ketentuan Hak Cipta Dalam Aktivitas Permainan Video
-                            </h2>
-                        </div>
-                            <p><strong>Menurut pasal 40 huruf Undang-Undang No. 28 Tahun 2014 (UUHC 2014), permainan video merupakan obyek perlindungan hak cipta.</strong></p>
+    <!-- Breadcrumbs -->
+    <div class="container-fluid mt-2">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+          <li class="breadcrumb-item"><a href="../../kajian.html">Kajian</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Ketentuan Hak Cipta Dalam Aktivitas Permainan Video</li>
+        </ol>
+      </nav>
+    </div>         
+          
+    <main class="container article p-5">
+      <div class="row mt-2 mt-md-5">
+        <div class="col-12">
 
-<p><strong>Sejauh apa Undang-Undang Hak Cipta memberikan perlindungan pada permainan video?</strong></p>
+          <!-- Article meta -->
+          <div class="row article-meta mb-3">
+            <div class="col-sm-6">
+              <i class="fa-solid fa-calendar-day fa-fw"></i> 8 September 2016
+            </div>
+            <div class="col-sm-6 pt-1 pt-sm-0 text-sm-end">
+              <i class="fa-solid fa-share-from-square fa-fw pe-1"></i> Bagikan ke 
+            
+              <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://creativecommons.or.id/2016/09/ketentuan-hak-cipta-dalam-aktivitas-permainan-video.html"><i class="fa-brands fa-linkedin ps-1" title="LinkedIn" aria-hidden="true"></i></a>
 
-<p><strong>Aspek Hak Cipta Dalam Permainan Video</strong></p>
+              <a href="https://facebook.com/sharer.php?u=https://creativecommons.or.id/2016/09/ketentuan-hak-cipta-dalam-aktivitas-permainan-video.html" rel="nofollow" target="_blank"><i class="fa-brands fa-facebook" title="Facebook" aria-hidden="true"></i></a>
 
-<p>Aktivitas di ranah permainan video (video game) biasanya melibatkan beberapa pihak, yakni pembuat permainan video (pencipta, pengembang, dan/atau penerbit) suatu permainan video orisinal, pengguna atau pemain permainan video, dan pebuat suatu permainan video yang merupakan ciptaan turunan  dari permainan video lainnya.</p>
+              <a href="https://twitter.com/intent/tweet?url=https://creativecommons.or.id/2016/09/ketentuan-hak-cipta-dalam-aktivitas-permainan-video.html" rel="nofollow" target="_blank"><i class="fa-brands fa-twitter" title="Twitter" aria-hidden="true"></i></a>
+            </div>
+          </div>
 
-<p>Mari kita mulai dengan membahas dari sudut pandang perlindungan dan pelanggaran terlebih dahulu.</p>
+          <h1>Ketentuan Hak Cipta Dalam Aktivitas Permainan Video</h1>
 
-<p>Dalam aktivitas tersebut, pihak-pihak selain pencipta atau pengembang permainan video orisinal akan dihadapkan pada pilihan untuk mengakses konten-konten permainan video secara resmi (legal) atau tidak resmi (illegal). Banyak hal yang dapat menjadi tolak ukur untuk menyatakan resmi atau tidaknya suatu aktivitas pengaksesan konten permainan video. Penyediaan akses resmi dan non-resmi ini bisa dilakukan di dalam jaringan maupun di luar jaringan. Aktivitas tersebut dapat disebut resmi apabila kita mendapatkan konten tersebut dari penyedia konten yang telah mengantongi ‘persetujuan resmi’ dari pihak pencipta atau pengembang suatu permainan video. Atau, bisa saja suatu tempat yang menjajakan atau menyewakan permaian-permainan video tersebut hanya menyediakan konten-konten ‘non-bajakan’ yang mereka beli secara langsung dari agen resmi maupun dari pengembangnya langsung, untuk dijual kembali atau sekedar disewakan.</p>
+          <!-- Profile of the article author -->
+          <div class="author-profile pt-2 mt-4 mb-5">
+            <img class="img-fluid float-start" src="../../uploads/people/hilman_square.jpg">
+            <h5>Hilman Fathoni</h5>
+            <h6><a href="https://www.linkedin.com/in/hilman-fathoni/"><i class="fa-brands fa-linkedin"></i></a></h6>
+          </div>
 
-<p>Dalam prakteknya, pihak pengelola tempat persewaan menyediakan kopian dari suatu permainan video yang didapat secara resmi (atau tidak resmi), untuk kemudian dapat disewa oleh pihak penyewa dengan membayar sejumlah uang kepada pihak pengelola tempat persewaan. Kopian tersebut kemudian dapat dibawa pulang oleh pihak penyewa, untuk kemudian dipasang, atau terkadang digandakan perangkat pemasangannya ke komputer personal pihak penyewa.</p>
+          <!-- Main article content goes here -->
 
-<p><img src="../../uploads/1069908_20130114114820-1024x768.jpg" alt="1069908_20130114114820-1024x768.jpg" class="img-fluid center-block" /><center><small><i>Permainan video "bajakan" untuk komputer personal. (<a href="http://fjb.kaskus.co.id/product/50b4422ce974b4aa190000c5/jual-game-pc-murah-terpercaya-update-cepat-bandung---jne/">Sumber gambar</a>)</i></small></center></p>
+          <p><strong>Menurut pasal 40 huruf Undang-Undang No. 28 Tahun 2014 (UUHC 2014), permainan video merupakan obyek perlindungan hak cipta.</strong></p>
 
-<p>Apakah aktivitas pemasangan permainan video sewaan tersebut pada perangkat keras milik pihak penyewa merupakan suatu pelanggaran hak cipta?</p>
+          <p><strong>Sejauh apa Undang-Undang Hak Cipta memberikan perlindungan pada permainan video?</strong></p>
 
-<p>Atau, penggandaan perangkat pemasangan (installer) tersebut yang dapat dianggap sebagai pelanggaran hak cipta?</p>
+          <p><strong>Aspek Hak Cipta Dalam Permainan Video</strong></p>
 
-<p>Aktivitas penyewaan ciptaan diatur dalam Pasal 9 UUCH, yang menyatakan bahwa penyewaan ciptaan harus dilakukan dengan izin langsung dari pencipta, dan setiap penggandaan atau penggunaan secara komersial tanpa izin pencipta, dilarang.</p>
+          <p>Aktivitas di ranah permainan video (video game) biasanya melibatkan beberapa pihak, yakni pembuat permainan video (pencipta, pengembang, dan/atau penerbit) suatu permainan video orisinal, pengguna atau pemain permainan video, dan pebuat suatu permainan video yang merupakan ciptaan turunan  dari permainan video lainnya.</p>
 
-<p>Pada dasarnya, kedua hal tersebut merupakan pelanggaran hak cipta, jika kita berbicara dalam konteks permainan video untuk komputer personal. Karena, biasanya permainan-permainan tersebut dilengkapi dengan nomor seri (serial numbers). Nomor seri permainan video ini merupakan mekanisme perlindungan yang dibuat oleh pihak pembuat permainan. Dengan adanya nomor seri, maka hanya pemilik resmi permainan video tersebut yang dapat memainkan dan memasangnya di komputer personal milik pihak tersebut. Pihak-pihak lain, misalnya seseorang yang berada dalam satu rumah dengan pemilik resmi pun, harus memiliki nomor seri dari permainan video yang ia miliki juga secara resmi.</p>
+          <p>Mari kita mulai dengan membahas dari sudut pandang perlindungan dan pelanggaran terlebih dahulu.</p>
 
-<p>Artinya, dapat dipastikan bahwa seluruh permainan video untuk komputer personal yang disewakan telah diretas (crack) mekanisme perlindungannya, sehingga permainan video tersebut dapat dimainkan dan dipasang oleh banyak penyewa.</p>
+          <p>Dalam aktivitas tersebut, pihak-pihak selain pencipta atau pengembang permainan video orisinal akan dihadapkan pada pilihan untuk mengakses konten-konten permainan video secara resmi (legal) atau tidak resmi (illegal). Banyak hal yang dapat menjadi tolak ukur untuk menyatakan resmi atau tidaknya suatu aktivitas pengaksesan konten permainan video. Penyediaan akses resmi dan non-resmi ini bisa dilakukan di dalam jaringan maupun di luar jaringan. Aktivitas tersebut dapat disebut resmi apabila kita mendapatkan konten tersebut dari penyedia konten yang telah mengantongi ‘persetujuan resmi’ dari pihak pencipta atau pengembang suatu permainan video. Atau, bisa saja suatu tempat yang menjajakan atau menyewakan permaian-permainan video tersebut hanya menyediakan konten-konten ‘non-bajakan’ yang mereka beli secara langsung dari agen resmi maupun dari pengembangnya langsung, untuk dijual kembali atau sekedar disewakan.</p>
 
-<p>Meskipun pihak yang menyewakan bukan merupakan pihak peretas, dapat disimpulkan bahwa hampir seluruh kegiatan persewaan permainan video adalah pelanggaran hak cipta, menurut Pasal 9 UUHC 2014.</p>
+          <p>Dalam prakteknya, pihak pengelola tempat persewaan menyediakan kopian dari suatu permainan video yang didapat secara resmi (atau tidak resmi), untuk kemudian dapat disewa oleh pihak penyewa dengan membayar sejumlah uang kepada pihak pengelola tempat persewaan. Kopian tersebut kemudian dapat dibawa pulang oleh pihak penyewa, untuk kemudian dipasang, atau terkadang digandakan perangkat pemasangannya ke komputer personal pihak penyewa.</p>
 
-<p>Maka, pihak yang menyewakan dapat terjerat ketentuan pasal tersebut, sebagai penyedia konten hasil pelanggaran hak cipta. Selain itu, pihak pemain juga dapat ikut serta terjerat karena telah menjadi pengguna konten hasil pelanggaran hak cipta. Tentu saja akibat hukum yang akan diterima oleh masing-masing pihak pelanggar akan berbeda-beda. Tergantung jenis pelanggaran yang telah dilakukan oleh masing-masing pihak tersebut.</p>
+          <figure class="figure w-sm-50 float-sm-end ms-sm-5 mt-3 mb-4">
+            <img src="../../uploads/1069908_20130114114820-1024x768.jpg" alt="1069908_20130114114820-1024x768.jpg" class="figure-img img-fluid">
+            <figcaption class="figure-caption">Permainan video "bajakan" untuk komputer personal. (<a href="http://fjb.kaskus.co.id/product/50b4422ce974b4aa190000c5/jual-game-pc-murah-terpercaya-update-cepat-bandung---jne/">Sumber gambar.</a>)</figcaption>
+          </figure>
 
-<p>Dan, tentu saja hal yang sama juga berlaku bagi pihak-pihak yang menjual (bukan menyewakan) konten-konten yang sama, berdasarkan Pasal 10 UUHC 2014 yang berbunyi:</p>
+          <p>Apakah aktivitas pemasangan permainan video sewaan tersebut pada perangkat keras milik pihak penyewa merupakan suatu pelanggaran hak cipta?</p>
 
-<p>“Pengelola tempat perdagangan dilarang membiarkan penjualan dan/atau penggandaan barang basil
-pelanggaran Hak Cipta dan/atau Hak Terkait di tempat perdagangan yang dikelolanya.”</p>
+          <p>Atau, penggandaan perangkat pemasangan (installer) tersebut yang dapat dianggap sebagai pelanggaran hak cipta?</p>
 
-<p>Jika kita berbicara dalam konteks permainan video konsol, praktik pelanggarannya sama, namun hanya berbeda tempat dan pola penyewaannya. Mirip dengan tempat bermain <a href="http://fjb.kaskus.co.id/product/50b4422ce974b4aa190000c5/jual-game-pc-murah-terpercaya-update-cepat-bandung---jne/">Arcade Games</a>,  biasanya pihak pengelola tempat persewaan menyediakan konsol permainan, dan menggunakan hard-drive internal maupun eksternal sebagai pengganti kaset permainan video. Kemudian, pihak penyewa hanya tinggal datang untuk bermain dengan menggunakan konsol dan permainan video yang tersimpan pada konsol tersebut. Besar kemungkinan, permainan-permainan video yang tersimpan dalam konsol tersebut juga merupakan hasil dari peretasan kaset video, agar dapat dimainkan di banyak konsol sekaligus.</p>
+          <p>Aktivitas penyewaan ciptaan diatur dalam Pasal 9 UUCH, yang menyatakan bahwa penyewaan ciptaan harus dilakukan dengan izin langsung dari pencipta, dan setiap penggandaan atau penggunaan secara komersial tanpa izin pencipta, dilarang.</p>
 
-<p>Platform jenis ini menggunakan suatu jenis perlindungan berupa Digital Rights Management (DRM), atau Sarana Kontrol Teknologi. Pada dasarnya metode perilindungan yang digunakan oleh permainan video untuk komputer personal juga berupa DRM, namun pengaplikasiannya berbeda dengan permainan video konsol. Sebagai contoh, X-Box One menerapkan DRM yang membuat kaset permainan video konsol tersebut hanya dapat digunakan oleh satu konsol saja. Pemain lain yang juga memiliki konsol X-Box One <a href="http://www.extremetech.com/gaming/168764-ps4-and-xbox-one-just-how-strict-is-the-drm">tidak dapat menggunakan permainan tersebut pada konsol yang dimilikinya</a>. Kebijakan ini menuai protes dari banyak pemain karena dirasa bertentangan dengan kegiatan pinjam-meminjam kaset permainan video antara pemain. Akhirnya pihak pengembang X-Box One akhirnya tidak lagi memberlakukan <a href="https://www.theguardian.com/technology/2013/jun/19/xbox-one-drm-second-hand-restrictions-abandoned">metode perlindungan</a> tersebut pada kaset-kaset permainan X-Box One. Untuk model permainan video ini, bentuk pelanggarannya kurang lebih sama dengan perminan video untuk komputer personal. Tetap ada kemungkinan seorang cracker menembus DRM yang diterapkan oleh pengembang X-Box One, entah untuk keperluan personal maupun komersial.</p>
+          <p>Pada dasarnya, kedua hal tersebut merupakan pelanggaran hak cipta, jika kita berbicara dalam konteks permainan video untuk komputer personal. Karena, biasanya permainan-permainan tersebut dilengkapi dengan nomor seri (serial numbers). Nomor seri permainan video ini merupakan mekanisme perlindungan yang dibuat oleh pihak pembuat permainan. Dengan adanya nomor seri, maka hanya pemilik resmi permainan video tersebut yang dapat memainkan dan memasangnya di komputer personal milik pihak tersebut. Pihak-pihak lain, misalnya seseorang yang berada dalam satu rumah dengan pemilik resmi pun, harus memiliki nomor seri dari permainan video yang ia miliki juga secara resmi.</p>
 
-<div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/HjEbpMgiL7U" frameborder="0" allowfullscreen=""></iframe></div>
+          <p>Artinya, dapat dipastikan bahwa seluruh permainan video untuk komputer personal yang disewakan telah diretas (crack) mekanisme perlindungannya, sehingga permainan video tersebut dapat dimainkan dan dipasang oleh banyak penyewa.</p>
 
-<p>Dalam ranah permainan video dalam jaringan (online gaming) terdapat bentuk pelanggaran yang berbeda lagi. Bentuk pelanggaran ini berupa pembuatan server pribadi (private server) tanpa izin dari pihak pembuat permainan. Pelanggaran ini terdiri dari dua rangkaian perbuatan. Yang pertama, seseorang yang memiliki pengetahuan peretasan yang mumpuni dapat saja menembus kode-kode yang digunakan oleh pembuat permainan video orisinal untuk membuat sebuah server pribadi. Dengan bermodalkan kode-kode orisinal dari permainan video dalam jaringan yang ditembusnya, seorang peretas dapat membangun (engine) sebuah server baru, beserta ‘modifikasi-modifikasi’ untuk membuat server ini unik dan berbeda dengan server aslinya. Selain itu, pihak peretas juga dapat memodifikasi ‘unsur seni’, seperti desain peta, dan karakter, dan menyesuaikannya dengan kebutuhan server pribadi yang dibuatnya. Sebagai contoh, Anda dapat melihat bagaimana server personal sangat berkembang di permainan <a href="https://www.theguardian.com/technology/2013/jun/19/xbox-one-drm-second-hand-restrictions-abandoned">Ragnarok Online</a>, dan bagaimana usaha pembuatan server personal mengalami hambatan di kalangan pemain <a href="http://www.gamesindustry.biz/articles/2016-04-11-blizzard-issues-cease-and-desist-to-private-wow-server">World of Warcraft</a>.</p>
+          <p>Meskipun pihak yang menyewakan bukan merupakan pihak peretas, dapat disimpulkan bahwa hampir seluruh kegiatan persewaan permainan video adalah pelanggaran hak cipta, menurut Pasal 9 UUHC 2014.</p>
 
-<p>Perbuatan ini tidak akan disebut sebagai pelanggaran jika pihak pembuat permainan video tersebut memang mengumumkan kode dan unsur seni dari permainan tersebut. Pihak pembuat permainan video juga dapat, menerapkan lisensi terbuka, pada kode-kode atau mesin penggerak serta ‘unsur seni’ permainan tersebut.</p>
+          <p>Maka, pihak yang menyewakan dapat terjerat ketentuan pasal tersebut, sebagai penyedia konten hasil pelanggaran hak cipta. Selain itu, pihak pemain juga dapat ikut serta terjerat karena telah menjadi pengguna konten hasil pelanggaran hak cipta. Tentu saja akibat hukum yang akan diterima oleh masing-masing pihak pelanggar akan berbeda-beda. Tergantung jenis pelanggaran yang telah dilakukan oleh masing-masing pihak tersebut.</p>
 
-<p><strong>Aktivitas Mengunduh Berkas Permainan Video dan Permainan Video “Terbuka”</strong></p>
+          <p>Dan, tentu saja hal yang sama juga berlaku bagi pihak-pihak yang menjual (bukan menyewakan) konten-konten yang sama, berdasarkan Pasal 10 UUHC 2014 yang berbunyi:</p>
 
-<p>Dalam perkembangannya, hampir semua permainan video dari berbagai konsol dapat ditemukan berkas-berkas digitalnya di dalam jaringan. Hal ini juga memungkinkan para pemain untuk <a href="http://www.theverge.com/2016/8/9/12410620/play-amiga-games-online-free-internet-archive">mengakses kembali permainan-permainan video pada masa lampau</a>. Berbeda dengan permainan video yang memang tersedia untuk dimainkan pada komputer personal. Permainan-permainan dari konsol seperti Play Station (1 &amp; 2), SNes, GBA, atau bahkan MSDos-Games memerlukan alat-alat tertentu agar dapat dimainkan dengan komputer personal. Alat-alat ini terdiri dari Emulator, dan ROM. Emulator merupakan perangkat lunak yang menjadi pengganti fungsi perangkat keras konsol ketika permainan video dimainkan di komputer personal. Sedangkan ROM adalah berkas digital dari permainan video, yang tidak memiliki versi resmi untuk dimainkan di komputer personal. Kaset-kaset permainan ini tadinya beredar dalam bentuk cakram padat, cartridge, dan Disket.</p>
+          <p>“Pengelola tempat perdagangan dilarang membiarkan penjualan dan/atau penggandaan barang basil
+          pelanggaran Hak Cipta dan/atau Hak Terkait di tempat perdagangan yang dikelolanya.”</p>
 
-<p><img src="../../uploads/SFC_cassette-1024x768.jpg" alt="SFC_cassette-1024x768.jpg" class="img-fluid center-block" /></p>
-<center><small><i>Kaset Super Nintendo yang menggunakan teknologi chip. (<a href="https://commons.wikimedia.org/wiki/File:SFC_cassette.jpg">Sumber Gambar</a>)</i></small></center>
+          <p>Jika kita berbicara dalam konteks permainan video konsol, praktik pelanggarannya sama, namun hanya berbeda tempat dan pola penyewaannya. Mirip dengan tempat bermain <a href="http://fjb.kaskus.co.id/product/50b4422ce974b4aa190000c5/jual-game-pc-murah-terpercaya-update-cepat-bandung---jne/">Arcade Games</a>,  biasanya pihak pengelola tempat persewaan menyediakan konsol permainan, dan menggunakan hard-drive internal maupun eksternal sebagai pengganti kaset permainan video. Kemudian, pihak penyewa hanya tinggal datang untuk bermain dengan menggunakan konsol dan permainan video yang tersimpan pada konsol tersebut. Besar kemungkinan, permainan-permainan video yang tersimpan dalam konsol tersebut juga merupakan hasil dari peretasan kaset video, agar dapat dimainkan di banyak konsol sekaligus.</p>
 
-<p>Sama halnya dengan musik dan film, aktivitas mengunduh atau menggandakan permainan-permainan video ini merupakan pelanggaran hak cipta. Meskipun aktivitas-aktivitas tersebut dapat dikecualikan dengan dalih “penggunaan wajar” (fair use), namun dalih itu kecil kemungkinannya dapat memperkuat kepastian hukum dalam aktivitas tersebut.</p>
+          <p>Platform jenis ini menggunakan suatu jenis perlindungan berupa Digital Rights Management (DRM), atau Sarana Kontrol Teknologi. Pada dasarnya metode perilindungan yang digunakan oleh permainan video untuk komputer personal juga berupa DRM, namun pengaplikasiannya berbeda dengan permainan video konsol. Sebagai contoh, X-Box One menerapkan DRM yang membuat kaset permainan video konsol tersebut hanya dapat digunakan oleh satu konsol saja. Pemain lain yang juga memiliki konsol X-Box One <a href="http://www.extremetech.com/gaming/168764-ps4-and-xbox-one-just-how-strict-is-the-drm">tidak dapat menggunakan permainan tersebut pada konsol yang dimilikinya</a>. Kebijakan ini menuai protes dari banyak pemain karena dirasa bertentangan dengan kegiatan pinjam-meminjam kaset permainan video antara pemain. Akhirnya pihak pengembang X-Box One akhirnya tidak lagi memberlakukan <a href="https://www.theguardian.com/technology/2013/jun/19/xbox-one-drm-second-hand-restrictions-abandoned">metode perlindungan</a> tersebut pada kaset-kaset permainan X-Box One. Untuk model permainan video ini, bentuk pelanggarannya kurang lebih sama dengan perminan video untuk komputer personal. Tetap ada kemungkinan seorang cracker menembus DRM yang diterapkan oleh pengembang X-Box One, entah untuk keperluan personal maupun komersial.</p>
 
-<p>Terdapat beberapa metode yang dapat menjamin kepastian hukum aktivitas pengunduhan, penggandaan, pemodifikasian, dan penggunaan permainan video.</p>
+            <div class="ratio ratio-16x9 mt-3 mb-4 w-sm-50">
+              <iframe src="https://www.youtube.com/embed/HjEbpMgiL7U" title="YouTube video" allowfullscreen></iframe>
+            </div>
 
-<p>Anda dapat memanfaatkan fasilitas dari situs-situs seperti <a href="http://store.steampowered.com/">Steam</a>, atau komunitas seperti <a href="http://www.reddit.com">Reddit</a> dan <a href="http://en.wikipedia.org">Wikipedia</a> untuk mengakses permainan-permainan video <a href="http://www.makeuseof.com/tag/4-places-where-you-can-download-premium-pc-games-free-legally/">secara gratis</a> dan legal. Meskipun, tidak semua permainan video tersebut menerapkan lisensi terbuka yang memungkinkan Anda untuk membuat modifikasi atau ciptaan turunan dari permainan-permainan video tersebut. Sebenarnya, keberadaan permainan video gratis dan terbuka juga sudah banyak. Permainan-permainan ini umumnya bukan dibuat dan diterbitkan oleh pihak pengembang ‘besar’. Istilah yang akrab digunakan pada permainan-permainan ini adalah <a href="http://www.imdb.com/title/tt1942884/">Indie Game</a>. Banyak dari judul-judul permainan video yang menganut keterbukaan tersebut dapat diakses di <a href="https://en.wikipedia.org/wiki/List_of_open-source_video_games">Wikipedia</a>.</p>
+            <p>Dalam ranah permainan video dalam jaringan (online gaming) terdapat bentuk pelanggaran yang berbeda lagi. Bentuk pelanggaran ini berupa pembuatan server pribadi (private server) tanpa izin dari pihak pembuat permainan. Pelanggaran ini terdiri dari dua rangkaian perbuatan. Yang pertama, seseorang yang memiliki pengetahuan peretasan yang mumpuni dapat saja menembus kode-kode yang digunakan oleh pembuat permainan video orisinal untuk membuat sebuah server pribadi. Dengan bermodalkan kode-kode orisinal dari permainan video dalam jaringan yang ditembusnya, seorang peretas dapat membangun (engine) sebuah server baru, beserta ‘modifikasi-modifikasi’ untuk membuat server ini unik dan berbeda dengan server aslinya. Selain itu, pihak peretas juga dapat memodifikasi ‘unsur seni’, seperti desain peta, dan karakter, dan menyesuaikannya dengan kebutuhan server pribadi yang dibuatnya. Sebagai contoh, Anda dapat melihat bagaimana server personal sangat berkembang di permainan <a href="https://www.theguardian.com/technology/2013/jun/19/xbox-one-drm-second-hand-restrictions-abandoned">Ragnarok Online</a>, dan bagaimana usaha pembuatan server personal mengalami hambatan di kalangan pemain <a href="http://www.gamesindustry.biz/articles/2016-04-11-blizzard-issues-cease-and-desist-to-private-wow-server">World of Warcraft</a>.</p>
 
-<p>Sebagai contoh, kita dapat melihat ketentuan lisensi yang diterapkan oleh beberapa permainan seperti <a href="https://en.wikipedia.org/wiki/Ryzom">Ryzom</a>, <a href="https://en.wikipedia.org/wiki/0_A.D._(video_game)">O A.D.</a>, dan <a href="https://en.wikipedia.org/wiki/AstroMenace">Astro Menace</a>. Permainan-permainan ini menerapkan lisensi <a href="https://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a> pada kode dan mesin penggeraknya, yang disertai dengan penerapan lisensi <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.id">CC BY-SA</a> pada unsur seni dari permainan-permainan tersebut. Dengan diterapkanya lisensi-lisensi tersebut, selain Anda dapat dengan gratis mengakses dan menggunakan permainannya, Anda juga dapat membangun sesuatu dari permainan-permainan video itu. Budaya bebas atau budaya terbuka ini tidak sepenuhnya hanya populer pada permainan video independen saja. Sebuah pengembang besar, Bethesda Softworks, juga menyediakan <a href="http://www.nexusmods.com/games/?">developer kits</a> bagi pemain-pemain yang berkeinginan untuk membangun sesuatu dari apa yang dibuat oleh <a href="http://www.bethsoft.com/">Bethesda Softworks</a>. Anda juga dapat membaca daftar perusahaan perminan video komersial yang membagikan kode dari mesin penggeraknya di <a href="https://en.wikipedia.org/wiki/List_of_commercial_video_games_with_available_source_code">Wikipedia</a>. Selain itu terdapat juga situs seperti <a href="http://opengameart.org/">Open Game Art</a> yang menyediakan desain-desain yang dapat Anda gunakan untuk permainan video yang Anda bangun. Penggunaan konten-konten dengan keterbukaan akses ini dapat menghindarkan pembuat permainan video independen, yang merupakan ciptaan turunan dari suatu permainan video orisinal, tuntutan dari <a href="http://www.wired.co.uk/article/nintendo-removes-500-games">pihak pembuat permainan video orisinal</a>.</p>
+            <p>Perbuatan ini tidak akan disebut sebagai pelanggaran jika pihak pembuat permainan video tersebut memang mengumumkan kode dan unsur seni dari permainan tersebut. Pihak pembuat permainan video juga dapat, menerapkan lisensi terbuka, pada kode-kode atau mesin penggerak serta ‘unsur seni’ permainan tersebut.</p>
 
-<p><img src="../../uploads/Ryzom_screenshot-1024x548.png" alt="Ryzom_screenshot-1024x548.png" class="img-fluid center-block" /><center><small><i>Ryzom. Salah satu permainan video yang menerapkan ketentuan lisensi GPL dan Creative Commons. (<a href="http://www.wired.co.uk/article/nintendo-removes-500-games">Ryzom Screenshot</a> oleh <a href="https://commons.wikimedia.org/w/index.php?title=User:Shaddim&amp;action=edit&amp;redlink=1">Shaddim</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.en">CC BY-SA 2.0</a>, <a href="https://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a>)</i></small></center></p>
+            <p><strong>Aktivitas Mengunduh Berkas Permainan Video dan Permainan Video “Terbuka”</strong></p>
 
-<p>Ranah permainan-permainan video ‘tua’ memiliki konsep keterbukaan yang berbeda. Kebanyakaan dari permainan-permainan ini sukar untuk diakses, entah di dalam jaringan maupun di luar jaringan. Pembuat-pembuat permainan ini juga banyak yang sudah tidak memperhatikan hak-hak yang dimilikinya terhadap permainan-permainan video yang dibuatnya. Hal ini membuat istilah <a href="https://en.wikipedia.org/wiki/Abandonware">Abandonware</a> naik ke permukaan. Abandonware merupakan kumpulan permainan video yang sudah tidak ‘diurusi’ lagi oleh penciptanya. Banyak dari permainan video yang termasuk sebagai Abandonware dapat kita akses di dalam jaringan melalui situs seperti <a href="http://www.theverge.com/2016/8/9/12410620/play-amiga-games-online-free-internet-archive">Archive.org</a> dan <a href="http://www.myabandonware.com/">Myabandonware.com</a>.</p>
+            <p>Dalam perkembangannya, hampir semua permainan video dari berbagai konsol dapat ditemukan berkas-berkas digitalnya di dalam jaringan. Hal ini juga memungkinkan para pemain untuk <a href="http://www.theverge.com/2016/8/9/12410620/play-amiga-games-online-free-internet-archive">mengakses kembali permainan-permainan video pada masa lampau</a>. Berbeda dengan permainan video yang memang tersedia untuk dimainkan pada komputer personal. Permainan-permainan dari konsol seperti Play Station (1 &amp; 2), SNes, GBA, atau bahkan MSDos-Games memerlukan alat-alat tertentu agar dapat dimainkan dengan komputer personal. Alat-alat ini terdiri dari Emulator, dan ROM. Emulator merupakan perangkat lunak yang menjadi pengganti fungsi perangkat keras konsol ketika permainan video dimainkan di komputer personal. Sedangkan ROM adalah berkas digital dari permainan video, yang tidak memiliki versi resmi untuk dimainkan di komputer personal. Kaset-kaset permainan ini tadinya beredar dalam bentuk cakram padat, cartridge, dan Disket.</p>
 
-<p><strong>Di Indonesia</strong></p>
+          <figure class="figure w-sm-50 float-sm-end ms-sm-5 mt-3 mb-4">
+            <img src="../../uploads/SFC_cassette-1024x768.jpg" alt="SFC_cassette-1024x768.jpg" class="figure-img img-fluid">
+            <figcaption class="figure-caption">Kaset Super Nintendo yang menggunakan teknologi chip. (<a href="https://commons.wikimedia.org/wiki/File:SFC_cassette.jpg">Sumber Gambar.</a>)</figcaption>
+          </figure>
 
-<div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/dwv-IkTF18M" frameborder="0" allowfullscreen=""></iframe></div>
+          <figure class="figure w-sm-50 float-sm-end ms-sm-5 mt-3 mb-4">
+            <img src="../../uploads/Ryzom_screenshot-1024x548.png" alt="Ryzom_screenshot-1024x548.png" class="figure-img img-fluid">
+            <figcaption class="figure-caption">Ryzom. Salah satu permainan video yang menerapkan ketentuan lisensi GPL dan Creative Commons. (<a href="http://www.wired.co.uk/article/nintendo-removes-500-games">Ryzom Screenshot</a> oleh <a href="https://commons.wikimedia.org/w/index.php?title=User:Shaddim&amp;action=edit&amp;redlink=1">Shaddim</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.en">CC BY-SA 2.0</a>, <a href="https://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a>)</figcaption>
+          </figure>
 
-<p>Penerapan lisensi terbuka masih belum terlacak pada permainan-permainan video yang dibuat oleh pembuat permainan video dari Indonesia. Tentu saja, keberadaan pembuat-pembuat permainan video di Indonesia <a href="http://www.wikugame.com/2013/09/10-game-buatan-indonesia-terbaik.html">tidak kalah</a> <a href="http://www.kaskus.co.id/thread/525b990e1e0bc3401c000004/hot-6-game-buatan-indonesia-yuk-dicoba/">kualitas dan kuantitasnya</a>, jika dibandingkan dengan pembuat dari luar Indonesia. Namun, keterbukaan, dalam hal pemodifikasian dan pembuat ciptaan turunan, atas permainan-permainan tersebut masih belum dapat diidentifikasi. Sementara itu kita dapat menjumpai permainan video-permainan video buatan Indonesia dalam berbagai platform seperti yang dimainkan di browser, di install di komputer personal, maupun dimainkan di telepon pintar.</p>
+          <p>Sama halnya dengan musik dan film, aktivitas mengunduh atau menggandakan permainan-permainan video ini merupakan pelanggaran hak cipta. Meskipun aktivitas-aktivitas tersebut dapat dikecualikan dengan dalih “penggunaan wajar” (fair use), namun dalih itu kecil kemungkinannya dapat memperkuat kepastian hukum dalam aktivitas tersebut.</p>
 
-<p>Sumber:</p>
+          <p>Terdapat beberapa metode yang dapat menjamin kepastian hukum aktivitas pengunduhan, penggandaan, pemodifikasian, dan penggunaan permainan video.</p>
 
-<p><a href="http://www.howtogeek.com/262758/is-downloading-retro-video-game-roms-ever-legal/">Is Downloading Retro Video Game ROMs Ever Legal? - How To Geek</a></p>
+          <p>Anda dapat memanfaatkan fasilitas dari situs-situs seperti <a href="http://store.steampowered.com/">Steam</a>, atau komunitas seperti <a href="http://www.reddit.com">Reddit</a> dan <a href="http://en.wikipedia.org">Wikipedia</a> untuk mengakses permainan-permainan video <a href="http://www.makeuseof.com/tag/4-places-where-you-can-download-premium-pc-games-free-legally/">secara gratis</a> dan legal. Meskipun, tidak semua permainan video tersebut menerapkan lisensi terbuka yang memungkinkan Anda untuk membuat modifikasi atau ciptaan turunan dari permainan-permainan video tersebut. Sebenarnya, keberadaan permainan video gratis dan terbuka juga sudah banyak. Permainan-permainan ini umumnya bukan dibuat dan diterbitkan oleh pihak pengembang ‘besar’. Istilah yang akrab digunakan pada permainan-permainan ini adalah <a href="http://www.imdb.com/title/tt1942884/">Indie Game</a>. Banyak dari judul-judul permainan video yang menganut keterbukaan tersebut dapat diakses di <a href="https://en.wikipedia.org/wiki/List_of_open-source_video_games">Wikipedia</a>.</p>
 
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-12">
-                                    <h5 style="display: inline;">Tags:</h5>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Permainan Video</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Video Game</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Hak Cipta</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Open Video Game</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Hak Cipta Video Game</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Hak Cipta Permainan Video</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Lisensi Creative Commons</button>
-                                    
-                            </div>                       
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <h5>Oleh: Hilman Fathoni</h5>
-                        8 Sep 2016
-                        <hr>
-                        <h5>Kategori:</h5>
-                        
-                        <button class="btn btn-white btn-xs" type="button">Kajian</button>
-                        
-                        <hr>
-                        <h5>Berita Terbaru</h5>
-			<ul>
-                        
-			<li><a href="../../2019/01/lokakarya-hak-cipta-dan-lisensi-creative-commons-di-pekanbaru.html" class="btn-link">Lokakarya Hak Cipta dan Lisensi Creative Commons di Pekanbaru</a></li>
-                        
-			<li><a href="../../2018/12/pengumuman-resmi-hasil-akhir-training-of-trainers-creative-commons-indonesia.html" class="btn-link">Pengumuman Resmi: Hasil Akhir Training of Trainers Creative Commons Indonesia</a></li>
-                        
-			<li><a href="../../2018/08/literatur-terbaru-tentang-model-bisnis-terbuka-made-with-cc.html" class="btn-link">Literatur tentang Model Bisnis Terbuka "Made With CC"</a></li>
-                        
-			<li><a href="../../2018/08/data-dan-artikel-ilmiah-terbuka-dari-plos.html" class="btn-link">Data dan Artikel Ilmiah Terbuka dari PLOS!</a></li>
-                        
-			<li><a href="../../2018/08/Konten-Format-Model-3-Dimensi-Berilsensi-CC-di-Platform-Sketchfab.html" class="btn-link">Konten Format Model 3 Dimensi Berilsensi CC di Platform Sketchfab</a></li>
-                        
-	 		</ul>
-			<hr>
-			<h5>Bagikan di:</h5>
-			<a href="https://facebook.com/sharer.php?u=https://creativecommons.or.id/2016/09/ketentuan-hak-cipta-dalam-aktivitas-permainan-video.html" rel="nofollow" target="_blank"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
-			<a href="https://twitter.com/intent/tweet?text=Ketentuan Hak Cipta Dalam Aktivitas Permainan Video&url=http://creativecommons.or.id//2016/09/ketentuan-hak-cipta-dalam-aktivitas-permainan-video/&via=&related=" rel="nofollow" target="_blank"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a>
-			</div>
-		</div>
+          <p>Sebagai contoh, kita dapat melihat ketentuan lisensi yang diterapkan oleh beberapa permainan seperti <a href="https://en.wikipedia.org/wiki/Ryzom">Ryzom</a>, <a href="https://en.wikipedia.org/wiki/0_A.D._(video_game)">O A.D.</a>, dan <a href="https://en.wikipedia.org/wiki/AstroMenace">Astro Menace</a>. Permainan-permainan ini menerapkan lisensi <a href="https://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a> pada kode dan mesin penggeraknya, yang disertai dengan penerapan lisensi <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.id">CC BY-SA</a> pada unsur seni dari permainan-permainan tersebut. Dengan diterapkanya lisensi-lisensi tersebut, selain Anda dapat dengan gratis mengakses dan menggunakan permainannya, Anda juga dapat membangun sesuatu dari permainan-permainan video itu. Budaya bebas atau budaya terbuka ini tidak sepenuhnya hanya populer pada permainan video independen saja. Sebuah pengembang besar, Bethesda Softworks, juga menyediakan <a href="http://www.nexusmods.com/games/?">developer kits</a> bagi pemain-pemain yang berkeinginan untuk membangun sesuatu dari apa yang dibuat oleh <a href="http://www.bethsoft.com/">Bethesda Softworks</a>. Anda juga dapat membaca daftar perusahaan perminan video komersial yang membagikan kode dari mesin penggeraknya di <a href="https://en.wikipedia.org/wiki/List_of_commercial_video_games_with_available_source_code">Wikipedia</a>. Selain itu terdapat juga situs seperti <a href="http://opengameart.org/">Open Game Art</a> yang menyediakan desain-desain yang dapat Anda gunakan untuk permainan video yang Anda bangun. Penggunaan konten-konten dengan keterbukaan akses ini dapat menghindarkan pembuat permainan video independen, yang merupakan ciptaan turunan dari suatu permainan video orisinal, tuntutan dari <a href="http://www.wired.co.uk/article/nintendo-removes-500-games">pihak pembuat permainan video orisinal</a>.</p>
 
-<div class="row">
-<div class="col-lg-9">
-		
-	<div id="disqus_thread"></div>
-	<script>
+          <p>Ranah permainan-permainan video ‘tua’ memiliki konsep keterbukaan yang berbeda. Kebanyakaan dari permainan-permainan ini sukar untuk diakses, entah di dalam jaringan maupun di luar jaringan. Pembuat-pembuat permainan ini juga banyak yang sudah tidak memperhatikan hak-hak yang dimilikinya terhadap permainan-permainan video yang dibuatnya. Hal ini membuat istilah <a href="https://en.wikipedia.org/wiki/Abandonware">Abandonware</a> naik ke permukaan. Abandonware merupakan kumpulan permainan video yang sudah tidak ‘diurusi’ lagi oleh penciptanya. Banyak dari permainan video yang termasuk sebagai Abandonware dapat kita akses di dalam jaringan melalui situs seperti <a href="http://www.theverge.com/2016/8/9/12410620/play-amiga-games-online-free-internet-archive">Archive.org</a> dan <a href="http://www.myabandonware.com/">Myabandonware.com</a>.</p>
 
-	/**
-	*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-	*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-	/*
-	var disqus_config = function () {
-	this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-	this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-	};
-	*/
-	(function() { // DON'T EDIT BELOW THIS LINE
-	var d = document, s = d.createElement('script');
-	s.src = '//creative-commons-indonesia.disqus.com/embed.js';
-	s.setAttribute('data-timestamp', +new Date());
-	(d.head || d.body).appendChild(s);
-	})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <p><strong>Di Indonesia</strong></p>
 
-</div>
-</div>
+            <div class="ratio ratio-16x9 mt-3 mb-4 w-sm-50">
+              <iframe src="https://www.youtube.com/embed/dwv-IkTF18M" title="YouTube video" allowfullscreen></iframe>
+            </div>
 
-        	</div>
-		</div>
-	</div>
+          <p>Penerapan lisensi terbuka masih belum terlacak pada permainan-permainan video yang dibuat oleh pembuat permainan video dari Indonesia. Tentu saja, keberadaan pembuat-pembuat permainan video di Indonesia <a href="http://www.wikugame.com/2013/09/10-game-buatan-indonesia-terbaik.html">tidak kalah</a> <a href="http://www.kaskus.co.id/thread/525b990e1e0bc3401c000004/hot-6-game-buatan-indonesia-yuk-dicoba/">kualitas dan kuantitasnya</a>, jika dibandingkan dengan pembuat dari luar Indonesia. Namun, keterbukaan, dalam hal pemodifikasian dan pembuat ciptaan turunan, atas permainan-permainan tersebut masih belum dapat diidentifikasi. Sementara itu kita dapat menjumpai permainan video-permainan video buatan Indonesia dalam berbagai platform seperti yang dimainkan di browser, di install di komputer personal, maupun dimainkan di telepon pintar.</p>
 
-        
-        <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          <p>Sumber:</p>
 
-  ga('create', 'UA-92784032-1', 'auto');
-  ga('send', 'pageview');
-</script>     
+          <p><a href="http://www.howtogeek.com/262758/is-downloading-retro-video-game-roms-ever-legal/">Is Downloading Retro Video Game ROMs Ever Legal? - How To Geek</a></p>
 
-<footer class="footer">
-    <div class="container">
-	<nav class="pull-left">
-	    <ul>
-		<li><a href="../../faq.html">FAQ</a></li>
-		<li><a href="../../hubungi-kami.html">Hubungi Kami</a></li>
-		<li><a href="https://www.facebook.com/CreativeCommonsIndonesia"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-		<li><a href="https://twitter.com/CC_ID"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-		<li><a href="../../feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
-	    </ul>
-	</nav>
-	<div class="copyright pull-right"><a href="https://creativecommons.org/licenses/by/4.0/">2012-2016 Creative Commons Indonesia | CC BY 4.0</a></div>
-    </div>
-</footer>
+          <div class="article-end mt-5"></div>
+        </div>
+      </div>
+    </main>
 
-    
-	</div>
-</body>
+    <footer class="mt-5">
+      <div class="container-fluid">
+        <div class="row align-items-md-end pt-5 pb-4">
+          <div class="col-md-12 col-lg-2 offset-lg-1 px-5 px-md-0 mb-4 mb-md-5 mb-lg-2 text-center align-self-center">
+            <img src="../../assets/img/footer-sketch.svg" class="img-fluid h-100 px-2">
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 ps-5 ps-md-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Informasi</h5></li>
+              <li><span class="fa-li"><i class="fa-brands fa-readme"></i></span><a href="../../media.html">Media</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-creative-commons"></i></span><a href="../../lisensi-cc-bahasa-indonesia.html">Lisensi</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-book-open-reader"></i></span><a href="../../kajian.html">Kajian</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-circle-question"></i></span><a href="../../faq.html">FAQ</a></li>             
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Tentang kami</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-person-rays"></i></span><a href="../../tentang.html">Tentang kami</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-newspaper"></i></span><a href="../../berita.html">Berita</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-calendar-check"></i></span><a href="../../acara.html">Acara</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 ps-5 ps-md-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Network</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-users"></i></span><a href="../../sobatccid.html">Sobat CCID</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-creative-commons"></i></span><a href="https://creativecommons.org/">CCHQ</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-earth-asia"></i></span><a href="https://network.creativecommons.org/">CC Global Network</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Kontak</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-address-book"></i></span><a href="../../hubungi-kami.html">Hubungi kami</a></li>              
+              <li><span class="fa-li"><i class="fa-brands fa-square-facebook"></i></span><a href="https://www.facebook.com/CreativeCommonsIndonesia">Facebook</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-twitter"></i></span><a href="https://twitter.com/CC_ID">Twitter</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-instagram"></i></span><a href="https://www.instagram.com/cc.indonesia/">Instagram</a></li>
+          </div>
+        </div>
+        <div class="row footer-license">
+          <div class="col-12 text-center text-white">
+            <p class="my-4"><i class="fa-brands fa-creative-commons pe-1"></i><i class="fa-brands fa-creative-commons-by pe-1"></i> 2012&ndash;2023 Creative Commons Indonesia. Kecuali dinyatakan lain, konten di situs ini dilisensikan di bawah lisensi <a href="https://creativecommons.org/licenses/by/4.0/deed.id">Creative Commons Atribusi 4.0 Internasional</a>. 
+          </div>
+        </div>
+      </div>
+    </footer>
 
+    <!-- js -->
+    <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+    <script src="../../assets/js/popper.min.js"></script>
+    <script src="../../assets/js/bootstrap.js"></script>
+  </body>
 </html>
