@@ -1,9 +1,9 @@
 /*  ============================
  *   CREATIVE COMMONS INDONESIA
- *   v 0.9
+ *   v 1.01
  *  ============================
  *
- *   Copyright 2022 CCID
+ *   Copyright 2022-2023 CCID
  *     by Joaquim Baeta
  *     <mail@joaquimbaeta.com>
  *
@@ -511,6 +511,17 @@ footer li a:hover {
 
 .sobatccid .index-card > .h-100 {
   box-shadow: none
+}
+
+/* Section pages */
+
+.section-title {
+  color: var(--ccid-red-56);
+}
+
+.section-title i {
+  color: var(--ccid-red-91);
+  text-shadow: 4px 4px var(--ccid-red-66);
 }
 
 /* Articles */
