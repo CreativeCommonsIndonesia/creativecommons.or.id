@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GR2HTWFX22"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GR2HTWFX22');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Creative Commons Indonesia supports the usage of Creative Commons licenses and open cultural works in Indonesia">
@@ -9,27 +19,19 @@
     <title>Kisah Pembebasan Lagu "Happy Birthday" Ke Domain Publik</title>
     
     <!-- fonts -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-
-    <!-- icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Sen&display=swap" rel="stylesheet"> 
 
     <!-- css -->
-    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../assets/css/material-kit.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../../assets/css/custom.css" rel="stylesheet">
+    <link href="../../assets/css/animate.min.css" rel="stylesheet">
 
-    <!-- js -->
-    <script src="../../assets/js/jquery-3.6.1.min.js"></script>
-    <script src="../../assets/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/material.min.js"></script>
-    <script src="../../assets/js/material-kit.js"></script>
-
-    <!-- plugins -->
-    <script src="../../assets/js/nouislider.min.js"></script> <!-- sliders (http://refreshless.com/nouislider) -->
-    <script src="../../assets/js/bootstrap-datepicker.js"></script> <!-- datepicker (http://www.eyecon.ro/bootstrap-datepicker) -->
-    <script src="../../assets/js/jPages.js"></script> <!-- pagination -->
-    <script src="../../assets/js/js.js"></script> <!-- pagination -->
+    <!-- icons -->
+    <link href="../../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="../../assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="../../assets/fontawesome/css/solid.css" rel="stylesheet">
 
     <!-- favicon -->
     <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
@@ -37,261 +39,212 @@
     <!-- rss feed -->
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="../../feed.xml">
   </head>
-
     
-<body class="index-page">
-	<div class="wrapper">
-	
-	
-        	<style>
-.main {
-	margin-top: 80px;
-  }
-.navbar, .navbar.navbar-danger {
-	background-color: #9e1c1c;
-	color: #ffffff;
-}
-</style>  
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-md" aria-label="Navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html"><img src="../../assets/img/logoputih.png" alt="Creative Commons Indonesia" class="img-fluid" width="150"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ccidnavbar" aria-controls="ccidnavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <nav class="navbar navbar-danger navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="../../index.html">
-                    <div class="logo-container">
-                        <div class="logo">
-                            <img src="../../assets/img/logoputih.png" alt="Creative Commons Indonesia" class="img-fluid" width="150">
-                        </div>
-                    </div>
-                </a>
-            </div>
-    
-            <div class="collapse navbar-collapse" id="navigation-index">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="../../tentang.html" target="_blank">
-                            Tentang
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../../lisensi-cc-bahasa-indonesia.html" target="_blank">
-                            Lisensi
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Blog <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../../sobatccid.html">Sobat CCID</a></li>
-                            <li><a href="../../berita.html">Berita</a></li>
-                            <li><a href="../../kajian.html">Kajian</a></li>
-                            <li><a href="../../acara.html">Acara</a></li>
-                        </ul>
-                    </li>
-		<li>
-			<a href="../../search.html" target="_blank">
-			<i class="fa fa-search" aria-hidden="true"></i>
-			</a>
-		</li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="ccidnavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Informasi
+              </a>
+              <ul class="dropdown-menu mt-3 bg-ccid-red-31 animate__animated animate__flipInY animate__faster" aria-labelledby="resources">
+                <li><a class="dropdown-item" href="../../lisensi-cc-bahasa-indonesia.html">Lisensi</a></li>
+                <li><a class="dropdown-item" href="../../kajian.html">Kajian</a></li>
+                <li><a class="dropdown-item" href="../../faq.html">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../../berita.html">Berita</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../acara.html">Acara</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../media.html">Media</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../tentang.html">Tentang kami</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../sobatccid.html">Sobat CCID</a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/CreativeCommonsIndonesia" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://twitter.com/CC_ID" title="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/cc.indonesia/" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../hubungi-kami.html" title="Hubungi kami"><i class="fa-solid fa-address-book"></i></a></li>            
+          </ul>       
         </div>
+      </div>
     </nav>
 
-	
-       
-        
-	<div class="main">
-		<div class="section section-basic">
-	    	<div class="container">
-		
-		<small><a href="../../index.html">Beranda</a>/<a href="https://creativecommons.or.id/
-			kajian
-		.html">
-			Kajian
-		</a>/Kisah Pembebasan Lagu "Happy Birthday" Ke Domain Publik</small>
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="text-center article-title">
-                            <h2>
-                                Kisah Pembebasan Lagu "Happy Birthday" Ke Domain Publik
-                            </h2>
-                        </div>
-                            <p><img src="../../uploads/A-1922-copy-of-The-Everyday-Song-Book-containing-lyrics-to-Happy-Birthday.-Christine-Mai-Duc-Los-Angeles-Times.jpg" alt="A-1922-copy-of-The-Everyday-Song-Book-containing-lyrics-to-Happy-Birthday.-Christine-Mai-Duc-Los-Angeles-Times.jpg" class="img-fluid center-block" /><center><small><i>Lirik lagu "Good Morning To You-Happy Birthday" dari buku "Everyday Song Book". (<a href="http://www.latimes.com/local/lanow/la-me-ln-happy-birthday-song-lawsuit-decision-20150922-story.html">Sumber gambar</a>, foto oleh Christine Mai-Duc)</i></small></center></p>
+    <!-- Breadcrumbs -->
+    <div class="container-fluid mt-2">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+          <li class="breadcrumb-item"><a href="../../kajian.html">Kajian</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Kisah Pembebasan Lagu "Happy Birthday" Ke Domain Publik</li>
+        </ol>
+      </nav>
+    </div>         
+          
+    <main class="container article p-5">
+      <div class="row mt-2 mt-md-5">
+        <div class="col-12">
 
-<p>Pada bulan September 2015, hakim George H. King <a href="http://documents.latimes.com/happy-birthday-ruling/">memutuskan</a> bahwa lagu “<a href="https://youtu.be/MzrLNrXaWYA">Happy Birthday</a>” resmi berstatus domain publik. Produk hukum ini lahir oleh karena upaya Jennifer Nelson dan tim pengacaranya yang memperkarakan penarikan biaya sebanyak <strong>1500 Dollar AS</strong> terhadap penggunaan lagu “Happy Birthday”. Jennifer bermaksud menggunakan lagu tersebut pada film yang diproduksi bersama timnya di Good Morning To You Productions. Film tersebut dibuat untuk menceritakan sejarah lagu itu sendiri.</p>
+          <!-- Article meta -->
+          <div class="row article-meta mb-3">
+            <div class="col-sm-6">
+              <i class="fa-solid fa-calendar-day fa-fw"></i> 1 Agustus 2016
+            </div>
+            <div class="col-sm-6 pt-1 pt-sm-0 text-sm-end">
+              <i class="fa-solid fa-share-from-square fa-fw pe-1"></i> Bagikan ke 
+            
+              <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://creativecommons.or.id/2016/08/kisah-pembebasan-lagu-happy-birthday-ke-domain-publik.html"><i class="fa-brands fa-linkedin ps-1" title="LinkedIn" aria-hidden="true"></i></a>
 
-<p><strong>Sejarah lagu “Happy Birthday”</strong></p>
+              <a href="https://facebook.com/sharer.php?u=https://creativecommons.or.id/2016/08/kisah-pembebasan-lagu-happy-birthday-ke-domain-publik.html" rel="nofollow" target="_blank"><i class="fa-brands fa-facebook" title="Facebook" aria-hidden="true"></i></a>
 
-<p>Pada tahun 1893, kakak beradik Mildred dan Patty Hill menciptakan lagu berjudul “Good Morning To You” atau Good Morning to All” untuk mereka nyanyikan kepada para murid yang bersekolah di taman kanak-kanak yang mereka kelola. Kedua aktivis pendidikan tersebut memang memiliki latar belakang sebagai ahli pengetahuan musik. Dalam penciptaan lagu ini, Patty (Kepala Sekolah di taman kanak-kanak eksperimental Louisville) bertugas sebagai penulis lirik, dan Mildred (komposer musik) yang menciptakan nada-nadanya. Pada awal abad ke-20 lagu ini mulai banyak dinyanyikan, dengan kata “Happy Birthday” sebagai pengganti kata “Good Morning”. Tidak pernah diketahui siapa yang sebenarnya mulai membuat perubahan kata pada lagu tersebut.</p>
+              <a href="https://twitter.com/intent/tweet?url=https://creativecommons.or.id/2016/08/kisah-pembebasan-lagu-happy-birthday-ke-domain-publik.html" rel="nofollow" target="_blank"><i class="fa-brands fa-twitter" title="Twitter" aria-hidden="true"></i></a>
+            </div>
+          </div>
 
-<p><img src="../../uploads/songbook-728x1024.jpg" alt="songbook-728x1024.jpg" class="img-fluid center-block" /><center><small><i>Sampul buku "Everyday Song Book". (<a href="http://boingboing.net/2015/08/07/the-twisted-history-of-the-hap.html">Sumber gambar</a>)</i></small></center></p>
+          <h1>Kisah Pembebasan Lagu "Happy Birthday" Ke Domain Publik</h1>
 
-<p><strong>“Happy Birthday” Bebas Hak Cipta</strong></p>
+          <!-- Profile of the article author -->
+          <div class="author-profile pt-2 mt-4 mb-5">
+            <img class="img-fluid float-start" src="../../uploads/people/hilman_square.jpg">
+            <h5>Hilman Fathoni</h5>
+            <h6><a href="https://www.linkedin.com/in/hilman-fathoni/"><i class="fa-brands fa-linkedin"></i></a></h6>
+          </div>
 
-<p>Pembatasan penggunaan lagu yang hampir setiap hari dinyanyikan oleh semua orang (dengan asumsi bahwa setiap hari ada orang yang berulang tahun) oleh Warner Music ini akhirnya mengundang perdebatan. Salah satu argumen terkuat dilontarkan oleh seorang peneliti bernama Robert Brauneis. Pada tahun 2010, Robert menerbitkan hasil penelitiannya yang berjudul <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1111624">“Copyright and the World’s Most Popular Song”</a> (Hak Cipta dan Lagu-Lagu Paling Populer Sedunia). Robert menjabarkan bukti-bukti bahwa lagu ini seharusnya berada di ranah publik sejak dulu. Buku “Everyday Songbook” (1922) menjadi salah satu alat bukti yang digunakan Robert. Pada halaman tempat lagu “Happy Birthday” dan “Good Morning To All” dicantumkan, tidak dicantumkan pula pemberitahuan pemilik hak cipta atas lagu tersebut.</p>
+          <!-- Main article content goes here -->
 
-<div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/y3whtVeMalo" frameborder="0" allowfullscreen=""></iframe></div>
+          <figure class="figure w-sm-50 float-sm-end ms-sm-5 mt-2 mb-4">
+            <img src="../../uploads/A-1922-copy-of-The-Everyday-Song-Book-containing-lyrics-to-Happy-Birthday.-Christine-Mai-Duc-Los-Angeles-Times.jpg" alt="A-1922-copy-of-The-Everyday-Song-Book-containing-lyrics-to-Happy-Birthday.-Christine-Mai-Duc-Los-Angeles-Times.jpg" class="figure-img img-fluid">
+            <figcaption class="figure-caption">Lirik lagu "Good Morning To You-Happy Birthday" dari buku "Everyday Song Book". (<a href="http://www.latimes.com/local/lanow/la-me-ln-happy-birthday-song-lawsuit-decision-20150922-story.html">Sumber gambar</a>, foto oleh Christine Mai-Duc)</figcaption>
+          </figure>
 
-<p>Menurut Copyright Act 1909 Amerika Serikat, ciptaan yang tidak mencantumkan copyright notice (atau logo ini © pada ciptaan), maka karya tersebut dianggap berstatus domain publik. Hal ini berlaku bagi semua karya yang dipublikasi ketika Amerika belum memperbaiki sitem hak ciptanya pada tahun 1977. Fakta ini juga digunakan oleh tim pengacara Jennifer Nelson sebagai alat bukti di perkara yang mereka ajukan. Selain itu, jika kita merujuk pada peristiwa penjualan hak cipta oleh Jessica kepada perusahaan Clayton F. Summy, yang dijual hanyalah “beberapa bagian komposisi piano” lagu “Happy Birthday”. Sehingga, ketika Warner/Chappel Music membeli perusahaan tersebut, Warner/Chappel Music juga hanya mendapatkan bagian yang sama dari lagu “Happy Birthday”. Fakta-fakta ini merupakan sebagian dari banyak fakta yang mendorong hakim King untuk memutuskan bahwa lagu “Happy Birthday” adalah milik publik. Maka telah ditetapkan sejak bulan Juni 2016, ketika putusan pengadilan diumumkan, lagu “Happy Birhday” resmi memasuki domain publik.</p>
+          <p>Pada bulan September 2015, hakim George H. King <a href="http://documents.latimes.com/happy-birthday-ruling/">memutuskan</a> bahwa lagu “<a href="https://youtu.be/MzrLNrXaWYA">Happy Birthday</a>” resmi berstatus domain publik. Produk hukum ini lahir oleh karena upaya Jennifer Nelson dan tim pengacaranya yang memperkarakan penarikan biaya sebanyak <strong>1500 Dollar AS</strong> terhadap penggunaan lagu “Happy Birthday”. Jennifer bermaksud menggunakan lagu tersebut pada film yang diproduksi bersama timnya di Good Morning To You Productions. Film tersebut dibuat untuk menceritakan sejarah lagu itu sendiri.</p>
 
-<p><img src="../../uploads/bs.jpg" alt="bs.jpg" class="img-fluid center-block" /></p>
-<center><small><i>Adikarso menabuh drum mengiringi Bing Slamet. (<a href="https://dennysakrie63.wordpress.com/2013/11/25/ngak-ngik-bgok-versus-irama-lenso/">Sumber gambar</a>)</i></small></center>
+          <p><strong>Sejarah lagu “Happy Birthday”</strong></p>
 
-<p><strong>Lagu “Selamat Ulang Tahun” Di Indonesia</strong></p>
+          <p>Pada tahun 1893, kakak beradik Mildred dan Patty Hill menciptakan lagu berjudul “Good Morning To You” atau Good Morning to All” untuk mereka nyanyikan kepada para murid yang bersekolah di taman kanak-kanak yang mereka kelola. Kedua aktivis pendidikan tersebut memang memiliki latar belakang sebagai ahli pengetahuan musik. Dalam penciptaan lagu ini, Patty (Kepala Sekolah di taman kanak-kanak eksperimental Louisville) bertugas sebagai penulis lirik, dan Mildred (komposer musik) yang menciptakan nada-nadanya. Pada awal abad ke-20 lagu ini mulai banyak dinyanyikan, dengan kata “Happy Birthday” sebagai pengganti kata “Good Morning”. Tidak pernah diketahui siapa yang sebenarnya mulai membuat perubahan kata pada lagu tersebut.</p>
 
-<p>Indonesia juga memiliki lagu untuk ucapan ulang tahun yang tidak kalah populer dari “Happy Birthday”. Lagu tersebut berjudul “Selamat Ulang Tahun” ciptaan <a href="http://budiwarsito.net/adikarso-majalah-varia/">Adikarso</a>. Tembang ini dinyanyikannya bersama <a href="https://dennysakrie63.wordpress.com/2013/09/29/bersilaturahmi-dengan-munif-bahasuan/">Munif Bahasuan</a>, diiringi oleh Orkes Melayu Kelana Ria, dan dapat ditemukan di album musik berjudul “<a href="http://media-kitlv.nl/image/61cad1b6-a369-2810-5471-d819b44a0c75">Kabilah</a>”. <a href="http://reviewmusik.com/irama-record-perusahaan-rekaman-rintisan-sang-kolonel/">Irama Records</a> menjadi pihak yang bertanggung jawab untuk menerbitkan serta mendistribusikan album ini.</p>
+          <figure class="figure w-sm-50 mt-3 mb-4">
+            <img src="../../uploads/songbook-728x1024.jpg" alt="songbook-728x1024.jpg" class="figure-img img-fluid">
+            <figcaption class="figure-caption">Sampul buku "Everyday Song Book". (<a href="http://boingboing.net/2015/08/07/the-twisted-history-of-the-hap.html">Sumber gambar</a>)</figcaption>
+          </figure>
 
-<p><img src="../../uploads/Bukti-ciptaan-Adikarso.jpg" alt="Bukti-ciptaan-Adikarso.jpg" class="img-fluid center-block" /></p>
-<center><small><i>Kata pengantar ini dapat menjadi bukti bahwa pencipta lagu "Selamat Ulang Tahun" adalah Adikarso. (<a href="http://media-kitlv.nl/image/61cad1b6-a369-2810-5471-d819b44a0c75">Sumber gambar</a>)</i></small></center>
+          <p><strong>“Happy Birthday” Bebas Hak Cipta</strong></p>
 
-<p>Selain itu, Adikarso juga menciptakan lagu “<a href="https://www.youtube.com/watch?v=5O_6CjQ_GAo">Papaja Cha-Cha-Cha</a>”. Lagu tersebut terdapat di dalam album “<a href="https://id.wikipedia.org/wiki/Papaja_Mangga_Pisang_Djambu">Papaja Mangga Pisang Djambu</a>” yang menempati peringkat 47 dari “<a href="https://id.wikipedia.org/wiki/150_Album_Indonesia_Terbaik">150 Album Indonesia Terbaik</a>” versi majalah Rolling Stone Indonesia. Materi asli dari lagu “Selamat Ulang Tahun” durasinya lebih panjang dari materi yang biasa dinyanyikan di pesta-pesta. Putar video berikut ini untuk mendengarkan materi asli lagu tersebut.</p>
+          <p>Pembatasan penggunaan lagu yang hampir setiap hari dinyanyikan oleh semua orang (dengan asumsi bahwa setiap hari ada orang yang berulang tahun) oleh Warner Music ini akhirnya mengundang perdebatan. Salah satu argumen terkuat dilontarkan oleh seorang peneliti bernama Robert Brauneis. Pada tahun 2010, Robert menerbitkan hasil penelitiannya yang berjudul <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1111624">“Copyright and the World’s Most Popular Song”</a> (Hak Cipta dan Lagu-Lagu Paling Populer Sedunia). Robert menjabarkan bukti-bukti bahwa lagu ini seharusnya berada di ranah publik sejak dulu. Buku “Everyday Songbook” (1922) menjadi salah satu alat bukti yang digunakan Robert. Pada halaman tempat lagu “Happy Birthday” dan “Good Morning To All” dicantumkan, tidak dicantumkan pula pemberitahuan pemilik hak cipta atas lagu tersebut.</p>
 
-<div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/5O_6CjQ_GAo" frameborder="0" allowfullscreen=""></iframe></div>
+          <div class="ratio ratio-16x9 mt-3 mb-4">
+            <iframe src="https://www.youtube.com/embed/y3whtVeMalo" title="YouTube video" allowfullscreen></iframe>
+          </div>
 
-<p><strong>Fakta-Fakta Hukum</strong></p>
+          <p>Menurut Copyright Act 1909 Amerika Serikat, ciptaan yang tidak mencantumkan copyright notice (atau logo ini © pada ciptaan), maka karya tersebut dianggap berstatus domain publik. Hal ini berlaku bagi semua karya yang dipublikasi ketika Amerika belum memperbaiki sitem hak ciptanya pada tahun 1977. Fakta ini juga digunakan oleh tim pengacara Jennifer Nelson sebagai alat bukti di perkara yang mereka ajukan. Selain itu, jika kita merujuk pada peristiwa penjualan hak cipta oleh Jessica kepada perusahaan Clayton F. Summy, yang dijual hanyalah “beberapa bagian komposisi piano” lagu “Happy Birthday”. Sehingga, ketika Warner/Chappel Music membeli perusahaan tersebut, Warner/Chappel Music juga hanya mendapatkan bagian yang sama dari lagu “Happy Birthday”. Fakta-fakta ini merupakan sebagian dari banyak fakta yang mendorong hakim King untuk memutuskan bahwa lagu “Happy Birthday” adalah milik publik. Maka telah ditetapkan sejak bulan Juni 2016, ketika putusan pengadilan diumumkan, lagu “Happy Birhday” resmi memasuki domain publik.</p>
 
-<p>Berdasarkan hukum yang berlaku di Indonesia, lagu “Selamat Ulang Tahun” belum habis masa berlaku hak ciptanya. Apabila kita merujuk pada peraturan hak cipta terbaru yakni, Undang-Undang No. 28 Tahun 2014 Tentang Hak Cipta (UUHC 2014), masa berlaku hak cipta untuk karya musik adalah seumur hidup Pencipta dan terus berlangsung selama 70 tahun setelah Pencipta meninggal dunia. Kemudian, apabila hak cipta suatu ciptaan dipegang oleh dua pihak atau lebih, maka hak cipta berlaku selama masa hidup Pencipta yang meninggal dunia paling akhir,  dan berlangsung 70 tahun sesudahnya.</p>
+          <figure class="figure w-sm-50 float-sm-end ms-sm-5 mt-2 mb-4">
+            <img src="../../uploads/bs.jpg" alt="bs.jpg" class="figure-img img-fluid">
+            <figcaption class="figure-caption">Adikarso menabuh drum mengiringi Bing Slamet. (<a href="https://dennysakrie63.wordpress.com/2013/11/25/ngak-ngik-bgok-versus-irama-lenso/">Sumber gambar</a>)</figcaption>
+          </figure>
 
-<p><img src="../../uploads/adimunif.jpg" alt="adimunif.jpg" class="img-fluid center-block" /><center><small><i>Daftar lagu-lagu yang ada di album "Kabilah" (<a href="http://media-kitlv.nl/image/61cad1b6-a369-2810-5471-d819b44a0c75">Sumber gambar</a>)</i></small></center></p>
+          <p><strong>Lagu “Selamat Ulang Tahun” Di Indonesia</strong></p>
 
-<p>Jika hak cipta atas lagu tersebut hanya dipegang oleh Adikarso seorang, maka ketentuan masa berlaku hak cipta yang dirujuk yaitu seumur hidup Pencipta, terus berlangsung selama 70 tahun setelah pencipta meninggal dunia. Pada daftar lagu album “Kabilah”, Adikarso dan Munif Bahasuan disebutkan sebagai pihak yang membawakan lagu “Selamat Ulang Tahun” di rekaman tersebut. Tidak kami temukan pernyataan yang jelas apakah Munif Bahasuan termasuk sebagai pihak pemegang hak cipta bersama Adikarso. Namun, jika memang hak cipta atas lagu tersebut dipegang oleh dua orang, maka masa berlaku hak cipta atas karya tersebut masih berlaku 70 tahun setelah pencipta yang paling terakhir meninggal dunia.</p>
+          <p>Indonesia juga memiliki lagu untuk ucapan ulang tahun yang tidak kalah populer dari “Happy Birthday”. Lagu tersebut berjudul “Selamat Ulang Tahun” ciptaan <a href="http://budiwarsito.net/adikarso-majalah-varia/">Adikarso</a>. Tembang ini dinyanyikannya bersama <a href="https://dennysakrie63.wordpress.com/2013/09/29/bersilaturahmi-dengan-munif-bahasuan/">Munif Bahasuan</a>, diiringi oleh Orkes Melayu Kelana Ria, dan dapat ditemukan di album musik berjudul “<a href="http://media-kitlv.nl/image/61cad1b6-a369-2810-5471-d819b44a0c75">Kabilah</a>”. <a href="http://reviewmusik.com/irama-record-perusahaan-rekaman-rintisan-sang-kolonel/">Irama Records</a> menjadi pihak yang bertanggung jawab untuk menerbitkan serta mendistribusikan album ini.</p>
 
-<p><strong>Sumber-sumber:</strong></p>
+          <figure class="figure w-sm-50 float-sm-end ms-sm-5 mt-2 mb-4">
+            <img src="../../uploads/Bukti-ciptaan-Adikarso.jpg" alt="Bukti-ciptaan-Adikarso.jpg" class="figure-img img-fluid">
+            <figcaption class="figure-caption">Kata pengantar ini dapat menjadi bukti bahwa pencipta lagu "Selamat Ulang Tahun" adalah Adikarso. (<a href="http://media-kitlv.nl/image/61cad1b6-a369-2810-5471-d819b44a0c75">Sumber gambar</a>)</figcaption>
+          </figure>
 
-<p><a href="http://www.cbc.ca/news/business/happy-birthday-song-copyright-invalid-filmmakers-allege-1.3172074">Happy Birthday song copyright invalid, filmmakers allege - CBC News</a></p>
+          <p>Selain itu, Adikarso juga menciptakan lagu “<a href="https://www.youtube.com/watch?v=5O_6CjQ_GAo">Papaja Cha-Cha-Cha</a>”. Lagu tersebut terdapat di dalam album “<a href="https://id.wikipedia.org/wiki/Papaja_Mangga_Pisang_Djambu">Papaja Mangga Pisang Djambu</a>” yang menempati peringkat 47 dari “<a href="https://id.wikipedia.org/wiki/150_Album_Indonesia_Terbaik">150 Album Indonesia Terbaik</a>” versi majalah Rolling Stone Indonesia. Materi asli dari lagu “Selamat Ulang Tahun” durasinya lebih panjang dari materi yang biasa dinyanyikan di pesta-pesta. Putar video berikut ini untuk mendengarkan materi asli lagu tersebut.</p>
 
-<p><a href="http://www.cbc.ca/news/business/happy-birthday-ruling-1.3239679">Happy Birthday song should be in Public Domain, judge rules - CBC News</a></p>
+          <div class="ratio ratio-16x9 w-sm-50 mt-3 mb-4">
+            <iframe src="https://www.youtube.com/embed/5O_6CjQ_GAo" title="YouTube video" allowfullscreen></iframe>
+          </div>
 
-<p><a href="http://boingboing.net/2015/08/07/the-twisted-history-of-the-hap.html">The Twisted history of the Happy Birthday song-and the copyright shenanigans that keep it profitable - BoingBoing  </a></p>
+          <p><strong>Fakta-Fakta Hukum</strong></p>
 
-<p><a href="http://www.telegraph.co.uk/music/news/Happy-Birthday-song-and-its-strange-past/">Happy Birthday song and it strange past - The Telegraph</a></p>
+          <p>Berdasarkan hukum yang berlaku di Indonesia, lagu “Selamat Ulang Tahun” belum habis masa berlaku hak ciptanya. Apabila kita merujuk pada peraturan hak cipta terbaru yakni, Undang-Undang No. 28 Tahun 2014 Tentang Hak Cipta (UUHC 2014), masa berlaku hak cipta untuk karya musik adalah seumur hidup Pencipta dan terus berlangsung selama 70 tahun setelah Pencipta meninggal dunia. Kemudian, apabila hak cipta suatu ciptaan dipegang oleh dua pihak atau lebih, maka hak cipta berlaku selama masa hidup Pencipta yang meninggal dunia paling akhir,  dan berlangsung 70 tahun sesudahnya.</p>
 
-<p><a href="https://en.wikipedia.org/wiki/Happy_Birthday_to_You#CITEREFBrauneis2010">Happy Birthday To You - Wikipedia</a></p>
+          <figure class="figure w-sm-50 float-sm-end ms-sm-5 mt-2 mb-4">
+            <img src="../../uploads/adimunif.jpg" alt="adimunif.jpg" class="figure-img img-fluid">
+            <figcaption class="figure-caption">Daftar lagu-lagu yang ada di album "Kabilah" (<a href="http://media-kitlv.nl/image/61cad1b6-a369-2810-5471-d819b44a0c75">Sumber gambar</a>)</figcaption>
+          </figure>
 
-<p><a href="http://wikimapia.org/9427247/id/Rumah-Kebesaran-Adikarso-Pencipta-lagu-Selamat-Ulang-Tahun-Jalan-Cipayung-2-No-8">Peta Letak Rumah Bung Adi Karso - Wikimapia</a></p>
+          <p>Jika hak cipta atas lagu tersebut hanya dipegang oleh Adikarso seorang, maka ketentuan masa berlaku hak cipta yang dirujuk yaitu seumur hidup Pencipta, terus berlangsung selama 70 tahun setelah pencipta meninggal dunia. Pada daftar lagu album “Kabilah”, Adikarso dan Munif Bahasuan disebutkan sebagai pihak yang membawakan lagu “Selamat Ulang Tahun” di rekaman tersebut. Tidak kami temukan pernyataan yang jelas apakah Munif Bahasuan termasuk sebagai pihak pemegang hak cipta bersama Adikarso. Namun, jika memang hak cipta atas lagu tersebut dipegang oleh dua orang, maka masa berlaku hak cipta atas karya tersebut masih berlaku 70 tahun setelah pencipta yang paling terakhir meninggal dunia.</p>
 
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-12">
-                                    <h5 style="display: inline;">Tags:</h5>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Happy Birthday</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Happy Birthday to You</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Public Domain Song</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Public Domain</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Domain Publik</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Selamat Ulang Tahun</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Adikarso</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Munif Bahasuan</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Musik</button>
-                                    
-                            </div>                       
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <h5>Oleh: Hilman Fathoni</h5>
-                        1 Aug 2016
-                        <hr>
-                        <h5>Kategori:</h5>
-                        
-                        <button class="btn btn-white btn-xs" type="button">Kajian</button>
-                        
-                        <hr>
-                        <h5>Berita Terbaru</h5>
-			<ul>
-                        
-			<li><a href="../../2019/01/lokakarya-hak-cipta-dan-lisensi-creative-commons-di-pekanbaru.html" class="btn-link">Lokakarya Hak Cipta dan Lisensi Creative Commons di Pekanbaru</a></li>
-                        
-			<li><a href="../../2018/12/pengumuman-resmi-hasil-akhir-training-of-trainers-creative-commons-indonesia.html" class="btn-link">Pengumuman Resmi: Hasil Akhir Training of Trainers Creative Commons Indonesia</a></li>
-                        
-			<li><a href="../../2018/08/literatur-terbaru-tentang-model-bisnis-terbuka-made-with-cc.html" class="btn-link">Literatur tentang Model Bisnis Terbuka "Made With CC"</a></li>
-                        
-			<li><a href="../../2018/08/data-dan-artikel-ilmiah-terbuka-dari-plos.html" class="btn-link">Data dan Artikel Ilmiah Terbuka dari PLOS!</a></li>
-                        
-			<li><a href="../../2018/08/Konten-Format-Model-3-Dimensi-Berilsensi-CC-di-Platform-Sketchfab.html" class="btn-link">Konten Format Model 3 Dimensi Berilsensi CC di Platform Sketchfab</a></li>
-                        
-	 		</ul>
-			<hr>
-			<h5>Bagikan di:</h5>
-			<a href="https://facebook.com/sharer.php?u=https://creativecommons.or.id/2016/08/kisah-pembebasan-lagu-happy-birthday-ke-domain-publik.html" rel="nofollow" target="_blank"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
-			<a href="https://twitter.com/intent/tweet?text=Kisah Pembebasan Lagu "Happy Birthday" Ke Domain Publik&url=http://creativecommons.or.id//2016/08/kisah-pembebasan-lagu-happy-birthday-ke-domain-publik/&via=&related=" rel="nofollow" target="_blank"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a>
-			</div>
-		</div>
+          <p><strong>Sumber-sumber:</strong></p>
 
-<div class="row">
-<div class="col-lg-9">
-		
-	<div id="disqus_thread"></div>
-	<script>
+          <p><a href="http://www.cbc.ca/news/business/happy-birthday-song-copyright-invalid-filmmakers-allege-1.3172074">Happy Birthday song copyright invalid, filmmakers allege - CBC News</a></p>
 
-	/**
-	*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-	*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-	/*
-	var disqus_config = function () {
-	this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-	this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-	};
-	*/
-	(function() { // DON'T EDIT BELOW THIS LINE
-	var d = document, s = d.createElement('script');
-	s.src = '//creative-commons-indonesia.disqus.com/embed.js';
-	s.setAttribute('data-timestamp', +new Date());
-	(d.head || d.body).appendChild(s);
-	})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <p><a href="http://www.cbc.ca/news/business/happy-birthday-ruling-1.3239679">Happy Birthday song should be in Public Domain, judge rules - CBC News</a></p>
 
-</div>
-</div>
+          <p><a href="http://boingboing.net/2015/08/07/the-twisted-history-of-the-hap.html">The Twisted history of the Happy Birthday song-and the copyright shenanigans that keep it profitable - BoingBoing  </a></p>
 
-        	</div>
-		</div>
-	</div>
+          <p><a href="http://www.telegraph.co.uk/music/news/Happy-Birthday-song-and-its-strange-past/">Happy Birthday song and it strange past - The Telegraph</a></p>
 
-        
-        <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          <p><a href="https://en.wikipedia.org/wiki/Happy_Birthday_to_You#CITEREFBrauneis2010">Happy Birthday To You - Wikipedia</a></p>
 
-  ga('create', 'UA-92784032-1', 'auto');
-  ga('send', 'pageview');
-</script>     
+          <p><a href="http://wikimapia.org/9427247/id/Rumah-Kebesaran-Adikarso-Pencipta-lagu-Selamat-Ulang-Tahun-Jalan-Cipayung-2-No-8">Peta Letak Rumah Bung Adi Karso - Wikimapia</a></p>
 
-<footer class="footer">
-    <div class="container">
-	<nav class="pull-left">
-	    <ul>
-		<li><a href="../../faq.html">FAQ</a></li>
-		<li><a href="../../hubungi-kami.html">Hubungi Kami</a></li>
-		<li><a href="https://www.facebook.com/CreativeCommonsIndonesia"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-		<li><a href="https://twitter.com/CC_ID"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-		<li><a href="../../feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
-	    </ul>
-	</nav>
-	<div class="copyright pull-right"><a href="https://creativecommons.org/licenses/by/4.0/">2012-2016 Creative Commons Indonesia | CC BY 4.0</a></div>
-    </div>
-</footer>
+          <div class="article-end mt-5"></div>
+        </div>
+      </div>
+    </main>
 
-    
-	</div>
-</body>
+    <footer class="mt-5">
+      <div class="container-fluid">
+        <div class="row align-items-md-end pt-5 pb-4">
+          <div class="col-md-12 col-lg-2 offset-lg-1 px-5 px-md-0 mb-4 mb-md-5 mb-lg-2 text-center align-self-center">
+            <img src="../../assets/img/footer-sketch.svg" class="img-fluid h-100 px-2">
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 ps-5 ps-md-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Informasi</h5></li>
+              <li><span class="fa-li"><i class="fa-brands fa-readme"></i></span><a href="../../media.html">Media</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-creative-commons"></i></span><a href="../../lisensi-cc-bahasa-indonesia.html">Lisensi</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-book-open-reader"></i></span><a href="../../kajian.html">Kajian</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-circle-question"></i></span><a href="../../faq.html">FAQ</a></li>             
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Tentang kami</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-person-rays"></i></span><a href="../../tentang.html">Tentang kami</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-newspaper"></i></span><a href="../../berita.html">Berita</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-calendar-check"></i></span><a href="../../acara.html">Acara</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 ps-5 ps-md-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Network</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-users"></i></span><a href="../../sobatccid.html">Sobat CCID</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-creative-commons"></i></span><a href="https://creativecommons.org/">CCHQ</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-earth-asia"></i></span><a href="https://network.creativecommons.org/">CC Global Network</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Kontak</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-address-book"></i></span><a href="../../hubungi-kami.html">Hubungi kami</a></li>              
+              <li><span class="fa-li"><i class="fa-brands fa-square-facebook"></i></span><a href="https://www.facebook.com/CreativeCommonsIndonesia">Facebook</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-twitter"></i></span><a href="https://twitter.com/CC_ID">Twitter</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-instagram"></i></span><a href="https://www.instagram.com/cc.indonesia/">Instagram</a></li>
+          </div>
+        </div>
+        <div class="row footer-license">
+          <div class="col-12 text-center text-white">
+            <p class="my-4"><i class="fa-brands fa-creative-commons pe-1"></i><i class="fa-brands fa-creative-commons-by pe-1"></i> 2012&ndash;2023 Creative Commons Indonesia. Kecuali dinyatakan lain, konten di situs ini dilisensikan di bawah lisensi <a href="https://creativecommons.org/licenses/by/4.0/deed.id">Creative Commons Atribusi 4.0 Internasional</a>. 
+          </div>
+        </div>
+      </div>
+    </footer>
 
+    <!-- js -->
+    <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+    <script src="../../assets/js/popper.min.js"></script>
+    <script src="../../assets/js/bootstrap.js"></script>
+  </body>
 </html>

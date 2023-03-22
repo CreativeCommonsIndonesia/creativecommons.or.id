@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GR2HTWFX22"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GR2HTWFX22');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Creative Commons Indonesia supports the usage of Creative Commons licenses and open cultural works in Indonesia">
@@ -9,27 +19,19 @@
     <title>Tanya Jawab Sobat CCID 2 Agustus 2016</title>
     
     <!-- fonts -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-
-    <!-- icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Sen&display=swap" rel="stylesheet"> 
 
     <!-- css -->
-    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../assets/css/material-kit.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../../assets/css/custom.css" rel="stylesheet">
+    <link href="../../assets/css/animate.min.css" rel="stylesheet">
 
-    <!-- js -->
-    <script src="../../assets/js/jquery-3.6.1.min.js"></script>
-    <script src="../../assets/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/material.min.js"></script>
-    <script src="../../assets/js/material-kit.js"></script>
-
-    <!-- plugins -->
-    <script src="../../assets/js/nouislider.min.js"></script> <!-- sliders (http://refreshless.com/nouislider) -->
-    <script src="../../assets/js/bootstrap-datepicker.js"></script> <!-- datepicker (http://www.eyecon.ro/bootstrap-datepicker) -->
-    <script src="../../assets/js/jPages.js"></script> <!-- pagination -->
-    <script src="../../assets/js/js.js"></script> <!-- pagination -->
+    <!-- icons -->
+    <link href="../../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="../../assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="../../assets/fontawesome/css/solid.css" rel="stylesheet">
 
     <!-- favicon -->
     <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
@@ -37,398 +39,350 @@
     <!-- rss feed -->
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="../../feed.xml">
   </head>
-
     
-<body class="index-page">
-	<div class="wrapper">
-	
-	
-        	<style>
-.main {
-	margin-top: 80px;
-  }
-.navbar, .navbar.navbar-danger {
-	background-color: #9e1c1c;
-	color: #ffffff;
-}
-</style>  
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-md" aria-label="Navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html"><img src="../../assets/img/logoputih.png" alt="Creative Commons Indonesia" class="img-fluid" width="150"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ccidnavbar" aria-controls="ccidnavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <nav class="navbar navbar-danger navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="../../index.html">
-                    <div class="logo-container">
-                        <div class="logo">
-                            <img src="../../assets/img/logoputih.png" alt="Creative Commons Indonesia" class="img-fluid" width="150">
-                        </div>
-                    </div>
-                </a>
-            </div>
-    
-            <div class="collapse navbar-collapse" id="navigation-index">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="../../tentang.html" target="_blank">
-                            Tentang
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../../lisensi-cc-bahasa-indonesia.html" target="_blank">
-                            Lisensi
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Blog <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../../sobatccid.html">Sobat CCID</a></li>
-                            <li><a href="../../berita.html">Berita</a></li>
-                            <li><a href="../../kajian.html">Kajian</a></li>
-                            <li><a href="../../acara.html">Acara</a></li>
-                        </ul>
-                    </li>
-		<li>
-			<a href="../../search.html" target="_blank">
-			<i class="fa fa-search" aria-hidden="true"></i>
-			</a>
-		</li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="ccidnavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Informasi
+              </a>
+              <ul class="dropdown-menu mt-3 bg-ccid-red-31 animate__animated animate__flipInY animate__faster" aria-labelledby="resources">
+                <li><a class="dropdown-item" href="../../lisensi-cc-bahasa-indonesia.html">Lisensi</a></li>
+                <li><a class="dropdown-item" href="../../kajian.html">Kajian</a></li>
+                <li><a class="dropdown-item" href="../../faq.html">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../../berita.html">Berita</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../acara.html">Acara</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../media.html">Media</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../tentang.html">Tentang kami</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../sobatccid.html">Sobat CCID</a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/CreativeCommonsIndonesia" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://twitter.com/CC_ID" title="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/cc.indonesia/" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../hubungi-kami.html" title="Hubungi kami"><i class="fa-solid fa-address-book"></i></a></li>            
+          </ul>       
         </div>
+      </div>
     </nav>
 
-	
-       
-        
-	<div class="main">
-		<div class="section section-basic">
-	    	<div class="container">
-		
-		<small><a href="../../index.html">Beranda</a>/<a href="https://creativecommons.or.id/
-			sobatccid
-		.html">
-			Sobat CCID
-		</a>/Tanya Jawab Sobat CCID 2 Agustus 2016</small>
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="text-center article-title">
-                            <h2>
-                                Tanya Jawab Sobat CCID 2 Agustus 2016
-                            </h2>
-                        </div>
-                            <p><img src="../../uploads/Sobat-Biondy-Alfian.jpg" alt="Sobat-Biondy-Alfian.jpg" class="img-fluid center-block" /></p>
+    <!-- Breadcrumbs -->
+    <div class="container-fluid mt-2">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+          <li class="breadcrumb-item"><a href="../../sobatccid.html">Sobat CCID</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Tanya Jawab Sobat CCID 2 Agustus 2016</li>
+        </ol>
+      </nav>
+    </div>         
+          
+    <main class="container article p-5">
+      <div class="row mt-2 mt-md-5">
+        <div class="col-12">
 
-<p>Pada <a href="https://www.facebook.com/CreativeCommonsIndonesia/posts/1038296166247878">facebook Creative Commons Indonesia</a>, <a href="https://www.facebook.com/biondy.alfian?fref=nf">Biondy Alfian</a> mengajukan pertanyaan tentang ketentuan “Penggunaan Wajar” di Indonesia:</p>
+          <!-- Article meta -->
+          <div class="row article-meta mb-3">
+            <div class="col-sm-6">
+              <i class="fa-solid fa-calendar-day fa-fw"></i> 2 Agustus 2016
+            </div>
+            <div class="col-sm-6 pt-1 pt-sm-0 text-sm-end">
+              <i class="fa-solid fa-share-from-square fa-fw pe-1"></i> Bagikan ke 
+            
+              <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://creativecommons.or.id/2016/08/tanya-jawab-sobat-ccid-2-agustus-2016.html"><i class="fa-brands fa-linkedin ps-1" title="LinkedIn" aria-hidden="true"></i></a>
 
-<p><strong>“Halo, Admin. Bagaimana ketentuan dan penerapan “Penggunaan Wajar” atau “Fair Use” di Indonesia? Apakah Creative Commons Indonesia menyediakan artikel terkait hal ini? Terima kasih”</strong></p>
+              <a href="https://facebook.com/sharer.php?u=https://creativecommons.or.id/2016/08/tanya-jawab-sobat-ccid-2-agustus-2016.html" rel="nofollow" target="_blank"><i class="fa-brands fa-facebook" title="Facebook" aria-hidden="true"></i></a>
 
-<p>Secara sederhana, hak cipta merupakan hak eksklusif yang dimiliki oleh seorang pencipta (dapat dipegang oleh dua orang atau lebih, juga dapat dipegang oleh  sebuah badan hukum) atas ciptaan-ciptaannya. Hak ini diharapkan dapat melindungi kepentingan-kepentingan pencipta atas ciptaannya. Kepentingan-kepentingan tersebut terdiri atas dua hak yakni hak moral dan hak ekonomi. Hak moral merupakan kepentingan pencipta agar disebutkan namanya dalam setiap penggunaan atas ciptaannya. Sedangkan hak ekonomi berfungsi untuk menjamin segala keuntungan yang dapat diperoleh pencipta dari ciptaannya. Setiap pengguna ciptaan diwajibkan untuk menghormati ketentuan dari kedua hak tersebut. <strong>Selain itu, secara tradisional, pengguna juga diharuskan untuk mendapatkan izin terlebih dahulu dari pencipta sebelum menggunakan suatu ciptaan.</strong></p>
+              <a href="https://twitter.com/intent/tweet?url=https://creativecommons.or.id/2016/08/tanya-jawab-sobat-ccid-2-agustus-2016.html" rel="nofollow" target="_blank"><i class="fa-brands fa-twitter" title="Twitter" aria-hidden="true"></i></a>
+            </div>
+          </div>
 
-<p>Selain ketentuan-ketentuan tentang perlindungan hak, rezim hak cipta Indonesia juga membuat beberapa ketentuan tentang pembatasan perlindungan. Ketentuan ini diharapkan dapat menghidupkan fungsi sosial dari suatu ciptaan. <a href="http://arijuliano.blogspot.co.id/2007/05/naif-hki-dan-budaya-hki.html#c8116186029481196067">Sehingga pelaksanaan perlindungan hak cipta tidak hanya berfokus pada kepentingan pencipta saja, namun juga pada kepentingan publik</a>. Beberapa ketentuan ini biasa disebut sebagai “Penggunaan Wajar” atau “Fair Use”.</p>
+          <h1>Tanya Jawab Sobat CCID 2 Agustus 2016</h1>
 
-<p><img src="../../uploads/Penggunaan-Wajar.png" alt="Penggunaan-Wajar.png" class="img-fluid center-block" /><center><small><i>Simbol Fair Use (<a href="https://commons.wikimedia.org/wiki/File:Fair_use_logo.svg">Fair Use Symbol</a>, oleh <a href="https://en.wikipedia.org/wiki/User:%C3%93%C3%B0inn">Óðinn</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA</a>, via &lt;a href="https://commons.wikimedia.org/wiki/Main_Page"Wikimedia Commons&lt;/a&gt;)</i></small></center></p>
+          <!-- Profile of the article author -->
+          <div class="author-profile pt-2 mt-4 mb-5">
+            <img class="img-fluid float-start" src="../../uploads/people/hilman_square.jpg">
+            <h5>Hilman Fathoni</h5>
+            <h6><a href="https://www.linkedin.com/in/hilman-fathoni/"><i class="fa-brands fa-linkedin"></i></a></h6>
+          </div>
 
-<p>“Penggunaan Wajar” merupakan b<strong>eberapa bentuk penggunaan yang dikecualikan dari ketentuan pelanggaran hak cipta</strong>. Ketentuan ini dibuat untuk mengontrol beberapa bentuk penggunaan tersebut dibawah kondisi-kondisi tertentu. <strong>Misalnya, seseorang dapat membagikan atau menyebarluaskan suatu ciptaan tanpa izin dari pencipta untuk kepentingan pendidikan</strong>.</p>
+          <!-- Main article content goes here -->
 
-<p>Melalui Undang-Undang Hak Cipta Tahun 2014 Tentang Hak Cipta (2014), rezim hukum hak cipta nasional kita memuat ketentuan-ketentuan tersebut dalam Pasal 43-51 (<strong>Tentang Pembatasan Hak Cipta</strong>).</p>
+          <img src="../../uploads/Sobat-Biondy-Alfian.jpg" alt="Sobat-Biondy-Alfian.jpg" class="img-fluid w-sm-50 mt-2 mb-4">
 
-<p>Berikut ini adalah beberapa hal substansial dari beberapa pasal-pasal:</p>
+          <p>Pada <a href="https://www.facebook.com/CreativeCommonsIndonesia/posts/1038296166247878">facebook Creative Commons Indonesia</a>, <a href="https://www.facebook.com/biondy.alfian?fref=nf">Biondy Alfian</a> mengajukan pertanyaan tentang ketentuan “Penggunaan Wajar” di Indonesia:</p>
 
-<ol>
-  <li><strong>Pasal 43 UUHC 2014</strong></li>
-</ol>
+          <p><strong>“Halo, Admin. Bagaimana ketentuan dan penerapan “Penggunaan Wajar” atau “Fair Use” di Indonesia? Apakah Creative Commons Indonesia menyediakan artikel terkait hal ini? Terima kasih”</strong></p>
 
-<ul>
-  <li>Perbuatan untuk mengumumkan, mendistribusikan, pengkomunikasian, dan penggandaan <strong>materi asli lambang negara</strong> dan <strong>lagu kebangsaan</strong> bukan merupakan pelanggaran hak cipta.</li>
-</ul>
+          <p>Secara sederhana, hak cipta merupakan hak eksklusif yang dimiliki oleh seorang pencipta (dapat dipegang oleh dua orang atau lebih, juga dapat dipegang oleh  sebuah badan hukum) atas ciptaan-ciptaannya. Hak ini diharapkan dapat melindungi kepentingan-kepentingan pencipta atas ciptaannya. Kepentingan-kepentingan tersebut terdiri atas dua hak yakni hak moral dan hak ekonomi. Hak moral merupakan kepentingan pencipta agar disebutkan namanya dalam setiap penggunaan atas ciptaannya. Sedangkan hak ekonomi berfungsi untuk menjamin segala keuntungan yang dapat diperoleh pencipta dari ciptaannya. Setiap pengguna ciptaan diwajibkan untuk menghormati ketentuan dari kedua hak tersebut. <strong>Selain itu, secara tradisional, pengguna juga diharuskan untuk mendapatkan izin terlebih dahulu dari pencipta sebelum menggunakan suatu ciptaan.</strong></p>
 
-<p>Yang dimaksud dengan <strong>materi asli</strong> adalah materi yang bukan merupakan ciptaan turunan. Materi ini <strong>bukan</strong> merupakan buatan pihak yang bukan pencipta asli, dimana buatan tersebut telah dirubah sedemikian rupa sehingga berbeda dengan materi aslinya.</p>
+          <p>Selain ketentuan-ketentuan tentang perlindungan hak, rezim hak cipta Indonesia juga membuat beberapa ketentuan tentang pembatasan perlindungan. Ketentuan ini diharapkan dapat menghidupkan fungsi sosial dari suatu ciptaan. <a href="http://arijuliano.blogspot.co.id/2007/05/naif-hki-dan-budaya-hki.html#c8116186029481196067">Sehingga pelaksanaan perlindungan hak cipta tidak hanya berfokus pada kepentingan pencipta saja, namun juga pada kepentingan publik</a>. Beberapa ketentuan ini biasa disebut sebagai “Penggunaan Wajar” atau “Fair Use”.</p>
 
-<p><img src="../../uploads/IndonesiaRaya-SinPo1928-752x1024.jpg" alt="IndonesiaRaya-SinPo1928-752x1024.jpg" class="img-fluid center-block" /><center><small><i>Publikasi pertama lagu Indonesia Raya di edisi tanggal 10 November 1928 di majalah mingguan Sin Po. (<a href="https://commons.wikimedia.org/wiki/File:IndonesiaRaya-SinPo1928.jpg">Indonesia Raya- Sin Po 1928</a>, <a href="https://id.wikipedia.org/wiki/domain_publik">Domain Publik</a> via <a href="https://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a>)</i></small></center></p>
+          <figure class="figure w-sm-25 float-sm-end ms-sm-5 mt-3 mb-4">
+            <img src="../../uploads/Penggunaan-Wajar.png" alt="Penggunaan-Wajar.png" class="figure-img img-fluid borderless">
+            <figcaption class="figure-caption">Simbol Fair Use (<a href="https://commons.wikimedia.org/wiki/File:Fair_use_logo.svg">Fair Use Symbol</a>, oleh <a href="https://en.wikipedia.org/wiki/User:%C3%93%C3%B0inn">Óðinn</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA</a>, via <a href="https://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a>).</figcaption>
+          </figure>
 
-<p>Untuk lagu kebangsaan, kita dapat menunjuk lagu “Indonesia Raya” sebagai lagu yang dimaksud oleh ketentuan tersebut. Lagu ini dibuat oleh seorang penulis lagu bernama Wage Rudolf (W.R.) Soepratman dan pertama kali dinyanyikan pada Kongres Pemuda II tahun 1928. Tembang ini mengalami perubahan pada tubuh liriknya di tahun 1944, dan aransemen musiknya dibuat pada tahun 1958, masih sama hingga yang digunakan sekarang. Selain itu, lagu ini <strong>telah bebas hak cipta sejak tahun 2009</strong>, yaitu 70 tahun setelah meninggalnya W.R. Soepratman pada tahun 1938. Penghitungan ini merujuk pada ketentuan masa berlaku hak cipta dari Undang-Undang No. 28 Tahun 2014 Tentang Hak Cipta.</p>
+          <p>“Penggunaan Wajar” merupakan b<strong>eberapa bentuk penggunaan yang dikecualikan dari ketentuan pelanggaran hak cipta</strong>. Ketentuan ini dibuat untuk mengontrol beberapa bentuk penggunaan tersebut dibawah kondisi-kondisi tertentu. <strong>Misalnya, seseorang dapat membagikan atau menyebarluaskan suatu ciptaan tanpa izin dari pencipta untuk kepentingan pendidikan</strong>.</p>
 
-<ul>
-  <li>Pembuatan atau Penyebarluasan ciptaan melalui media teknologi informasi dan komunikasi (Internet) <strong>yang tidak bersifat komersial</strong>, dan / atau <strong>pencipta tersebut menyatakan tidak keberatan atas perbuatan tersebut</strong>, tidak dianggap sebagai pelanggaran hak cipta.</li>
-</ul>
+          <p>Melalui Undang-Undang Hak Cipta Tahun 2014 Tentang Hak Cipta (2014), rezim hukum hak cipta nasional kita memuat ketentuan-ketentuan tersebut dalam Pasal 43-51 (<strong>Tentang Pembatasan Hak Cipta</strong>).</p>
 
-<p>Artinya, Anda diperbolehkan melakukan beberapa perbuatan yang ditunjuk oleh ketentuan di atas asal tidak melibatkan kepentingan komersial. Hingga kini belum ada batas yang dapat menjadi tolak ukur penggunaan komersial suatu ciptaan. Namun, untuk menghindari keraguan kita akan mengacu pada pengertiannya yang paling luas, <strong>yaitu setiap penggunaan yang memberikan keuntungan finansial harus dianggap sebagai penggunaan komersial</strong> (terutama yang dilaksanakan oleh perusahaan yang berorientasi pada keuntungan).</p>
+          <p>Berikut ini adalah beberapa hal substansial dari beberapa pasal-pasal:</p>
 
-<p>Namun, pasal ini juga menyebutkan bahwa bentuk <strong>penggunaan untuk kepentingan komersial sah-sah saja jika pencipta merasa tidak keberatan atas perbuatan tersebut</strong>.</p>
+          <ol>
+            <li><strong>Pasal 43 UUHC 2014</strong></li>
+          </ol>
 
-<p><strong>Bagaimana kita dapat mengetahui seorang pencipta memperbolehkan penggunaan komersial atas ciptaannya?</strong></p>
+          <ul>
+            <li>Perbuatan untuk mengumumkan, mendistribusikan, pengkomunikasian, dan penggandaan <strong>materi asli lambang negara</strong> dan <strong>lagu kebangsaan</strong> bukan merupakan pelanggaran hak cipta.</li>
+          </ul>
 
-<p><img src="../../uploads/CC-BY-RED.jpg" alt="CC-BY-RED.jpg" class="img-fluid center-block" /><center><small><i>Contoh Penggunaan Lisensi CC di Flickr.com (<a href="https://www.flickr.com/photos/62713570@N07/14983911395/">Sumber gambar</a>).</i></small></center></p>
+          <p>Yang dimaksud dengan <strong>materi asli</strong> adalah materi yang bukan merupakan ciptaan turunan. Materi ini <strong>bukan</strong> merupakan buatan pihak yang bukan pencipta asli, dimana buatan tersebut telah dirubah sedemikian rupa sehingga berbeda dengan materi aslinya.</p>
 
-<p>Selain dengan memanfaatkan ciptaan yang <a href="https://ccid.siteleaf.net/kajian/2016/07/18/habis-belum-mencari-tahu-karya-yang-telah-bebas-hak-cipta.html">sudah bebas hak cipta</a> untuk kepentingan komersial, kita juga dapat memanfaatkan ciptaan-ciptaan yang menerapkan lisensi Creative Commons <a href="https://creativecommons.org/licenses/by/4.0/deed.id">BY</a> (Atribusi) dan / atau <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.id">BY-SA</a> (Atribusi-BerbagiSerupa). Ciptaan-ciptaan ini biasanya ditempel dengan ketentuan lisensi yang digunakan oleh penciptanya. Dengan ditempelkannya ketentuan lisensi ini, kita dapat mengetahui pencipta memperbolehkan penggunaan untuk kepentingan komersial atas ciptaannya atau tidak. Setiap ciptaan yang menggunakan lisensi ini juga secara langsung memberikan izin kepada pengguna untuk memanfaatkan ciptaan. Untuk memperjelas pelarangan penggunaan ciptaan untuk kepentingan komersial, pencipta dapat menggunakan lisensi CC <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.id">BY-NC</a> (Atribusi-NonKomersial) atau CC <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.id">BY-NC-SA</a> (Atribusi-NonKomersial-BerbagiSerupa).</p>
+          <figure class="figure w-100 mt-3 mb-4 text-center">
+            <img src="../../uploads/IndonesiaRaya-SinPo1928-752x1024.jpg" alt="IndonesiaRaya-SinPo1928-752x1024.jpg" class="figure-img img-fluid borderless">
+            <figcaption class="figure-caption">Publikasi pertama lagu Indonesia Raya di edisi tanggal 10 November 1928 di majalah mingguan Sin Po. (<a href="https://commons.wikimedia.org/wiki/File:IndonesiaRaya-SinPo1928.jpg">Indonesia Raya- Sin Po 1928</a>, <a href="https://id.wikipedia.org/wiki/domain_publik">Domain Publik</a> via <a href="https://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a>).</figcaption>
+          </figure>
 
-<p>Berikut ini adalah penjelasan tentang ketentuan dari tiap lisensi tersebut:</p>
+          <p>Untuk lagu kebangsaan, kita dapat menunjuk lagu “Indonesia Raya” sebagai lagu yang dimaksud oleh ketentuan tersebut. Lagu ini dibuat oleh seorang penulis lagu bernama Wage Rudolf (W.R.) Soepratman dan pertama kali dinyanyikan pada Kongres Pemuda II tahun 1928. Tembang ini mengalami perubahan pada tubuh liriknya di tahun 1944, dan aransemen musiknya dibuat pada tahun 1958, masih sama hingga yang digunakan sekarang. Selain itu, lagu ini <strong>telah bebas hak cipta sejak tahun 2009</strong>, yaitu 70 tahun setelah meninggalnya W.R. Soepratman pada tahun 1938. Penghitungan ini merujuk pada ketentuan masa berlaku hak cipta dari Undang-Undang No. 28 Tahun 2014 Tentang Hak Cipta.</p>
 
-<p>BY</p>
+          <ul>
+            <li>Pembuatan atau Penyebarluasan ciptaan melalui media teknologi informasi dan komunikasi (Internet) <strong>yang tidak bersifat komersial</strong>, dan / atau <strong>pencipta tersebut menyatakan tidak keberatan atas perbuatan tersebut</strong>, tidak dianggap sebagai pelanggaran hak cipta.</li>
+          </ul>
 
-<p><img src="../../uploads/BY.png" alt="BY.png" class="img-fluid center-block" /></p>
+          <p>Artinya, Anda diperbolehkan melakukan beberapa perbuatan yang ditunjuk oleh ketentuan di atas asal tidak melibatkan kepentingan komersial. Hingga kini belum ada batas yang dapat menjadi tolak ukur penggunaan komersial suatu ciptaan. Namun, untuk menghindari keraguan kita akan mengacu pada pengertiannya yang paling luas, <strong>yaitu setiap penggunaan yang memberikan keuntungan finansial harus dianggap sebagai penggunaan komersial</strong> (terutama yang dilaksanakan oleh perusahaan yang berorientasi pada keuntungan).</p>
 
-<p><a href="https://creativecommons.org/licenses/by/4.0/deed.id">Lisensi CC Atribusi</a></p>
+          <p>Namun, pasal ini juga menyebutkan bahwa bentuk <strong>penggunaan untuk kepentingan komersial sah-sah saja jika pencipta merasa tidak keberatan atas perbuatan tersebut</strong>.</p>
 
-<p>Anda diizinkan:</p>
+          <p><strong>Bagaimana kita dapat mengetahui seorang pencipta memperbolehkan penggunaan komersial atas ciptaannya?</strong></p>
 
-<ul>
-  <li>Berbagi: Menyalin dan menyebarluaskan ciptaan.</li>
-  <li>Adaptasi: Mengubah, menggubah, dan membuat ciptaan turunan dari suatu ciptaan.</li>
-</ul>
+          <figure class="figure w-sm-50 mt-3 mb-4">
+            <img src="../../uploads/CC-BY-RED.jpg" alt="CC-BY-RED.jpg" class="figure-img img-fluid">
+            <figcaption class="figure-caption">Contoh Penggunaan Lisensi CC di Flickr.com (<a href="https://www.flickr.com/photos/62713570@N07/14983911395/">Sumber gambar</a>).</figcaption>
+          </figure>
 
-<p>Dengan catatan:</p>
+          <p>Selain dengan memanfaatkan ciptaan yang <a href="https://ccid.siteleaf.net/kajian/2016/07/18/habis-belum-mencari-tahu-karya-yang-telah-bebas-hak-cipta.html">sudah bebas hak cipta</a> untuk kepentingan komersial, kita juga dapat memanfaatkan ciptaan-ciptaan yang menerapkan lisensi Creative Commons <a href="https://creativecommons.org/licenses/by/4.0/deed.id">BY</a> (Atribusi) dan / atau <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.id">BY-SA</a> (Atribusi-BerbagiSerupa). Ciptaan-ciptaan ini biasanya ditempel dengan ketentuan lisensi yang digunakan oleh penciptanya. Dengan ditempelkannya ketentuan lisensi ini, kita dapat mengetahui pencipta memperbolehkan penggunaan untuk kepentingan komersial atas ciptaannya atau tidak. Setiap ciptaan yang menggunakan lisensi ini juga secara langsung memberikan izin kepada pengguna untuk memanfaatkan ciptaan. Untuk memperjelas pelarangan penggunaan ciptaan untuk kepentingan komersial, pencipta dapat menggunakan lisensi CC <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.id">BY-NC</a> (Atribusi-NonKomersial) atau CC <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.id">BY-NC-SA</a> (Atribusi-NonKomersial-BerbagiSerupa).</p>
 
-<ul>
-  <li>Atribusi: mencatumkan nama yang sesuai, mencantumkan tautan terhadap lisensi, dan menunjukan perubahan yang dibuat.</li>
-</ul>
+          <p>Berikut ini adalah penjelasan tentang ketentuan dari tiap lisensi tersebut:</p>
 
-<p>BY-SA</p>
+          <p>BY</p>
 
-<p><img src="../../uploads/by-sa.png" alt="by-sa.png" class="img-fluid center-block" /></p>
+          <img src="../../uploads/BY.png" alt="BY.png" class="img-fluid borderless mt-3 mb-4">
 
-<p><a href="https://creativecommons.org/licenses/by/4.0/deed.id">Lisensi CC Atribusi-BerbagiSerupa</a></p>
+          <p><a href="https://creativecommons.org/licenses/by/4.0/deed.id">Lisensi CC Atribusi</a></p>
 
-<p>Anda diizinkan:</p>
+          <p>Anda diizinkan:</p>
 
-<ul>
-  <li>Berbagi: Menyalin dan menyebarluaskan ciptaan.</li>
-  <li>Adaptasi: Mengubah, menggubah, dan membuat ciptaan turunan dari suatu ciptaan.</li>
-</ul>
+          <ul>
+            <li>Berbagi: Menyalin dan menyebarluaskan ciptaan.</li>
+            <li>Adaptasi: Mengubah, menggubah, dan membuat ciptaan turunan dari suatu ciptaan.</li>
+          </ul>
 
-<p>Dengan catatan:</p>
+          <p>Dengan catatan:</p>
 
-<ul>
-  <li>Atribusi: mencatumkan nama yang sesuai, mencantumkan tautan terhadap lisensi, dan menunjukan perubahan yang dibuat.</li>
-  <li>BerbagiSerupa: Apabila Anda menggubah, mengubah, atau membuat ciptaan turunan dari suatu ciptaan, Anda harus menyebarluaskan kontribusi Anda di bawah lisensi yang sama dengan materi asli.</li>
-</ul>
+          <ul>
+            <li>Atribusi: mencatumkan nama yang sesuai, mencantumkan tautan terhadap lisensi, dan menunjukan perubahan yang dibuat.</li>
+          </ul>
 
-<p>BY-NC</p>
+          <p>BY-SA</p>
 
-<p><img src="../../uploads/by-nc.png" alt="by-nc.png" class="img-fluid center-block" /></p>
+          <img src="../../uploads/by-sa.png" alt="by-sa.png" class="img-fluid borderless mt-3 mb-4">
 
-<p><a href="https://creativecommons.org/licenses/by/4.0/deed.id">Lisensi CC Atribusi-NonKomersial</a></p>
+          <p><a href="https://creativecommons.org/licenses/by/4.0/deed.id">Lisensi CC Atribusi-BerbagiSerupa</a></p>
 
-<p>Anda diizinkan:</p>
+          <p>Anda diizinkan:</p>
 
-<ul>
-  <li>Berbagi: Menyalin dan menyebarluaskan ciptaan.</li>
-  <li>Adaptasi: Mengubah, menggubah, dan membuat ciptaan turunan dari suatu ciptaan.</li>
-</ul>
+          <ul>
+            <li>Berbagi: Menyalin dan menyebarluaskan ciptaan.</li>
+            <li>Adaptasi: Mengubah, menggubah, dan membuat ciptaan turunan dari suatu ciptaan.</li>
+          </ul>
 
-<p>Dengan catatan:</p>
+          <p>Dengan catatan:</p>
 
-<ul>
-  <li>Atribusi: mencatumkan nama yang sesuai, mencantumkan tautan terhadap lisensi, dan menunjukan perubahan yang dibuat.</li>
-  <li>NonKomersial: Tidak dapat menggunakan ciptaan untuk kepentingan komersial.</li>
-</ul>
+          <ul>
+            <li>Atribusi: mencatumkan nama yang sesuai, mencantumkan tautan terhadap lisensi, dan menunjukan perubahan yang dibuat.</li>
+            <li>BerbagiSerupa: Apabila Anda menggubah, mengubah, atau membuat ciptaan turunan dari suatu ciptaan, Anda harus menyebarluaskan kontribusi Anda di bawah lisensi yang sama dengan materi asli.</li>
+          </ul>
 
-<p>BY-NC-SA</p>
+          <p>BY-NC</p>
 
-<p><img src="../../uploads/by-nc-sa.png" alt="by-nc-sa.png" class="img-fluid center-block" /></p>
+          <img src="../../uploads/by-nc.png" alt="by-nc.png" class="img-fluid borderless mt-3 mb-4">
 
-<p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.id">Lisensi CC Atribusi-NonKomersial-BerbagiSerupa</a></p>
+          <p><a href="https://creativecommons.org/licenses/by/4.0/deed.id">Lisensi CC Atribusi-NonKomersial</a></p>
 
-<p>Anda diizinkan:</p>
+          <p>Anda diizinkan:</p>
 
-<ul>
-  <li>Berbagi: Menyalin dan menyebarluaskan ciptaan.</li>
-  <li>Adaptasi: Mengubah, menggubah, dan membuat ciptaan turunan dari suatu ciptaan.</li>
-</ul>
+          <ul>
+            <li>Berbagi: Menyalin dan menyebarluaskan ciptaan.</li>
+            <li>Adaptasi: Mengubah, menggubah, dan membuat ciptaan turunan dari suatu ciptaan.</li>
+          </ul>
 
-<p>Dengan catatan:</p>
+          <p>Dengan catatan:</p>
 
-<ul>
-  <li>Atribusi: mencatumkan nama yang sesuai, mencantumkan tautan terhadap lisensi, dan menunjukan perubahan yang dibuat.</li>
-  <li>NonKomersial: Tidak dapat menggunakan ciptaan untuk kepentingan komersial.</li>
-  <li>BerbagiSerupa: Apabila Anda menggubah, mengubah, atau membuat ciptaan turunan dari suatu ciptaan, Anda harus menyebarluaskan kontribusi Anda di bawah lisensi yang sama dengan materi asli.</li>
-</ul>
+          <ul>
+            <li>Atribusi: mencatumkan nama yang sesuai, mencantumkan tautan terhadap lisensi, dan menunjukan perubahan yang dibuat.</li>
+            <li>NonKomersial: Tidak dapat menggunakan ciptaan untuk kepentingan komersial.</li>
+          </ul>
 
-<p><img src="../../uploads/Joko_Widodo_2014_official_portrait.jpg" alt="Joko_Widodo_2014_official_portrait.jpg" class="img-fluid center-block" /><center><small><i>Foto Resmi Presiden Indonesia Joko Widodo (<a href="http://www.indonesia.go.id/in/presiden-dan-wakil-presiden/presiden">Dokumen Resmi Negara Indonesia</a>)</i></small></center></p>
+          <p>BY-NC-SA</p>
 
-<ul>
-  <li>Segala bentuk penggunaan untuk ciptaan-ciptaan yang merupakan dokumen negara, bukan merupakan pelanggaran hak cipta.</li>
-</ul>
+          <img src="../../uploads/by-nc-sa.png" alt="by-nc-sa.png" class="img-fluid borderless mt-3 mb-4">
 
-<p>Potret resmi presiden merupakan salah satu wujud dari dokumen negara. Pengguna dibebaskan untuk menggandakan, menyebarluaskan, dan mendistribusikan dokumen negara, termasuk salah satunya adalah peraturan perundang-undangan yang diedarkan. P<strong>enggunaan ini harus memperhatikan martabat dan kewajaran dari obyek-obyek yang digunakan</strong>.</p>
+          <p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.id">Lisensi CC Atribusi-NonKomersial-BerbagiSerupa</a></p>
 
-<p><strong>2. Pasal 44 UUHC 2014</strong></p>
+          <p>Anda diizinkan:</p>
 
-<p>Dalam pasal ini dijabarkan bahwa penggunaan, pengambilan, penggandaan suatu ciptaan atau produk hak terkait secara seluruh atau sebagian yang substantial tidak dianggap sebagai pelanggaran hak cipta apabila digunakan untuk keperluan pendidikan yang diantaranya:</p>
+          <ul>
+            <li>Berbagi: Menyalin dan menyebarluaskan ciptaan.</li>
+            <li>Adaptasi: Mengubah, menggubah, dan membuat ciptaan turunan dari suatu ciptaan.</li>
+          </ul>
 
-<ul>
-  <li>Pendidikan, penelitian, penulisan karya ilmiah, penulisan laporan, penulisan kritik atau tinjauan suatu masalah dengan tidak merugikan kepentingan yang wajar dari Pencipta atau Pemegang Hak Cipta;</li>
-  <li>Ceramah yang hanya untuk tujuan pendidikan dan ilmu pengetahuan.</li>
-</ul>
-
-<p>Informasi lebih lanjut terkait siasat penggunaan ciptaan untuk kepentingan pendidikan dapat anda baca <a href="https://ccid.siteleaf.net/kajian/2016/06/12/hak-cipta-di-ruang-kelas-tips-pendekatan-praktis-untuk-guru.html">di sini</a> dan <a href="https://ccid.siteleaf.net/kajian/2016/06/12/wahai-para-guru-hak-cipta-penting-bagi-anda.html">di sini</a>.</p>
-
-<p><strong>3. Pasal 45, 46, dan 47 UUHC 2014</strong></p>
-
-<p>Ketiga pasal ini menjabarkan ketentuan-ketentuan terkait jenis-jenis penggandaan terhadap ciptaan-ciptaan tertentu yang dapat dianggap sebagai penggunaan wajar. Ketentuan-ketentuannya adalah sebagai berikut:</p>
-
-<p><strong>Program Komputer</strong></p>
-
-<ul>
-  <li>Penggandaan sebanyak satu salinan program komputer oleh pengguna yang sah dapat dilakukan tanpa izin pencipta atau pemegang hak cipta untuk tujuan penelitian dan pengembangan program komputer tersebut.</li>
-  <li>Penggandaan sebanyak satu salinan program komputer oleh pengguna yang sah dapat dilakukan tanpa izin pencipta atau pemegang hak cipta sebagai arsip atau cadangan untuk mencegah kehilangan program komputer yang didapat secara sah tersebut.
-Salinan tersebut harus dimusnahkan apabila penggunaan program komputer telah berakhir.</li>
-</ul>
-
-<p><strong>Penggandaan Untuk Kepentingan Pribadi</strong></p>
-
-<p>Pengguna dapat menggandakan ciptaan sebanyak satu salinan untuk kepentingan pribadi tanpa izin dari pencipta atau pemegang hak cipta, dengan kondisi:</p>
-
-<ul>
-  <li>Bukan seluruh atau bagian substansial dari suatu buku atau notasi musik.</li>
-  <li>Bukan seluruh atau bagian substasian dari suatu basis data dalam bentuk digital.</li>
-</ul>
-
-<p><strong>Penggandan Untuk Kepentingan Perpustakaan</strong></p>
-
-<p>Setiap perpustakaan atau lembaga arsip yang tidak bertujuan komersial diperbolehkan menggandakan ciptaan sebanyak satu salinan tanpa izin dari pencipta atau pemegang hak cipta, dengan kondisi:</p>
-
-<ul>
-  <li>Perpustakaan atau lembaga arsip dapat menjamin ciptaan hanya digunakan untuk tujuan pendidikan atau penelitian.</li>
-  <li>Penggandaan dilakukan secara terpisah, dan bukan merupakan kegiatan yang berulang. Jika dilakukan berulang, kegiatan tersebut harus bukan kegiatan yang saling berhubungan.</li>
-  <li>Penggandaan dimaksudkan untuk pemeliharaan, penggantian salinan yang diperlukan, atau penggantian salinan yang hilang.</li>
-  <li>Penggandaan dimaksudkan untuk pertukaran informasi antara perpustakaan atau lembaga arsip.</li>
-</ul>
-
-<p><strong>4. Pasal 48 UUHC 2014</strong></p>
-
-<p>Pasal ini menjelaskan bahwa penggandaan, penyiaran, atau komunikasi ciptaan untuk tujuan informasi** dengan menyebutkan sumber dan nama pencipta** diperbolehkan terhadap ciptaan yang berupa:</p>
-
-<ul>
-  <li>Artikel yang sudah pernah dilakukan pengumuman baik di media cetak maupun di media elektronik.</li>
-  <li>Laporan peristiwa aktual.</li>
-  <li>Karya ilmiah, pidato, ceramah, atau Ciptaan sejenis yang disampaikan kepada publik.</li>
-</ul>
-
-<p><strong>5. Pasal 49 UUHC 2014</strong></p>
-
-<p>Pasal ini mengatur bahwa penggandaan ciptaan untuk sementara dapat dilakukan tanpa dianggap sebagai pelanggaran hak cipta. Penggandaan yang dimaksudkan adalah untuk tujuan pemeliharaan ciptaan, misalnya dengan mengunggah ciptaan tersebut ke tempat penyimpanan data di internet seperti <a href="https://www.dropbox.com/">Dropbox</a> atau <a href="https://archive.org/">Internet Archive</a>. Penggandaan ini dilakukan dengan mengantongi izin dari Pencipta. Namun, berkas-berkas digital hasil penggandaan ciptaan tersebut harus mempunyai mekanisme penghapusan otomatis sehingga tidak dapat ditampilkan kembali.</p>
-
-<p>Teks lengkap dari ketentuan-ketentuan ini dapat Anda baca dengan mengakses <a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwjpgr_xw6LOAhVN9WMKHYRiAh4QFggeMAA&amp;url=http%3A%2F%2Fwww.dgip.go.id%2Fimages%2Fki-images%2Fpdf-files%2Fuu_pp1%2Fuu_hc_%252028_2014.pdf&amp;usg=AFQjCNE8VXY1L5-67iXWs_IVyCS9FTbFww&amp;sig2=ssi2Wi-b9DLMMZXKJoUnng">UUHC 2014</a>.</p>
-
-<p>Semoga membantu. Pokoknya Creative Commons!</p>
-
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-12">
-                                    <h5 style="display: inline;">Tags:</h5>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Tanya Jawab</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Sobat CCID</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Fair Use</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Penggunaan Wajar</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Lisensi Creative Commons</button>
-                                    
-                            </div>                       
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <h5>Oleh: Hilman Fathoni</h5>
-                        2 Aug 2016
-                        <hr>
-                        <h5>Kategori:</h5>
-                        
-                        <button class="btn btn-white btn-xs" type="button">Sobat CCID</button>
-                        
-                        <button class="btn btn-white btn-xs" type="button">Kajian</button>
-                        
-                        <hr>
-                        <h5>Berita Terbaru</h5>
-			<ul>
-                        
-			<li><a href="../../2019/01/lokakarya-hak-cipta-dan-lisensi-creative-commons-di-pekanbaru.html" class="btn-link">Lokakarya Hak Cipta dan Lisensi Creative Commons di Pekanbaru</a></li>
-                        
-			<li><a href="../../2018/12/pengumuman-resmi-hasil-akhir-training-of-trainers-creative-commons-indonesia.html" class="btn-link">Pengumuman Resmi: Hasil Akhir Training of Trainers Creative Commons Indonesia</a></li>
-                        
-			<li><a href="../../2018/08/literatur-terbaru-tentang-model-bisnis-terbuka-made-with-cc.html" class="btn-link">Literatur tentang Model Bisnis Terbuka "Made With CC"</a></li>
-                        
-			<li><a href="../../2018/08/data-dan-artikel-ilmiah-terbuka-dari-plos.html" class="btn-link">Data dan Artikel Ilmiah Terbuka dari PLOS!</a></li>
-                        
-			<li><a href="../../2018/08/Konten-Format-Model-3-Dimensi-Berilsensi-CC-di-Platform-Sketchfab.html" class="btn-link">Konten Format Model 3 Dimensi Berilsensi CC di Platform Sketchfab</a></li>
-                        
-	 		</ul>
-			<hr>
-			<h5>Bagikan di:</h5>
-			<a href="https://facebook.com/sharer.php?u=https://creativecommons.or.id/2016/08/tanya-jawab-sobat-ccid-2-agustus-2016.html" rel="nofollow" target="_blank"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
-			<a href="https://twitter.com/intent/tweet?text=Tanya Jawab Sobat CCID 2 Agustus 2016&url=http://creativecommons.or.id//2016/08/tanya-jawab-sobat-ccid-2-agustus-2016/&via=&related=" rel="nofollow" target="_blank"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a>
-			</div>
-		</div>
-
-<div class="row">
-<div class="col-lg-9">
-		
-	<div id="disqus_thread"></div>
-	<script>
-
-	/**
-	*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-	*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-	/*
-	var disqus_config = function () {
-	this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-	this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-	};
-	*/
-	(function() { // DON'T EDIT BELOW THIS LINE
-	var d = document, s = d.createElement('script');
-	s.src = '//creative-commons-indonesia.disqus.com/embed.js';
-	s.setAttribute('data-timestamp', +new Date());
-	(d.head || d.body).appendChild(s);
-	})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-</div>
-</div>
-
-        	</div>
-		</div>
-	</div>
-
-        
-        <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-92784032-1', 'auto');
-  ga('send', 'pageview');
-</script>     
-
-<footer class="footer">
-    <div class="container">
-	<nav class="pull-left">
-	    <ul>
-		<li><a href="../../faq.html">FAQ</a></li>
-		<li><a href="../../hubungi-kami.html">Hubungi Kami</a></li>
-		<li><a href="https://www.facebook.com/CreativeCommonsIndonesia"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-		<li><a href="https://twitter.com/CC_ID"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-		<li><a href="../../feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
-	    </ul>
-	</nav>
-	<div class="copyright pull-right"><a href="https://creativecommons.org/licenses/by/4.0/">2012-2016 Creative Commons Indonesia | CC BY 4.0</a></div>
-    </div>
-</footer>
-
-    
-	</div>
-</body>
+          <p>Dengan catatan:</p>
 
+          <ul>
+            <li>Atribusi: mencatumkan nama yang sesuai, mencantumkan tautan terhadap lisensi, dan menunjukan perubahan yang dibuat.</li>
+            <li>NonKomersial: Tidak dapat menggunakan ciptaan untuk kepentingan komersial.</li>
+            <li>BerbagiSerupa: Apabila Anda menggubah, mengubah, atau membuat ciptaan turunan dari suatu ciptaan, Anda harus menyebarluaskan kontribusi Anda di bawah lisensi yang sama dengan materi asli.</li>
+          </ul>
+
+          <figure class="figure w-sm-50 float-sm-end ms-sm-5 mt-3 mb-4">
+            <img src="../../uploads/Joko_Widodo_2014_official_portrait.jpg" alt="Joko_Widodo_2014_official_portrait.jpg" class="figure-img img-fluid">
+            <figcaption class="figure-caption">Foto Resmi Presiden Indonesia Joko Widodo (<a href="http://www.indonesia.go.id/in/presiden-dan-wakil-presiden/presiden">Dokumen Resmi Negara Indonesia</a>).</figcaption>
+          </figure>
+
+          <ul>
+            <li>Segala bentuk penggunaan untuk ciptaan-ciptaan yang merupakan dokumen negara, bukan merupakan pelanggaran hak cipta.</li>
+          </ul>
+
+          <p>Potret resmi presiden merupakan salah satu wujud dari dokumen negara. Pengguna dibebaskan untuk menggandakan, menyebarluaskan, dan mendistribusikan dokumen negara, termasuk salah satunya adalah peraturan perundang-undangan yang diedarkan. P<strong>enggunaan ini harus memperhatikan martabat dan kewajaran dari obyek-obyek yang digunakan</strong>.</p>
+
+          <p><strong>2. Pasal 44 UUHC 2014</strong></p>
+
+          <p>Dalam pasal ini dijabarkan bahwa penggunaan, pengambilan, penggandaan suatu ciptaan atau produk hak terkait secara seluruh atau sebagian yang substantial tidak dianggap sebagai pelanggaran hak cipta apabila digunakan untuk keperluan pendidikan yang diantaranya:</p>
+
+          <ul>
+            <li>Pendidikan, penelitian, penulisan karya ilmiah, penulisan laporan, penulisan kritik atau tinjauan suatu masalah dengan tidak merugikan kepentingan yang wajar dari Pencipta atau Pemegang Hak Cipta;</li>
+            <li>Ceramah yang hanya untuk tujuan pendidikan dan ilmu pengetahuan.</li>
+          </ul>
+
+          <p>Informasi lebih lanjut terkait siasat penggunaan ciptaan untuk kepentingan pendidikan dapat anda baca <a href="https://ccid.siteleaf.net/kajian/2016/06/12/hak-cipta-di-ruang-kelas-tips-pendekatan-praktis-untuk-guru.html">di sini</a> dan <a href="https://ccid.siteleaf.net/kajian/2016/06/12/wahai-para-guru-hak-cipta-penting-bagi-anda.html">di sini</a>.</p>
+
+          <p><strong>3. Pasal 45, 46, dan 47 UUHC 2014</strong></p>
+
+          <p>Ketiga pasal ini menjabarkan ketentuan-ketentuan terkait jenis-jenis penggandaan terhadap ciptaan-ciptaan tertentu yang dapat dianggap sebagai penggunaan wajar. Ketentuan-ketentuannya adalah sebagai berikut:</p>
+
+          <p><strong>Program Komputer</strong></p>
+
+          <ul>
+            <li>Penggandaan sebanyak satu salinan program komputer oleh pengguna yang sah dapat dilakukan tanpa izin pencipta atau pemegang hak cipta untuk tujuan penelitian dan pengembangan program komputer tersebut.</li>
+            <li>Penggandaan sebanyak satu salinan program komputer oleh pengguna yang sah dapat dilakukan tanpa izin pencipta atau pemegang hak cipta sebagai arsip atau cadangan untuk mencegah kehilangan program komputer yang didapat secara sah tersebut.
+          Salinan tersebut harus dimusnahkan apabila penggunaan program komputer telah berakhir.</li>
+          </ul>
+
+          <p><strong>Penggandaan Untuk Kepentingan Pribadi</strong></p>
+
+          <p>Pengguna dapat menggandakan ciptaan sebanyak satu salinan untuk kepentingan pribadi tanpa izin dari pencipta atau pemegang hak cipta, dengan kondisi:</p>
+
+          <ul>
+            <li>Bukan seluruh atau bagian substansial dari suatu buku atau notasi musik.</li>
+            <li>Bukan seluruh atau bagian substasian dari suatu basis data dalam bentuk digital.</li>
+          </ul>
+
+          <p><strong>Penggandan Untuk Kepentingan Perpustakaan</strong></p>
+
+          <p>Setiap perpustakaan atau lembaga arsip yang tidak bertujuan komersial diperbolehkan menggandakan ciptaan sebanyak satu salinan tanpa izin dari pencipta atau pemegang hak cipta, dengan kondisi:</p>
+
+          <ul>
+            <li>Perpustakaan atau lembaga arsip dapat menjamin ciptaan hanya digunakan untuk tujuan pendidikan atau penelitian.</li>
+            <li>Penggandaan dilakukan secara terpisah, dan bukan merupakan kegiatan yang berulang. Jika dilakukan berulang, kegiatan tersebut harus bukan kegiatan yang saling berhubungan.</li>
+            <li>Penggandaan dimaksudkan untuk pemeliharaan, penggantian salinan yang diperlukan, atau penggantian salinan yang hilang.</li>
+            <li>Penggandaan dimaksudkan untuk pertukaran informasi antara perpustakaan atau lembaga arsip.</li>
+          </ul>
+
+          <p><strong>4. Pasal 48 UUHC 2014</strong></p>
+
+          <p>Pasal ini menjelaskan bahwa penggandaan, penyiaran, atau komunikasi ciptaan untuk tujuan informasi** dengan menyebutkan sumber dan nama pencipta** diperbolehkan terhadap ciptaan yang berupa:</p>
+
+          <ul>
+            <li>Artikel yang sudah pernah dilakukan pengumuman baik di media cetak maupun di media elektronik.</li>
+            <li>Laporan peristiwa aktual.</li>
+            <li>Karya ilmiah, pidato, ceramah, atau Ciptaan sejenis yang disampaikan kepada publik.</li>
+          </ul>
+
+          <p><strong>5. Pasal 49 UUHC 2014</strong></p>
+
+          <p>Pasal ini mengatur bahwa penggandaan ciptaan untuk sementara dapat dilakukan tanpa dianggap sebagai pelanggaran hak cipta. Penggandaan yang dimaksudkan adalah untuk tujuan pemeliharaan ciptaan, misalnya dengan mengunggah ciptaan tersebut ke tempat penyimpanan data di internet seperti <a href="https://www.dropbox.com/">Dropbox</a> atau <a href="https://archive.org/">Internet Archive</a>. Penggandaan ini dilakukan dengan mengantongi izin dari Pencipta. Namun, berkas-berkas digital hasil penggandaan ciptaan tersebut harus mempunyai mekanisme penghapusan otomatis sehingga tidak dapat ditampilkan kembali.</p>
+
+          <p>Teks lengkap dari ketentuan-ketentuan ini dapat Anda baca dengan mengakses <a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwjpgr_xw6LOAhVN9WMKHYRiAh4QFggeMAA&amp;url=http%3A%2F%2Fwww.dgip.go.id%2Fimages%2Fki-images%2Fpdf-files%2Fuu_pp1%2Fuu_hc_%252028_2014.pdf&amp;usg=AFQjCNE8VXY1L5-67iXWs_IVyCS9FTbFww&amp;sig2=ssi2Wi-b9DLMMZXKJoUnng">UUHC 2014</a>.</p>
+
+          <p>Semoga membantu. Pokoknya Creative Commons!</p>
+
+          <div class="article-end mt-5"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mt-5">
+      <div class="container-fluid">
+        <div class="row align-items-md-end pt-5 pb-4">
+          <div class="col-md-12 col-lg-2 offset-lg-1 px-5 px-md-0 mb-4 mb-md-5 mb-lg-2 text-center align-self-center">
+            <img src="../../assets/img/footer-sketch.svg" class="img-fluid h-100 px-2">
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 ps-5 ps-md-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Informasi</h5></li>
+              <li><span class="fa-li"><i class="fa-brands fa-readme"></i></span><a href="../../media.html">Media</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-creative-commons"></i></span><a href="../../lisensi-cc-bahasa-indonesia.html">Lisensi</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-book-open-reader"></i></span><a href="../../kajian.html">Kajian</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-circle-question"></i></span><a href="../../faq.html">FAQ</a></li>             
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Tentang kami</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-person-rays"></i></span><a href="../../tentang.html">Tentang kami</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-newspaper"></i></span><a href="../../berita.html">Berita</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-calendar-check"></i></span><a href="../../acara.html">Acara</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 ps-5 ps-md-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Network</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-users"></i></span><a href="../../sobatccid.html">Sobat CCID</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-creative-commons"></i></span><a href="https://creativecommons.org/">CCHQ</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-earth-asia"></i></span><a href="https://network.creativecommons.org/">CC Global Network</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Kontak</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-address-book"></i></span><a href="../../hubungi-kami.html">Hubungi kami</a></li>              
+              <li><span class="fa-li"><i class="fa-brands fa-square-facebook"></i></span><a href="https://www.facebook.com/CreativeCommonsIndonesia">Facebook</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-twitter"></i></span><a href="https://twitter.com/CC_ID">Twitter</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-instagram"></i></span><a href="https://www.instagram.com/cc.indonesia/">Instagram</a></li>
+          </div>
+        </div>
+        <div class="row footer-license">
+          <div class="col-12 text-center text-white">
+            <p class="my-4"><i class="fa-brands fa-creative-commons pe-1"></i><i class="fa-brands fa-creative-commons-by pe-1"></i> 2012&ndash;2023 Creative Commons Indonesia. Kecuali dinyatakan lain, konten di situs ini dilisensikan di bawah lisensi <a href="https://creativecommons.org/licenses/by/4.0/deed.id">Creative Commons Atribusi 4.0 Internasional</a>. 
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- js -->
+    <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+    <script src="../../assets/js/popper.min.js"></script>
+    <script src="../../assets/js/bootstrap.js"></script>
+  </body>
 </html>
