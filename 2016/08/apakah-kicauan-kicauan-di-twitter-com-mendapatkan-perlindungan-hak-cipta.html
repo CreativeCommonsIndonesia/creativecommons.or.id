@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GR2HTWFX22"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GR2HTWFX22');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Creative Commons Indonesia supports the usage of Creative Commons licenses and open cultural works in Indonesia">
@@ -9,27 +19,19 @@
     <title>Apakah kicauan-kicauan di Twitter.com mendapatkan perlindungan hak cipta?</title>
     
     <!-- fonts -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-
-    <!-- icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Sen&display=swap" rel="stylesheet"> 
 
     <!-- css -->
-    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../assets/css/material-kit.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../../assets/css/custom.css" rel="stylesheet">
+    <link href="../../assets/css/animate.min.css" rel="stylesheet">
 
-    <!-- js -->
-    <script src="../../assets/js/jquery-3.6.1.min.js"></script>
-    <script src="../../assets/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/material.min.js"></script>
-    <script src="../../assets/js/material-kit.js"></script>
-
-    <!-- plugins -->
-    <script src="../../assets/js/nouislider.min.js"></script> <!-- sliders (http://refreshless.com/nouislider) -->
-    <script src="../../assets/js/bootstrap-datepicker.js"></script> <!-- datepicker (http://www.eyecon.ro/bootstrap-datepicker) -->
-    <script src="../../assets/js/jPages.js"></script> <!-- pagination -->
-    <script src="../../assets/js/js.js"></script> <!-- pagination -->
+    <!-- icons -->
+    <link href="../../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="../../assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="../../assets/fontawesome/css/solid.css" rel="stylesheet">
 
     <!-- favicon -->
     <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
@@ -37,261 +39,210 @@
     <!-- rss feed -->
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="../../feed.xml">
   </head>
-
     
-<body class="index-page">
-	<div class="wrapper">
-	
-	
-        	<style>
-.main {
-	margin-top: 80px;
-  }
-.navbar, .navbar.navbar-danger {
-	background-color: #9e1c1c;
-	color: #ffffff;
-}
-</style>  
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-md" aria-label="Navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html"><img src="../../assets/img/logoputih.png" alt="Creative Commons Indonesia" class="img-fluid" width="150"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ccidnavbar" aria-controls="ccidnavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <nav class="navbar navbar-danger navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="../../index.html">
-                    <div class="logo-container">
-                        <div class="logo">
-                            <img src="../../assets/img/logoputih.png" alt="Creative Commons Indonesia" class="img-fluid" width="150">
-                        </div>
-                    </div>
-                </a>
-            </div>
-    
-            <div class="collapse navbar-collapse" id="navigation-index">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="../../tentang.html" target="_blank">
-                            Tentang
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../../lisensi-cc-bahasa-indonesia.html" target="_blank">
-                            Lisensi
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Blog <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../../sobatccid.html">Sobat CCID</a></li>
-                            <li><a href="../../berita.html">Berita</a></li>
-                            <li><a href="../../kajian.html">Kajian</a></li>
-                            <li><a href="../../acara.html">Acara</a></li>
-                        </ul>
-                    </li>
-		<li>
-			<a href="../../search.html" target="_blank">
-			<i class="fa fa-search" aria-hidden="true"></i>
-			</a>
-		</li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="ccidnavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Informasi
+              </a>
+              <ul class="dropdown-menu mt-3 bg-ccid-red-31 animate__animated animate__flipInY animate__faster" aria-labelledby="resources">
+                <li><a class="dropdown-item" href="../../lisensi-cc-bahasa-indonesia.html">Lisensi</a></li>
+                <li><a class="dropdown-item" href="../../kajian.html">Kajian</a></li>
+                <li><a class="dropdown-item" href="../../faq.html">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../../berita.html">Berita</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../acara.html">Acara</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../media.html">Media</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../tentang.html">Tentang kami</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../sobatccid.html">Sobat CCID</a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/CreativeCommonsIndonesia" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://twitter.com/CC_ID" title="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/cc.indonesia/" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../hubungi-kami.html" title="Hubungi kami"><i class="fa-solid fa-address-book"></i></a></li>            
+          </ul>       
         </div>
+      </div>
     </nav>
 
-	
-       
-        
-	<div class="main">
-		<div class="section section-basic">
-	    	<div class="container">
-		
-		<small><a href="../../index.html">Beranda</a>/<a href="https://creativecommons.or.id/
-			kajian
-		.html">
-			Kajian
-		</a>/Apakah kicauan-kicauan di Twitter.com mendapatkan perlindungan hak cipta?</small>
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="text-center article-title">
-                            <h2>
-                                Apakah kicauan-kicauan di Twitter.com mendapatkan perlindungan hak cipta?
-                            </h2>
-                        </div>
-                            <p>Twitter adalah layanan jejaring sosial berupa mikroblog yang memungkinkan penggunanya untuk membagikan teks, gambar (juga mengakomodasi format .gif dan <a href="https://en.wikipedia.org/wiki/Vine_(service)">Vines</a>), dan video. Pengguna hanya dapat menulis dan membagikan 140 karakter teks dalam sekali kicau (tweet). Selain itu pengguna juga dapat berkomunikasi dengan pengguna lain dengan memilih perintah mention, atau membagikan kembali kicauan pengguna lain dengan mengklik perintah retweet.</p>
+    <!-- Breadcrumbs -->
+    <div class="container-fluid mt-2">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+          <li class="breadcrumb-item"><a href="../../kajian.html">Kajian</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Apakah kicauan-kicauan di Twitter.com mendapatkan perlindungan hak cipta?</li>
+        </ol>
+      </nav>
+    </div>         
+          
+    <main class="container article p-5">
+      <div class="row mt-2 mt-md-5">
+        <div class="col-12">
 
-<p>Cara penyampaian materi lawak oleh para pelawak di Indonesia telah begitu berkembang. Lawakan dapat disampaikan dari atas panggung, melalui perantara audio/visual seperti radio dan televisi, atau lewat akun media sosial, yang salah satunya adalah twitter.</p>
+          <!-- Article meta -->
+          <div class="row article-meta mb-3">
+            <div class="col-sm-6">
+              <i class="fa-solid fa-calendar-day fa-fw"></i> 31 Agustus 2016
+            </div>
+            <div class="col-sm-6 pt-1 pt-sm-0 text-sm-end">
+              <i class="fa-solid fa-share-from-square fa-fw pe-1"></i> Bagikan ke 
+            
+              <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://creativecommons.or.id/2016/08/apakah-kicauan-kicauan-di-twitter-com-mendapatkan-perlindungan-hak-cipta.html"><i class="fa-brands fa-linkedin ps-1" title="LinkedIn" aria-hidden="true"></i></a>
 
-<p>Bulan Juli tahun 2015 lalu dunia pertwitteran dihebohkan dengan isu penggunaan materi lawak-materi lawak tanpa menyebutkan sumber dan izin dari pembuat materi. Seorang pelawak tunggal <a href="http://chirpstory.com/li/277319">@ernestprakasa bercerita mengenai hal tersebut lewat kicauan dari akun twitter pribadinya</a>. Ia menyatakan bahwa penggunaan materi-materi tanpa izin tersebut dilakukan oleh Dagelandotco. Sebelum sampai ke meja hijau, kasus ini diselesaikan secara baik-baik dengan <a href="https://dagelandotco.wordpress.com/2015/07/28/klarifikasi-dan-permohonan-maaf-dagelan/">permintaan maaf yang dibuat secara tertulis oleh pihak Dagelandotco</a> dengan menyebut kesalahannya sebagai pelanggaran hak kekayaan intelektual .</p>
+              <a href="https://facebook.com/sharer.php?u=https://creativecommons.or.id/2016/08/apakah-kicauan-kicauan-di-twitter-com-mendapatkan-perlindungan-hak-cipta.html" rel="nofollow" target="_blank"><i class="fa-brands fa-facebook" title="Facebook" aria-hidden="true"></i></a>
 
-<p>Saat itu <a href="https://twitter.com/ernestprakasa">@ernesprakasa</a> juga mengajak para pengikutnya di twitter untuk mengumpulkan <a href="https://twitter.com/ernestprakasa/status/624429450319364096">hasil penggunaan konten tanpa izin yang dilakukan oleh Dagelandotco</a>. Ajakan tersebut bertujuan untuk mengumpulkan alat bukti, jika saja ternyata kasus tersebut dapat dibawa ke pengadilan. Sebelum berjalan lebih jauh, kami akan menunjukan dua alat bukti yang dilaporkan oleh pengikut Ernest Prakasa di twitter:</p>
+              <a href="https://twitter.com/intent/tweet?url=https://creativecommons.or.id/2016/08/apakah-kicauan-kicauan-di-twitter-com-mendapatkan-perlindungan-hak-cipta.html" rel="nofollow" target="_blank"><i class="fa-brands fa-twitter" title="Twitter" aria-hidden="true"></i></a>
+            </div>
+          </div>
 
-<p><img src="../../uploads/CKneF6LWEAIgfaZ.jpg" alt="CKneF6LWEAIgfaZ.jpg" class="img-fluid center-block" /><center><small><i>Penggunaan teks dari informasi akun twitter @pergijauh. (<a href="https://twitter.com/ramotgun/status/624274216523833344/photo/1">Sumber gambar</a>)</i></small></center></p>
+          <h1>Apakah kicauan-kicauan di Twitter.com mendapatkan perlindungan hak cipta?</h1>
 
-<p><img src="../../uploads/CKnePL6W8AU-LHA.jpg" alt="CKnePL6W8AU-LHA.jpg" class="img-fluid center-block" /><center><small><i>Kicauan @arhamrsalan digunakan sebagai meme. (<a href="https://twitter.com/ramotgun/status/624274375903170560/photo/1">Sumber gambar</a>)</i></small></center></p>
+          <!-- Profile of the article author -->
+          <div class="author-profile pt-2 mt-4 mb-5">
+            <img class="img-fluid float-start" src="../../uploads/people/hilman_square.jpg">
+            <h5>Hilman Fathoni</h5>
+            <h6><a href="https://www.linkedin.com/in/hilman-fathoni/"><i class="fa-brands fa-linkedin"></i></a></h6>
+          </div>
 
-<p>Alat bukti-alat bukti tersebut, serta pengakuan dari Dagelandotco, menggiring kami pada sebuah pertanyaan:</p>
+          <!-- Main article content goes here -->
 
-<p><strong>“Apakah kicauan di twitter merupakan obyek perlindungan hak cipta?”</strong></p>
+          <p>Twitter adalah layanan jejaring sosial berupa mikroblog yang memungkinkan penggunanya untuk membagikan teks, gambar (juga mengakomodasi format .gif dan <a href="https://en.wikipedia.org/wiki/Vine_(service)">Vines</a>), dan video. Pengguna hanya dapat menulis dan membagikan 140 karakter teks dalam sekali kicau (tweet). Selain itu pengguna juga dapat berkomunikasi dengan pengguna lain dengan memilih perintah mention, atau membagikan kembali kicauan pengguna lain dengan mengklik perintah retweet.</p>
 
-<p><strong>Unsur Hak Cipta Kicauan di Twitter</strong></p>
+          <p>Cara penyampaian materi lawak oleh para pelawak di Indonesia telah begitu berkembang. Lawakan dapat disampaikan dari atas panggung, melalui perantara audio/visual seperti radio dan televisi, atau lewat akun media sosial, yang salah satunya adalah twitter.</p>
 
-<p><strong>Teks</strong></p>
+          <p>Bulan Juli tahun 2015 lalu dunia pertwitteran dihebohkan dengan isu penggunaan materi lawak-materi lawak tanpa menyebutkan sumber dan izin dari pembuat materi. Seorang pelawak tunggal <a href="http://chirpstory.com/li/277319">@ernestprakasa bercerita mengenai hal tersebut lewat kicauan dari akun twitter pribadinya</a>. Ia menyatakan bahwa penggunaan materi-materi tanpa izin tersebut dilakukan oleh Dagelandotco. Sebelum sampai ke meja hijau, kasus ini diselesaikan secara baik-baik dengan <a href="https://dagelandotco.wordpress.com/2015/07/28/klarifikasi-dan-permohonan-maaf-dagelan/">permintaan maaf yang dibuat secara tertulis oleh pihak Dagelandotco</a> dengan menyebut kesalahannya sebagai pelanggaran hak kekayaan intelektual .</p>
 
-<p>Ciptaan seperti buku merupakan obyek perlindungan hak cipta. Salah satu unsur yang mendapat perlindungan adalah unsur tekstual dari buku tersebut. Sama halnya dengan buku, kicauan di twitter juga memiliki unsur tekstual.</p>
+          <p>Saat itu <a href="https://twitter.com/ernestprakasa">@ernesprakasa</a> juga mengajak para pengikutnya di twitter untuk mengumpulkan <a href="https://twitter.com/ernestprakasa/status/624429450319364096">hasil penggunaan konten tanpa izin yang dilakukan oleh Dagelandotco</a>. Ajakan tersebut bertujuan untuk mengumpulkan alat bukti, jika saja ternyata kasus tersebut dapat dibawa ke pengadilan. Sebelum berjalan lebih jauh, kami akan menunjukan dua alat bukti yang dilaporkan oleh pengikut Ernest Prakasa di twitter:</p>
 
-<p>Namun, apakah kicauan di twitter merupakan hal yang dimaksud sebagai Ciptaan oleh Undang-Undang Hak Cipta (UUHC)?</p>
+          <figure class="figure w-sm-50 float-sm-end ms-sm-5 mt-3 mb-4">
+            <img src="../../uploads/CKneF6LWEAIgfaZ.jpg" alt="CKneF6LWEAIgfaZ.jpg" class="figure-img img-fluid">
+            <figcaption class="figure-caption">Penggunaan teks dari informasi akun twitter @pergijauh. (<a href="https://twitter.com/ramotgun/status/624274216523833344/photo/1">Sumber gambar</a>)</figcaption>
+          </figure>
 
-<p>Apakah susunan kata sepanjang 140 karakter tersebut memiliki nilai untuk dilindungi oleh ketentuan hak cipta?</p>
+          <figure class="figure w-sm-50 float-sm-end ms-sm-5 mt-3 mb-4">
+            <img src="../../uploads/CKnePL6W8AU-LHA.jpg" alt="CKnePL6W8AU-LHA.jpg" class="figure-img img-fluid">
+            <figcaption class="figure-caption">Kicauan @arhamrsalan digunakan sebagai meme. (<a href="https://twitter.com/ramotgun/status/624274375903170560/photo/1">Sumber gambar</a>)</figcaption>
+          </figure>
 
-<p>Angka 3 Pasal 1 bagian Ketentuan Umum UUHC 2014 menyebutkan bahwa “ciptaan adalah setiap hasil karya cipta di bidang ilmu pengetahuan, seni, dan sastra yang dihasilkan atas inspirasi, kemampuan, pikiran, imajinasi, kecekatan, keterampilan, atau keahlian yang diekspresikan dalam bentuk nyata”.</p>
+          <p>Alat bukti-alat bukti tersebut, serta pengakuan dari Dagelandotco, menggiring kami pada sebuah pertanyaan:</p>
 
-<p>Bisa saja suatu kicauan dianggap sebagai Ciptaan seperti yang dimaksud oleh UUHC2014. Misalnya, kicauan itu berisi buah pikiran seorang ilmuwan, sastrawan, atau seniman yang memiliki unsur intelektual. Yang kemudian buah pikiran-buah pikiran tersebut diwujudkan secara nyata dalam bentuk teks, melalui twitter dan/atau hanya di twitter.</p>
+          <p><strong>“Apakah kicauan di twitter merupakan obyek perlindungan hak cipta?”</strong></p>
 
-<p>Namun, sebaiknya diperhatikan juga bahwa tidak semua kicauan di twitter memiliki elemen-elemen tersebut.</p>
+          <p><strong>Unsur Hak Cipta Kicauan di Twitter</strong></p>
 
-<p>Banyak juga kita jumpai kicauan-kicauan berupa lelucon, percakapan ringan, atau curahan-curahan hati yang tidak bisa disampaikan jika tidak di twitter. Hal-hal yang disebutkan sebelumnya ini belum tentu memenuhi kriteria perbidangan yang ditentukan UUHC, seperti ilmu pengetahuan, seni, dan sastra atau unsur intelektual yang dimaksud oleh UUHC. Sehingga masih terdapat kemungkinan unsur tekstual yang seperti itu, untuk menjadi obyek perlindungan hak cipta, asal dapat memenuhi kriteria yang disyaratkan oleh UUHC.</p>
+          <p><strong>Teks</strong></p>
 
-<p>Apabila kita merujuk pada kasus @ernestprakasa vs. @Dagelandotco, hal yang dibahas sebagai ciptaan adalah materi lawak. Materi lawak yang berkualitas tentu dibuat dengan modal kemampuan berpikir, berimajinasi, serta kecekatan seorang manusia. Selain itu, terdapat banyak kemungkinan materi-materi lawak tersebut mengandung elemen perbidangan yang disebutkan oleh UUHC. Jika obyek perlindungan hak cipta merupakan ide yang sudah diwujudkan secara nyata, sebenarnya kita juga menganggap kita ide tersebut dikicaukan di twitter, ide tersebut sudah berwujud nyata.</p>
+          <p>Ciptaan seperti buku merupakan obyek perlindungan hak cipta. Salah satu unsur yang mendapat perlindungan adalah unsur tekstual dari buku tersebut. Sama halnya dengan buku, kicauan di twitter juga memiliki unsur tekstual.</p>
 
-<p>Telah disebutkan sebelumnya bahwa twitter merupakan layanan jejaring sosial berupa mikroblog. Yang membedakan mikroblog dengan blog konvensional, dalam perannya sebagai layanan jejaring sosial, hanya banyak karakter yang dapat dibagikan saja. Selebihnya kita bisa menganggap konten yang dibagikan oleh pengguna di kedua model layanan tersebut memiliki kapasitas yang sama untuk dilindungi. Dengan begitu, teks-teks yang dibagikan di twitter mempunyai kesempatan untuk dilindungi seperti teks-teks lain yang beredar di dalam jaringan.</p>
+          <p>Namun, apakah kicauan di twitter merupakan hal yang dimaksud sebagai Ciptaan oleh Undang-Undang Hak Cipta (UUHC)?</p>
 
-<p>Tentu saja diikuti dengan segala ketentuan terkait perlindungan ciptaan teks dari UUHC, dengan syarat bahwa kicauan itu juga merupakan materi asli, atau karya orisinal.</p>
+          <p>Apakah susunan kata sepanjang 140 karakter tersebut memiliki nilai untuk dilindungi oleh ketentuan hak cipta?</p>
 
-<p><strong>Gambar, Video, dan Vines</strong></p>
+          <p>Angka 3 Pasal 1 bagian Ketentuan Umum UUHC 2014 menyebutkan bahwa “ciptaan adalah setiap hasil karya cipta di bidang ilmu pengetahuan, seni, dan sastra yang dihasilkan atas inspirasi, kemampuan, pikiran, imajinasi, kecekatan, keterampilan, atau keahlian yang diekspresikan dalam bentuk nyata”.</p>
 
-<p>Karya fotografi, potret, sinematografi (video), dan karya seni rupa (lukisan) jelas merupakan obyek perlindungan hak cipta. Obyek-obyek ini juga diatur oleh pasal yang sama dengan teks, yaitu pasal 40 UUHC 2014. Twitter memungkinkan penggunanya untuk mengunggah satu atau beberapa berkas gambar dalam satu kicauan. Bentuk pelanggaran hak cipta dalam aktivitas ini dapat dilakukan oleh pengakses gambar maupun pengunggah gambar. Twitter memiliki <a href="https://twitter.com/tos?lang=en#copyright">kebijakannya sendiri</a> untuk mengatasi pengunggahan gambar yang merupakan pelanggaran hak cipta oleh pengguna. Pelanggaran hak cipta juga dapat terjadi pada gambar buatan sendiri atau materi asli yang diunggah pengguna dan digunakan oleh pihak lain tanpa izin pengguna untuk kepentingan tertentu. Pola pelanggaran dan penegakan hukum dalam aktivitas berbagi gambar, video, dan potongan video dengan menggunakan Vines di twitter terbilang normal dan sama saja dengan situs lainnya. Namun penjelasan ini bertujuan sebagai pengingat bahwa hal-hal ini juga merupakan aspek hak cipta yang ada di twitter, selain teks.</p>
+          <p>Bisa saja suatu kicauan dianggap sebagai Ciptaan seperti yang dimaksud oleh UUHC2014. Misalnya, kicauan itu berisi buah pikiran seorang ilmuwan, sastrawan, atau seniman yang memiliki unsur intelektual. Yang kemudian buah pikiran-buah pikiran tersebut diwujudkan secara nyata dalam bentuk teks, melalui twitter dan/atau hanya di twitter.</p>
 
-<p>Meskipun bukan di twitter, materi lawak dari <a href="https://www.facebook.com/MenurutCakLontong/">Cak Lontong</a> ini dapat dijadikan contoh materi lawak yang diwujudkan dalam bentuk gambar, dan disebarkan melalui media sosial.</p>
+          <p>Namun, sebaiknya diperhatikan juga bahwa tidak semua kicauan di twitter memiliki elemen-elemen tersebut.</p>
 
-<p><img src="../../uploads/14053994_314103755593384_6071415061900518175_n.jpg" alt="14053994_314103755593384_6071415061900518175_n.jpg" class="img-fluid center-block" /><center><small><i>Materi lawak dalam bentuk meme dari akun facebook resmi Cak Lontong. (<a href="https://www.facebook.com/MenurutCakLontong/photos/a.290430197960740.1073741828.290424084628018/314103755593384/?type=3&amp;theater">Sumber Gambar</a>)</i></small></center></p>
+          <p>Banyak juga kita jumpai kicauan-kicauan berupa lelucon, percakapan ringan, atau curahan-curahan hati yang tidak bisa disampaikan jika tidak di twitter. Hal-hal yang disebutkan sebelumnya ini belum tentu memenuhi kriteria perbidangan yang ditentukan UUHC, seperti ilmu pengetahuan, seni, dan sastra atau unsur intelektual yang dimaksud oleh UUHC. Sehingga masih terdapat kemungkinan unsur tekstual yang seperti itu, untuk menjadi obyek perlindungan hak cipta, asal dapat memenuhi kriteria yang disyaratkan oleh UUHC.</p>
 
-<p><strong>Tweet Dengan Lisensi Terbuka?</strong></p>
+          <p>Apabila kita merujuk pada kasus @ernestprakasa vs. @Dagelandotco, hal yang dibahas sebagai ciptaan adalah materi lawak. Materi lawak yang berkualitas tentu dibuat dengan modal kemampuan berpikir, berimajinasi, serta kecekatan seorang manusia. Selain itu, terdapat banyak kemungkinan materi-materi lawak tersebut mengandung elemen perbidangan yang disebutkan oleh UUHC. Jika obyek perlindungan hak cipta merupakan ide yang sudah diwujudkan secara nyata, sebenarnya kita juga menganggap kita ide tersebut dikicaukan di twitter, ide tersebut sudah berwujud nyata.</p>
 
-<p>Apabila telah ditetapkan bahwa kicauan di twitter merupakan obyek perlindungan hak cipta, maka aktivitas membagikan dan menyebarluaskan sebuah kicauan harus mengikuti ketentuan-ketentuan yang ada dari UUHC. Tentu saja seorang pengguna karya diharuskan untuk mendapatkan izin langsung dari pencipta dalam penggunaan karya tersebut. Kemudian, fitur retweet atau quote yang memungkinkan pengguna untuk membagikan kembali kicauan pengguna lain, akan berubah nilainya. Meskipun, twitter menyediakan fitur untuk mengontrol akses menuju akun twitter mereka, serta fitur untuk mengontrol penggunaan kicauan mereka oleh pengguna lainnya. Artinya, pengguna yang tidak mengunci kicauannya, berarti telah mengizinkan pengguna lain untuk menggunakan “properti intelektual”nya, sejauh yang telah disediakan oleh fasilitas retweet dan quote.</p>
+          <p>Telah disebutkan sebelumnya bahwa twitter merupakan layanan jejaring sosial berupa mikroblog. Yang membedakan mikroblog dengan blog konvensional, dalam perannya sebagai layanan jejaring sosial, hanya banyak karakter yang dapat dibagikan saja. Selebihnya kita bisa menganggap konten yang dibagikan oleh pengguna di kedua model layanan tersebut memiliki kapasitas yang sama untuk dilindungi. Dengan begitu, teks-teks yang dibagikan di twitter mempunyai kesempatan untuk dilindungi seperti teks-teks lain yang beredar di dalam jaringan.</p>
 
-<p>Selain itu, sama halnya dengan beberapa situs lain, ketika satu kicauan dapat disebut sebagai obyek perlindungan hak cipta, di mana satu kicauan dapat mengandung unsur teks, gambar, atau video, dan jika terdapat pengguna yang menghendaki konten-kontennya sebagai konten terbuka, hal ini dapat menjadi faktor pendorong twitter untuk menyediakan platform lisensi terbuka seperti Creative Commons dalam pengakomodasian aktivitas berbagi konten di situs tersebut. Lisensi ini dapat memfasilitasi pencipta yang membagikan kontennya di twitter dengan penjelasan tentang apa yang boleh dan tidak boleh dilakukan oleh pengguna terhadap suatu ciptaan, sambil tetap membuka kesempatan agar para pengguna dapat membagikan dan/atau memanfaatkan konten tersebut.</p>
+          <p>Tentu saja diikuti dengan segala ketentuan terkait perlindungan ciptaan teks dari UUHC, dengan syarat bahwa kicauan itu juga merupakan materi asli, atau karya orisinal.</p>
 
-<p>Sumber:</p>
+          <p><strong>Gambar, Video, dan Vines</strong></p>
 
-<p><a href="http://www.technollama.co.uk/can-you-copyright-a-tweet">Can You Copyright A Tweet?</a> - <a href="http://www.technollama.co.uk/">TechnoLlama</a> oleh <a href="http://www.technollama.co.uk/author/andres">Andres</a></p>
+          <p>Karya fotografi, potret, sinematografi (video), dan karya seni rupa (lukisan) jelas merupakan obyek perlindungan hak cipta. Obyek-obyek ini juga diatur oleh pasal yang sama dengan teks, yaitu pasal 40 UUHC 2014. Twitter memungkinkan penggunanya untuk mengunggah satu atau beberapa berkas gambar dalam satu kicauan. Bentuk pelanggaran hak cipta dalam aktivitas ini dapat dilakukan oleh pengakses gambar maupun pengunggah gambar. Twitter memiliki <a href="https://twitter.com/tos?lang=en#copyright">kebijakannya sendiri</a> untuk mengatasi pengunggahan gambar yang merupakan pelanggaran hak cipta oleh pengguna. Pelanggaran hak cipta juga dapat terjadi pada gambar buatan sendiri atau materi asli yang diunggah pengguna dan digunakan oleh pihak lain tanpa izin pengguna untuk kepentingan tertentu. Pola pelanggaran dan penegakan hukum dalam aktivitas berbagi gambar, video, dan potongan video dengan menggunakan Vines di twitter terbilang normal dan sama saja dengan situs lainnya. Namun penjelasan ini bertujuan sebagai pengingat bahwa hal-hal ini juga merupakan aspek hak cipta yang ada di twitter, selain teks.</p>
 
-<p><a href="http://chirpstory.com/li/277319">Komentar Geram @ernestprakasa soal @Dagelandotco</a> - <a href="http://chirpstory.com/">Chirpstory</a> oleh <a href="https://twitter.com/tumbenlucu">@tumbenlucu</a></p>
+          <p>Meskipun bukan di twitter, materi lawak dari <a href="https://www.facebook.com/MenurutCakLontong/">Cak Lontong</a> ini dapat dijadikan contoh materi lawak yang diwujudkan dalam bentuk gambar, dan disebarkan melalui media sosial.</p>
 
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-12">
-                                    <h5 style="display: inline;">Tags:</h5>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Twitter</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Hak Cipta Twitter</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Dagelandotco</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Ernest Prakasa</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Hak Cipta Teks</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Twitter di Indonesia</button>
-                                    
-                            </div>                       
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <h5>Oleh: Hilman Fathoni</h5>
-                        31 Aug 2016
-                        <hr>
-                        <h5>Kategori:</h5>
-                        
-                        <button class="btn btn-white btn-xs" type="button">Kajian</button>
-                        
-                        <hr>
-                        <h5>Berita Terbaru</h5>
-			<ul>
-                        
-			<li><a href="../../2019/01/lokakarya-hak-cipta-dan-lisensi-creative-commons-di-pekanbaru.html" class="btn-link">Lokakarya Hak Cipta dan Lisensi Creative Commons di Pekanbaru</a></li>
-                        
-			<li><a href="../../2018/12/pengumuman-resmi-hasil-akhir-training-of-trainers-creative-commons-indonesia.html" class="btn-link">Pengumuman Resmi: Hasil Akhir Training of Trainers Creative Commons Indonesia</a></li>
-                        
-			<li><a href="../../2018/08/literatur-terbaru-tentang-model-bisnis-terbuka-made-with-cc.html" class="btn-link">Literatur tentang Model Bisnis Terbuka "Made With CC"</a></li>
-                        
-			<li><a href="../../2018/08/data-dan-artikel-ilmiah-terbuka-dari-plos.html" class="btn-link">Data dan Artikel Ilmiah Terbuka dari PLOS!</a></li>
-                        
-			<li><a href="../../2018/08/Konten-Format-Model-3-Dimensi-Berilsensi-CC-di-Platform-Sketchfab.html" class="btn-link">Konten Format Model 3 Dimensi Berilsensi CC di Platform Sketchfab</a></li>
-                        
-	 		</ul>
-			<hr>
-			<h5>Bagikan di:</h5>
-			<a href="https://facebook.com/sharer.php?u=https://creativecommons.or.id/2016/08/apakah-kicauan-kicauan-di-twitter-com-mendapatkan-perlindungan-hak-cipta.html" rel="nofollow" target="_blank"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
-			<a href="https://twitter.com/intent/tweet?text=Apakah kicauan-kicauan di Twitter.com mendapatkan perlindungan hak cipta?&url=http://creativecommons.or.id//2016/08/apakah-kicauan-kicauan-di-twitter-com-mendapatkan-perlindungan-hak-cipta/&via=&related=" rel="nofollow" target="_blank"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a>
-			</div>
-		</div>
+          <figure class="figure w-sm-50 float-sm-end ms-sm-5 mt-3 mb-4">
+            <img src="../../uploads/14053994_314103755593384_6071415061900518175_n.jpg" alt="14053994_314103755593384_6071415061900518175_n.jpg" class="figure-img img-fluid">
+            <figcaption class="figure-caption">Materi lawak dalam bentuk meme dari akun facebook resmi Cak Lontong. (<a href="https://www.facebook.com/MenurutCakLontong/photos/a.290430197960740.1073741828.290424084628018/314103755593384/?type=3&amp;theater">Sumber Gambar</a>)</figcaption>
+          </figure>
 
-<div class="row">
-<div class="col-lg-9">
-		
-	<div id="disqus_thread"></div>
-	<script>
+          <p><strong>Tweet Dengan Lisensi Terbuka?</strong></p>
 
-	/**
-	*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-	*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-	/*
-	var disqus_config = function () {
-	this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-	this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-	};
-	*/
-	(function() { // DON'T EDIT BELOW THIS LINE
-	var d = document, s = d.createElement('script');
-	s.src = '//creative-commons-indonesia.disqus.com/embed.js';
-	s.setAttribute('data-timestamp', +new Date());
-	(d.head || d.body).appendChild(s);
-	})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <p>Apabila telah ditetapkan bahwa kicauan di twitter merupakan obyek perlindungan hak cipta, maka aktivitas membagikan dan menyebarluaskan sebuah kicauan harus mengikuti ketentuan-ketentuan yang ada dari UUHC. Tentu saja seorang pengguna karya diharuskan untuk mendapatkan izin langsung dari pencipta dalam penggunaan karya tersebut. Kemudian, fitur retweet atau quote yang memungkinkan pengguna untuk membagikan kembali kicauan pengguna lain, akan berubah nilainya. Meskipun, twitter menyediakan fitur untuk mengontrol akses menuju akun twitter mereka, serta fitur untuk mengontrol penggunaan kicauan mereka oleh pengguna lainnya. Artinya, pengguna yang tidak mengunci kicauannya, berarti telah mengizinkan pengguna lain untuk menggunakan “properti intelektual”nya, sejauh yang telah disediakan oleh fasilitas retweet dan quote.</p>
 
-</div>
-</div>
+          <p>Selain itu, sama halnya dengan beberapa situs lain, ketika satu kicauan dapat disebut sebagai obyek perlindungan hak cipta, di mana satu kicauan dapat mengandung unsur teks, gambar, atau video, dan jika terdapat pengguna yang menghendaki konten-kontennya sebagai konten terbuka, hal ini dapat menjadi faktor pendorong twitter untuk menyediakan platform lisensi terbuka seperti Creative Commons dalam pengakomodasian aktivitas berbagi konten di situs tersebut. Lisensi ini dapat memfasilitasi pencipta yang membagikan kontennya di twitter dengan penjelasan tentang apa yang boleh dan tidak boleh dilakukan oleh pengguna terhadap suatu ciptaan, sambil tetap membuka kesempatan agar para pengguna dapat membagikan dan/atau memanfaatkan konten tersebut.</p>
 
-        	</div>
-		</div>
-	</div>
+          <p>Sumber:</p>
 
-        
-        <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          <p><a href="http://www.technollama.co.uk/can-you-copyright-a-tweet">Can You Copyright A Tweet?</a> - <a href="http://www.technollama.co.uk/">TechnoLlama</a> oleh <a href="http://www.technollama.co.uk/author/andres">Andres</a></p>
 
-  ga('create', 'UA-92784032-1', 'auto');
-  ga('send', 'pageview');
-</script>     
+          <p><a href="http://chirpstory.com/li/277319">Komentar Geram @ernestprakasa soal @Dagelandotco</a> - <a href="http://chirpstory.com/">Chirpstory</a> oleh <a href="https://twitter.com/tumbenlucu">@tumbenlucu</a></p>
 
-<footer class="footer">
-    <div class="container">
-	<nav class="pull-left">
-	    <ul>
-		<li><a href="../../faq.html">FAQ</a></li>
-		<li><a href="../../hubungi-kami.html">Hubungi Kami</a></li>
-		<li><a href="https://www.facebook.com/CreativeCommonsIndonesia"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-		<li><a href="https://twitter.com/CC_ID"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-		<li><a href="../../feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
-	    </ul>
-	</nav>
-	<div class="copyright pull-right"><a href="https://creativecommons.org/licenses/by/4.0/">2012-2016 Creative Commons Indonesia | CC BY 4.0</a></div>
-    </div>
-</footer>
+          <div class="article-end mt-5"></div>
+        </div>
+      </div>
+    </main>
 
-    
-	</div>
-</body>
+    <footer class="mt-5">
+      <div class="container-fluid">
+        <div class="row align-items-md-end pt-5 pb-4">
+          <div class="col-md-12 col-lg-2 offset-lg-1 px-5 px-md-0 mb-4 mb-md-5 mb-lg-2 text-center align-self-center">
+            <img src="../../assets/img/footer-sketch.svg" class="img-fluid h-100 px-2">
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 ps-5 ps-md-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Informasi</h5></li>
+              <li><span class="fa-li"><i class="fa-brands fa-readme"></i></span><a href="../../media.html">Media</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-creative-commons"></i></span><a href="../../lisensi-cc-bahasa-indonesia.html">Lisensi</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-book-open-reader"></i></span><a href="../../kajian.html">Kajian</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-circle-question"></i></span><a href="../../faq.html">FAQ</a></li>             
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Tentang kami</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-person-rays"></i></span><a href="../../tentang.html">Tentang kami</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-newspaper"></i></span><a href="../../berita.html">Berita</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-calendar-check"></i></span><a href="../../acara.html">Acara</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 ps-5 ps-md-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Network</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-users"></i></span><a href="../../sobatccid.html">Sobat CCID</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-creative-commons"></i></span><a href="https://creativecommons.org/">CCHQ</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-earth-asia"></i></span><a href="https://network.creativecommons.org/">CC Global Network</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Kontak</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-address-book"></i></span><a href="../../hubungi-kami.html">Hubungi kami</a></li>              
+              <li><span class="fa-li"><i class="fa-brands fa-square-facebook"></i></span><a href="https://www.facebook.com/CreativeCommonsIndonesia">Facebook</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-twitter"></i></span><a href="https://twitter.com/CC_ID">Twitter</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-instagram"></i></span><a href="https://www.instagram.com/cc.indonesia/">Instagram</a></li>
+          </div>
+        </div>
+        <div class="row footer-license">
+          <div class="col-12 text-center text-white">
+            <p class="my-4"><i class="fa-brands fa-creative-commons pe-1"></i><i class="fa-brands fa-creative-commons-by pe-1"></i> 2012&ndash;2023 Creative Commons Indonesia. Kecuali dinyatakan lain, konten di situs ini dilisensikan di bawah lisensi <a href="https://creativecommons.org/licenses/by/4.0/deed.id">Creative Commons Atribusi 4.0 Internasional</a>. 
+          </div>
+        </div>
+      </div>
+    </footer>
 
+    <!-- js -->
+    <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+    <script src="../../assets/js/popper.min.js"></script>
+    <script src="../../assets/js/bootstrap.js"></script>
+  </body>
 </html>
