@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GR2HTWFX22"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GR2HTWFX22');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Creative Commons Indonesia supports the usage of Creative Commons licenses and open cultural works in Indonesia">
@@ -9,27 +19,19 @@
     <title>Habis? Belum? Mencari Tahu Karya yang Telah Bebas Hak Cipta</title>
     
     <!-- fonts -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-
-    <!-- icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Sen&display=swap" rel="stylesheet"> 
 
     <!-- css -->
-    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../assets/css/material-kit.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../../assets/css/custom.css" rel="stylesheet">
+    <link href="../../assets/css/animate.min.css" rel="stylesheet">
 
-    <!-- js -->
-    <script src="../../assets/js/jquery-3.6.1.min.js"></script>
-    <script src="../../assets/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/material.min.js"></script>
-    <script src="../../assets/js/material-kit.js"></script>
-
-    <!-- plugins -->
-    <script src="../../assets/js/nouislider.min.js"></script> <!-- sliders (http://refreshless.com/nouislider) -->
-    <script src="../../assets/js/bootstrap-datepicker.js"></script> <!-- datepicker (http://www.eyecon.ro/bootstrap-datepicker) -->
-    <script src="../../assets/js/jPages.js"></script> <!-- pagination -->
-    <script src="../../assets/js/js.js"></script> <!-- pagination -->
+    <!-- icons -->
+    <link href="../../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="../../assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="../../assets/fontawesome/css/solid.css" rel="stylesheet">
 
     <!-- favicon -->
     <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
@@ -37,263 +39,220 @@
     <!-- rss feed -->
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="../../feed.xml">
   </head>
-
     
-<body class="index-page">
-	<div class="wrapper">
-	
-	
-        	<style>
-.main {
-	margin-top: 80px;
-  }
-.navbar, .navbar.navbar-danger {
-	background-color: #9e1c1c;
-	color: #ffffff;
-}
-</style>  
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-md" aria-label="Navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html"><img src="../../assets/img/logoputih.png" alt="Creative Commons Indonesia" class="img-fluid" width="150"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ccidnavbar" aria-controls="ccidnavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <nav class="navbar navbar-danger navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="../../index.html">
-                    <div class="logo-container">
-                        <div class="logo">
-                            <img src="../../assets/img/logoputih.png" alt="Creative Commons Indonesia" class="img-fluid" width="150">
-                        </div>
-                    </div>
-                </a>
-            </div>
-    
-            <div class="collapse navbar-collapse" id="navigation-index">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="../../tentang.html" target="_blank">
-                            Tentang
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../../lisensi-cc-bahasa-indonesia.html" target="_blank">
-                            Lisensi
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Blog <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../../sobatccid.html">Sobat CCID</a></li>
-                            <li><a href="../../berita.html">Berita</a></li>
-                            <li><a href="../../kajian.html">Kajian</a></li>
-                            <li><a href="../../acara.html">Acara</a></li>
-                        </ul>
-                    </li>
-		<li>
-			<a href="../../search.html" target="_blank">
-			<i class="fa fa-search" aria-hidden="true"></i>
-			</a>
-		</li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="ccidnavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Informasi
+              </a>
+              <ul class="dropdown-menu mt-3 bg-ccid-red-31 animate__animated animate__flipInY animate__faster" aria-labelledby="resources">
+                <li><a class="dropdown-item" href="../../lisensi-cc-bahasa-indonesia.html">Lisensi</a></li>
+                <li><a class="dropdown-item" href="../../kajian.html">Kajian</a></li>
+                <li><a class="dropdown-item" href="../../faq.html">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../../berita.html">Berita</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../acara.html">Acara</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../media.html">Media</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../tentang.html">Tentang kami</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../sobatccid.html">Sobat CCID</a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/CreativeCommonsIndonesia" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://twitter.com/CC_ID" title="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/cc.indonesia/" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../hubungi-kami.html" title="Hubungi kami"><i class="fa-solid fa-address-book"></i></a></li>            
+          </ul>       
         </div>
+      </div>
     </nav>
 
-	
-       
-        
-	<div class="main">
-		<div class="section section-basic">
-	    	<div class="container">
-		
-		<small><a href="../../index.html">Beranda</a>/<a href="https://creativecommons.or.id/
-			kajian
-		.html">
-			Kajian
-		</a>/Habis? Belum? Mencari Tahu Karya yang Telah Bebas Hak Cipta</small>
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="text-center article-title">
-                            <h2>
-                                Habis? Belum? Mencari Tahu Karya yang Telah Bebas Hak Cipta
-                            </h2>
-                        </div>
-                            <p>Zaman sekarang sudah banyak gambar dan video yang terlepas begitu saja di Internet, tanpa kita mengetahui dari mana asal usulnya dan apakah kita bisa menggunakan gambar atau video tersebut secara bebas. Karena itu, cukup banyak foto digunakan secara asal-asalan, tanpa memperhatikan hak ciptanya.</p>
+    <!-- Breadcrumbs -->
+    <div class="container-fluid mt-2">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+          <li class="breadcrumb-item"><a href="../../kajian.html">Kajian</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Habis? Belum? Mencari Tahu Karya yang Telah Bebas Hak Cipta</li>
+        </ol>
+      </nav>
+    </div>         
+          
+    <main class="container article p-5">
+      <div class="row mt-2 mt-md-5">
+        <div class="col-12">
 
-<p>Di artikel singkat ini, kami akan menjelaskan sedikit mengenai cara mengetahui status hak cipta gambar atau video, sehingga gambar atau video tersebut dapat digunakan secara bebas.</p>
+          <!-- Article meta -->
+          <div class="row article-meta mb-3">
+            <div class="col-sm-6">
+              <i class="fa-solid fa-calendar-day fa-fw"></i> 18 Juli 2016
+            </div>
+            <div class="col-sm-6 pt-1 pt-sm-0 text-sm-end">
+              <i class="fa-solid fa-share-from-square fa-fw pe-1"></i> Bagikan ke 
+            
+              <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://creativecommons.or.id/2016/07/habis-belum-mencari-tahu-karya-yang-telah-bebas-hak-cipta.html"><i class="fa-brands fa-linkedin ps-1" title="LinkedIn" aria-hidden="true"></i></a>
 
-<p><strong>Karya Seni Rupa</strong></p>
+              <a href="https://facebook.com/sharer.php?u=https://creativecommons.or.id/2016/07/habis-belum-mencari-tahu-karya-yang-telah-bebas-hak-cipta.html" rel="nofollow" target="_blank"><i class="fa-brands fa-facebook" title="Facebook" aria-hidden="true"></i></a>
 
-<p>Menurut <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/28">Pasal 58 Ayat (1) dari Undang-Undang Nomor 28 Tahun 2014 tentang Hak Cipta</a> (UU Hak Cipta), semua karya seni rupa, baik itu lukisan, gambar, ukiran, kaligrafi, seni pahat, patung, ataupun kolase, dilindungi hak ciptanya selama hidup Pencipta (pelukis, penggambar, pengukir, dst.) dan terus berlangsung selama tujuh puluh tahun setelah Pencipta meninggal dunia, terhitung mulai tanggal 1 Januari tahun berikutnya. Dalam kata lain, apabila seorang pelukis meninggal dunia pada tanggal 4 Juli 2016, maka hak cipta karya lukisnya dilindungi sampai tanggal 1 Januari 2087.</p>
+              <a href="https://twitter.com/intent/tweet?url=https://creativecommons.or.id/2016/07/habis-belum-mencari-tahu-karya-yang-telah-bebas-hak-cipta.html" rel="nofollow" target="_blank"><i class="fa-brands fa-twitter" title="Twitter" aria-hidden="true"></i></a>
+            </div>
+          </div>
 
-<p>Mari kita lihat contoh di bawah sebagai ilustrasi periode perlindungan hak cipta untuk beberapa bentuk karya seni:</p>
+          <h1>Habis? Belum? Mencari Tahu Karya yang Telah Bebas Hak Cipta</h1>
 
-<p><img src="../../uploads/Raden_Saleh_-_Diponegoro_arrest.jpg" alt="Raden_Saleh_-_Diponegoro_arrest.jpg" class="img-fluid center-block" /><center><small><i>Penangkapan Pangeran Diponegoro (public domain)</i></small></center></p>
+          <!-- Profile of the article author -->
+          <div class="author-profile pt-2 mt-4 mb-5">
+            <img class="img-fluid float-start" src="../../uploads/people/ccid-mosaic.svg">
+            <h5>Chris Woodrich</h5>
+          </div>
 
-<p>Gambar di atas adalah lukisan yang berjudul Penangkapan Pangeran Diponegoro yang dilukis Raden Saleh (1810–1880) pada tahun 1857. Karena lukisan ini merupakan suatu karya seni rupa, maka menurut UU Hak Cipta yang berlaku sekarang hak ciptanya dilindungi sepanjang hidup Raden Saleh dan terus dilindungi selama tujuh puluh tahun setelah ia meninggal, dan mulai berlaku pada tanggal 1 Januari 1881. Dengan demikian, menurut UU Hak Cipta yang berlaku sekarang, perlindungan hak cipta terhadap lukisan ini habis pada tanggal 1 Januari 1951.</p>
+          <!-- Main article content goes here -->
 
-<p><strong>Karya Fotografi</strong></p>
+          <p>Zaman sekarang sudah banyak gambar dan video yang terlepas begitu saja di Internet, tanpa kita mengetahui dari mana asal usulnya dan apakah kita bisa menggunakan gambar atau video tersebut secara bebas. Karena itu, cukup banyak foto digunakan secara asal-asalan, tanpa memperhatikan hak ciptanya.</p>
 
-<p>Masa berlaku karya fotografi dan sinematografi dihitung berbeda dari masa berlaku gambar lain. <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/29">Menurut Pasal 59 Ayat (1) dari UU Hak Cipta</a>, karya fotografi (termasuk potret) dilindungi selama lima puluh tahun setelah karya pertama kali diumumkan.</p>
+          <p>Di artikel singkat ini, kami akan menjelaskan sedikit mengenai cara mengetahui status hak cipta gambar atau video, sehingga gambar atau video tersebut dapat digunakan secara bebas.</p>
 
-<p>Dalam kata lain, karya fotografi yang diterbitkan di koran, buku, majalah, internet, dan sebagainya akan dilindungi hak cipta selama lima puluh tahun setelah dia pertama diterbitkan. Mari kita lihat contoh:</p>
+          <h4>Karya Seni Rupa</h4>
 
-<p><img src="../../uploads/Net_fisherman_in_Ambon,_Indonesia_Tanah_Airku,_p53.jpg" alt="Net_fisherman_in_Ambon,_Indonesia_Tanah_Airku,_p53.jpg" class="img-fluid center-block" /><center><small><i>Nelayan di Ambon sedang melempar jaringnya (public domain)</i></small></center></p>
+          <p>Menurut <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/28">Pasal 58 Ayat (1) dari Undang-Undang Nomor 28 Tahun 2014 tentang Hak Cipta</a> (UU Hak Cipta), semua karya seni rupa, baik itu lukisan, gambar, ukiran, kaligrafi, seni pahat, patung, ataupun kolase, dilindungi hak ciptanya selama hidup Pencipta (pelukis, penggambar, pengukir, dst.) dan terus berlangsung selama tujuh puluh tahun setelah Pencipta meninggal dunia, terhitung mulai tanggal 1 Januari tahun berikutnya. Dalam kata lain, apabila seorang pelukis meninggal dunia pada tanggal 4 Juli 2016, maka hak cipta karya lukisnya dilindungi sampai tanggal 1 Januari 2087.</p>
 
-<p>Karya fotografi di atas pertama kali diterbitkan pada tahun 1952 dalam buku Indonesia Tanah Airku karya G. Silitonga, R. Soekardi, dan S. Tambunan. Meskipun nama fotografer tidak disebutkan, hal ini tidak menjadi masalah untuk mengetahui masa berlaku hak ciptanya karena masa berlakunya hak cipta atas karya ini sepenuhnya dihitung berdasarkan tahun terbit buku Indonesia Tanah Airku.</p>
+          <p>Mari kita lihat contoh di bawah sebagai ilustrasi periode perlindungan hak cipta untuk beberapa bentuk karya seni:</p>
 
-<p>Dengan demikian, menurut UU Hak Cipta yang berlaku sekarang, perlindungan hak cipta terhadap lukisan ini habis pada tahun 2002.</p>
+          <figure class="figure w-sm-50 mt-3 mb-4">
+            <img src="../../uploads/Raden_Saleh_-_Diponegoro_arrest.jpg" alt="Raden_Saleh_-_Diponegoro_arrest.jpg" class="figure-img img-fluid">
+            <figcaption class="figure-caption">Penangkapan Pangeran Diponegoro (public domain).</figcaption>
+          </figure>
 
-<p>Pengumuman karya fotografi, sebagaimana dipahami UU Hak Cipta, tidak mesti melalui penerbitan buku. Sebuah pengumuman dipahami sebagai pembacaan, penyiaran, pameran, suatu ciptaan dengan menggunakan alat apapun baik elektronik atau non-elektronik atau melakukan dengan cara apapun sehingga suatu ciptaan dapat dibaca, didengar, atau dilihat orang lain.</p>
+          <p>Gambar di atas adalah lukisan yang berjudul Penangkapan Pangeran Diponegoro yang dilukis Raden Saleh (1810–1880) pada tahun 1857. Karena lukisan ini merupakan suatu karya seni rupa, maka menurut UU Hak Cipta yang berlaku sekarang hak ciptanya dilindungi sepanjang hidup Raden Saleh dan terus dilindungi selama tujuh puluh tahun setelah ia meninggal, dan mulai berlaku pada tanggal 1 Januari 1881. Dengan demikian, menurut UU Hak Cipta yang berlaku sekarang, perlindungan hak cipta terhadap lukisan ini habis pada tanggal 1 Januari 1951.</p>
 
-<p>Dengan demikian, pengumuman juga dapat berupa pengedaran karya fotografi untuk kepentingan publisitas, seperti foto <a href="https://id.wikipedia.org/wiki/Mieke_Wijaya">Mieke Wijaya</a> di bawah:</p>
+          <h4>Karya Fotografi</h4>
 
-<p><img src="../../uploads/512px-Mieke_Wijaya,_c._1960,_from_Tati_Photo_Studio.jpg" alt="512px-Mieke_Wijaya,_c._1960,_from_Tati_Photo_Studio.jpg" class="img-fluid center-block" /><center><small><i>Mieke Wijaya, kira-kira tahun 1960 (public domain)</i></small></center></p>
+          <p>Masa berlaku karya fotografi dan sinematografi dihitung berbeda dari masa berlaku gambar lain. <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/29">Menurut Pasal 59 Ayat (1) dari UU Hak Cipta</a>, karya fotografi (termasuk potret) dilindungi selama lima puluh tahun setelah karya pertama kali diumumkan.</p>
 
-<p>Potret di atas diambil oleh Tati Studio kira-kira pada tahun 1960, lalu diedarkan sebagai foto publisitas. Dengan demikian, karya fotografi ini telah habis masa berlaku perlindungan hak ciptanya pada tahun 2010.</p>
+          <p>Dalam kata lain, karya fotografi yang diterbitkan di koran, buku, majalah, internet, dan sebagainya akan dilindungi hak cipta selama lima puluh tahun setelah dia pertama diterbitkan. Mari kita lihat contoh:</p>
 
-<p>Karya fotografi di atas pertama kali diterbitkan pada tahun 1952 dalam buku, masa berlaku perlindungan hak ciptanya habis pada tahun 2002.</p>
+          <figure class="figure w-sm-50 mt-3 mb-4">
+            <img src="../../uploads/Net_fisherman_in_Ambon,_Indonesia_Tanah_Airku,_p53.jpg" alt="Net_fisherman_in_Ambon,_Indonesia_Tanah_Airku,_p53.jpg" class="figure-img img-fluid">
+            <figcaption class="figure-caption">Nelayan di Ambon sedang melempar jaringnya (public domain).</figcaption>
+          </figure>
 
-<p><strong>Karya Sinematografi</strong></p>
+          <p>Karya fotografi di atas pertama kali diterbitkan pada tahun 1952 dalam buku Indonesia Tanah Airku karya G. Silitonga, R. Soekardi, dan S. Tambunan. Meskipun nama fotografer tidak disebutkan, hal ini tidak menjadi masalah untuk mengetahui masa berlaku hak ciptanya karena masa berlakunya hak cipta atas karya ini sepenuhnya dihitung berdasarkan tahun terbit buku Indonesia Tanah Airku.</p>
 
-<p>Seperti halnya karya fotografi, hak cipta atas karya sinematografi (film) dilindungi selama lima puluh tahun setelah karya pertama kali dilakukan Pengumuman. Dalam kasus karya sinematografi, pengumuman dapat dipahami sebagai penayangan pertama suatu film.</p>
+          <p>Dengan demikian, menurut UU Hak Cipta yang berlaku sekarang, perlindungan hak cipta terhadap lukisan ini habis pada tahun 2002.</p>
 
-<p><img src="../../uploads/Darah_dan_Doa_screenshot.jpg" alt="Darah_dan_Doa_screenshot.jpg" class="img-fluid center-block" /><center><small><i>Kartu judul untuk film Darah dan Doa (public domain)</i></small></center></p>
+          <p>Pengumuman karya fotografi, sebagaimana dipahami UU Hak Cipta, tidak mesti melalui penerbitan buku. Sebuah pengumuman dipahami sebagai pembacaan, penyiaran, pameran, suatu ciptaan dengan menggunakan alat apapun baik elektronik atau non-elektronik atau melakukan dengan cara apapun sehingga suatu ciptaan dapat dibaca, didengar, atau dilihat orang lain.</p>
 
-<p>Film <a href="https://id.wikipedia.org/wiki/Darah_dan_Doa">Darah dan Doa</a> pertama kali ditayangkan pada pertengahan tahun 1950. Dengan demikian, karya Usmar Ismail ini telah bebas hak cipta pada tahun 2002, sehingga dapat digunakan secara bebas di Indonesia.</p>
+          <p>Dengan demikian, pengumuman juga dapat berupa pengedaran karya fotografi untuk kepentingan publisitas, seperti foto <a href="https://id.wikipedia.org/wiki/Mieke_Wijaya">Mieke Wijaya</a> di bawah:</p>
 
-<p><strong>Beberapa Kasus Problematis</strong></p>
+          <figure class="figure w-sm-50 mt-3 mb-4">
+            <img src="../../uploads/512px-Mieke_Wijaya,_c._1960,_from_Tati_Photo_Studio.jpg" alt="512px-Mieke_Wijaya,_c._1960,_from_Tati_Photo_Studio.jpg" class="figure-img img-fluid">
+            <figcaption class="figure-caption">Mieke Wijaya, kira-kira tahun 1960 (public domain).</figcaption>
+          </figure>
 
-<p><strong>Karya Terbitan Pemerintah</strong></p>
+          <p>Potret di atas diambil oleh Tati Studio kira-kira pada tahun 1960, lalu diedarkan sebagai foto publisitas. Dengan demikian, karya fotografi ini telah habis masa berlaku perlindungan hak ciptanya pada tahun 2010.</p>
 
-<p>Meskipun beberapa Ciptaan pemerintah dilindungi hak cipta, menurut <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/21">Pasal 43 huruf b. dari UU Hak Cipta</a>, segala ciptaan oleh atau atas nama pemerintah Indonesia dapat digunakan secara bebas, asalkan ciptaan yang digunakan tersebut tidak dinyatakan dilindungi oleh peraturan perundang-undangan. Ini tidak berarti bahwa ciptaan tersebut bebas hak cipta; ini hanya berarti bahwa penggunaan ciptaan tersebut tidak dianggap sebagai pelanggaran Hak Cipta terhadap pemerintah oleh UU.</p>
+          <p>Karya fotografi di atas pertama kali diterbitkan pada tahun 1952 dalam buku, masa berlaku perlindungan hak ciptanya habis pada tahun 2002.</p>
 
-<p><img src="../../uploads/Wanita-di-Lombok-sembahyang-untuk-mendapatkan-suami-270x300.jpg" alt="Wanita-di-Lombok-sembahyang-untuk-mendapatkan-suami-270x300.jpg" class="img-fluid center-block" /><center><small><i>Wanita di Lombok dalam perjalanannya sembahyang untuk mendapatkan suami (public domain)</i></small></center></p>
+          <h4>Karya Sinematografi</h4>
 
-<p>Foto di atas diambil dari buku Know Indonesia… Know Your Friend, yang diterbitkan oleh Departemen Penerangan Republik Indonesia pada tahun 1951 untuk memperkenalkan Indonesia kepada orang-orang asing. Sejak 2001, masa berlaku perlindungan hak cipta atas karya fotografi dalam buku tersebut sudah habis; namun, teks dari buku tersebut tetap berhak cipta.</p>
+          <p>Seperti halnya karya fotografi, hak cipta atas karya sinematografi (film) dilindungi selama lima puluh tahun setelah karya pertama kali dilakukan Pengumuman. Dalam kasus karya sinematografi, pengumuman dapat dipahami sebagai penayangan pertama suatu film.</p>
 
-<p><strong>Hak Cipta orang lain</strong></p>
+          <figure class="figure w-sm-50 mt-3 mb-4">
+            <img src="../../uploads/Darah_dan_Doa_screenshot.jpg" alt="Darah_dan_Doa_screenshot.jpg" class="figure-img img-fluid">
+            <figcaption class="figure-caption">Kartu judul untuk film Darah dan Doa (public domain).</figcaption>
+          </figure>
 
-<p>Ketika kita mereproduksi seluruh atau sebagian dari ciptaan orang lain, hak cipta atas ciptaan tersebut tidak menjadi milik kita. Kita memang berhak atas karya hasil kita (misalnya, foto Monas), tetapi hak cipta atas ciptaan yang direproduksi (misalnya, Monas) tetap dilindungi. Karena itu, kita tidak boleh menggunakan reproduksi kita atas ciptaan orang lain dengan bebas; kita masih harus menghormati hak cipta pencipta objek yang direproduksi. Adapun reproduksi atau pemodifikasian ciptaan tersebut dapat dilakukan merujuk pada ketentuan masa berlaku perlindungan hak cipta yang berlaku terhadap jenis ciptaan tersebut.</p>
+          <p>Film <a href="https://id.wikipedia.org/wiki/Darah_dan_Doa">Darah dan Doa</a> pertama kali ditayangkan pada pertengahan tahun 1950. Dengan demikian, karya Usmar Ismail ini telah bebas hak cipta pada tahun 2002, sehingga dapat digunakan secara bebas di Indonesia.</p>
 
-<p><img src="../../uploads/Banyunibo_Temple,_2014-05-31_01.jpg" alt="Banyunibo_Temple,_2014-05-31_01.jpg" class="img-fluid center-block" /><center><small><i>Candi Banyunibo di Yogyakarta (Chris Woodrich/CC-BY-SA 3.0)</i></small></center></p>
+          <h4>Beberapa Kasus Problematis</h4>
 
-<p>Karya fotografi di atas, yang mengambil Candi Banyunibo di Yogyakarta sebagai objek, diumumkan dengan lisensi Creative Commons. Namun, fotografer tidak memiliki hak cipta atas objek tersebut. Sebelum foto ini dapat digunakan secara bebas, maka status hak cipta candi harus ditanyakan. Karena UUHC yang berlaku di Indonesia belum mengecualikan pengabadian obyek dalam medium lukis, fotografi, atau video ketentuan penggunaan ciptaan dalam perbuatan-perbuatan yang dijabarkan pada Pasal 9, kecuali jika perbuatan tersebut memenuhi klausa penggunaan wajar. Mengingat bahwa candi ini dibangun pada abad ke-9, tentu masa berlaku perlindungan hak ciptanya sebagai karya arsitektur sudah habis, artinya berbagai macam penggunaanya dapat dilaksanakan secara langsung asal tetap menyebutkan sumber ciptaan dan nama penciptanya.</p>
+          <h4>Karya Terbitan Pemerintah</h4>
 
-<hr />
+          <p>Meskipun beberapa Ciptaan pemerintah dilindungi hak cipta, menurut <a href="https://id.wikisource.org/wiki/Halaman%3AUU_No._28_Tahun_2014.djvu/21">Pasal 43 huruf b. dari UU Hak Cipta</a>, segala ciptaan oleh atau atas nama pemerintah Indonesia dapat digunakan secara bebas, asalkan ciptaan yang digunakan tersebut tidak dinyatakan dilindungi oleh peraturan perundang-undangan. Ini tidak berarti bahwa ciptaan tersebut bebas hak cipta; ini hanya berarti bahwa penggunaan ciptaan tersebut tidak dianggap sebagai pelanggaran Hak Cipta terhadap pemerintah oleh UU.</p>
 
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-12">
-                                    <h5 style="display: inline;">Tags:</h5>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Masa Berlaku Hak Cipta</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Domain Publik</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Hak Cipta</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Public Domain</button>
-                                    
-                                        <button class="btn btn-white btn-xs" type="button">Lisensi Creative Commons</button>
-                                    
-                            </div>                       
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <h5>Oleh: Chris Woodrich</h5>
-                        18 Jul 2016
-                        <hr>
-                        <h5>Kategori:</h5>
-                        
-                        <button class="btn btn-white btn-xs" type="button">Kajian</button>
-                        
-                        <hr>
-                        <h5>Berita Terbaru</h5>
-			<ul>
-                        
-			<li><a href="../../2019/01/lokakarya-hak-cipta-dan-lisensi-creative-commons-di-pekanbaru.html" class="btn-link">Lokakarya Hak Cipta dan Lisensi Creative Commons di Pekanbaru</a></li>
-                        
-			<li><a href="../../2018/12/pengumuman-resmi-hasil-akhir-training-of-trainers-creative-commons-indonesia.html" class="btn-link">Pengumuman Resmi: Hasil Akhir Training of Trainers Creative Commons Indonesia</a></li>
-                        
-			<li><a href="../../2018/08/literatur-terbaru-tentang-model-bisnis-terbuka-made-with-cc.html" class="btn-link">Literatur tentang Model Bisnis Terbuka "Made With CC"</a></li>
-                        
-			<li><a href="../../2018/08/data-dan-artikel-ilmiah-terbuka-dari-plos.html" class="btn-link">Data dan Artikel Ilmiah Terbuka dari PLOS!</a></li>
-                        
-			<li><a href="../../2018/08/Konten-Format-Model-3-Dimensi-Berilsensi-CC-di-Platform-Sketchfab.html" class="btn-link">Konten Format Model 3 Dimensi Berilsensi CC di Platform Sketchfab</a></li>
-                        
-	 		</ul>
-			<hr>
-			<h5>Bagikan di:</h5>
-			<a href="https://facebook.com/sharer.php?u=https://creativecommons.or.id/2016/07/habis-belum-mencari-tahu-karya-yang-telah-bebas-hak-cipta.html" rel="nofollow" target="_blank"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
-			<a href="https://twitter.com/intent/tweet?text=Habis? Belum? Mencari Tahu Karya yang Telah Bebas Hak Cipta&url=http://creativecommons.or.id//2016/07/habis-belum-mencari-tahu-karya-yang-telah-bebas-hak-cipta/&via=&related=" rel="nofollow" target="_blank"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a>
-			</div>
-		</div>
+          <figure class="figure w-sm-50 mt-3 mb-4">
+            <img src="../../uploads/Wanita-di-Lombok-sembahyang-untuk-mendapatkan-suami-270x300.jpg" alt="Wanita-di-Lombok-sembahyang-untuk-mendapatkan-suami-270x300.jpg" class="figure-img img-fluid">
+            <figcaption class="figure-caption">Wanita di Lombok dalam perjalanannya sembahyang untuk mendapatkan suami (public domain).</figcaption>
+          </figure>
 
-<div class="row">
-<div class="col-lg-9">
-		
-	<div id="disqus_thread"></div>
-	<script>
+          <p>Foto di atas diambil dari buku Know Indonesia… Know Your Friend, yang diterbitkan oleh Departemen Penerangan Republik Indonesia pada tahun 1951 untuk memperkenalkan Indonesia kepada orang-orang asing. Sejak 2001, masa berlaku perlindungan hak cipta atas karya fotografi dalam buku tersebut sudah habis; namun, teks dari buku tersebut tetap berhak cipta.</p>
 
-	/**
-	*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-	*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-	/*
-	var disqus_config = function () {
-	this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-	this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-	};
-	*/
-	(function() { // DON'T EDIT BELOW THIS LINE
-	var d = document, s = d.createElement('script');
-	s.src = '//creative-commons-indonesia.disqus.com/embed.js';
-	s.setAttribute('data-timestamp', +new Date());
-	(d.head || d.body).appendChild(s);
-	})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <h4>Hak Cipta orang lain</h4>
 
-</div>
-</div>
+          <p>Ketika kita mereproduksi seluruh atau sebagian dari ciptaan orang lain, hak cipta atas ciptaan tersebut tidak menjadi milik kita. Kita memang berhak atas karya hasil kita (misalnya, foto Monas), tetapi hak cipta atas ciptaan yang direproduksi (misalnya, Monas) tetap dilindungi. Karena itu, kita tidak boleh menggunakan reproduksi kita atas ciptaan orang lain dengan bebas; kita masih harus menghormati hak cipta pencipta objek yang direproduksi. Adapun reproduksi atau pemodifikasian ciptaan tersebut dapat dilakukan merujuk pada ketentuan masa berlaku perlindungan hak cipta yang berlaku terhadap jenis ciptaan tersebut.</p>
 
-        	</div>
-		</div>
-	</div>
+          <figure class="figure w-sm-50 mt-3 mb-4">
+            <img src="../../uploads/Banyunibo_Temple,_2014-05-31_01.jpg" alt="Banyunibo_Temple,_2014-05-31_01.jpg" class="figure-img img-fluid">
+            <figcaption class="figure-caption">Candi Banyunibo di Yogyakarta (Chris Woodrich/CC-BY-SA 3.0).</figcaption>
+          </figure>
 
-        
-        <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          <p>Karya fotografi di atas, yang mengambil Candi Banyunibo di Yogyakarta sebagai objek, diumumkan dengan lisensi Creative Commons. Namun, fotografer tidak memiliki hak cipta atas objek tersebut. Sebelum foto ini dapat digunakan secara bebas, maka status hak cipta candi harus ditanyakan. Karena UUHC yang berlaku di Indonesia belum mengecualikan pengabadian obyek dalam medium lukis, fotografi, atau video ketentuan penggunaan ciptaan dalam perbuatan-perbuatan yang dijabarkan pada Pasal 9, kecuali jika perbuatan tersebut memenuhi klausa penggunaan wajar. Mengingat bahwa candi ini dibangun pada abad ke-9, tentu masa berlaku perlindungan hak ciptanya sebagai karya arsitektur sudah habis, artinya berbagai macam penggunaanya dapat dilaksanakan secara langsung asal tetap menyebutkan sumber ciptaan dan nama penciptanya.</p>
 
-  ga('create', 'UA-92784032-1', 'auto');
-  ga('send', 'pageview');
-</script>     
+          <div class="article-end mt-5"></div>
+        </div>
+      </div>
+    </main>
 
-<footer class="footer">
-    <div class="container">
-	<nav class="pull-left">
-	    <ul>
-		<li><a href="../../faq.html">FAQ</a></li>
-		<li><a href="../../hubungi-kami.html">Hubungi Kami</a></li>
-		<li><a href="https://www.facebook.com/CreativeCommonsIndonesia"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-		<li><a href="https://twitter.com/CC_ID"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-		<li><a href="../../feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
-	    </ul>
-	</nav>
-	<div class="copyright pull-right"><a href="https://creativecommons.org/licenses/by/4.0/">2012-2016 Creative Commons Indonesia | CC BY 4.0</a></div>
-    </div>
-</footer>
+    <footer class="mt-5">
+      <div class="container-fluid">
+        <div class="row align-items-md-end pt-5 pb-4">
+          <div class="col-md-12 col-lg-2 offset-lg-1 px-5 px-md-0 mb-4 mb-md-5 mb-lg-2 text-center align-self-center">
+            <img src="../../assets/img/footer-sketch.svg" class="img-fluid h-100 px-2">
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 ps-5 ps-md-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Informasi</h5></li>
+              <li><span class="fa-li"><i class="fa-brands fa-readme"></i></span><a href="../../media.html">Media</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-creative-commons"></i></span><a href="../../lisensi-cc-bahasa-indonesia.html">Lisensi</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-book-open-reader"></i></span><a href="../../kajian.html">Kajian</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-circle-question"></i></span><a href="../../faq.html">FAQ</a></li>             
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Tentang kami</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-person-rays"></i></span><a href="../../tentang.html">Tentang kami</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-newspaper"></i></span><a href="../../berita.html">Berita</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-calendar-check"></i></span><a href="../../acara.html">Acara</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 ps-5 ps-md-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Network</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-users"></i></span><a href="../../sobatccid.html">Sobat CCID</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-creative-commons"></i></span><a href="https://creativecommons.org/">CCHQ</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-earth-asia"></i></span><a href="https://network.creativecommons.org/">CC Global Network</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3 mb-md-0 d-flex justify-content-md-center">
+            <ul class="ms-4 fa-ul">
+              <li><h5>Kontak</h5></li>
+              <li><span class="fa-li"><i class="fa-solid fa-address-book"></i></span><a href="../../hubungi-kami.html">Hubungi kami</a></li>              
+              <li><span class="fa-li"><i class="fa-brands fa-square-facebook"></i></span><a href="https://www.facebook.com/CreativeCommonsIndonesia">Facebook</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-twitter"></i></span><a href="https://twitter.com/CC_ID">Twitter</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-instagram"></i></span><a href="https://www.instagram.com/cc.indonesia/">Instagram</a></li>
+          </div>
+        </div>
+        <div class="row footer-license">
+          <div class="col-12 text-center text-white">
+            <p class="my-4"><i class="fa-brands fa-creative-commons pe-1"></i><i class="fa-brands fa-creative-commons-by pe-1"></i> 2012&ndash;2023 Creative Commons Indonesia. Kecuali dinyatakan lain, konten di situs ini dilisensikan di bawah lisensi <a href="https://creativecommons.org/licenses/by/4.0/deed.id">Creative Commons Atribusi 4.0 Internasional</a>. 
+          </div>
+        </div>
+      </div>
+    </footer>
 
-    
-	</div>
-</body>
-
+    <!-- js -->
+    <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+    <script src="../../assets/js/popper.min.js"></script>
+    <script src="../../assets/js/bootstrap.js"></script>
+  </body>
 </html>
