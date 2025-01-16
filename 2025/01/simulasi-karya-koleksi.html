@@ -258,9 +258,17 @@
             background: white;
             border: 1px solid #ddd;
             border-radius: 4px;
-            width: 88px;
+            width: 100px;
             text-align: center;
             margin-bottom: 0;
+            display: flex;
+            /* Added to control inner layout */
+            flex-direction: column;
+            /* Stack children vertically */
+            align-items: center;
+            /* Center children horizontally */
+            gap: 8px;
+            /* Space between image and label */
           }
 
           .clear-btn {
@@ -282,8 +290,9 @@
           }
 
           img {
-            max-width: 88px;
+            max-width: 100px;
             height: auto;
+            display: block;
           }
 
           .hasil-label {
@@ -495,13 +504,16 @@
 
             <div class="container1">
               <h2>Bahan Baku Karya Koleksi</h2>
-              <p>Seret lah salah satu Jenis dari Karya berlisensi CC atau tanda CC0/PD yang akan Anda gunakan untuk
+              <p style="padding-left: 16px;">Seret dan letak (<i>Drag and Drop</i>) salah salah satu Jenis dari Karya
+                berlisensi CC atau tanda
+                CC0/PD yang akan Anda
+                gunakan untuk
                 membuat Karya
                 Koleksi di masing-masing kotak yang telah disediakan maksimal 4 butir</p>
               <div class="items">
                 <div class="draggable" draggable="true" ondragstart="drag(event)" data-license="cc0">
                   <img src="../../uploads/lisensi/cc-0.png" alt="CC0" />
-                  CC0/PD
+                  <span>CC0/PD</span>
                 </div>
                 <div class="draggable" draggable="true" ondragstart="drag(event)" data-license="cc-by">
                   <img src="../../uploads/lisensi/cc-by.png" alt="CC BY" />
