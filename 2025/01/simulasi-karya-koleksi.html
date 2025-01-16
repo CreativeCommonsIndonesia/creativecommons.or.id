@@ -323,6 +323,11 @@
         </style>
 
         <script>
+          document.addEventListener('touchstart', function (e) {
+            if (e.target.hasAttribute('draggable')) {
+              e.preventDefault();
+            }
+          });
           // Script Rujak
           const ncLicenses = ['cc-by-nc', 'cc-by-nc-sa', 'cc-by-nc-nd'];
           const standardLicenses = {
