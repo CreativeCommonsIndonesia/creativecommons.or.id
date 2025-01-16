@@ -417,9 +417,27 @@
           }
 
           function drag(ev) {
-            const draggable = ev.target.closest('.draggable');
-            ev.dataTransfer.setData("text", draggable.innerHTML);
-            ev.dataTransfer.setData("license", draggable.dataset.license);
+            // Check if it's a touch device
+            if (ev.type === 'touchstart') {
+              const touch = ev.touches[0];
+              const draggable = touch.target.closest('.draggable');
+
+              // Store the dragged element's data
+              ev.dataTransfer = {
+                items: new Map([
+                  ["text", draggable.innerHTML],
+                  ["license", draggable.dataset.license]
+                ])
+              };
+
+              // Prevent scrolling while dragging
+              ev.preventDefault();
+            } else {
+              // Original desktop drag behavior
+              const draggable = ev.target.closest('.draggable');
+              ev.dataTransfer.setData("text", draggable.innerHTML);
+              ev.dataTransfer.setData("license", draggable.dataset.license);
+            }
           }
 
           function drop(ev) {
