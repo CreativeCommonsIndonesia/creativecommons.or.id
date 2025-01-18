@@ -191,16 +191,18 @@
 
         <h3>Simulasi Karya Koleksi</h3>
 
-        <p>Setelah memahami analogi karya koleksi seperti <strong><u>Rujak</u></strong> serta melihat tabel dan contoh
-          karya
-          koleksi,
-          Anda dapat
-          mencoba simulasi berikut untuk menentukan lisensi CC yang tepat bagi karya koleksi Anda. </p>
+        <p>Setelah memahami analogi karya koleksi seperti Rujak serta melihat tabel dan contoh karya koleksi di atas,
+          Anda dapat mencoba simulasi berikut untuk menentukan lisensi Creative Commons (CC) dan tanda CC0/Public Domain
+          (PD) yang tepat bagi karya koleksi Anda. Simulasi ini bertujuan membantu Anda memahami bagaimana lisensi CC
+          dan tanda CC0/Public Domain (PD) dapat diterapkan pada sebuah karya koleksi.
+        </p>
 
-        <p>Simulasi ini menggunakan empat kolom sebagai contoh, namun Anda dapat menggabungkan lebih dari empat karya
-          berlisensi CC dalam praktik sebenarnya. Karya-karya tersebut dapat dikombinasikan dengan lisensi CC yang sama
-          atau berbeda. Cukup klik dan seret ikon dari enam jenis lisensi CC atau PD/CC0 ke dalam kotak yang tersedia.
-          Lisensi CC yang kompatibel untuk karya koleksi Anda akan muncul secara otomatis di bawah kotak-kotak tersebut.
+        <p>
+          Simulasi ini menggunakan empat kolom sebagai contoh bahan baku yang akan digunakan dalam membuat karya
+          koleksi, tetapi dalam praktik sebenarnya, Anda dapat menggunakan lebih dari empat bahan baku/ karya berlisensi
+          Creative Commons atau bertanda CC0/Public Domain. Karya-karya tersebut dapat dikombinasikan dengan lisensi CC
+          yang sama atau berbeda. Lisensi CC yang kompatibel untuk karya koleksi Anda akan muncul secara otomatis pada
+          kotak hasil karya koleksi.
         </p>
 
         <style>
@@ -324,7 +326,15 @@
 
         <script>
           document.addEventListener('touchstart', function (e) {
-            if (e.target.hasAttribute('draggable')) {
+            // Only prevent default if it's a draggable item that's not in a drop zone
+            if (e.target.hasAttribute('draggable') && !e.target.closest('.drop-zone')) {
+              e.preventDefault();
+            }
+          });
+
+          // Add event listener to prevent image dragging
+          document.addEventListener('dragstart', function (e) {
+            if (e.target.tagName === 'IMG' && e.target.closest('.drop-zone')) {
               e.preventDefault();
             }
           });
@@ -350,6 +360,11 @@
           });
 
           function handleTouchStart(e) {
+            // Prevent dragging if the item is in a drop zone
+            if (e.target.closest('.drop-zone')) {
+              return;
+            }
+
             e.preventDefault();
             const touch = e.touches[0];
             draggedItem = this;
@@ -417,6 +432,9 @@
 
           // Original drag and drop functions
           function allowDrop(ev) {
+            if (ev.target.closest('.drop-zone.filled')) {
+              return; // Prevent dropping on filled zones
+            }
             ev.preventDefault();
             ev.currentTarget.classList.add('hover');
           }
@@ -424,6 +442,12 @@
           function drag(ev) {
             // Check if it's a touch device
             if (ev.type === 'touchstart') {
+              // Prevent dragging if the item is in a drop zone
+              if (ev.target.closest('.drop-zone')) {
+                ev.preventDefault();
+                return;
+              }
+
               const touch = ev.touches[0];
               const draggable = touch.target.closest('.draggable');
 
@@ -438,6 +462,11 @@
               // Prevent scrolling while dragging
               ev.preventDefault();
             } else {
+              // Prevent dragging if the item is in a drop zone
+              if (ev.target.closest('.drop-zone')) {
+                ev.preventDefault();
+                return;
+              }
               // Original desktop drag behavior
               const draggable = ev.target.closest('.draggable');
               ev.dataTransfer.setData("text", draggable.innerHTML);
@@ -516,8 +545,9 @@
 
               <div class="hasil-label">
                 <h2>Hasil Karya Koleksi</h2>
-                <p>Berikut pilihan jenis lisensi CC yang kompatibel dari hasil karya koleksi di atas, Anda dapat memilih
-                  salah satunya!
+                <p>
+                  Berikut pilihan jenis lisensi CC yang kompatibel dari hasil karya koleksi di atas, Anda dapat memilih
+                  salah satunya yang sesuai dengan keinginan Anda!
                 </p>
               </div>
               <div class="hasil-box">
@@ -527,12 +557,13 @@
 
             <div class="container1">
               <h2>Bahan Baku Karya Koleksi</h2>
-              <p style="padding-left: 16px;">Seret dan letak (<i>Drag and Drop</i>) salah salah satu Jenis dari Karya
-                berlisensi CC atau tanda
-                CC0/PD yang akan Anda
-                gunakan untuk
-                membuat Karya
-                Koleksi di masing-masing kotak yang telah disediakan maksimal 4 butir</p>
+              <p style="padding-left: 16px;">
+                Silakan gunakan metode seret dan lepas (<i>Drag and Drop</i>) untuk memilih jenis lisensi Creative
+                Commons (CC)
+                atau tanda CC0/Public Domain (PD) di bawah ini. Seret pilihan Anda ke salah satu dari empat kotak kosong
+                yang tersedia di sisi kiri. Isilah satu kotak dengan satu pilihan, Anda dapat mengisi kotak dengan
+                kombinasi pilihan yang sama atau berbeda sesuai kebutuhan.
+              </p>
               <div class="items">
                 <div class="draggable" draggable="true" ondragstart="drag(event)" data-license="cc0">
                   <img src="../../uploads/lisensi/cc-0.png" alt="CC0" />
